@@ -1,0 +1,307 @@
+"""Discord composer — hedge-fund report format.
+
+Sections (each is one embed):
+  1. Header / weekly thesis + color-coded mood
+  2. Scoreboard (cum return, vs SPY, AUM, after-tax, win rate)
+  3. This week's actions (one block per non-NONE/HOLD decision)
+  4. Open positions with MTM
+  5. Last week's reflection summary
+  6. Diagnostics — degraded signals + skipped trades
+  7. Disclaimer footer
+
+Discord constraints respected: ≤6000 chars per embed, ≤10 embeds per message.
+The sender chunks across messages if needed.
+"""
+
+from __future__ import annotations
+
+from datetime import date, datetime
+from typing import Optional
+
+
+COLOR_BULLISH = 0x00CC66
+COLOR_BEARISH = 0xCC3333
+COLOR_NEUTRAL = 0xFFAA00
+COLOR_INFO = 0x3498DB
+COLOR_SCOREBOARD = 0x9B59B6
+
+
+def _color_for_return(pct: Optional[float]) -> int:
+    if pct is None:
+        return COLOR_NEUTRAL
+    if pct > 0.005:
+        return COLOR_BULLISH
+    if pct < -0.005:
+        return COLOR_BEARISH
+    return COLOR_NEUTRAL
+
+
+def _pct(x: Optional[float], digits: int = 2) -> str:
+    if x is None:
+        return "—"
+    return f"{x * 100:+.{digits}f}%"
+
+
+def _usd(x: Optional[float]) -> str:
+    if x is None:
+        return "—"
+    sign = "-" if x < 0 else ""
+    return f"{sign}${abs(x):,.2f}"
+
+
+def _trim(text: str, max_len: int) -> str:
+    if len(text) <= max_len:
+        return text
+    return text[: max_len - 1] + "…"
+
+
+def _conviction_badge(c: Optional[str]) -> str:
+    return {"high": "🟢 HIGH", "medium": "🟡 MED", "low": "🟠 LOW"}.get((c or "").lower(), "—")
+
+
+def _action_badge(action: str) -> str:
+    return {
+        "OPEN":  "🟢 OPEN",
+        "ADD":   "🟢 ADD",
+        "HOLD":  "⚪ HOLD",
+        "TRIM":  "🟠 TRIM",
+        "CLOSE": "🔴 CLOSE",
+        "NONE":  "·  PASS",
+    }.get(action, action)
+
+
+def compose_digest(
+    today: date,
+    portfolio_state: dict,
+    mark: dict,
+    pm_output: dict,
+    executed_trades: list[dict],
+    skipped: list[dict],
+    scoreboard: dict,
+    reflection: Optional[dict],
+    degraded_signals: list[str],
+) -> tuple[str, list[dict]]:
+    """Return (title, embeds) ready to hand to DiscordSender."""
+    embeds: list[dict] = []
+
+    title = _title(today, mark)
+    embeds.append(_header_embed(today, mark, pm_output, title))
+    embeds.append(_scoreboard_embed(scoreboard))
+
+    actions_embed = _actions_embed(pm_output, executed_trades)
+    if actions_embed:
+        embeds.append(actions_embed)
+
+    positions_embed = _positions_embed(mark, portfolio_state)
+    if positions_embed:
+        embeds.append(positions_embed)
+
+    if reflection:
+        embeds.append(_reflection_embed(reflection))
+
+    if degraded_signals or skipped:
+        embeds.append(_diagnostics_embed(degraded_signals, skipped))
+
+    embeds.append(_disclaimer_embed())
+
+    return title, embeds
+
+
+def compose_error(today: date, error_message: str, run_url: Optional[str] = None) -> list[dict]:
+    """One-embed error payload for failed runs."""
+    body = f"```\n{_trim(error_message, 1500)}\n```"
+    if run_url:
+        body += f"\n[View GitHub Actions run]({run_url})"
+    return [{
+        "title": f"❌ MiniHedgeFund — Run failed {today.isoformat()}",
+        "description": body,
+        "color": COLOR_BEARISH,
+        "footer": {"text": f"Generated {datetime.utcnow().isoformat()}Z"},
+    }]
+
+
+# ---- internal embed builders ----
+
+def _title(today: date, mark: dict) -> str:
+    wr = mark.get("weekly_return_pct")
+    suffix = ""
+    if wr is not None:
+        suffix = f" · {_pct(wr)} wk"
+    return f"MiniHedgeFund — Week of {today.strftime('%b %d, %Y')}{suffix}"
+
+
+def _header_embed(today: date, mark: dict, pm_output: dict, title: str) -> dict:
+    thesis = pm_output.get("weekly_thesis") or "(no thesis recorded)"
+    narrative = pm_output.get("narrative") or ""
+    body = f"**Thesis:** {thesis}\n\n{narrative}"
+    return {
+        "title": title,
+        "description": _trim(body, 4000),
+        "color": _color_for_return(mark.get("weekly_return_pct")),
+        "footer": {"text": "Not investment advice — experimental AI simulation."},
+    }
+
+
+def _scoreboard_embed(sb: dict) -> dict:
+    lines = []
+    aum = sb.get("current_aum") or 0
+    cum = sb.get("cumulative_return_pct")
+    spy = sb.get("spy_cumulative_pct")
+    alpha = sb.get("cumulative_alpha_pct")
+    after_tax = sb.get("after_tax_cumulative_return_pct")
+    weeks = sb.get("weeks_tracked", 0)
+    win = sb.get("weekly_win_rate")
+
+    lines.append(f"**AUM:** {_usd(aum)}  ·  Initial: {_usd(sb.get('initial_capital'))}")
+    lines.append(f"**Cumulative:** {_pct(cum)}  ·  After-tax: {_pct(after_tax)}")
+    lines.append(f"**vs SPY:** {_pct(spy)}  ·  Alpha: {_pct(alpha)}")
+    lines.append(f"**Weeks:** {weeks}  ·  Weekly win rate: {_pct(win, digits=1) if win is not None else '—'}")
+
+    realized_g = sb.get("total_realized_gains") or 0
+    realized_l = sb.get("total_realized_losses") or 0
+    tax_owed = sb.get("estimated_tax_owed") or 0
+    if realized_g or realized_l:
+        lines.append(f"**Realized:** gains {_usd(realized_g)} · losses {_usd(realized_l)} · est. tax owed {_usd(tax_owed)}")
+
+    best = sb.get("best_week")
+    worst = sb.get("worst_week")
+    if best and worst and best.get("return_pct") is not None:
+        lines.append(f"**Best:** {best.get('week_of')} {_pct(best.get('return_pct'))}  ·  **Worst:** {worst.get('week_of')} {_pct(worst.get('return_pct'))}")
+
+    return {
+        "title": "📊 Scoreboard",
+        "description": "\n".join(lines),
+        "color": COLOR_SCOREBOARD,
+    }
+
+
+def _actions_embed(pm_output: dict, executed_trades: list[dict]) -> Optional[dict]:
+    decisions = pm_output.get("decisions") or []
+    actionable = [d for d in decisions if d.get("action") not in (None, "NONE", "HOLD")]
+    if not actionable:
+        return None
+
+    # Map executed trades back to decisions by ticker
+    exec_by_ticker: dict[str, list[dict]] = {}
+    for t in executed_trades:
+        exec_by_ticker.setdefault(t.get("ticker", ""), []).append(t)
+
+    blocks: list[str] = []
+    for d in actionable:
+        ticker = d.get("ticker", "")
+        action = d.get("action", "")
+        conv = _conviction_badge(d.get("conviction"))
+        thesis = _trim(d.get("thesis", ""), 280)
+        size = ""
+        if action == "OPEN":
+            size = f" · {d.get('target_weight_pct', 0):.1f}% target"
+        elif action == "ADD":
+            size = f" · +{d.get('additional_weight_pct', 0):.1f}%"
+        elif action == "TRIM":
+            size = f" · {d.get('trim_pct_of_position', 0):.0f}% of position"
+
+        fills = exec_by_ticker.get(ticker, [])
+        fill_str = ""
+        if fills:
+            kinds = ", ".join(f"{f['kind']} {f['shares']} @ ${f['price']:.2f}" for f in fills[:3])
+            fill_str = f"\n   _fill:_ {kinds}"
+
+        blocks.append(
+            f"**{_action_badge(action)} `${ticker}`** · {conv}{size}\n"
+            f"   {thesis}{fill_str}"
+        )
+
+    desc = "\n\n".join(blocks)
+    return {
+        "title": "🎯 This Week's Actions",
+        "description": _trim(desc, 4000),
+        "color": COLOR_INFO,
+    }
+
+
+def _positions_embed(mark: dict, portfolio_state: dict) -> Optional[dict]:
+    positions = mark.get("positions") or []
+    if not positions:
+        return {
+            "title": "💼 Positions",
+            "description": f"All cash: {_usd(mark.get('cash'))}",
+            "color": COLOR_NEUTRAL,
+        }
+
+    lines = []
+    aum = mark.get("aum") or 1.0
+    for p in positions:
+        ticker = p.get("ticker", "")
+        mv = p.get("market_value") or 0
+        weight = mv / aum if aum > 0 else 0
+        upl = p.get("unrealized_pnl") or 0
+        upl_pct = p.get("unrealized_pnl_pct")
+        days = p.get("days_held")
+        upl_color = "🟢" if upl > 0 else ("🔴" if upl < 0 else "⚪")
+        lines.append(
+            f"{upl_color} **${ticker}** · {_usd(mv)} ({weight * 100:.1f}%)  ·  "
+            f"{_pct(upl_pct)}  ·  {days}d held"
+        )
+
+    cash_pct = mark.get("cash", 0) / aum if aum > 0 else 0
+    lines.append(f"💵 **Cash** · {_usd(mark.get('cash'))} ({cash_pct * 100:.1f}%)")
+
+    return {
+        "title": "💼 Open Positions (MTM)",
+        "description": _trim("\n".join(lines), 4000),
+        "color": COLOR_INFO,
+    }
+
+
+def _reflection_embed(reflection: dict) -> dict:
+    out = reflection.get("output") or reflection  # support both wrapped+unwrapped
+    summary = out.get("summary") or ""
+    lessons = out.get("lessons_for_pm") or []
+    watch = out.get("watch_for") or []
+
+    lines = []
+    if summary:
+        lines.append(f"_{summary}_")
+
+    if lessons:
+        lines.append("\n**Lessons applied this week:**")
+        for ll in lessons[:6]:
+            lines.append(f"• {ll}")
+
+    if watch:
+        lines.append("\n**Watching for:**")
+        for w in watch[:3]:
+            lines.append(f"• {w}")
+
+    return {
+        "title": "🔁 Reflection",
+        "description": _trim("\n".join(lines), 4000),
+        "color": COLOR_SCOREBOARD,
+    }
+
+
+def _diagnostics_embed(degraded_signals: list[str], skipped: list[dict]) -> dict:
+    lines = []
+    if degraded_signals:
+        lines.append("**Degraded signals:** " + ", ".join(degraded_signals))
+    if skipped:
+        lines.append("**Skipped trades:**")
+        for s in skipped[:8]:
+            lines.append(f"• `{s.get('ticker', '?')}` ({s.get('action', '?')}) — {s.get('reason', '?')}")
+    return {
+        "title": "🔧 Diagnostics",
+        "description": _trim("\n".join(lines), 2000),
+        "color": COLOR_NEUTRAL,
+    }
+
+
+def _disclaimer_embed() -> dict:
+    return {
+        "title": " ",
+        "description": (
+            "_Not investment advice. This is an experimental AI-driven simulation; "
+            "no real capital is deployed. All decisions are made by language models "
+            "and may be wrong._"
+        ),
+        "color": COLOR_NEUTRAL,
+    }

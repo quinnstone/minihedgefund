@@ -1,5 +1,6 @@
-"""Discord webhook delivery (composer is rebuilt in Phase 4)."""
+"""Discord webhook composition + delivery."""
 
+from .composer import compose_digest, compose_error
 from .sender import DiscordSender
 
-__all__ = ["DiscordSender"]
+__all__ = ["compose_digest", "compose_error", "DiscordSender"]
