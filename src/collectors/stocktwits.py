@@ -11,6 +11,7 @@ but we sleep between calls to be polite.
 from __future__ import annotations
 
 import logging
+import os
 import time
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -23,6 +24,15 @@ logger = logging.getLogger(__name__)
 BASE_URL = "https://api.stocktwits.com/api/2"
 DEFAULT_TIMEOUT = 10
 DEFAULT_SLEEP_S = 1.0
+
+# StockTwits' public API is Cloudflare-protected and 403s from GitHub Actions
+# datacenter IPs. We gate the entire collector on an env var so CI (which won't
+# set it) skips silently and local runs (where you set it in .env) work normally.
+ENABLED_ENV_VAR = "STOCKTWITS_ENABLED"
+
+
+def _is_enabled() -> bool:
+    return os.getenv(ENABLED_ENV_VAR, "").lower() in ("true", "1", "yes", "on")
 
 
 @dataclass
@@ -56,14 +66,29 @@ class StockTwitsAggregate:
 
 
 class StockTwitsCollector:
-    def __init__(self, timeout: int = DEFAULT_TIMEOUT, sleep_s: float = DEFAULT_SLEEP_S):
+    def __init__(
+        self,
+        timeout: int = DEFAULT_TIMEOUT,
+        sleep_s: float = DEFAULT_SLEEP_S,
+        enabled: Optional[bool] = None,
+    ):
         self.timeout = timeout
         self.sleep_s = sleep_s
+        # Allow explicit override (mostly for tests); otherwise read env var.
+        self.enabled = _is_enabled() if enabled is None else enabled
         self._session = requests.Session()
         self._session.headers.update({"User-Agent": "MiniHedgeFund/1.0"})
+        if not self.enabled:
+            logger.info(
+                "StockTwits collector disabled (set %s=true to enable)",
+                ENABLED_ENV_VAR,
+            )
 
     def get_cashtag_stream(self, ticker: str, limit: int = 30) -> list[StockTwitsMessage]:
-        """Most recent N messages for a ticker. Returns [] on any failure."""
+        """Most recent N messages for a ticker. Returns [] on any failure
+        or when disabled via env var."""
+        if not self.enabled:
+            return []
         url = f"{BASE_URL}/streams/symbol/{ticker.upper()}.json"
         try:
             resp = self._session.get(url, timeout=self.timeout)
@@ -82,7 +107,10 @@ class StockTwitsCollector:
         return out
 
     def get_trending(self, limit: int = 30, exclude_crypto: bool = True) -> list[str]:
-        """Trending symbols across all of StockTwits. .X suffix = crypto token."""
+        """Trending symbols across all of StockTwits. .X suffix = crypto token.
+        Returns [] when disabled."""
+        if not self.enabled:
+            return []
         url = f"{BASE_URL}/trending/symbols.json"
         try:
             resp = self._session.get(url, timeout=self.timeout)
