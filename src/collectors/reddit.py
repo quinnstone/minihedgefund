@@ -87,7 +87,14 @@ class RedditCollector:
         return [t for t in matches if t not in self.EXCLUDED_WORDS]
 
     def _fetch_subreddit_hot(self, subreddit: str, limit: int = 100) -> list[dict]:
-        """One unauth JSON page; reddit caps `limit` at ~100 per request."""
+        """Try RSS first (works from datacenter IPs Reddit blocks for JSON),
+        fall back to JSON if RSS returns nothing. Output is normalized to
+        the same dict shape regardless of source.
+        """
+        rss_posts = self._fetch_via_rss(subreddit, limit=limit)
+        if rss_posts:
+            return rss_posts
+
         url = f"https://www.reddit.com/r/{subreddit}/hot.json"
         try:
             resp = self._session.get(
@@ -96,10 +103,70 @@ class RedditCollector:
             resp.raise_for_status()
             data = resp.json()
         except (requests.RequestException, ValueError) as exc:
-            logger.warning("reddit fetch failed for r/%s: %s", subreddit, exc)
+            logger.warning("reddit JSON fetch failed for r/%s: %s", subreddit, exc)
             return []
 
         return [c.get("data", {}) for c in (data.get("data", {}).get("children") or [])]
+
+    def _fetch_via_rss(self, subreddit: str, limit: int = 100) -> list[dict]:
+        """Reddit Atom RSS endpoint. Often unblocked on IPs where JSON returns 403.
+
+        Cost: no score / num_comments / upvote_ratio. We zero those out; the
+        synthesis still gets buzz volume from mention counts."""
+        from bs4 import BeautifulSoup
+
+        url = f"https://www.reddit.com/r/{subreddit}/hot/.rss"
+        try:
+            resp = self._session.get(
+                url, params={"limit": min(limit, 100)}, timeout=self.DEFAULT_TIMEOUT,
+            )
+            resp.raise_for_status()
+        except requests.RequestException as exc:
+            logger.warning("reddit RSS fetch failed for r/%s: %s", subreddit, exc)
+            return []
+
+        try:
+            soup = BeautifulSoup(resp.text, "lxml-xml")
+        except Exception:
+            soup = BeautifulSoup(resp.text, "xml")
+
+        entries = soup.find_all("entry")
+        if not entries:
+            return []
+
+        out: list[dict] = []
+        for entry in entries[:limit]:
+            title_el = entry.find("title")
+            title = title_el.get_text(strip=True) if title_el else ""
+            content_el = entry.find("content")
+            # Reddit RSS embeds the post HTML in <content>. Strip to plain text.
+            selftext = ""
+            if content_el is not None:
+                content_soup = BeautifulSoup(content_el.get_text(), "lxml")
+                selftext = content_soup.get_text(separator=" ", strip=True)[:1000]
+            link_el = entry.find("link")
+            permalink = link_el.get("href") if link_el is not None else ""
+            updated_el = entry.find("updated") or entry.find("published")
+            updated_ts = None
+            if updated_el is not None:
+                try:
+                    s = updated_el.get_text(strip=True).replace("Z", "+00:00")
+                    updated_ts = datetime.fromisoformat(s).timestamp()
+                except (ValueError, AttributeError):
+                    pass
+
+            out.append({
+                "title": title,
+                "selftext": selftext,
+                "score": 0,                # not in RSS
+                "num_comments": 0,         # not in RSS
+                "created_utc": updated_ts or datetime.utcnow().timestamp(),
+                "permalink": permalink.replace("https://www.reddit.com", ""),
+                "link_flair_text": None,
+                "upvote_ratio": 0.0,
+            })
+
+        return out
 
     def collect_posts(
         self,
