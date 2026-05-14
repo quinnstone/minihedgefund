@@ -9,6 +9,8 @@ from typing import Optional
 
 import yfinance as yf
 
+from ..utils import to_yfinance as _to_yf
+
 logger = logging.getLogger(__name__)
 
 
@@ -90,7 +92,7 @@ class MarketCollector:
     def get_stock_data(self, ticker: str) -> Optional[StockData]:
         """Get current stock data for a ticker."""
         try:
-            stock = yf.Ticker(ticker)
+            stock = yf.Ticker(_to_yf(ticker))
             info = stock.info
 
             if not info or "regularMarketPrice" not in info:
@@ -136,7 +138,7 @@ class MarketCollector:
 
         for name, ticker in self.INDICES.items():
             try:
-                index = yf.Ticker(ticker)
+                index = yf.Ticker(_to_yf(ticker))
                 hist = index.history(period="1y")
 
                 if hist.empty:
@@ -169,7 +171,7 @@ class MarketCollector:
 
         for sector, etf in self.SECTOR_ETFS.items():
             try:
-                ticker = yf.Ticker(etf)
+                ticker = yf.Ticker(_to_yf(etf))
                 hist = ticker.history(period="1mo")
 
                 if hist.empty or len(hist) < 2:
@@ -214,7 +216,7 @@ class MarketCollector:
         earnings = []
         for ticker in major_tickers:
             try:
-                stock = yf.Ticker(ticker)
+                stock = yf.Ticker(_to_yf(ticker))
                 info = stock.info
 
                 # Check if there's upcoming earnings

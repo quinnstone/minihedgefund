@@ -14,6 +14,7 @@ from typing import Optional
 import yfinance as yf
 
 from ..portfolio.state import PortfolioState
+from ..utils import to_yfinance
 
 
 MAX_SINGLE_NAME_PCT = 0.20      # 20% cap on any one position
@@ -43,7 +44,7 @@ class PortfolioRiskView:
 def _vol_and_volume(ticker: str) -> tuple[Optional[float], Optional[float], Optional[str]]:
     """Annualized vol, avg dollar volume, sector — all from yfinance."""
     try:
-        t = yf.Ticker(ticker)
+        t = yf.Ticker(to_yfinance(ticker))
         hist = t.history(period="3mo", auto_adjust=True)
     except Exception:
         return None, None, None

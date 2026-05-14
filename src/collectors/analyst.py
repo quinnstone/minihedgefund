@@ -13,6 +13,8 @@ from typing import Optional
 
 import yfinance as yf
 
+from ..utils import to_yfinance
+
 logger = logging.getLogger(__name__)
 
 
@@ -96,7 +98,7 @@ class AnalystCollector:
     def get_recent_changes(self, ticker: str, days: int = 14) -> list[RatingChange]:
         """Recent upgrades/downgrades. Returns [] on any fetch failure."""
         try:
-            t = yf.Ticker(ticker)
+            t = yf.Ticker(to_yfinance(ticker))
             df = t.upgrades_downgrades
         except Exception as exc:
             logger.warning("yfinance upgrades_downgrades failed for %s: %s", ticker, exc)
@@ -131,7 +133,7 @@ class AnalystCollector:
 
     def get_price_targets(self, ticker: str) -> Optional[PriceTargets]:
         try:
-            info = yf.Ticker(ticker).info or {}
+            info = yf.Ticker(to_yfinance(ticker)).info or {}
         except Exception as exc:
             logger.warning("yfinance info failed for %s: %s", ticker, exc)
             return None

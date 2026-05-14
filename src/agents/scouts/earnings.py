@@ -1,4 +1,8 @@
-"""Earnings scout — recent beat/miss, post-earnings drift, upcoming dates."""
+"""Earnings scout — recent beat/miss, post-earnings drift, upcoming dates.
+
+ETFs are skipped cleanly with `is_etf: True` — they don't have earnings.
+Ticker is normalized to yfinance format (BRK.B → BRK-B) before any yf calls.
+"""
 
 from __future__ import annotations
 
@@ -8,6 +12,7 @@ from typing import Optional
 import yfinance as yf
 
 from ...collectors.market import MarketCollector
+from ...utils import is_etf, to_yfinance
 
 
 def _drift_score(drift_pct: Optional[float]) -> float:
@@ -41,7 +46,7 @@ def _recent_earnings_event(ticker: str, max_lookback_days: int = 60) -> dict:
     """
     out = {"result": None, "days_since": None, "surprise_pct": None}
     try:
-        t = yf.Ticker(ticker)
+        t = yf.Ticker(to_yfinance(ticker))
         df = t.earnings_dates
     except Exception:
         return out
@@ -91,7 +96,7 @@ def _recent_earnings_event(ticker: str, max_lookback_days: int = 60) -> dict:
 
 def _next_earnings_in_days(ticker: str) -> Optional[int]:
     try:
-        t = yf.Ticker(ticker)
+        t = yf.Ticker(to_yfinance(ticker))
         cal = t.calendar
     except Exception:
         return None
@@ -128,10 +133,23 @@ def run_earnings_scout(
     universe: list[str],
     market: MarketCollector,
 ) -> dict:
-    """Earnings brief for the universe."""
+    """Earnings brief for the universe. ETFs get a clean "n/a" entry."""
     candidates = []
 
     for ticker in universe:
+        if is_etf(ticker):
+            candidates.append({
+                "ticker": ticker,
+                "recent_result": "n/a (ETF)",
+                "days_since_earnings": None,
+                "surprise_pct": None,
+                "post_earnings_drift_pct": None,
+                "next_earnings_in_days": None,
+                "composite_score": 50.0,
+                "is_etf": True,
+            })
+            continue
+
         evt = _recent_earnings_event(ticker)
         upcoming = _next_earnings_in_days(ticker)
 

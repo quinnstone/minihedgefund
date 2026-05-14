@@ -14,6 +14,7 @@ from typing import Optional
 import yfinance as yf
 
 from ..portfolio.state import PortfolioState
+from ..utils import to_yfinance
 
 logger = logging.getLogger(__name__)
 
@@ -52,7 +53,7 @@ class MarkSnapshot:
 
 def _fetch_latest_price(ticker: str) -> Optional[float]:
     try:
-        hist = yf.Ticker(ticker).history(period="5d", auto_adjust=True)
+        hist = yf.Ticker(to_yfinance(ticker)).history(period="5d", auto_adjust=True)
         if hist is None or hist.empty:
             return None
         return float(hist["Close"].iloc[-1])

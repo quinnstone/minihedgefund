@@ -10,6 +10,8 @@ from typing import Optional
 
 import yfinance as yf
 
+from ...utils import to_yfinance
+
 
 def _rsi(closes: list[float], period: int = 14) -> Optional[float]:
     if len(closes) < period + 1:
@@ -87,7 +89,7 @@ def _composite(
 def _analyze_ticker(ticker: str) -> dict:
     closes: list[float] = []
     try:
-        hist = yf.Ticker(ticker).history(period="3mo", auto_adjust=True)
+        hist = yf.Ticker(to_yfinance(ticker)).history(period="3mo", auto_adjust=True)
         if hist is not None and not hist.empty:
             closes = [float(c) for c in hist["Close"].tolist()]
     except Exception:
