@@ -38,8 +38,10 @@ class TestRedditFetchParsing:
     def setup_method(self):
         self.c = RedditCollector(RedditConfig(client_id="", client_secret="", user_agent="test"))
 
+    @patch.object(RedditCollector, "_fetch_via_rss", return_value=[])
     @patch("src.collectors.reddit.requests.Session.get")
-    def test_parses_json_response(self, mock_get):
+    def test_parses_json_response_when_rss_empty(self, mock_get, _mock_rss):
+        """RSS returns nothing → falls back to JSON path."""
         mock_resp = MagicMock()
         mock_resp.json.return_value = {
             "data": {"children": [
@@ -61,9 +63,11 @@ class TestRedditFetchParsing:
         raw = self.c._fetch_subreddit_hot("wallstreetbets", limit=10)
         assert len(raw) == 1
         assert raw[0]["title"] == "$NVDA to the moon"
+        assert raw[0]["score"] == 1500   # JSON path preserves engagement
 
+    @patch.object(RedditCollector, "_fetch_via_rss", return_value=[])
     @patch("src.collectors.reddit.requests.Session.get")
-    def test_network_failure_returns_empty(self, mock_get):
+    def test_network_failure_returns_empty(self, mock_get, _mock_rss):
         import requests
         mock_get.side_effect = requests.RequestException("connection failed")
         raw = self.c._fetch_subreddit_hot("wallstreetbets")
