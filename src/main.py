@@ -54,7 +54,7 @@ from .discord.sender import DiscordSender
 from .portfolio.schwab import SchwabRealism
 from .portfolio.tax import TaxEngine
 from .tracking.executor import execute_decisions
-from .tracking.marking import mark_portfolio
+from .tracking.marking import fetch_price_map, mark_portfolio
 from .tracking.persistence import (
     append_trade,
     load_latest_reflection,
@@ -263,8 +263,23 @@ def run_weekly(
     sector_map = _build_sector_map(risk_brief, universe)
     wash_blocks = set(tax_brief.get("wash_sale_blocks", {}).keys())
 
+    # Enrich price_map with prices for any ticker the PM wants to open or add to.
+    # The original snap.price_map only covers current positions + SPY, so without
+    # this step every OPEN gets skipped with "no price."
+    decisions = pm_result.output.get("decisions") or []
+    needed_prices: set[str] = set()
+    for d in decisions:
+        if d.get("action") in ("OPEN", "ADD"):
+            t = (d.get("ticker") or "").upper()
+            if t and t not in snap.price_map:
+                needed_prices.add(t)
+    if needed_prices:
+        logger.info("fetching prices for %d new candidates: %s",
+                    len(needed_prices), sorted(needed_prices))
+        snap.price_map.update(fetch_price_map(sorted(needed_prices)))
+
     exec_result = execute_decisions(
-        decisions=pm_result.output.get("decisions") or [],
+        decisions=decisions,
         portfolio=state,
         price_map=snap.price_map,
         wash_sale_blocks=wash_blocks,

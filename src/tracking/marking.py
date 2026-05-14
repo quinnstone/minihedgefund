@@ -51,7 +51,7 @@ class MarkSnapshot:
         }
 
 
-def _fetch_latest_price(ticker: str) -> Optional[float]:
+def fetch_latest_price(ticker: str) -> Optional[float]:
     try:
         hist = yf.Ticker(to_yfinance(ticker)).history(period="5d", auto_adjust=True)
         if hist is None or hist.empty:
@@ -62,10 +62,10 @@ def _fetch_latest_price(ticker: str) -> Optional[float]:
         return None
 
 
-def _fetch_price_map(tickers: list[str]) -> dict[str, float]:
+def fetch_price_map(tickers: list[str]) -> dict[str, float]:
     out: dict[str, float] = {}
     for t in tickers:
-        p = _fetch_latest_price(t)
+        p = fetch_latest_price(t)
         if p is not None:
             out[t] = p
     return out
@@ -105,7 +105,7 @@ def mark_portfolio(
     """
     today = today or date.today()
     tickers = sorted(portfolio.positions.keys())
-    price_map = _fetch_price_map(tickers + [SPY_TICKER])
+    price_map = fetch_price_map(tickers + [SPY_TICKER])
     spy_price = price_map.pop(SPY_TICKER, None)
 
     snap = MarkSnapshot(as_of=today, price_map=price_map, cash=portfolio.cash)
