@@ -58,6 +58,15 @@ from .portfolio.schwab import SchwabRealism
 from .portfolio.tax import TaxEngine
 from .tracking.executor import execute_decisions
 from .tracking.marking import fetch_price_map, mark_portfolio
+from .tracking.pick_tracker import (
+    close_picks,
+    compute_aggregate,
+    load_pick_scoreboard,
+    record_picks,
+    refresh_open_picks,
+    save_pick_scoreboard,
+    update_weekly_recaps,
+)
 from .tracking.persistence import (
     append_trade,
     load_latest_reflection,
@@ -148,6 +157,7 @@ def run_weekly(
     recent_marks = load_recent_marks(n_weeks=8)
     scoreboard = load_scoreboard()
     reflection_agent = ReflectionAgent(api_key=config.anthropic.api_key)
+    pick_scoreboard_prior = load_pick_scoreboard()
     reflection_input = {
         "today": today.isoformat(),
         "weeks_of_history": min(len(recent_decisions), len(recent_marks)),
@@ -171,6 +181,14 @@ def run_weekly(
             for m in recent_marks
         ],
         "scoreboard": scoreboard,
+        "pick_scoreboard": {
+            "aggregate": pick_scoreboard_prior.get("aggregate"),
+            "weekly_recaps": pick_scoreboard_prior.get("weekly_recaps"),
+            "recent_closed_picks": [
+                p for p in (pick_scoreboard_prior.get("picks") or [])
+                if p.get("status") == "closed"
+            ][-15:],
+        },
     }
     reflection_result = reflection_agent.run(reflection_input)
     save_reflection(today, {
@@ -338,6 +356,35 @@ def run_weekly(
     post_snap = mark_portfolio(state, prior, today=today)
     save_marks(today, post_snap.to_dict())
 
+    # 8b. Pick scoreboard — signal-quality ledger separate from portfolio MTM
+    pick_sb = pick_scoreboard_prior   # reuse the loaded copy
+    # First close any picks the PM CLOSEd this week, then record new buys,
+    # then mark all open picks (including the new ones) to current prices.
+    close_picks(
+        pick_sb, today,
+        pm_decisions=pm_result.output.get("decisions") or [],
+        executed_trades=[t.to_dict() for t in exec_result.trades],
+        market_price_map=post_snap.price_map,
+    )
+    record_picks(
+        pick_sb, today,
+        pm_decisions=pm_result.output.get("decisions") or [],
+        executed_trades=[t.to_dict() for t in exec_result.trades],
+        market_price_map=snap.price_map,   # un-slipped market prices at PM-call time
+        ranked_candidates=synth_result.output.get("ranked_candidates") or [],
+    )
+    refresh_open_picks(pick_sb, today, post_snap.price_map)
+    pick_sb["aggregate"] = compute_aggregate(pick_sb)
+    update_weekly_recaps(pick_sb, today)
+    save_pick_scoreboard(pick_sb)
+    logger.info(
+        "pick scoreboard: total=%d, open=%d, win_rate=%.1f%%, basket_return=%.2f%%",
+        pick_sb["aggregate"]["total_picks"],
+        pick_sb["aggregate"]["open_picks"],
+        (pick_sb["aggregate"]["win_rate"] or 0) * 100,
+        (pick_sb["aggregate"]["equal_weight_basket_return_pct"] or 0) * 100,
+    )
+
     # 9. Scoreboard
     all_trades = load_trades()
     realized_g, realized_l, tax_owed = compute_realized_tax_totals(
@@ -388,6 +435,11 @@ def run_weekly(
         "executed_trades": [t.to_dict() for t in exec_result.trades],
         "skipped": exec_result.skipped,
         "degraded_signals": degraded,
+        "pick_scoreboard_snapshot": {
+            "aggregate": pick_sb.get("aggregate"),
+            "weekly_recaps": pick_sb.get("weekly_recaps"),
+            "open_picks": [p for p in pick_sb.get("picks") or [] if p.get("status") == "open"],
+        },
         "agent_costs_usd": {
             "reflection": round(reflection_result.estimated_cost_usd, 6),
             "synthesis": round(synth_result.estimated_cost_usd, 6),
@@ -413,6 +465,7 @@ def run_weekly(
         reflection=reflection_result.output,
         degraded_signals=degraded,
         insider_brief=insider_brief,
+        pick_scoreboard=pick_sb,
     )
 
     if dry_run:

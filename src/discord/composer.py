@@ -81,6 +81,7 @@ def compose_digest(
     reflection: Optional[dict],
     degraded_signals: list[str],
     insider_brief: Optional[dict] = None,
+    pick_scoreboard: Optional[dict] = None,
 ) -> tuple[str, list[dict]]:
     """Return (title, embeds) ready to hand to DiscordSender."""
     embeds: list[dict] = []
@@ -88,6 +89,10 @@ def compose_digest(
     title = _title(today, mark)
     embeds.append(_header_embed(today, mark, pm_output, title))
     embeds.append(_scoreboard_embed(scoreboard))
+
+    pick_sb_embed = _pick_scoreboard_embed(pick_scoreboard) if pick_scoreboard else None
+    if pick_sb_embed:
+        embeds.append(pick_sb_embed)
 
     actions_embed = _actions_embed(pm_output, executed_trades)
     if actions_embed:
@@ -297,6 +302,72 @@ def _diagnostics_embed(degraded_signals: list[str], skipped: list[dict]) -> dict
         "title": "🔧 Diagnostics",
         "description": _trim("\n".join(lines), 2000),
         "color": COLOR_NEUTRAL,
+    }
+
+
+def _pick_scoreboard_embed(pick_sb: dict) -> Optional[dict]:
+    """The signal-quality view — every pick the system has ever made.
+
+    Distinct from portfolio scoreboard: this answers "if every recommendation
+    had been bought at recommendation time, frictionless, how would the
+    basket have performed?" Independent of sizing rules and Schwab realism.
+    """
+    agg = pick_sb.get("aggregate") or {}
+    if not agg.get("total_picks"):
+        return None
+
+    lines = []
+    total = agg.get("total_picks", 0)
+    open_n = agg.get("open_picks", 0)
+    closed_n = agg.get("closed_picks", 0)
+    wins = agg.get("win_count", 0)
+    losses = agg.get("loss_count", 0)
+    win_rate = agg.get("win_rate", 0)
+
+    lines.append(f"**Total picks:** {total}  ·  {open_n} open · {closed_n} closed")
+    lines.append(f"**Win rate:** {win_rate * 100:.1f}%  ({wins} W / {losses} L)")
+
+    eq = agg.get("equal_weight_basket_return_pct")
+    wt = agg.get("weighted_basket_return_pct")
+    avg_win = agg.get("avg_winner_return_pct")
+    avg_loss = agg.get("avg_loser_return_pct")
+    lines.append(f"**If executed at rec time (equal-weight):** {_pct(eq)}")
+    lines.append(f"**Weight-aware basket:** {_pct(wt)}")
+    if wins or losses:
+        lines.append(f"  · winners avg {_pct(avg_win)}  ·  losers avg {_pct(avg_loss)}")
+
+    best = agg.get("best_pick") or {}
+    worst = agg.get("worst_pick") or {}
+    if best.get("ticker"):
+        lines.append(
+            f"**Best:** ${best['ticker']} {_pct(best.get('return_pct'))} "
+            f"({best.get('conviction', '?')}, {best.get('week_of', '?')})"
+        )
+    if worst.get("ticker") and worst.get("ticker") != best.get("ticker"):
+        lines.append(
+            f"**Worst:** ${worst['ticker']} {_pct(worst.get('return_pct'))} "
+            f"({worst.get('conviction', '?')}, {worst.get('week_of', '?')})"
+        )
+
+    by_conv = agg.get("by_conviction") or {}
+    if by_conv:
+        conv_lines = []
+        for conv in ("high", "medium", "low"):
+            b = by_conv.get(conv)
+            if not b or b.get("count", 0) == 0:
+                continue
+            conv_lines.append(
+                f"  · **{conv.upper()}** ({b['count']}): "
+                f"win {b['win_rate'] * 100:.0f}%, avg {_pct(b['avg_return_pct'])}"
+            )
+        if conv_lines:
+            lines.append("**By conviction:**")
+            lines.extend(conv_lines)
+
+    return {
+        "title": "📈 Pick Scoreboard (signal quality)",
+        "description": _trim("\n".join(lines), 4000),
+        "color": COLOR_SCOREBOARD,
     }
 
 
