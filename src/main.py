@@ -43,7 +43,7 @@ from .agents.scouts import (
     run_sentiment_scout,
     run_technical_scout,
 )
-from .agents.synthesis import SynthesisAgent
+from .agents.synthesis import SynthesisAgent, heuristic_synthesis
 from .agents.tax_constraints import build_tax_brief
 from .collectors.edgar import EdgarCollector
 from .collectors.macro import MacroCollector
@@ -235,9 +235,39 @@ def run_weekly(
     if not synth_result.success:
         logger.error("synthesis failed: %s", synth_result.error)
         return _abort(today, f"Synthesis agent failed: {synth_result.error}", config, dry_run)
-    logger.info("synthesis: %d candidates ranked, cost=$%.4f",
+
+    # Defensive fallback: tool-use schema's minItems is advisory, not enforced.
+    # If the model returned an empty ranking, substitute a deterministic
+    # weighted-average heuristic so the PM has something to read.
+    if not (synth_result.output.get("ranked_candidates") or []):
+        logger.warning(
+            "synthesis returned empty ranked_candidates — substituting heuristic fallback"
+        )
+        fallback = heuristic_synthesis(
+            scout_briefs={
+                "sentiment": sentiment_brief,
+                "earnings": earnings_brief,
+                "technical": technical_brief,
+                "macro": macro_brief,
+                "influencer": influencer_brief,
+                "news": news_brief,
+                "insider": insider_brief,
+            },
+            universe=universe,
+        )
+        # Preserve any LLM narrative + themes if they were produced
+        synth_result.output["ranked_candidates"] = fallback["ranked_candidates"]
+        synth_result.output["_fallback_used"] = True
+        if not synth_result.output.get("market_context"):
+            synth_result.output["market_context"] = fallback["market_context"]
+        if not synth_result.output.get("themes"):
+            synth_result.output["themes"] = fallback["themes"]
+        degraded.append("synthesis_fallback")
+
+    logger.info("synthesis: %d candidates ranked, cost=$%.4f, fallback=%s",
                 len(synth_result.output.get("ranked_candidates") or []),
-                synth_result.estimated_cost_usd)
+                synth_result.estimated_cost_usd,
+                synth_result.output.get("_fallback_used", False))
 
     top_candidates = [c["ticker"] for c in (synth_result.output.get("ranked_candidates") or [])][:15]
 

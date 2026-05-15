@@ -1,15 +1,33 @@
-"""Synthesis agent — merges all 5 scout briefs into a unified scorecard.
+"""Synthesis agent — merges all 7 scout briefs into a unified scorecard.
 
-Reads sentiment, earnings, technical, macro, and influencer briefs and emits
-ranked candidates with factor-decomposed scores and narrative. Does not make
-trade decisions; the PM agent does.
+Reads sentiment, earnings, technical, macro, influencer, news, and insider
+briefs and emits ranked candidates with factor-decomposed scores and
+narrative. Does not make trade decisions; the PM agent does.
+
+heuristic_synthesis() is a deterministic fallback used when the LLM returns
+an empty ranked_candidates array (the tool-use schema's minItems constraint
+is advisory, not enforced server-side). The fallback uses a weighted
+average of each scout's composite_score per ticker.
 """
 
 from __future__ import annotations
 
 import json
+from typing import Optional
 
 from .base import MODEL_OPUS, BaseAgent
+
+
+# Weights mirror the spec: sentiment dominant, insider high-quality
+HEURISTIC_WEIGHTS = {
+    "sentiment":  0.20,
+    "insider":    0.20,
+    "news":       0.15,
+    "earnings":   0.15,
+    "technical":  0.15,
+    "macro_fit":  0.10,
+    "influencer": 0.05,
+}
 
 
 SYSTEM_PROMPT = """You are the **Synthesis Agent** of an AI-driven hedge fund managing $10,000.
@@ -24,6 +42,10 @@ Operating principles (engrained):
 - Be honest about uncertainty. If signals conflict, say so. Don't paper over disagreement.
 - Tax drag (~35% STCG for the user) means every score must be conviction-worthy, not noise-following.
 - Watch for: low-volume buzz (likely noise), overbought RSI (mean-reversion risk), macro-regime mismatch, insider selling on a name being promoted in retail sentiment.
+
+CRITICAL OUTPUT CONTRACT:
+- You MUST emit EXACTLY ONE `ranked_candidates` entry per ticker in the `universe` field of the input. No omissions, no empty arrays. Empty `ranked_candidates` is a hard contract violation — every input ticker gets scored, even if the score is 50 with low confidence.
+- If a ticker has degraded or missing scout data for some factors, score those factors at 50 and add "degraded_signal" to its risk_flags. Still produce the entry.
 
 Output rules:
 - `unified_score` is 0–100. 50 = neutral. Reserve 80+ for genuine cross-signal alignment AND insider/news confirmation.
@@ -43,12 +65,15 @@ class SynthesisAgent(BaseAgent):
         return SYSTEM_PROMPT
 
     def user_prompt(self, input_data: dict) -> str:
+        universe = input_data.get("universe") or []
         return (
-            "Scout briefs for this Monday's decision. Synthesize into a ranked scorecard.\n\n"
+            f"Scout briefs for this Monday's decision. Synthesize into a ranked scorecard.\n\n"
+            f"The `universe` has {len(universe)} tickers: {universe}\n\n"
+            f"You MUST output exactly {len(universe)} ranked_candidates entries, "
+            f"one per ticker. Rank descending by `unified_score`.\n\n"
             "```json\n"
             + json.dumps(input_data, indent=2, default=str)
-            + "\n```\n\n"
-            "Rank by `unified_score`. Include every ticker present in at least one scout."
+            + "\n```"
         )
 
     def output_schema(self) -> dict:
@@ -106,3 +131,100 @@ class SynthesisAgent(BaseAgent):
             "required": ["market_context", "themes", "ranked_candidates"],
             "additionalProperties": False,
         }
+
+
+# ─── Deterministic fallback ────────────────────────────────────────────
+
+def _polarity_to_score(polarity: Optional[str]) -> float:
+    """Map influencer polarity label to a 0-100 score."""
+    return {"bullish": 70.0, "bearish": 30.0, "neutral": 50.0}.get(polarity or "", 50.0)
+
+
+def _scout_score_by_ticker(brief: dict, field: str = "composite_score") -> dict[str, float]:
+    """Pull a per-ticker score field from a scout brief, defaulting to 50."""
+    out: dict[str, float] = {}
+    for c in (brief.get("candidates") or []):
+        ticker = c.get("ticker", "").upper()
+        if ticker:
+            out[ticker] = float(c.get(field) or 50.0)
+    return out
+
+
+def heuristic_synthesis(scout_briefs: dict, universe: list[str]) -> dict:
+    """Deterministic fallback when the LLM synthesis returns empty.
+
+    Per-ticker weighted composite from each scout's composite_score:
+      sentiment 0.20, insider 0.20, news 0.15, earnings 0.15,
+      technical 0.15, macro_fit 0.10, influencer 0.05
+
+    Macro per-ticker isn't available without a sector→regime mapping at
+    synthesis time, so macro_fit defaults to 50 per ticker. The PM still
+    reads the macro brief independently.
+
+    Output schema matches what the LLM agent would produce so downstream
+    consumers don't need to branch.
+    """
+    sentiment = _scout_score_by_ticker(scout_briefs.get("sentiment") or {})
+    earnings = _scout_score_by_ticker(scout_briefs.get("earnings") or {})
+    technical = _scout_score_by_ticker(scout_briefs.get("technical") or {})
+    news = _scout_score_by_ticker(scout_briefs.get("news") or {})
+    insider = _scout_score_by_ticker(scout_briefs.get("insider") or {})
+
+    influencer_brief = scout_briefs.get("influencer") or {}
+    influencer_by_ticker = {
+        c.get("ticker", "").upper(): _polarity_to_score(c.get("polarity"))
+        for c in (influencer_brief.get("candidates") or [])
+    }
+
+    candidates = []
+    for ticker in universe:
+        t = ticker.upper()
+        factors = {
+            "sentiment":  sentiment.get(t, 50.0),
+            "earnings":   earnings.get(t, 50.0),
+            "technical":  technical.get(t, 50.0),
+            "macro_fit":  50.0,                       # see note above
+            "influencer": influencer_by_ticker.get(t, 50.0),
+            "news":       news.get(t, 50.0),
+            "insider":    insider.get(t, 50.0),
+        }
+        unified = sum(factors[f] * HEURISTIC_WEIGHTS[f] for f in HEURISTIC_WEIGHTS)
+
+        risk_flags = []
+        if influencer_brief.get("degraded"):
+            risk_flags.append("degraded_signal")
+        if factors["insider"] < 40:
+            risk_flags.append("insider_selling")
+        if factors["news"] < 45 and factors["sentiment"] < 45:
+            risk_flags.append("news_silence")
+
+        # Pick the highest-scoring factor for a one-line thesis hint
+        top_factor = max(factors, key=factors.get)
+        thesis = f"Heuristic synthesis — {top_factor} is the strongest signal ({factors[top_factor]:.0f}/100)."
+
+        candidates.append({
+            "ticker": t,
+            "unified_score": round(unified, 1),
+            "factor_breakdown": {k: round(v, 1) for k, v in factors.items()},
+            "primary_thesis": thesis,
+            "narrative": (
+                "Deterministic weighted-average fallback used because the LLM "
+                "synthesis returned an empty ranking. Composite is a weighted "
+                "blend of all 7 factor scores."
+            ),
+            "risk_flags": risk_flags,
+        })
+
+    candidates.sort(key=lambda c: c["unified_score"], reverse=True)
+
+    macro_regime = (scout_briefs.get("macro") or {}).get("regime") or {}
+    return {
+        "market_context": (
+            f"Heuristic fallback synthesis. Macro regime: "
+            f"{macro_regime.get('overall_regime', 'unknown')}, "
+            f"rate trend {macro_regime.get('rate_trend', 'unknown')}."
+        ),
+        "themes": ["heuristic-fallback-mode"],
+        "ranked_candidates": candidates,
+        "_fallback_used": True,
+    }
