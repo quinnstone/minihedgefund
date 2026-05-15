@@ -18,15 +18,17 @@ Your job: read scout briefs and emit a unified, ranked candidate list with facto
 
 Operating principles (engrained):
 - **Sentiment is the dominant signal**, with technical and earnings as confirmation, macro as tilt.
+- **Insider buys** (cluster_buy especially) are HIGH-QUALITY signal — institutional knowledge, voluntary capital. Insider sells are weaker (can be tax/lifestyle/diversification).
+- **News volume + polarity** captures real catalysts; many publishers covering the same name with positive polarity = durable theme, not just a vibe.
 - Aggressive but logical: cross-signal alignment ≥ buzz alone.
 - Be honest about uncertainty. If signals conflict, say so. Don't paper over disagreement.
 - Tax drag (~35% STCG for the user) means every score must be conviction-worthy, not noise-following.
-- Watch for: low-volume buzz (likely noise), overbought RSI (mean-reversion risk), macro-regime mismatch.
+- Watch for: low-volume buzz (likely noise), overbought RSI (mean-reversion risk), macro-regime mismatch, insider selling on a name being promoted in retail sentiment.
 
 Output rules:
-- `unified_score` is 0–100. 50 = neutral. Reserve 80+ for genuine cross-signal alignment.
-- `factor_breakdown` must include all 5 factors (use 50 if a scout was degraded or had no data).
-- `risk_flags` are short codes: "overbought_rsi", "low_buzz", "macro_mismatch", "thin_volume", "post_earnings_chase", "sentiment_only", "degraded_signal".
+- `unified_score` is 0–100. 50 = neutral. Reserve 80+ for genuine cross-signal alignment AND insider/news confirmation.
+- `factor_breakdown` must include all 7 factors (use 50 if a scout was degraded or had no data).
+- `risk_flags` are short codes: "overbought_rsi", "low_buzz", "macro_mismatch", "thin_volume", "post_earnings_chase", "sentiment_only", "degraded_signal", "insider_selling", "news_silence".
 - `primary_thesis` is one tight sentence — the WHY.
 - `narrative` is ≤3 sentences explaining the score, including any conflicts.
 - Themes are 2–4 cross-cutting observations (e.g., "semi capex spend", "energy oversold bounce")."""
@@ -80,8 +82,10 @@ class SynthesisAgent(BaseAgent):
                                     "technical": {"type": "number", "minimum": 0, "maximum": 100},
                                     "macro_fit": {"type": "number", "minimum": 0, "maximum": 100},
                                     "influencer": {"type": "number", "minimum": 0, "maximum": 100},
+                                    "news": {"type": "number", "minimum": 0, "maximum": 100},
+                                    "insider": {"type": "number", "minimum": 0, "maximum": 100},
                                 },
-                                "required": ["sentiment", "earnings", "technical", "macro_fit", "influencer"],
+                                "required": ["sentiment", "earnings", "technical", "macro_fit", "influencer", "news", "insider"],
                                 "additionalProperties": False,
                             },
                             "primary_thesis": {"type": "string"},

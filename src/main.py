@@ -37,12 +37,15 @@ from .agents.risk import build_risk_brief
 from .agents.scouts import (
     run_earnings_scout,
     run_influencer_scout,
+    run_insider_scout,
     run_macro_scout,
+    run_news_scout,
     run_sentiment_scout,
     run_technical_scout,
 )
 from .agents.synthesis import SynthesisAgent
 from .agents.tax_constraints import build_tax_brief
+from .collectors.edgar import EdgarCollector
 from .collectors.macro import MacroCollector
 from .collectors.market import MarketCollector
 from .collectors.nitter import NitterCollector
@@ -196,18 +199,22 @@ def run_weekly(
     )
     logger.info("universe: %d tickers", len(universe))
 
-    # 4. Scouts
+    # 4. Scouts (7 total — sentiment, earnings, technical, macro, influencer, news, insider)
     degraded: list[str] = []
     sentiment_brief = run_sentiment_scout(universe, reddit, stocktwits, lookback_days=7)
     earnings_brief = run_earnings_scout(universe, market)
     technical_brief = run_technical_scout(universe)
     macro_brief = run_macro_scout(macro)
     influencer_brief = run_influencer_scout(universe[:10], nitter)  # cap nitter calls
+    news_brief = run_news_scout(universe)
+    edgar = EdgarCollector(lookback_days=7)
+    insider_brief = run_insider_scout(universe, edgar)
 
     for label, brief in [
         ("sentiment", sentiment_brief), ("earnings", earnings_brief),
         ("technical", technical_brief), ("macro", macro_brief),
         ("influencer", influencer_brief),
+        ("news", news_brief), ("insider", insider_brief),
     ]:
         if brief.get("degraded"):
             degraded.append(label)
@@ -222,6 +229,8 @@ def run_weekly(
         "technical": technical_brief,
         "macro": macro_brief,
         "influencer": influencer_brief,
+        "news": news_brief,
+        "insider": insider_brief,
     })
     if not synth_result.success:
         logger.error("synthesis failed: %s", synth_result.error)
@@ -338,6 +347,8 @@ def run_weekly(
             "technical": technical_brief,
             "macro": macro_brief,
             "influencer": influencer_brief,
+            "news": news_brief,
+            "insider": insider_brief,
         },
         "synthesis": {"agent_result": synth_result.to_dict(), "output": synth_result.output},
         "risk_brief": risk_brief,
@@ -371,6 +382,7 @@ def run_weekly(
         scoreboard=new_scoreboard,
         reflection=reflection_result.output,
         degraded_signals=degraded,
+        insider_brief=insider_brief,
     )
 
     if dry_run:

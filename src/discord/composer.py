@@ -80,6 +80,7 @@ def compose_digest(
     scoreboard: dict,
     reflection: Optional[dict],
     degraded_signals: list[str],
+    insider_brief: Optional[dict] = None,
 ) -> tuple[str, list[dict]]:
     """Return (title, embeds) ready to hand to DiscordSender."""
     embeds: list[dict] = []
@@ -95,6 +96,10 @@ def compose_digest(
     positions_embed = _positions_embed(mark, portfolio_state)
     if positions_embed:
         embeds.append(positions_embed)
+
+    insider_embed = _insider_embed(insider_brief) if insider_brief else None
+    if insider_embed:
+        embeds.append(insider_embed)
 
     if reflection:
         embeds.append(_reflection_embed(reflection))
@@ -292,6 +297,38 @@ def _diagnostics_embed(degraded_signals: list[str], skipped: list[dict]) -> dict
         "title": "🔧 Diagnostics",
         "description": _trim("\n".join(lines), 2000),
         "color": COLOR_NEUTRAL,
+    }
+
+
+def _insider_embed(insider_brief: dict) -> Optional[dict]:
+    """Surface tickers with notable insider activity. Skips when nothing
+    meaningful happened (≥$50k net OR a cluster_buy)."""
+    candidates = [
+        c for c in (insider_brief.get("candidates") or [])
+        if not c.get("is_etf")
+        and (c.get("cluster_buy") or abs(c.get("net_value_usd") or 0) >= 50_000)
+    ]
+    if not candidates:
+        return None
+
+    candidates.sort(key=lambda c: abs(c.get("net_value_usd") or 0), reverse=True)
+
+    lines = []
+    for c in candidates[:8]:
+        net = c.get("net_value_usd") or 0
+        buys = c.get("buy_count") or 0
+        sells = c.get("sell_count") or 0
+        marker = "🟢" if net > 0 else ("🔴" if net < 0 else "⚪")
+        cluster = " ⭐ cluster-buy" if c.get("cluster_buy") else ""
+        lines.append(
+            f"{marker} **${c['ticker']}** · net {_usd(net)}  ·  "
+            f"{buys} buy / {sells} sell ({c.get('distinct_buyers', 0)} buyers, {c.get('distinct_sellers', 0)} sellers){cluster}"
+        )
+
+    return {
+        "title": "🏦 Insider Activity (last 7 days)",
+        "description": _trim("\n".join(lines), 4000),
+        "color": COLOR_INFO,
     }
 
 

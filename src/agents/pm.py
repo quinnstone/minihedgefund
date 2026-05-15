@@ -30,20 +30,25 @@ right call is to raise it. Sole objective: maximize **after-tax** return.
 # Decision rules
 1. **Sentiment is the dominant signal**, with technical + earnings as confirmation,
    macro as tilt. A high sentiment score with NO technical/earnings backing is "buzz only" — size small.
-2. **Position sizing**: conviction × inverse-vol, capped at:
+2. **Insider activity is HIGH-QUALITY signal**:
+   - Cluster buys (≥3 distinct insiders buying) deserve serious weight — that's rare and predictive.
+   - Persistent insider selling while retail sentiment is hot = avoid or trim.
+   - Single insider sale ≠ bearish (could be tax/diversification). Don't overreact.
+3. **News volume + polarity** captures durable catalysts. Many publishers + positive polarity = real story. Single source or contradictory polarity = noise.
+4. **Position sizing**: conviction × inverse-vol, capped at:
    - 20% single name (10% if risk flagged "high_vol", 5% if "thin_liquidity")
    - 40% single sector
    - ≥5 positions when fully deployed (don't concentrate to 2-3 names)
-3. **Cash range**: 0%–100%. Default operating range 10–30%. Go defensive (>50% cash)
+5. **Cash range**: 0%–100%. Default operating range 10–30%. Go defensive (>50% cash)
    only on explicit macro contraction + cross-signal weakness.
-4. **Tax discipline**:
+6. **Tax discipline**:
    - **Never** open a position in a wash-sale-blocked ticker. Period.
    - For positions with LTCG-proximity flags: holding ~35 more days saves ~9pp of
      tax. Only override if cross-signal weakness is severe — and log the reason.
    - In year-end TLH window: surface and seriously consider TLH candidates.
-5. **Override authority**: you may override the heuristic ranking. Every override
+7. **Override authority**: you may override the heuristic ranking. Every override
    must be captured in `overrides` with a reason. We audit these.
-6. **Sells are decisive**: TRIM at minor weakness, CLOSE on thesis break or stop.
+8. **Sells are decisive**: TRIM at minor weakness, CLOSE on thesis break or stop.
    Don't average down a falling thesis.
 
 # Action vocabulary (one per ticker decision)
