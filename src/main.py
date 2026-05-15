@@ -26,14 +26,22 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
+import subprocess
 import sys
 from copy import deepcopy
 from datetime import date, datetime, timezone
 from typing import Optional
 
+from . import __version__
+
 from .agents.pm import PMAgent
 from .agents.reflection import ReflectionAgent
-from .agents.risk import build_risk_brief
+from .agents.risk import (
+    MAX_SECTOR_PCT,
+    MAX_SINGLE_NAME_PCT,
+    build_risk_brief,
+)
 from .agents.scouts import (
     run_earnings_scout,
     run_influencer_scout,
@@ -43,7 +51,7 @@ from .agents.scouts import (
     run_sentiment_scout,
     run_technical_scout,
 )
-from .agents.synthesis import SynthesisAgent, heuristic_synthesis
+from .agents.synthesis import HEURISTIC_WEIGHTS, SynthesisAgent, heuristic_synthesis
 from .agents.tax_constraints import build_tax_brief
 from .collectors.edgar import EdgarCollector
 from .collectors.macro import MacroCollector
@@ -54,8 +62,8 @@ from .collectors.stocktwits import StockTwitsCollector
 from .config import Config
 from .discord.composer import compose_digest, compose_error
 from .discord.sender import DiscordSender
-from .portfolio.schwab import SchwabRealism
-from .portfolio.tax import TaxEngine
+from .portfolio.schwab import DEFAULT_SLIPPAGE_BPS, SchwabRealism
+from .portfolio.tax import LTCG_HOLDING_DAYS, WASH_SALE_WINDOW, TaxEngine
 from .tracking.executor import execute_decisions
 from .tracking.marking import fetch_price_map, mark_portfolio
 from .tracking.pick_tracker import (
@@ -108,6 +116,69 @@ def _is_monday_10am_et(tolerance_minutes: int = 90) -> bool:
         return False
     minutes_from_10 = abs((now.hour - 10) * 60 + now.minute)
     return minutes_from_10 <= tolerance_minutes
+
+
+def _git_sha() -> Optional[str]:
+    """Best-effort code version capture for the audit trail."""
+    sha = os.getenv("GITHUB_SHA")
+    if sha:
+        return sha[:12]
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--short=12", "HEAD"],
+            capture_output=True, text=True, timeout=2, check=False,
+        )
+        if result.returncode == 0:
+            return result.stdout.strip() or None
+    except (FileNotFoundError, subprocess.SubprocessError):
+        pass
+    return None
+
+
+def _build_methodology_snapshot(
+    tax_engine: TaxEngine,
+    synthesis_fallback_used: bool,
+    stocktwits_enabled: bool,
+    edgar_lookback_days: int,
+) -> dict:
+    """Capture everything needed to faithfully replay this decision later.
+
+    Anything that could change between runs and would affect a backtest goes
+    here. If you change HEURISTIC_WEIGHTS, a sector cap, slippage assumption,
+    subreddit list, or tax-bracket profile, those edits are versioned in this
+    snapshot per-decision so future-you can rerun a specific Monday with the
+    same rules that were in effect at the time.
+    """
+    from .collectors.reddit import RedditCollector
+    return {
+        "code_version": __version__,
+        "git_sha": _git_sha(),
+        "synthesis": {
+            "weights": dict(HEURISTIC_WEIGHTS),
+            "fallback_used": synthesis_fallback_used,
+        },
+        "portfolio_rules": {
+            "max_single_name_pct": MAX_SINGLE_NAME_PCT,
+            "max_sector_pct": MAX_SECTOR_PCT,
+            "slippage_bps": DEFAULT_SLIPPAGE_BPS,
+        },
+        "tax_profile": {
+            "stcg_rate": round(tax_engine.brackets.stcg_rate, 6),
+            "ltcg_rate": round(tax_engine.brackets.ltcg_rate, 6),
+            "ltcg_holding_days": LTCG_HOLDING_DAYS,
+            "wash_sale_window_days": WASH_SALE_WINDOW,
+            "federal_ordinary": tax_engine.brackets.federal_ordinary,
+            "federal_ltcg": tax_engine.brackets.federal_ltcg,
+            "state": tax_engine.brackets.state,
+            "city": tax_engine.brackets.city,
+            "niit_applies": tax_engine.brackets.niit_applies,
+        },
+        "scout_config": {
+            "reddit_subreddits": list(RedditCollector.SUBREDDITS),
+            "stocktwits_enabled": stocktwits_enabled,
+            "edgar_lookback_days": edgar_lookback_days,
+        },
+    }
 
 
 def _build_sector_map(risk_brief: dict, universe: list[str]) -> dict[str, str]:
@@ -412,9 +483,16 @@ def run_weekly(
     save_scoreboard(new_scoreboard)
 
     # 10. Save full decision audit
+    methodology = _build_methodology_snapshot(
+        tax_engine=tax_engine,
+        synthesis_fallback_used=bool(synth_result.output.get("_fallback_used")),
+        stocktwits_enabled=stocktwits.enabled,
+        edgar_lookback_days=edgar.lookback_days,
+    )
     decision_payload = {
         "date": today.isoformat(),
         "as_of_utc": datetime.now(timezone.utc).isoformat(),
+        "methodology": methodology,
         "portfolio_state_before": state_before_dict,
         "portfolio_state_after": state.to_dict(),
         "universe": universe,
