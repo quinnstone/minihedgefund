@@ -1,0 +1,80 @@
+{
+  "cash": 5912.413026199499,
+  "positions": {
+    "XLE": {
+      "ticker": "XLE",
+      "lots": [
+        {
+          "lot_id": "95fda2c9144c",
+          "ticker": "XLE",
+          "shares": 13,
+          "cost_basis_per_share": 60.61029183197021,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "UNH": {
+      "ticker": "UNH",
+      "lots": [
+        {
+          "lot_id": "b382df2c6f8d",
+          "ticker": "UNH",
+          "shares": 1.5331898040171854,
+          "cost_basis_per_share": 391.3255698852539,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "BRK.B": {
+      "ticker": "BRK.B",
+      "lots": [
+        {
+          "lot_id": "ad2698872434",
+          "ticker": "BRK.B",
+          "shares": 1.637136514546689,
+          "cost_basis_per_share": 488.62419488525387,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "GOOGL": {
+      "ticker": "GOOGL",
+      "lots": [
+        {
+          "lot_id": "234d94231da2",
+          "ticker": "GOOGL",
+          "shares": 1.762416668044355,
+          "cost_basis_per_share": 397.13847244262695,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "lots": [
+        {
+          "lot_id": "36468f865281",
+          "ticker": "NVDA",
+          "shares": 2.6970744125369643,
+          "cost_basis_per_share": 222.43116732788084,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "lots": [
+        {
+          "lot_id": "6ab5dfc0d5dd",
+          "ticker": "AMZN",
+          "shares": 2.263821101307247,
+          "cost_basis_per_share": 264.9924153442383,
+          "acquisition_date": "2026-05-18"
+        }
+      ]
+    }
+  },
+  "initial_capital": 10000.0,
+  "inception_date": "2026-05-18",
+  "last_updated": "2026-05-18T22:17:24.578239"
+}

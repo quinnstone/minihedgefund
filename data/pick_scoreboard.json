@@ -1,0 +1,215 @@
+{
+  "inception_date": "2026-05-18",
+  "picks": [
+    {
+      "pick_id": "81d221744075",
+      "ticker": "XLE",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 60.58000183105469,
+      "executed_fill_price": 60.6103,
+      "target_weight_pct": 8.0,
+      "conviction": "medium",
+      "thesis": "Energy bounce with strong news polarity (95) offers uncorrelated diversifier vs tech-heavy book ahead of NVDA print.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 50.0,
+        "technical": 74.1,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 95.0,
+        "insider": 50.0
+      },
+      "current_price": 60.58000183105469,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "4ab8b3bc7ab5",
+      "ticker": "UNH",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 391.1300048828125,
+      "executed_fill_price": 391.3256,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Healthcare laggard with strong news (90) and improving technicals (74) offers uncorrelated exposure to AI/tech beta.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 73.7,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 89.5,
+        "insider": 50.0
+      },
+      "current_price": 391.1300048828125,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "cac5dcd2d776",
+      "ticker": "BRK.B",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 488.3800048828125,
+      "executed_fill_price": 488.6242,
+      "target_weight_pct": 8.0,
+      "conviction": "medium",
+      "thesis": "Low-vol (16%) financial services anchor with solid news (88) \u2014 ballast for cold-start book during NVDA-week binary risk.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 67.3,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 87.6,
+        "insider": 50.0
+      },
+      "current_price": 488.3800048828125,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "db571758ae7e",
+      "ticker": "GOOGL",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 396.94000244140625,
+      "executed_fill_price": 397.1385,
+      "target_weight_pct": 7.0,
+      "conviction": "medium",
+      "thesis": "Mega-cap AI exposure with clean insider signal (50) unlike peers, decent technicals, and macro-favored sector.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 72.2,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 80.7,
+        "insider": 50.0
+      },
+      "current_price": 396.94000244140625,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "f20399643e56",
+      "ticker": "NVDA",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 222.32000732421875,
+      "executed_fill_price": 222.4312,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Earnings Wed is binary but technical setup (74) and AI capex narrative intact; sized small to respect event risk on first deployment.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 50.0,
+        "technical": 74.4,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 73.9,
+        "insider": 50.0
+      },
+      "current_price": 222.32000732421875,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "b545628701bb",
+      "ticker": "AMZN",
+      "week_of": "2026-05-18",
+      "action": "OPEN",
+      "rec_market_price": 264.8599853515625,
+      "executed_fill_price": 264.9924,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Discretionary macro-favored, strong news (78), no insider selling flag \u2014 diversifies away from pure semis.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 57.3,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 78.0,
+        "insider": 50.0
+      },
+      "current_price": 264.8599853515625,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    }
+  ],
+  "aggregate": {
+    "total_picks": 6,
+    "open_picks": 6,
+    "closed_picks": 0,
+    "win_count": 0,
+    "loss_count": 0,
+    "flat_count": 6,
+    "win_rate": 0.0,
+    "avg_return_pct": 0.0,
+    "avg_winner_return_pct": 0.0,
+    "avg_loser_return_pct": 0.0,
+    "equal_weight_basket_return_pct": 0.0,
+    "weighted_basket_return_pct": 0.0,
+    "best_pick": {
+      "ticker": "XLE",
+      "week_of": "2026-05-18",
+      "return_pct": 0.0,
+      "conviction": "medium"
+    },
+    "worst_pick": {
+      "ticker": "XLE",
+      "week_of": "2026-05-18",
+      "return_pct": 0.0,
+      "conviction": "medium"
+    },
+    "by_conviction": {
+      "medium": {
+        "count": 6,
+        "win_rate": 0.0,
+        "avg_return_pct": 0.0
+      }
+    }
+  },
+  "weekly_recaps": [
+    {
+      "week_of": "2026-05-18",
+      "picks_count": 6,
+      "tickers": [
+        "XLE",
+        "UNH",
+        "BRK.B",
+        "GOOGL",
+        "NVDA",
+        "AMZN"
+      ],
+      "avg_return_since_pick": 0.0
+    }
+  ]
+}

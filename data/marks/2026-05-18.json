@@ -1,0 +1,93 @@
+{
+  "as_of": "2026-05-18",
+  "as_of_utc": "2026-05-18T22:17:24.839516+00:00",
+  "price_map": {
+    "AMZN": 264.8599853515625,
+    "BRK.B": 488.3800048828125,
+    "GOOGL": 396.94000244140625,
+    "NVDA": 222.32000732421875,
+    "UNH": 391.1300048828125,
+    "XLE": 60.58000183105469
+  },
+  "positions": [
+    {
+      "ticker": "XLE",
+      "shares": 13,
+      "avg_cost_per_share": 60.6103,
+      "current_price": 60.58,
+      "market_value": 787.54,
+      "unrealized_pnl": -0.3938,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "UNH",
+      "shares": 1.53319,
+      "avg_cost_per_share": 391.3256,
+      "current_price": 391.13,
+      "market_value": 599.6765,
+      "unrealized_pnl": -0.2998,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "BRK.B",
+      "shares": 1.637137,
+      "avg_cost_per_share": 488.6242,
+      "current_price": 488.38,
+      "market_value": 799.5447,
+      "unrealized_pnl": -0.3998,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "GOOGL",
+      "shares": 1.762417,
+      "avg_cost_per_share": 397.1385,
+      "current_price": 396.94,
+      "market_value": 699.5737,
+      "unrealized_pnl": -0.3498,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 2.697074,
+      "avg_cost_per_share": 222.4312,
+      "current_price": 222.32,
+      "market_value": 599.6136,
+      "unrealized_pnl": -0.2998,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "AMZN",
+      "shares": 2.263821,
+      "avg_cost_per_share": 264.9924,
+      "current_price": 264.86,
+      "market_value": 599.5956,
+      "unrealized_pnl": -0.2998,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 0,
+      "n_lots": 1
+    }
+  ],
+  "cash": 5912.413,
+  "aum": 9997.9572,
+  "prior_aum": null,
+  "weekly_return_pct": null,
+  "weekly_return_usd": null,
+  "spy_weekly_return_pct": null,
+  "alpha_pct": null
+}
