@@ -63,6 +63,10 @@ jobs:
           ARGS=""
           if [[ "${{ github.event.inputs.dry_run }}" == "true" ]]; then ARGS="$ARGS --dry-run"; fi
           if [[ "${{ github.event.inputs.force }}" == "true" ]]; then ARGS="$ARGS --force"; fi
+          # Schedule-triggered runs bypass the time-of-day gate (cron can lag
+          # hours and we don't want to silently no-op when that happens).
+          # Idempotency check still applies so duplicate cron firings skip.
+          if [[ "${{ github.event_name }}" == "schedule" ]]; then ARGS="$ARGS --cron"; fi
           echo "Running: python -m src.main $ARGS"
           python -m src.main $ARGS
 

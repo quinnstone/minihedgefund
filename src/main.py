@@ -198,13 +198,36 @@ def run_weekly(
     config: Config,
     dry_run: bool = False,
     force: bool = False,
+    cron: bool = False,
     today: Optional[date] = None,
 ) -> int:
     today = today or _today_et()
 
-    if not force and not dry_run and not _is_monday_10am_et():
-        logger.info("not within Monday 10am ET window — skipping run")
-        return 0
+    # Time-of-day gate. Skipped when:
+    #   --force      → manual override (user knows what they want)
+    #   --cron       → scheduled run; the cron itself decides timing.
+    #                  GH Actions cron can lag hours, so trust the schedule.
+    #   --dry-run    → testing
+    if not force and not cron and not dry_run:
+        if not _is_monday_10am_et():
+            logger.info("not within Monday 10am ET window — skipping run")
+            return 0
+
+    # Idempotency. Skipped when:
+    #   --force      → user explicitly asked to re-run
+    #   --dry-run    → no persistence anyway, so re-running is harmless
+    # Otherwise: if today's decision file already exists, the pipeline
+    # already completed successfully today (e.g. earlier cron firing,
+    # earlier manual run), and we shouldn't run again.
+    if not force and not dry_run:
+        from .tracking.persistence import DECISIONS_DIR
+        decisions_today = DECISIONS_DIR / f"{today.isoformat()}.json"
+        if decisions_today.exists():
+            logger.info(
+                "decision file %s already exists — pipeline already ran today, skipping",
+                decisions_today.name,
+            )
+            return 0
 
     logger.info("=== MiniHedgeFund weekly cycle %s ===", today.isoformat())
 
@@ -578,7 +601,10 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--dry-run", action="store_true",
                         help="run full pipeline; print Discord payload instead of posting")
     parser.add_argument("--force", action="store_true",
-                        help="skip the Monday-10am-ET gate")
+                        help="bypass both the time-of-day gate and the idempotency check")
+    parser.add_argument("--cron", action="store_true",
+                        help="bypass time-of-day gate but respect idempotency "
+                             "(set by the CI workflow on scheduled triggers)")
     parser.add_argument("--env-file", default=None, help="path to .env file")
     parser.add_argument("--today", default=None,
                         help="override today (YYYY-MM-DD); useful for backtest replays")
@@ -599,7 +625,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     today = date.fromisoformat(args.today) if args.today else None
 
     try:
-        return run_weekly(config, dry_run=args.dry_run, force=args.force, today=today)
+        return run_weekly(
+            config, dry_run=args.dry_run, force=args.force, cron=args.cron, today=today,
+        )
     except Exception as exc:
         logger.exception("fatal pipeline error")
         return _abort(today or _today_et(), f"Fatal: {type(exc).__name__}: {exc}", config, args.dry_run)
