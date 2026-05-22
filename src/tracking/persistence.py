@@ -205,6 +205,9 @@ def _empty_scoreboard() -> dict:
     return {
         "inception_date": None,
         "initial_capital": 10_000.00,
+        "deployment_aum": None,
+        "deployment_cost_usd": 0.0,
+        "deployment_cost_pct": 0.0,
         "weeks_tracked": 0,
         "weekly_returns": [],
         "cumulative_return_pct": 0.0,

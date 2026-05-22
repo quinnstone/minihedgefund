@@ -34,8 +34,31 @@ def update_scoreboard(
     weeks = len(weekly_returns)
     current_aum = new_week.get("aum") or prior.get("current_aum", initial_capital)
 
-    cum_pct = (current_aum - initial_capital) / initial_capital if initial_capital > 0 else 0.0
-    cum_usd = current_aum - initial_capital
+    # Performance baseline: the AUM AT END of the first week, NOT the
+    # pre-deployment cash. PMs report performance from inception of the book,
+    # not from "before I funded the account." Entry slippage on week 1's
+    # deployment is a one-time entry cost, not "performance" — surfacing it
+    # as a -0.02% loss on day zero is misleading.
+    #
+    # Retroactive fix: scoreboards that pre-date this field have no
+    # deployment_aum. Recover it from the first recorded week's AUM (always
+    # available because we just appended new_week if nothing else was there).
+    deployment_aum = prior.get("deployment_aum")
+    if deployment_aum is None or deployment_aum <= 0:
+        first_week = weekly_returns[0] if weekly_returns else None
+        if first_week and first_week.get("aum"):
+            deployment_aum = float(first_week["aum"])
+        else:
+            deployment_aum = current_aum
+
+    cum_pct = (current_aum - deployment_aum) / deployment_aum if deployment_aum > 0 else 0.0
+    cum_usd = current_aum - deployment_aum
+
+    # Slippage / entry cost = the difference between what was originally
+    # funded and what got deployed after slippage + rounding. Tracked
+    # separately so it's visible without polluting "performance."
+    deployment_cost_usd = deployment_aum - initial_capital
+    deployment_cost_pct = deployment_cost_usd / initial_capital if initial_capital > 0 else 0.0
 
     wins = sum(1 for w in weekly_returns if (w.get("return_pct") or 0) > 0)
     win_rate = wins / weeks if weeks > 0 else 0.0
@@ -48,7 +71,7 @@ def update_scoreboard(
             spy_cum *= (1.0 + spy_pct)
     spy_cum_pct = spy_cum - 1.0
 
-    after_tax_cum = cum_pct - (estimated_tax_owed / initial_capital if initial_capital > 0 else 0)
+    after_tax_cum = cum_pct - (estimated_tax_owed / deployment_aum if deployment_aum > 0 else 0)
 
     best = max(weekly_returns, key=lambda w: w.get("return_pct") or 0, default=None)
     worst = min(weekly_returns, key=lambda w: w.get("return_pct") or 0, default=None)
@@ -56,6 +79,9 @@ def update_scoreboard(
     return {
         "inception_date": inception_date_iso,
         "initial_capital": initial_capital,
+        "deployment_aum": round(deployment_aum, 4),
+        "deployment_cost_usd": round(deployment_cost_usd, 4),
+        "deployment_cost_pct": round(deployment_cost_pct, 6),
         "weeks_tracked": weeks,
         "weekly_returns": weekly_returns,
         "cumulative_return_pct": round(cum_pct, 6),

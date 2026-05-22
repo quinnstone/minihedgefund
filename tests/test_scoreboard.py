@@ -4,15 +4,64 @@ from src.tracking.scoreboard import compute_realized_tax_totals, update_scoreboa
 
 
 class TestUpdateScoreboard:
-    def test_first_week_initializes(self):
+    def test_first_week_cumulative_is_zero(self):
+        """Inception week always reports cumulative = 0%. The first-week AUM
+        becomes the deployment baseline; small entry-slippage drag is captured
+        in `deployment_cost_usd`, not surfaced as 'performance'."""
         prior = {"weekly_returns": [], "current_aum": 10_000.0}
-        new = {"week_of": "2026-05-11", "return_pct": 0.02, "spy_pct": 0.01,
-               "alpha": 0.01, "aum": 10_200.0}
-        sb = update_scoreboard(prior, new, 10_000.0, "2026-05-11", 3, 50.0, 0.0, 17.4)
+        new = {"week_of": "2026-05-18", "return_pct": None, "spy_pct": None,
+               "alpha": None, "aum": 9_997.96}   # the actual problem case
+        sb = update_scoreboard(prior, new, 10_000.0, "2026-05-18", 5, 0.0, 0.0, 0.0)
         assert sb["weeks_tracked"] == 1
-        assert sb["current_aum"] == 10_200.0
-        assert sb["cumulative_return_pct"] == 0.02
-        assert sb["weekly_win_rate"] == 1.0
+        assert sb["current_aum"] == 9_997.96
+        assert sb["deployment_aum"] == 9_997.96
+        assert sb["cumulative_return_pct"] == 0.0
+        assert sb["cumulative_return_usd"] == 0.0
+        # Slippage is visible in its own field rather than polluting performance
+        assert sb["deployment_cost_usd"] == -2.04
+        assert abs(sb["deployment_cost_pct"] - (-0.000204)) < 1e-6
+
+    def test_retroactive_deployment_recovery(self):
+        """Scoreboards created before deployment_aum existed should still
+        compute correctly: the first recorded week's AUM is treated as the
+        baseline. Critical for upgrading existing data without rerunning."""
+        # Simulate existing on-disk scoreboard from week 1 (pre-fix): the
+        # week-1 entry is there but no deployment_aum field exists.
+        prior = {
+            "weekly_returns": [
+                {"week_of": "2026-05-18", "return_pct": None, "spy_pct": None, "aum": 9_997.96},
+            ],
+            "current_aum": 9_997.96,
+            # NO deployment_aum field — pre-fix scoreboard
+        }
+        # Next Monday brings AUM to $10,100
+        new = {"week_of": "2026-05-25", "return_pct": 0.0102, "spy_pct": 0.005, "aum": 10_100.0}
+        sb = update_scoreboard(prior, new, 10_000.0, "2026-05-18", 0, 0, 0, 0)
+        # Should retroactively use week-1's $9,997.96 as the baseline, not
+        # this week's $10,100
+        assert sb["deployment_aum"] == 9_997.96
+        # cum = (10100 - 9997.96) / 9997.96 ≈ +1.02%
+        assert abs(sb["cumulative_return_pct"] - ((10100 - 9997.96) / 9997.96)) < 1e-6
+
+    def test_week_two_measures_vs_deployment_not_initial(self):
+        """Performance compares against deployment_aum, not initial_capital."""
+        # Week 1: $10k → $9,997.96 after deployment slippage
+        sb = update_scoreboard(
+            {"weekly_returns": [], "current_aum": 10_000.0},
+            {"week_of": "2026-05-18", "return_pct": None, "spy_pct": None, "aum": 9_997.96},
+            10_000, "2026-05-18", 0, 0, 0, 0,
+        )
+        deployment = sb["deployment_aum"]
+        # Week 2: AUM moves to $10,097.94 (+1% from deployment, not from initial)
+        sb = update_scoreboard(
+            sb,
+            {"week_of": "2026-05-25", "return_pct": 0.01, "spy_pct": 0.005, "aum": 10_097.94},
+            10_000, "2026-05-18", 0, 0, 0, 0,
+        )
+        assert sb["deployment_aum"] == deployment   # baseline doesn't drift
+        # cum = (10097.94 - 9997.96) / 9997.96 = 0.01
+        assert abs(sb["cumulative_return_pct"] - 0.01) < 1e-4
+        assert abs(sb["cumulative_return_usd"] - 99.98) < 0.01
 
     def test_multiple_weeks_compound_spy(self):
         prior = {"weekly_returns": [], "current_aum": 10_000.0}
@@ -27,7 +76,7 @@ class TestUpdateScoreboard:
     def test_duplicate_week_replaced(self):
         prior = {"weekly_returns": [
             {"week_of": "2026-05-11", "return_pct": 0.02, "spy_pct": 0.01, "aum": 10_200},
-        ], "current_aum": 10_200.0}
+        ], "current_aum": 10_200.0, "deployment_aum": 10_200.0}
         # Reprocess same week with updated return
         sb = update_scoreboard(prior, {"week_of": "2026-05-11", "return_pct": 0.05, "spy_pct": 0.02, "aum": 10_500},
                                 10_000, "2026-05-11", 0, 0, 0, 0)
