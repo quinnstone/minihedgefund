@@ -104,16 +104,24 @@ def _today_et() -> date:
     return datetime.now(ZoneInfo("America/New_York")).date()
 
 
+def _is_monday_et() -> bool:
+    """True if today (in America/New_York) is Monday."""
+    from zoneinfo import ZoneInfo
+    return datetime.now(ZoneInfo("America/New_York")).weekday() == 0
+
+
 def _is_monday_10am_et(tolerance_minutes: int = 90) -> bool:
     """True if we're within a 1.5h window centered on Monday 10am ET.
 
-    The GitHub Actions workflow fires two crons (14:00 and 15:00 UTC) to cover
-    EDT/EST. Exactly one of them is 10am ET, the other no-ops here.
+    Composed of the day check + an hour-of-day check. The hour check is
+    bypassed for --cron runs (GH Actions cron lag), but the day check is
+    always enforced — if extreme lag pushes the cron into Tuesday in ET,
+    we'd rather skip than produce a "Monday decision" on Tuesday data.
     """
     from zoneinfo import ZoneInfo
-    now = datetime.now(ZoneInfo("America/New_York"))
-    if now.weekday() != 0:
+    if not _is_monday_et():
         return False
+    now = datetime.now(ZoneInfo("America/New_York"))
     minutes_from_10 = abs((now.hour - 10) * 60 + now.minute)
     return minutes_from_10 <= tolerance_minutes
 
@@ -203,15 +211,22 @@ def run_weekly(
 ) -> int:
     today = today or _today_et()
 
-    # Time-of-day gate. Skipped when:
-    #   --force      → manual override (user knows what they want)
-    #   --cron       → scheduled run; the cron itself decides timing.
-    #                  GH Actions cron can lag hours, so trust the schedule.
-    #   --dry-run    → testing
-    if not force and not cron and not dry_run:
-        if not _is_monday_10am_et():
-            logger.info("not within Monday 10am ET window — skipping run")
-            return 0
+    # Day + hour gate. Behavior by flag:
+    #   --force      → bypass everything (manual override)
+    #   --dry-run    → bypass everything (testing)
+    #   --cron       → enforce day-only (Monday in ET). Skip the hour check
+    #                  because GH Actions cron lag is routine, but still
+    #                  refuse to run if lag pushes us into Tuesday ET.
+    #   default      → enforce day + hour (Monday + 10am ET ± 90 min)
+    if not force and not dry_run:
+        if cron:
+            if not _is_monday_et():
+                logger.info("cron-triggered run but today is not Monday in ET — skipping")
+                return 0
+        else:
+            if not _is_monday_10am_et():
+                logger.info("not within Monday 10am ET window — skipping run")
+                return 0
 
     # Idempotency. Skipped when:
     #   --force      → user explicitly asked to re-run
