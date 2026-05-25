@@ -20,9 +20,9 @@
         "news": 95.0,
         "insider": 50.0
       },
-      "current_price": 60.58000183105469,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 59.4900016784668,
+      "lifetime_return_pct": -0.017992738851802605,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 391.1300048828125,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 388.4700012207031,
+      "lifetime_return_pct": -0.0068008171935219994,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -74,9 +74,9 @@
         "news": 87.6,
         "insider": 50.0
       },
-      "current_price": 488.3800048828125,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 486.3800048828125,
+      "lifetime_return_pct": -0.004095171751513256,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -101,9 +101,9 @@
         "news": 80.7,
         "insider": 50.0
       },
-      "current_price": 396.94000244140625,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 382.9700012207031,
+      "lifetime_return_pct": -0.03519423876348993,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -128,9 +128,9 @@
         "news": 73.9,
         "insider": 50.0
       },
-      "current_price": 222.32000732421875,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 215.3300018310547,
+      "lifetime_return_pct": -0.0314411895595624,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -155,7 +155,88 @@
         "news": 78.0,
         "insider": 50.0
       },
-      "current_price": 264.8599853515625,
+      "current_price": 266.32000732421875,
+      "lifetime_return_pct": 0.005512429409517208,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "08e3d9e7636d",
+      "ticker": "SMCI",
+      "week_of": "2026-05-25",
+      "action": "OPEN",
+      "rec_market_price": 35.58000183105469,
+      "executed_fill_price": 35.5978,
+      "target_weight_pct": 5.0,
+      "conviction": "high",
+      "thesis": "Top-ranked composite (63.9) with technical 91 + news 96 confirming AI capex leadership; size at half cap due to high_vol flag.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 91.0,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 96.4,
+        "insider": 50.0
+      },
+      "current_price": 35.58000183105469,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "fdebb67d104e",
+      "ticker": "MU",
+      "week_of": "2026-05-25",
+      "action": "OPEN",
+      "rec_market_price": 751.0,
+      "executed_fill_price": 751.3755,
+      "target_weight_pct": 5.0,
+      "conviction": "high",
+      "thesis": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 50.0,
+        "technical": 81.6,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 94.2,
+        "insider": 50.0
+      },
+      "current_price": 751.0,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "1080316bd7e8",
+      "ticker": "NVDA",
+      "week_of": "2026-05-25",
+      "action": "ADD",
+      "rec_market_price": 215.3300018310547,
+      "executed_fill_price": 215.4377,
+      "target_weight_pct": 6.0,
+      "conviction": "high",
+      "thesis": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully.",
+      "factor_breakdown": {
+        "sentiment": 50.0,
+        "earnings": 55.0,
+        "technical": 67.5,
+        "macro_fit": 50.0,
+        "influencer": 50.0,
+        "news": 89.3,
+        "insider": 50.0
+      },
+      "current_price": 215.3300018310547,
       "lifetime_return_pct": 0.0,
       "days_held": 0,
       "status": "open",
@@ -165,33 +246,38 @@
     }
   ],
   "aggregate": {
-    "total_picks": 6,
-    "open_picks": 6,
+    "total_picks": 9,
+    "open_picks": 9,
     "closed_picks": 0,
-    "win_count": 0,
-    "loss_count": 0,
-    "flat_count": 6,
-    "win_rate": 0.0,
-    "avg_return_pct": 0.0,
-    "avg_winner_return_pct": 0.0,
-    "avg_loser_return_pct": 0.0,
-    "equal_weight_basket_return_pct": 0.0,
-    "weighted_basket_return_pct": 0.0,
+    "win_count": 1,
+    "loss_count": 4,
+    "flat_count": 4,
+    "win_rate": 0.1111111111111111,
+    "avg_return_pct": -0.010001302967819219,
+    "avg_winner_return_pct": 0.005512429409517208,
+    "avg_loser_return_pct": -0.022857246092094233,
+    "equal_weight_basket_return_pct": -0.010001302967819219,
+    "weighted_basket_return_pct": -0.010867375793550169,
     "best_pick": {
-      "ticker": "XLE",
+      "ticker": "AMZN",
       "week_of": "2026-05-18",
-      "return_pct": 0.0,
+      "return_pct": 0.005512,
       "conviction": "medium"
     },
     "worst_pick": {
-      "ticker": "XLE",
+      "ticker": "GOOGL",
       "week_of": "2026-05-18",
-      "return_pct": 0.0,
+      "return_pct": -0.035194,
       "conviction": "medium"
     },
     "by_conviction": {
       "medium": {
         "count": 6,
+        "win_rate": 0.1667,
+        "avg_return_pct": -0.015002
+      },
+      "high": {
+        "count": 3,
         "win_rate": 0.0,
         "avg_return_pct": 0.0
       }
@@ -208,6 +294,16 @@
         "GOOGL",
         "NVDA",
         "AMZN"
+      ],
+      "avg_return_since_pick": 0.0
+    },
+    {
+      "week_of": "2026-05-25",
+      "picks_count": 3,
+      "tickers": [
+        "SMCI",
+        "MU",
+        "NVDA"
       ],
       "avg_return_since_pick": 0.0
     }

@@ -1,5 +1,5 @@
 {
-  "cash": 5912.413026199499,
+  "cash": 4623.976432099686,
   "positions": {
     "XLE": {
       "ticker": "XLE",
@@ -58,6 +58,13 @@
           "shares": 2.6970744125369643,
           "cost_basis_per_share": 222.43116732788084,
           "acquisition_date": "2026-05-18"
+        },
+        {
+          "lot_id": "10f5dabbad68",
+          "ticker": "NVDA",
+          "shares": 2.7670980379351007,
+          "cost_basis_per_share": 215.4376668319702,
+          "acquisition_date": "2026-05-25"
         }
       ]
     },
@@ -67,14 +74,38 @@
         {
           "lot_id": "6ab5dfc0d5dd",
           "ticker": "AMZN",
-          "shares": 2.263821101307247,
+          "shares": 1.1319105506536236,
           "cost_basis_per_share": 264.9924153442383,
           "acquisition_date": "2026-05-18"
+        }
+      ]
+    },
+    "SMCI": {
+      "ticker": "SMCI",
+      "lots": [
+        {
+          "lot_id": "d782ec6c102e",
+          "ticker": "SMCI",
+          "shares": 13.956084249084475,
+          "cost_basis_per_share": 35.59779183197021,
+          "acquisition_date": "2026-05-25"
+        }
+      ]
+    },
+    "MU": {
+      "ticker": "MU",
+      "lots": [
+        {
+          "lot_id": "4ff4b69dd722",
+          "ticker": "MU",
+          "shares": 0.6611785557963616,
+          "cost_basis_per_share": 751.3755,
+          "acquisition_date": "2026-05-25"
         }
       ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-05-18T22:17:24.578239"
+  "last_updated": "2026-05-25T16:31:07.326320"
 }

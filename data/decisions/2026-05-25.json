@@ -1,0 +1,5220 @@
+{
+  "date": "2026-05-25",
+  "as_of_utc": "2026-05-25T16:31:07.864954+00:00",
+  "methodology": {
+    "code_version": "0.1.0",
+    "git_sha": "b63b0ff210ac",
+    "synthesis": {
+      "weights": {
+        "sentiment": 0.2,
+        "insider": 0.2,
+        "news": 0.15,
+        "earnings": 0.15,
+        "technical": 0.15,
+        "macro_fit": 0.1,
+        "influencer": 0.05
+      },
+      "fallback_used": true
+    },
+    "portfolio_rules": {
+      "max_single_name_pct": 0.2,
+      "max_sector_pct": 0.4,
+      "slippage_bps": 5
+    },
+    "tax_profile": {
+      "stcg_rate": 0.34726,
+      "ltcg_rate": 0.25726,
+      "ltcg_holding_days": 365,
+      "wash_sale_window_days": 30,
+      "federal_ordinary": 0.24,
+      "federal_ltcg": 0.15,
+      "state": 0.0685,
+      "city": 0.03876,
+      "niit_applies": false
+    },
+    "scout_config": {
+      "reddit_subreddits": [
+        "wallstreetbets",
+        "stocks",
+        "investing",
+        "stockmarket",
+        "options"
+      ],
+      "stocktwits_enabled": false,
+      "edgar_lookback_days": 7
+    }
+  },
+  "portfolio_state_before": {
+    "cash": 5912.413026199499,
+    "positions": {
+      "XLE": {
+        "ticker": "XLE",
+        "lots": [
+          {
+            "lot_id": "95fda2c9144c",
+            "ticker": "XLE",
+            "shares": 13,
+            "cost_basis_per_share": 60.61029183197021,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "UNH": {
+        "ticker": "UNH",
+        "lots": [
+          {
+            "lot_id": "b382df2c6f8d",
+            "ticker": "UNH",
+            "shares": 1.5331898040171854,
+            "cost_basis_per_share": 391.3255698852539,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "BRK.B": {
+        "ticker": "BRK.B",
+        "lots": [
+          {
+            "lot_id": "ad2698872434",
+            "ticker": "BRK.B",
+            "shares": 1.637136514546689,
+            "cost_basis_per_share": 488.62419488525387,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "GOOGL": {
+        "ticker": "GOOGL",
+        "lots": [
+          {
+            "lot_id": "234d94231da2",
+            "ticker": "GOOGL",
+            "shares": 1.762416668044355,
+            "cost_basis_per_share": 397.13847244262695,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "NVDA": {
+        "ticker": "NVDA",
+        "lots": [
+          {
+            "lot_id": "36468f865281",
+            "ticker": "NVDA",
+            "shares": 2.6970744125369643,
+            "cost_basis_per_share": 222.43116732788084,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "AMZN": {
+        "ticker": "AMZN",
+        "lots": [
+          {
+            "lot_id": "6ab5dfc0d5dd",
+            "ticker": "AMZN",
+            "shares": 2.263821101307247,
+            "cost_basis_per_share": 264.9924153442383,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      }
+    },
+    "initial_capital": 10000.0,
+    "inception_date": "2026-05-18",
+    "last_updated": "2026-05-18T22:17:24.578239"
+  },
+  "portfolio_state_after": {
+    "cash": 4623.976432099686,
+    "positions": {
+      "XLE": {
+        "ticker": "XLE",
+        "lots": [
+          {
+            "lot_id": "95fda2c9144c",
+            "ticker": "XLE",
+            "shares": 13,
+            "cost_basis_per_share": 60.61029183197021,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "UNH": {
+        "ticker": "UNH",
+        "lots": [
+          {
+            "lot_id": "b382df2c6f8d",
+            "ticker": "UNH",
+            "shares": 1.5331898040171854,
+            "cost_basis_per_share": 391.3255698852539,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "BRK.B": {
+        "ticker": "BRK.B",
+        "lots": [
+          {
+            "lot_id": "ad2698872434",
+            "ticker": "BRK.B",
+            "shares": 1.637136514546689,
+            "cost_basis_per_share": 488.62419488525387,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "GOOGL": {
+        "ticker": "GOOGL",
+        "lots": [
+          {
+            "lot_id": "234d94231da2",
+            "ticker": "GOOGL",
+            "shares": 1.762416668044355,
+            "cost_basis_per_share": 397.13847244262695,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "NVDA": {
+        "ticker": "NVDA",
+        "lots": [
+          {
+            "lot_id": "36468f865281",
+            "ticker": "NVDA",
+            "shares": 2.6970744125369643,
+            "cost_basis_per_share": 222.43116732788084,
+            "acquisition_date": "2026-05-18"
+          },
+          {
+            "lot_id": "10f5dabbad68",
+            "ticker": "NVDA",
+            "shares": 2.7670980379351007,
+            "cost_basis_per_share": 215.4376668319702,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "AMZN": {
+        "ticker": "AMZN",
+        "lots": [
+          {
+            "lot_id": "6ab5dfc0d5dd",
+            "ticker": "AMZN",
+            "shares": 1.1319105506536236,
+            "cost_basis_per_share": 264.9924153442383,
+            "acquisition_date": "2026-05-18"
+          }
+        ]
+      },
+      "SMCI": {
+        "ticker": "SMCI",
+        "lots": [
+          {
+            "lot_id": "d782ec6c102e",
+            "ticker": "SMCI",
+            "shares": 13.956084249084475,
+            "cost_basis_per_share": 35.59779183197021,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "MU": {
+        "ticker": "MU",
+        "lots": [
+          {
+            "lot_id": "4ff4b69dd722",
+            "ticker": "MU",
+            "shares": 0.6611785557963616,
+            "cost_basis_per_share": 751.3755,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      }
+    },
+    "initial_capital": 10000.0,
+    "inception_date": "2026-05-18",
+    "last_updated": "2026-05-25T16:31:07.326320"
+  },
+  "universe": [
+    "XLE",
+    "UNH",
+    "BRK.B",
+    "GOOGL",
+    "NVDA",
+    "AMZN",
+    "AAPL",
+    "MSFT",
+    "META",
+    "TSLA",
+    "AMD",
+    "AVGO",
+    "MU",
+    "SMCI",
+    "JPM",
+    "V",
+    "WMT",
+    "COST",
+    "SPY",
+    "QQQ",
+    "IWM",
+    "DIA",
+    "XLK",
+    "XLF",
+    "XLV",
+    "XLY",
+    "XLI",
+    "XLP",
+    "XLU",
+    "XLB"
+  ],
+  "scout_briefs": {
+    "sentiment": {
+      "scout": "sentiment",
+      "as_of": "2026-05-25T16:28:18.123175+00:00",
+      "lookback_days": 7,
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "XLE",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "UNH",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "BRK.B",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "GOOGL",
+          "buzz_level": "med",
+          "reddit_mentions": 6,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "NVDA",
+          "buzz_level": "high",
+          "reddit_mentions": 46,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AMZN",
+          "buzz_level": "low",
+          "reddit_mentions": 4,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AAPL",
+          "buzz_level": "low",
+          "reddit_mentions": 2,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "MSFT",
+          "buzz_level": "med",
+          "reddit_mentions": 6,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "META",
+          "buzz_level": "med",
+          "reddit_mentions": 6,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "TSLA",
+          "buzz_level": "med",
+          "reddit_mentions": 7,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AMD",
+          "buzz_level": "high",
+          "reddit_mentions": 24,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AVGO",
+          "buzz_level": "low",
+          "reddit_mentions": 4,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "MU",
+          "buzz_level": "med",
+          "reddit_mentions": 11,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SMCI",
+          "buzz_level": "low",
+          "reddit_mentions": 2,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "JPM",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "V",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "WMT",
+          "buzz_level": "low",
+          "reddit_mentions": 4,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "COST",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SPY",
+          "buzz_level": "med",
+          "reddit_mentions": 11,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "QQQ",
+          "buzz_level": "med",
+          "reddit_mentions": 9,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "IWM",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "DIA",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLK",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLF",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLV",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLY",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLI",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLP",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLU",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLB",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        }
+      ]
+    },
+    "earnings": {
+      "scout": "earnings",
+      "as_of": "2026-05-25T16:28:39.942381+00:00",
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "BRK.B",
+          "recent_result": "beat",
+          "days_since_earnings": 23,
+          "surprise_pct": 4.17,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "GOOGL",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 94.3,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "NVDA",
+          "recent_result": "beat",
+          "days_since_earnings": 4,
+          "surprise_pct": 5.54,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "AMZN",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 69.02,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "AAPL",
+          "recent_result": "beat",
+          "days_since_earnings": 24,
+          "surprise_pct": 3.46,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "MSFT",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 5.22,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "META",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 7.2,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "AMD",
+          "recent_result": "beat",
+          "days_since_earnings": 19,
+          "surprise_pct": 5.82,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "SMCI",
+          "recent_result": "beat",
+          "days_since_earnings": 19,
+          "surprise_pct": 34.51,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "V",
+          "recent_result": "beat",
+          "days_since_earnings": 26,
+          "surprise_pct": 6.79,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "UNH",
+          "recent_result": "beat",
+          "days_since_earnings": 34,
+          "surprise_pct": 9.52,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "TSLA",
+          "recent_result": "beat",
+          "days_since_earnings": 32,
+          "surprise_pct": 17.15,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "JPM",
+          "recent_result": "beat",
+          "days_since_earnings": 41,
+          "surprise_pct": 7.78,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "XLE",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "AVGO",
+          "recent_result": null,
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "MU",
+          "recent_result": null,
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "WMT",
+          "recent_result": "in_line",
+          "days_since_earnings": 4,
+          "surprise_pct": 0.19,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "COST",
+          "recent_result": null,
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SPY",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "QQQ",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "IWM",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "DIA",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLK",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLF",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLV",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLY",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLI",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLP",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLU",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLB",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        }
+      ]
+    },
+    "technical": {
+      "scout": "technical",
+      "as_of": "2026-05-25T16:28:44.005515+00:00",
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "SMCI",
+          "last_close": 35.58,
+          "ma20": 31.08,
+          "ma50": 27.9,
+          "ma_stack": "bull",
+          "rsi": 64.5,
+          "momentum_1w_pct": 14.63,
+          "momentum_1m_pct": 33.01,
+          "twentyd_breakout": true,
+          "composite_score": 91.0,
+          "data_available": true
+        },
+        {
+          "ticker": "AMD",
+          "last_close": 467.51,
+          "ma20": 405.9,
+          "ma50": 303.19,
+          "ma_stack": "bull",
+          "rsi": 72.6,
+          "momentum_1w_pct": 10.24,
+          "momentum_1m_pct": 53.12,
+          "twentyd_breakout": true,
+          "composite_score": 85.0,
+          "data_available": true
+        },
+        {
+          "ticker": "MU",
+          "last_close": 751.0,
+          "ma20": 668.75,
+          "ma50": 518.97,
+          "ma_stack": "bull",
+          "rsi": 65.0,
+          "momentum_1w_pct": 3.63,
+          "momentum_1m_pct": 55.9,
+          "twentyd_breakout": false,
+          "composite_score": 81.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLK",
+          "last_close": 180.39,
+          "ma20": 170.56,
+          "ma50": 153.5,
+          "ma_stack": "bull",
+          "rsi": 73.0,
+          "momentum_1w_pct": 2.34,
+          "momentum_1m_pct": 15.75,
+          "twentyd_breakout": true,
+          "composite_score": 80.2,
+          "data_available": true
+        },
+        {
+          "ticker": "TSLA",
+          "last_close": 426.01,
+          "ma20": 409.26,
+          "ma50": 388.33,
+          "ma_stack": "bull",
+          "rsi": 58.4,
+          "momentum_1w_pct": 0.89,
+          "momentum_1m_pct": 13.99,
+          "twentyd_breakout": false,
+          "composite_score": 75.9,
+          "data_available": true
+        },
+        {
+          "ticker": "DIA",
+          "last_close": 506.12,
+          "ma20": 496.11,
+          "ma50": 482.13,
+          "ma_stack": "bull",
+          "rsi": 65.4,
+          "momentum_1w_pct": 2.17,
+          "momentum_1m_pct": 2.72,
+          "twentyd_breakout": true,
+          "composite_score": 73.5,
+          "data_available": true
+        },
+        {
+          "ticker": "IWM",
+          "last_close": 285.12,
+          "ma20": 280.16,
+          "ma50": 266.58,
+          "ma_stack": "bull",
+          "rsi": 60.8,
+          "momentum_1w_pct": 2.71,
+          "momentum_1m_pct": 3.48,
+          "twentyd_breakout": false,
+          "composite_score": 72.5,
+          "data_available": true
+        },
+        {
+          "ticker": "V",
+          "last_close": 328.88,
+          "ma20": 324.21,
+          "ma50": 313.13,
+          "ma_stack": "bull",
+          "rsi": 58.5,
+          "momentum_1w_pct": 0.96,
+          "momentum_1m_pct": 6.7,
+          "twentyd_breakout": false,
+          "composite_score": 72.3,
+          "data_available": true
+        },
+        {
+          "ticker": "AAPL",
+          "last_close": 308.82,
+          "ma20": 289.22,
+          "ma50": 270.36,
+          "ma_stack": "bull",
+          "rsi": 78.6,
+          "momentum_1w_pct": 2.86,
+          "momentum_1m_pct": 13.05,
+          "twentyd_breakout": true,
+          "composite_score": 71.4,
+          "data_available": true
+        },
+        {
+          "ticker": "XLY",
+          "last_close": 119.18,
+          "ma20": 118.16,
+          "ma50": 114.75,
+          "ma_stack": "bull",
+          "rsi": 57.0,
+          "momentum_1w_pct": 2.27,
+          "momentum_1m_pct": 1.22,
+          "twentyd_breakout": false,
+          "composite_score": 70.9,
+          "data_available": true
+        },
+        {
+          "ticker": "BRK.B",
+          "last_close": 486.38,
+          "ma20": 478.04,
+          "ma50": 477.96,
+          "ma_stack": "bull",
+          "rsi": 58.4,
+          "momentum_1w_pct": 0.76,
+          "momentum_1m_pct": 3.36,
+          "twentyd_breakout": false,
+          "composite_score": 70.4,
+          "data_available": true
+        },
+        {
+          "ticker": "XLE",
+          "last_close": 59.49,
+          "ma20": 58.48,
+          "ma50": 58.38,
+          "ma_stack": "bull",
+          "rsi": 55.4,
+          "momentum_1w_pct": 0.08,
+          "momentum_1m_pct": 4.41,
+          "twentyd_breakout": false,
+          "composite_score": 70.3,
+          "data_available": true
+        },
+        {
+          "ticker": "JPM",
+          "last_close": 306.38,
+          "ma20": 305.45,
+          "ma50": 301.22,
+          "ma_stack": "bull",
+          "rsi": 52.9,
+          "momentum_1w_pct": 2.88,
+          "momentum_1m_pct": -1.7,
+          "twentyd_breakout": false,
+          "composite_score": 70.0,
+          "data_available": true
+        },
+        {
+          "ticker": "XLF",
+          "last_close": 51.94,
+          "ma20": 51.59,
+          "ma50": 50.8,
+          "ma_stack": "bull",
+          "rsi": 56.0,
+          "momentum_1w_pct": 1.64,
+          "momentum_1m_pct": 0.27,
+          "twentyd_breakout": false,
+          "composite_score": 69.8,
+          "data_available": true
+        },
+        {
+          "ticker": "XLP",
+          "last_close": 84.8,
+          "ma20": 84.3,
+          "ma50": 83.02,
+          "ma_stack": "bull",
+          "rsi": 54.1,
+          "momentum_1w_pct": 0.19,
+          "momentum_1m_pct": 1.58,
+          "twentyd_breakout": false,
+          "composite_score": 69.0,
+          "data_available": true
+        },
+        {
+          "ticker": "XLV",
+          "last_close": 149.89,
+          "ma20": 145.52,
+          "ma50": 146.31,
+          "ma_stack": "mixed",
+          "rsi": 62.1,
+          "momentum_1w_pct": 3.3,
+          "momentum_1m_pct": 2.5,
+          "twentyd_breakout": true,
+          "composite_score": 68.5,
+          "data_available": true
+        },
+        {
+          "ticker": "QQQ",
+          "last_close": 717.54,
+          "ma20": 694.91,
+          "ma50": 642.01,
+          "ma_stack": "bull",
+          "rsi": 71.5,
+          "momentum_1w_pct": 1.21,
+          "momentum_1m_pct": 10.15,
+          "twentyd_breakout": false,
+          "composite_score": 68.3,
+          "data_available": true
+        },
+        {
+          "ticker": "MSFT",
+          "last_close": 418.57,
+          "ma20": 415.8,
+          "ma50": 399.61,
+          "ma_stack": "bull",
+          "rsi": 55.6,
+          "momentum_1w_pct": -0.58,
+          "momentum_1m_pct": 0.9,
+          "twentyd_breakout": false,
+          "composite_score": 67.9,
+          "data_available": true
+        },
+        {
+          "ticker": "NVDA",
+          "last_close": 215.33,
+          "ma20": 214.75,
+          "ma50": 196.81,
+          "ma_stack": "bull",
+          "rsi": 53.6,
+          "momentum_1w_pct": -4.43,
+          "momentum_1m_pct": 7.86,
+          "twentyd_breakout": false,
+          "composite_score": 67.5,
+          "data_available": true
+        },
+        {
+          "ticker": "COST",
+          "last_close": 1028.24,
+          "ma20": 1026.25,
+          "ma50": 1007.01,
+          "ma_stack": "bull",
+          "rsi": 50.4,
+          "momentum_1w_pct": -1.97,
+          "momentum_1m_pct": 1.51,
+          "twentyd_breakout": false,
+          "composite_score": 66.8,
+          "data_available": true
+        },
+        {
+          "ticker": "SPY",
+          "last_close": 745.64,
+          "ma20": 731.58,
+          "ma50": 696.49,
+          "ma_stack": "bull",
+          "rsi": 68.8,
+          "momentum_1w_pct": 0.88,
+          "momentum_1m_pct": 5.25,
+          "twentyd_breakout": false,
+          "composite_score": 65.5,
+          "data_available": true
+        },
+        {
+          "ticker": "UNH",
+          "last_close": 388.47,
+          "ma20": 379.63,
+          "ma50": 330.65,
+          "ma_stack": "bull",
+          "rsi": 68.1,
+          "momentum_1w_pct": -1.37,
+          "momentum_1m_pct": 9.56,
+          "twentyd_breakout": false,
+          "composite_score": 65.4,
+          "data_available": true
+        },
+        {
+          "ticker": "GOOGL",
+          "last_close": 382.97,
+          "ma20": 385.48,
+          "ma50": 341.14,
+          "ma_stack": "mixed",
+          "rsi": 57.5,
+          "momentum_1w_pct": -3.48,
+          "momentum_1m_pct": 13.01,
+          "twentyd_breakout": false,
+          "composite_score": 59.0,
+          "data_available": true
+        },
+        {
+          "ticker": "AMZN",
+          "last_close": 266.32,
+          "ma20": 267.1,
+          "ma50": 241.92,
+          "ma_stack": "mixed",
+          "rsi": 58.3,
+          "momentum_1w_pct": 0.83,
+          "momentum_1m_pct": 4.41,
+          "twentyd_breakout": false,
+          "composite_score": 59.0,
+          "data_available": true
+        },
+        {
+          "ticker": "XLU",
+          "last_close": 45.35,
+          "ma20": 45.34,
+          "ma50": 45.74,
+          "ma_stack": "mixed",
+          "rsi": 50.5,
+          "momentum_1w_pct": 3.37,
+          "momentum_1m_pct": -1.61,
+          "twentyd_breakout": false,
+          "composite_score": 58.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLI",
+          "last_close": 171.77,
+          "ma20": 172.49,
+          "ma50": 169.23,
+          "ma_stack": "mixed",
+          "rsi": 50.1,
+          "momentum_1w_pct": 0.22,
+          "momentum_1m_pct": -1.32,
+          "twentyd_breakout": false,
+          "composite_score": 55.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLB",
+          "last_close": 50.29,
+          "ma20": 51.11,
+          "ma50": 50.6,
+          "ma_stack": "mixed",
+          "rsi": 44.7,
+          "momentum_1w_pct": -0.02,
+          "momentum_1m_pct": -2.93,
+          "twentyd_breakout": false,
+          "composite_score": 54.5,
+          "data_available": true
+        },
+        {
+          "ticker": "AVGO",
+          "last_close": 414.14,
+          "ma20": 419.09,
+          "ma50": 376.96,
+          "ma_stack": "mixed",
+          "rsi": 53.1,
+          "momentum_1w_pct": -2.6,
+          "momentum_1m_pct": -1.38,
+          "twentyd_breakout": false,
+          "composite_score": 52.7,
+          "data_available": true
+        },
+        {
+          "ticker": "META",
+          "last_close": 610.26,
+          "ma20": 619.1,
+          "ma50": 617.8,
+          "ma_stack": "mixed",
+          "rsi": 45.5,
+          "momentum_1w_pct": -0.65,
+          "momentum_1m_pct": -7.42,
+          "twentyd_breakout": false,
+          "composite_score": 51.6,
+          "data_available": true
+        },
+        {
+          "ticker": "WMT",
+          "last_close": 120.27,
+          "ma20": 129.48,
+          "ma50": 126.77,
+          "ma_stack": "mixed",
+          "rsi": 34.1,
+          "momentum_1w_pct": -8.51,
+          "momentum_1m_pct": -8.73,
+          "twentyd_breakout": false,
+          "composite_score": 40.6,
+          "data_available": true
+        }
+      ]
+    },
+    "macro": {
+      "scout": "macro",
+      "as_of": "2026-05-25T16:28:46.255853+00:00",
+      "indicators": {
+        "fed_funds_rate": {
+          "name": "Federal Funds Rate",
+          "current_value": 3.64,
+          "previous_value": 3.64,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "unit": "%",
+          "last_updated": "2026-04-01T00:00:00"
+        },
+        "inflation_cpi": {
+          "name": "Consumer Price Index",
+          "current_value": 332.407,
+          "previous_value": 330.293,
+          "change": 2.113999999999976,
+          "change_percent": 0.6400377846336361,
+          "unit": "Index",
+          "last_updated": "2026-04-01T00:00:00"
+        },
+        "unemployment_rate": {
+          "name": "Unemployment Rate",
+          "current_value": 4.3,
+          "previous_value": 4.3,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "unit": "%",
+          "last_updated": "2026-04-01T00:00:00"
+        },
+        "gdp_growth": {
+          "name": "Real GDP Growth",
+          "current_value": 2.0,
+          "previous_value": 0.5,
+          "change": 1.5,
+          "change_percent": 300.0,
+          "unit": "%",
+          "last_updated": "2026-01-01T00:00:00"
+        },
+        "treasury_10y": {
+          "name": "10-Year Treasury",
+          "current_value": 4.57,
+          "previous_value": 4.57,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "unit": "%",
+          "last_updated": "2026-05-21T00:00:00"
+        },
+        "consumer_sentiment": {
+          "name": "Consumer Sentiment",
+          "current_value": 49.8,
+          "previous_value": 53.3,
+          "change": -3.5,
+          "change_percent": -6.566604127579738,
+          "unit": "Index",
+          "last_updated": "2026-04-01T00:00:00"
+        }
+      },
+      "regime": {
+        "overall_regime": "expansion",
+        "rate_trend": "stable",
+        "inflation_trend": "rising",
+        "growth_trend": "moderate",
+        "favored_sectors": [
+          "Technology",
+          "Consumer Discretionary",
+          "Industrials",
+          "Financials"
+        ],
+        "disfavored_sectors": [
+          "Utilities",
+          "Consumer Staples"
+        ]
+      },
+      "degraded": false
+    },
+    "influencer": {
+      "scout": "influencer",
+      "as_of": "2026-05-25T16:29:02.114499+00:00",
+      "universe_size": 10,
+      "degraded": true,
+      "error_notes": [
+        "XLE: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "UNH: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "BRK.B: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "GOOGL: no instances available",
+        "NVDA: no instances available"
+      ],
+      "candidates": [
+        {
+          "ticker": "XLE",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "UNH",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "BRK.B",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "GOOGL",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "NVDA",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AMZN",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AAPL",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "MSFT",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "META",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "TSLA",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        }
+      ]
+    },
+    "news": {
+      "scout": "news",
+      "as_of": "2026-05-25T16:29:07.285810+00:00",
+      "universe_size": 30,
+      "broad_items_count": 171,
+      "degraded_sources": [],
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "AMD",
+          "headline_count": 9,
+          "broad_count": 1,
+          "ticker_specific_count": 8,
+          "distinct_sources": 8,
+          "buzz_level": "high",
+          "polarity_score": 0.953,
+          "top_headlines": [
+            {
+              "title": "AI super rally has retail investors acting the most aggressive since trading frenzy during Covid",
+              "source": "cnbc",
+              "link": "https://www.cnbc.com/2026/05/12/ai-super-rally-has-retail-investors-acting-the-most-aggressive-since-trading-frenzy-during-covid.html"
+            },
+            {
+              "title": "Advanced Micro Devices, Inc. (AMD) Is a Trending Stock: Facts to Know Before Betting on It",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/advanced-micro-devices-inc-amd-130004330.html"
+            },
+            {
+              "title": "The Math That Should Terrify Index Investors: AI Chips Account for Nearly All S&P 500 Gains",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/the-math-that-should-terrify-index-investors-ai-chips-account-for-nearly-all-sp-500-gains/"
+            }
+          ],
+          "composite_score": 97.3
+        },
+        {
+          "ticker": "SMCI",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.977,
+          "top_headlines": [
+            {
+              "title": "SMCI vs. GOOGL: Which Stock is a Safer Bet in the AI Ecosystem?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/smci-vs-googl-stock-safer-150000260.html"
+            },
+            {
+              "title": "Super Micro Computer's Sales More Than Doubled Last Quarter. Here's Why I'd Still Stay Far Away From the Stock",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/super-micro-computers-sales-more-than-doubled-last/"
+            },
+            {
+              "title": "Can Super Micro (SMCI) Reframe Its AI Margin Story Amid Export-Control Scrutiny and Leadership Changes?",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/super-micro-smci-reframe-ai-161422550.html"
+            }
+          ],
+          "composite_score": 96.4
+        },
+        {
+          "ticker": "QQQ",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.957,
+          "top_headlines": [
+            {
+              "title": "Why This Invesco ETF Might Be the Most Underrated Index Fund Available Today",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/why-invesco-etf-underrated-index-fund-ptf/"
+            },
+            {
+              "title": "TQQQ\u2019s 3x Promise Quietly Cost Holders 81 Percent in 2022 While the Nasdaq Fell Just 33 Percent",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/tqqqs-3x-promise-quietly-cost-holders-81-percent-in-2022-while-the-nasdaq-fell-just-33-percent/"
+            },
+            {
+              "title": "S&P 500 Other Than AI Infrastructure Is Growing at 0%. Lance Roberts Warns What Happens if the AI Boom Stumbles.",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/sp-500-other-than-ai-infrastructure-is-growing-at-0-lance-roberts-warns-what-happens-if-the-ai-boom-stumbles/"
+            }
+          ],
+          "composite_score": 95.9
+        },
+        {
+          "ticker": "TSLA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 8,
+          "buzz_level": "high",
+          "polarity_score": 0.934,
+          "top_headlines": [
+            {
+              "title": "Bitwise's Jeff Park: Crypto Entering 'Most Bullish' Phase, Says It's 'NVIDIA Before AI Boom'",
+              "source": "CCN",
+              "link": "https://www.ccn.com/news/crypto/bitwises-jeff-park-crypto-most-bullish-phase-nvidia-ai/"
+            },
+            {
+              "title": "SpaceX\u2019s $2 Trillion Pitch: Is Elon Musk Quietly Building a Backup Internet for Civilization?",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/spacexs-2-trillion-pitch-is-elon-musk-quietly-building-a-backup-internet-for-civilization/"
+            },
+            {
+              "title": "1 Growth Stock to Add to Your Roster and 2 We Turn Down",
+              "source": "StockStory",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/1-growth-stock-add-roster-130751392.html"
+            }
+          ],
+          "composite_score": 95.4
+        },
+        {
+          "ticker": "XLV",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.929,
+          "top_headlines": [
+            {
+              "title": "Better Health Care ETF: Fidelity's FHLC vs. State Street's XLV",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/coverage/etfs/2026/05/24/better-health-care-etf-fidelity-s-fhlc-vs-state-street-s-xlv/"
+            },
+            {
+              "title": "Sickly Healthcare Stocks Are Perking Up. For Contrarian Investors, Buying Now Could Be Just the Remedy to Protect Your Portfolio.",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2108109/sickly-healthcare-stocks-are-perking-up-for-contrarian-investors-buying-now-could-be-just-the-remedy-to-protect-your-portfolio"
+            },
+            {
+              "title": "Healthcare Stocks Are on Fire -- Don't Miss These Opportunities",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/22/healthcare-stocks-are-on-fire-dont-miss-these-oppo/"
+            }
+          ],
+          "composite_score": 95.2
+        },
+        {
+          "ticker": "GOOGL",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.925,
+          "top_headlines": [
+            {
+              "title": "Google rolls out AI-powered ad formats at Marketing Live",
+              "source": "Proactive",
+              "link": "https://www.proactiveinvestors.com/companies/news/1092827/google-rolls-out-ai-powered-ad-formats-at-marketing-live-1092827.html"
+            },
+            {
+              "title": "SMCI vs. GOOGL: Which Stock is a Safer Bet in the AI Ecosystem?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/smci-vs-googl-stock-safer-150000260.html"
+            },
+            {
+              "title": "ARM Targets the AI Data Center Opportunity With New AGI CPU Push",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/arm-targets-ai-data-center-145300405.html"
+            }
+          ],
+          "composite_score": 95.1
+        },
+        {
+          "ticker": "WMT",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.918,
+          "top_headlines": [
+            {
+              "title": "Walmart price target lowered by UBS as Q1 results miss elevated expectations",
+              "source": "Proactive",
+              "link": "https://www.proactiveinvestors.com/companies/news/1092829/walmart-price-target-lowered-by-ubs-as-q1-results-miss-elevated-expectations-1092829.html"
+            },
+            {
+              "title": "Walmart's Q1 Sales Jump 7.3%: Can E-commerce Sustain 26% Growth?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/walmarts-q1-sales-jump-7-144700191.html"
+            },
+            {
+              "title": "AI Could Soon Let Anyone Launch A Restaurant In Under A Minute, Wonder Founder Says",
+              "source": "Benzinga",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/ai-could-soon-let-anyone-140107171.html"
+            }
+          ],
+          "composite_score": 94.9
+        },
+        {
+          "ticker": "UNH",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.912,
+          "top_headlines": [
+            {
+              "title": "UnitedHealth Group (UNH) \u2013 Among the 12 Best Dividend Stocks to Invest in According to Hedge Funds",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/sectors/healthcare/articles/unitedhealth-group-unh-among-12-172106991.html"
+            },
+            {
+              "title": "Berkshire Hathaway\u2019s latest stock purge sends a clear message",
+              "source": "TheStreet",
+              "link": "https://www.thestreet.com/investing/berkshire-hathaways-latest-stock-purge-sends-a-clear-message"
+            },
+            {
+              "title": "Berkshire Hathaway Rebalances Under Greg Abel With Bigger AI And Tech Bet",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-rebalances-under-greg-161316454.html"
+            }
+          ],
+          "composite_score": 94.8
+        },
+        {
+          "ticker": "BRK.B",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.908,
+          "top_headlines": [
+            {
+              "title": "Billionaire Bill Ackman Sold This Stock While Warren Buffett Successor Greg Abel Bought It. Who's Right?",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/bill-ackman-sold-stock-berkshire-bought/"
+            },
+            {
+              "title": "Berkshire Hathaway Just Loaded Up on This Genius Artificial Intelligence (AI) Stock",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/berkshire-hathaway-just-loaded-up-on-this-genius/"
+            },
+            {
+              "title": "Buffett Bet Big On Visa, Mastercard Stocks 15 Years Ago: Here's How Much Those Positions Gained",
+              "source": "Benzinga",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/buffett-bet-big-visa-mastercard-120107528.html"
+            }
+          ],
+          "composite_score": 94.7
+        },
+        {
+          "ticker": "XLE",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.886,
+          "top_headlines": [
+            {
+              "title": "Is XLE the Right Fit for Your Portfolio Before Summer?",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/23/is-xle-etf-right-fit-for-portfolio-before-summer/"
+            },
+            {
+              "title": "IEO\u2019s $0.55 quarterly dividend faces a critical test as oil prices hover near 12-month highs",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/23/ieos-0-55-quarterly-dividend-faces-a-critical-test-as-oil-prices-hover-near-12-month-highs/"
+            },
+            {
+              "title": "Sector Update: Energy Stocks Rise Late Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-rise-afternoon-195644255.html"
+            }
+          ],
+          "composite_score": 94.2
+        },
+        {
+          "ticker": "MU",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.89,
+          "top_headlines": [
+            {
+              "title": "Why This Invesco ETF Might Be the Most Underrated Index Fund Available Today",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/why-invesco-etf-underrated-index-fund-ptf/"
+            },
+            {
+              "title": "IREN\u2019s CEO Just Said 11 Words that Delivered the AI Boom a Brutal Reality Check",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/irens-ceo-just-said-11-words-that-delivered-the-ai-boom-a-brutal-reality-check/"
+            },
+            {
+              "title": "Micron\u2019s 50% Problem: Why Having Too Few Microchips is Making Investors Rich",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/micron-ceo-sanjay-mehrotra-memory-chip-shortage-will-last-well-beyond-2026/"
+            }
+          ],
+          "composite_score": 94.2
+        },
+        {
+          "ticker": "XLF",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.843,
+          "top_headlines": [
+            {
+              "title": "Better Financial Sector ETF: Vanguard's VFH vs. State Street's XLF",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/coverage/etfs/2026/05/23/better-financial-sector-etf-vanguard-s-vfh-vs-state-street-s-xlf/"
+            },
+            {
+              "title": "Sector Update: Financial Stocks Rise Late Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-rise-afternoon-195052772.html"
+            },
+            {
+              "title": "Sector Update: Financial Stocks Higher Friday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-higher-friday-174910740.html"
+            }
+          ],
+          "composite_score": 93.1
+        },
+        {
+          "ticker": "JPM",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.839,
+          "top_headlines": [
+            {
+              "title": "JPM, WFC & Others Clear Key Regulatory Hurdle on Living Wills",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/economy/policy/articles/jpm-wfc-others-clear-key-150700715.html"
+            },
+            {
+              "title": "Morgan Stanley Gains 13.2% YTD: Should You Buy the Stock Now?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/morgan-stanley-gains-13-2-141900915.html"
+            },
+            {
+              "title": "VIG Investors: Watch the 10-Year Treasury Yield This Week\u20144.75% Is the Danger Line",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/vig-investors-watch-the-10-year-treasury-yield-this-week-4-75-is-the-danger-line/"
+            }
+          ],
+          "composite_score": 93.0
+        },
+        {
+          "ticker": "DIA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.983,
+          "top_headlines": [
+            {
+              "title": "Stocks Settle Higher on Iran Peace Hopes and Tech Strength",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2093234/stocks-settle-higher-on-iran-peace-hopes-and-tech-strength"
+            },
+            {
+              "title": "Stocks Climb on US-Iran Peace Hopes and Strength in Chipmakers",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2087619/stocks-climb-on-us-iran-peace-hopes-and-strength-in-chipmakers"
+            },
+            {
+              "title": "Stocks Supported by US-Iran Peace Deal Optimism",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2086238/stocks-supported-by-us-iran-peace-deal-optimism"
+            }
+          ],
+          "composite_score": 91.6
+        },
+        {
+          "ticker": "XLU",
+          "headline_count": 9,
+          "broad_count": 1,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.72,
+          "top_headlines": [
+            {
+              "title": "XLU: Power Demand Boom Meets A New Utility Playbook",
+              "source": "seeking_alpha",
+              "link": "https://seekingalpha.com/article/4908541-xlu-power-demand-boom-meets-a-new-utility-playbook?source=feed_all_articles"
+            },
+            {
+              "title": "After Years of Watching Volatility Spikes These Are the 3 Utility ETFs Built for Investors Who Want Income Without Sleepless Nights",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/24/after-years-of-watching-volatility-spikes-these-are-the-3-utility-etfs-built-for-investors-who-want-income-without-sleepless-nights/"
+            },
+            {
+              "title": "Boring Beats Brilliant: How a Utilities ETF Has Quietly Trounced the S&P 500 in Every Recession This Century",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/22/boring-beats-brilliant-how-a-utilities-etf-has-quietly-trounced-the-sp-500-in-every-recession-this-century/"
+            }
+          ],
+          "composite_score": 91.5
+        },
+        {
+          "ticker": "V",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.71,
+          "top_headlines": [
+            {
+              "title": "This Week In Digital Payment - Egypt's Social Commerce Market Set For Significant Growth",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/week-digital-payment-egypts-social-123745939.html"
+            },
+            {
+              "title": "Buffett Bet Big On Visa, Mastercard Stocks 15 Years Ago: Here's How Much Those Positions Gained",
+              "source": "Benzinga",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/buffett-bet-big-visa-mastercard-120107528.html"
+            },
+            {
+              "title": "Berkshire Hathaway\u2019s latest stock purge sends a clear message",
+              "source": "TheStreet",
+              "link": "https://www.thestreet.com/investing/berkshire-hathaways-latest-stock-purge-sends-a-clear-message"
+            }
+          ],
+          "composite_score": 89.7
+        },
+        {
+          "ticker": "COST",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.706,
+          "top_headlines": [
+            {
+              "title": "Here's How Costco's AI and Digital Bet Is Fueling Faster Sales Growth",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/heres-costcos-ai-digital-bet-133000437.html"
+            },
+            {
+              "title": "Walmart vs. Costco: Which Is the Better \"Recession-Proof\" Stock to Buy Now?",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/walmart-vs-costco-buy-recession-proof-stock/"
+            },
+            {
+              "title": "Dow Jones Futures Rise, Oil Prices Fall: Trump Says No 'Rush' For Iran Deal",
+              "source": "Investor's Business Daily",
+              "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-trump-iran-deal-hormuz-tesla-stocks/?src=A00220&yptr=yahoo"
+            }
+          ],
+          "composite_score": 89.6
+        },
+        {
+          "ticker": "NVDA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.693,
+          "top_headlines": [
+            {
+              "title": "Why This Invesco ETF Might Be the Most Underrated Index Fund Available Today",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/why-invesco-etf-underrated-index-fund-ptf/"
+            },
+            {
+              "title": "Bitwise's Jeff Park: Crypto Entering 'Most Bullish' Phase, Says It's 'NVIDIA Before AI Boom'",
+              "source": "CCN",
+              "link": "https://www.ccn.com/news/crypto/bitwises-jeff-park-crypto-most-bullish-phase-nvidia-ai/"
+            },
+            {
+              "title": "The AI Trade Might Be Grossly Underestimated \u2014 and It Could Be Time To Rethink How We View the Mag 7",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/the-ai-trade-might-be-grossly-underestimated-and-it-could-be-time-to-rethink-how-we-view-the-mag-7/"
+            }
+          ],
+          "composite_score": 89.3
+        },
+        {
+          "ticker": "XLI",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.81,
+          "top_headlines": [
+            {
+              "title": "Do Wall Street Analysts Like J.B. Hunt Transport Stock?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2113434/do-wall-street-analysts-like-j-b-hunt-transport-stock"
+            },
+            {
+              "title": "Equifax Stock: Is Wall Street Bullish or Bearish?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2113036/equifax-stock-is-wall-street-bullish-or-bearish"
+            },
+            {
+              "title": "Are Wall Street Analysts Predicting Jacobs Solutions\u2019 Stock Will Climb or Sink?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2112327/are-wall-street-analysts-predicting-jacobs-solutions-stock-will-climb-or-sink"
+            }
+          ],
+          "composite_score": 87.3
+        },
+        {
+          "ticker": "XLY",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.527,
+          "top_headlines": [
+            {
+              "title": "2 Magnificent S&P 500 Dividend Stocks Down as Much as 25% to Buy and Hold Forever",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/2-magnificent-sp-500-dividend-stocks-down-as-much/"
+            },
+            {
+              "title": "Sector Update: Consumer Stocks Advance Late Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-advance-afternoon-194136862.html"
+            },
+            {
+              "title": "Stock Market News for May 22, 2026",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-may-22-132300910.html"
+            }
+          ],
+          "composite_score": 85.2
+        },
+        {
+          "ticker": "XLK",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.466,
+          "top_headlines": [
+            {
+              "title": "Is XLE the Right Fit for Your Portfolio Before Summer?",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/23/is-xle-etf-right-fit-for-portfolio-before-summer/"
+            },
+            {
+              "title": "The 1 Tech Stock I Keep Adding To on Red Days -- and Why I'll Do It Again",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/22/the-1-tech-stock-i-keep-adding-to-on-red-days-and/"
+            },
+            {
+              "title": "Sector Update: Tech Stocks Higher Late Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-tech-stocks-higher-afternoon-193820310.html"
+            }
+          ],
+          "composite_score": 83.7
+        },
+        {
+          "ticker": "XLP",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.353,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Consumer Stocks Advance Late Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-advance-afternoon-194136862.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Friday Buoyed by Robust Corporate Earnings Season",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131038113.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Lower Pre-Bell Thursday Amid Uncertainty Surrounding US-Iran Talks",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131835522.html"
+            }
+          ],
+          "composite_score": 80.8
+        },
+        {
+          "ticker": "XLB",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.47,
+          "top_headlines": [
+            {
+              "title": "Stock Market News for May 22, 2026",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-may-22-132300910.html"
+            },
+            {
+              "title": "Is Wall Street Bullish or Bearish on Nucor Stock?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2065089/is-wall-street-bullish-or-bearish-on-nucor-stock"
+            },
+            {
+              "title": "Is Wall Street Bullish or Bearish on Steel Dynamics Stock?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2043166/is-wall-street-bullish-or-bearish-on-steel-dynamics-stock"
+            }
+          ],
+          "composite_score": 78.7
+        },
+        {
+          "ticker": "META",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 8,
+          "buzz_level": "high",
+          "polarity_score": -0.246,
+          "top_headlines": [
+            {
+              "title": "The AI Trade Might Be Grossly Underestimated \u2014 and It Could Be Time To Rethink How We View the Mag 7",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/the-ai-trade-might-be-grossly-underestimated-and-it-could-be-time-to-rethink-how-we-view-the-mag-7/"
+            },
+            {
+              "title": "Meta urges Labour to burden Apple with age checks",
+              "source": "The Telegraph",
+              "link": "https://uk.finance.yahoo.com/news/meta-urges-labour-burden-apple-142724103.html"
+            },
+            {
+              "title": "How The Story Is Shifting For TaskUs (TASK) As AI Grows And Trust And Safety Slows",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/story-shifting-taskus-task-ai-141055289.html"
+            }
+          ],
+          "composite_score": 65.9
+        },
+        {
+          "ticker": "AAPL",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": -0.636,
+          "top_headlines": [
+            {
+              "title": "Why This Invesco ETF Might Be the Most Underrated Index Fund Available Today",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/why-invesco-etf-underrated-index-fund-ptf/"
+            },
+            {
+              "title": "S&P 500 Dividends Just Hit an All-Time Low Going Back to the 1800s \u2014 Here\u2019s What Retirees Need to Know",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/personal-finance/2026/05/25/sp-500-dividends-just-hit-an-all-time-low-going-back-to-the-1800s-heres-what-retirees-need-to-know/"
+            },
+            {
+              "title": "Here's How Much You'd Need to Invest in VIG to Generate $500 per Month in Dividends",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/how-much-you-need-invest-vig-500-dividends/"
+            }
+          ],
+          "composite_score": 56.1
+        },
+        {
+          "ticker": "MSFT",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": -0.66,
+          "top_headlines": [
+            {
+              "title": "Microsoft AI Growth Story Meets Revenue Scrutiny And Shifting Big Holders",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-ai-growth-story-meets-160858177.html"
+            },
+            {
+              "title": "The AI Trade Might Be Grossly Underestimated \u2014 and It Could Be Time To Rethink How We View the Mag 7",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/the-ai-trade-might-be-grossly-underestimated-and-it-could-be-time-to-rethink-how-we-view-the-mag-7/"
+            },
+            {
+              "title": "Microsoft (MSFT) was Hurt by the \u201cSaaSmaggedon\u201d Market Reaction",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/microsoft-msft-hurt-saasmaggedon-market-154740514.html"
+            }
+          ],
+          "composite_score": 55.5
+        },
+        {
+          "ticker": "IWM",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": -0.727,
+          "top_headlines": [
+            {
+              "title": "Should iShares Russell 2000 ETF (IWM) Be on Your Investing Radar?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/ishares-russell-2000-etf-iwm-102001798.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Friday Buoyed by Robust Corporate Earnings Season",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131038113.html"
+            },
+            {
+              "title": "Dollar Holds Firm Amid Iran Deal Uncertainty: ETFs to Win/ Lose",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/currencies/articles/dollar-holds-firm-amid-iran-121300168.html"
+            }
+          ],
+          "composite_score": 53.8
+        },
+        {
+          "ticker": "AVGO",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": -0.814,
+          "top_headlines": [
+            {
+              "title": "If You'd Invested Just $1,000 in SMH 5 Years Ago, Here's What You'd Have Today",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/if-you-invested-1000-smh-5-years-ago-how-much/"
+            },
+            {
+              "title": "Here's How Much You'd Need to Invest in VIG to Generate $500 per Month in Dividends",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/05/25/how-much-you-need-invest-vig-500-dividends/"
+            },
+            {
+              "title": "VIG Investors: Watch the 10-Year Treasury Yield This Week\u20144.75% Is the Danger Line",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/vig-investors-watch-the-10-year-treasury-yield-this-week-4-75-is-the-danger-line/"
+            }
+          ],
+          "composite_score": 51.6
+        },
+        {
+          "ticker": "AMZN",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": -0.851,
+          "top_headlines": [
+            {
+              "title": "Who owns Amazon? Top executives and institutional investors",
+              "source": "TheStreet",
+              "link": "https://www.thestreet.com/investing/stocks/who-owns-amazon-top-executives-and-institutional-investors"
+            },
+            {
+              "title": "AI Could Soon Let Anyone Launch A Restaurant In Under A Minute, Wonder Founder Says",
+              "source": "Benzinga",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/ai-could-soon-let-anyone-140107171.html"
+            },
+            {
+              "title": "JEPQ\u2019s Distribution Looks Like Income Until You See the ELN Counterparty Risk Behind It",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/05/25/jepqs-distribution-looks-like-income-until-you-see-the-eln-counterparty-risk-behind-it/"
+            }
+          ],
+          "composite_score": 50.7
+        },
+        {
+          "ticker": "SPY",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": -0.903,
+          "top_headlines": [
+            {
+              "title": "The 5-Day Trap: How Missing Less Than a Week Wiped Out $154,000",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/personal-finance/2026/05/25/the-5-day-trap-how-missing-less-than-a-week-wiped-out-154000/"
+            },
+            {
+              "title": "S&P 500 Dividends Just Hit an All-Time Low Going Back to the 1800s \u2014 Here\u2019s What Retirees Need to Know",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/personal-finance/2026/05/25/sp-500-dividends-just-hit-an-all-time-low-going-back-to-the-1800s-heres-what-retirees-need-to-know/"
+            },
+            {
+              "title": "Diameter Capital Sells All Telephone and Data System Shares",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/coverage/filings/2026/05/25/diameter-capital-sells-all-tds-shares/"
+            }
+          ],
+          "composite_score": 44.4
+        }
+      ]
+    },
+    "insider": {
+      "scout": "insider",
+      "as_of": "2026-05-25T16:29:22.074626+00:00",
+      "universe_size": 30,
+      "etfs_skipped": 13,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "XLE",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "UNH",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "BRK.B",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "NVDA",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AAPL",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "TSLA",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AVGO",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "MU",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "SMCI",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "V",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "COST",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "SPY",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "QQQ",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "IWM",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "DIA",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLK",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLF",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLV",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLY",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLI",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLP",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLU",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLB",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "MSFT",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 1,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 519241.94,
+          "net_value_usd": -519241.94,
+          "cluster_buy": false,
+          "composite_score": 37.0,
+          "top_transactions": [
+            {
+              "filer": "Coleman Amy",
+              "role": "EVP, Chief Human Resources Off",
+              "direction": "sell",
+              "shares": 1262.312,
+              "price": 411.342,
+              "value_usd": 519241.94,
+              "date": "2026-05-14"
+            }
+          ]
+        },
+        {
+          "ticker": "GOOGL",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 14,
+          "distinct_buyers": 0,
+          "distinct_sellers": 2,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 3872728.61,
+          "net_value_usd": -3872728.61,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Hennessy John L.",
+              "role": "Director",
+              "direction": "sell",
+              "shares": 37.0,
+              "price": 391.89,
+              "value_usd": 14499.93,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Hennessy John L.",
+              "role": "Director",
+              "direction": "sell",
+              "shares": 134.0,
+              "price": 392.86,
+              "value_usd": 52643.24,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Hennessy John L.",
+              "role": "Director",
+              "direction": "sell",
+              "shares": 90.0,
+              "price": 393.75,
+              "value_usd": 35437.5,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Hennessy John L.",
+              "role": "Director",
+              "direction": "sell",
+              "shares": 39.0,
+              "price": 394.95,
+              "value_usd": 15403.05,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Hennessy John L.",
+              "role": "Director",
+              "direction": "sell",
+              "shares": 134.0,
+              "price": 392.41,
+              "value_usd": 52582.94,
+              "date": "2026-05-15"
+            }
+          ]
+        },
+        {
+          "ticker": "AMZN",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 6,
+          "distinct_buyers": 0,
+          "distinct_sellers": 2,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 3996574.75,
+          "net_value_usd": -3996574.75,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Garman Matthew S",
+              "role": "CEO Amazon Web Services",
+              "direction": "sell",
+              "shares": 3389.0,
+              "price": 261.7887,
+              "value_usd": 887201.9,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Garman Matthew S",
+              "role": "CEO Amazon Web Services",
+              "direction": "sell",
+              "shares": 6151.0,
+              "price": 262.8454,
+              "value_usd": 1616762.06,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Garman Matthew S",
+              "role": "CEO Amazon Web Services",
+              "direction": "sell",
+              "shares": 1935.0,
+              "price": 263.5705,
+              "value_usd": 510008.92,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Herrington Douglas J",
+              "role": "CEO Worldwide Amazon Stores",
+              "direction": "sell",
+              "shares": 1044.0,
+              "price": 261.7441,
+              "value_usd": 273260.84,
+              "date": "2026-05-15"
+            },
+            {
+              "filer": "Herrington Douglas J",
+              "role": "CEO Worldwide Amazon Stores",
+              "direction": "sell",
+              "shares": 2098.0,
+              "price": 262.725,
+              "value_usd": 551197.05,
+              "date": "2026-05-15"
+            }
+          ]
+        },
+        {
+          "ticker": "META",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 21,
+          "distinct_buyers": 0,
+          "distinct_sellers": 3,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 12567482.52,
+          "net_value_usd": -12567482.52,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Olivan Javier",
+              "role": "Chief Operating Officer",
+              "direction": "sell",
+              "shares": 837.0,
+              "price": 609.35,
+              "value_usd": 510025.95,
+              "date": "2026-05-18"
+            },
+            {
+              "filer": "Olivan Javier",
+              "role": "Chief Operating Officer",
+              "direction": "sell",
+              "shares": 82.0,
+              "price": 609.35,
+              "value_usd": 49966.7,
+              "date": "2026-05-18"
+            },
+            {
+              "filer": "Olivan Javier",
+              "role": "Chief Operating Officer",
+              "direction": "sell",
+              "shares": 57.0,
+              "price": 609.35,
+              "value_usd": 34732.95,
+              "date": "2026-05-18"
+            },
+            {
+              "filer": "Olivan Javier",
+              "role": "Chief Operating Officer",
+              "direction": "sell",
+              "shares": 82.0,
+              "price": 609.35,
+              "value_usd": 49966.7,
+              "date": "2026-05-18"
+            },
+            {
+              "filer": "Olivan Javier",
+              "role": "Chief Operating Officer",
+              "direction": "sell",
+              "shares": 408.0,
+              "price": 609.35,
+              "value_usd": 248614.8,
+              "date": "2026-05-18"
+            }
+          ]
+        },
+        {
+          "ticker": "AMD",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 10,
+          "distinct_buyers": 0,
+          "distinct_sellers": 2,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 11009523.96,
+          "net_value_usd": -11009523.96,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Norrod Forrest Eugene",
+              "role": "EVP & GM DESG",
+              "direction": "sell",
+              "shares": 516.0,
+              "price": 427.8,
+              "value_usd": 220744.8,
+              "date": "2026-05-20"
+            },
+            {
+              "filer": "Norrod Forrest Eugene",
+              "role": "EVP & GM DESG",
+              "direction": "sell",
+              "shares": 1975.0,
+              "price": 428.45,
+              "value_usd": 846188.75,
+              "date": "2026-05-20"
+            },
+            {
+              "filer": "Norrod Forrest Eugene",
+              "role": "EVP & GM DESG",
+              "direction": "sell",
+              "shares": 2667.0,
+              "price": 429.45,
+              "value_usd": 1145343.15,
+              "date": "2026-05-20"
+            },
+            {
+              "filer": "Norrod Forrest Eugene",
+              "role": "EVP & GM DESG",
+              "direction": "sell",
+              "shares": 5032.0,
+              "price": 430.68,
+              "value_usd": 2167181.76,
+              "date": "2026-05-20"
+            },
+            {
+              "filer": "Norrod Forrest Eugene",
+              "role": "EVP & GM DESG",
+              "direction": "sell",
+              "shares": 3287.0,
+              "price": 431.56,
+              "value_usd": 1418537.72,
+              "date": "2026-05-20"
+            }
+          ]
+        },
+        {
+          "ticker": "JPM",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 1,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 1641855.58,
+          "net_value_usd": -1641855.58,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Friedman Stacey",
+              "role": "General Counsel",
+              "direction": "sell",
+              "shares": 5468.0,
+              "price": 300.2662,
+              "value_usd": 1641855.58,
+              "date": "2026-05-20"
+            }
+          ]
+        },
+        {
+          "ticker": "WMT",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 4,
+          "distinct_buyers": 0,
+          "distinct_sellers": 3,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 2155154.75,
+          "net_value_usd": -2155154.75,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Furner John R.",
+              "role": "Director, President & CEO",
+              "direction": "sell",
+              "shares": 12100.0,
+              "price": 124.01,
+              "value_usd": 1500521.0,
+              "date": "2026-05-21"
+            },
+            {
+              "filer": "Furner John R.",
+              "role": "Director, President & CEO",
+              "direction": "sell",
+              "shares": 1025.0,
+              "price": 124.93,
+              "value_usd": 128053.25,
+              "date": "2026-05-21"
+            },
+            {
+              "filer": "Nicholas Christopher James",
+              "role": "Executive Vice President",
+              "direction": "sell",
+              "shares": 2900.0,
+              "price": 123.92,
+              "value_usd": 359368.0,
+              "date": "2026-05-21"
+            },
+            {
+              "filer": "Bartlett Daniel J",
+              "role": "Executive Vice President",
+              "direction": "sell",
+              "shares": 1250.0,
+              "price": 133.77,
+              "value_usd": 167212.5,
+              "date": "2026-05-15"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "agent_result": {
+      "agent_name": "synthesis",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "market_context": "Expansion regime with stable Fed funds at 3.64%, rising inflation, and moderate growth; AI capex narrative dominates with semis leading while consumer sentiment dips to 49.8 signaling a bifurcated tape.",
+        "themes": [
+          "AI capex super-cycle (semis dominant)",
+          "Healthcare contrarian bounce (XLV breakout)",
+          "Mag7 insider distribution into strength",
+          "Defensive sectors (XLP/XLU) macro-mismatched but news-positive",
+          "Walmart breakdown on weak Q1"
+        ],
+        "ranked_candidates": [
+          {
+            "ticker": "SMCI",
+            "unified_score": 63.9,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 91.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 96.4,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (96/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "MU",
+            "unified_score": 61.4,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 81.6,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 94.2,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (94/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "TSLA",
+            "unified_score": 61.1,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 53.0,
+              "technical": 75.9,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 95.4,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "BRK.B",
+            "unified_score": 60.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 70.4,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 94.7,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "V",
+            "unified_score": 60.0,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 72.3,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 89.7,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (90/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "DIA",
+            "unified_score": 59.8,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 73.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 91.6,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (92/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLE",
+            "unified_score": 59.7,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 70.3,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 94.2,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (94/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "QQQ",
+            "unified_score": 59.6,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 68.3,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 95.9,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (96/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLK",
+            "unified_score": 59.6,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 80.2,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 83.7,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (84/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLV",
+            "unified_score": 59.6,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 68.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 95.2,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "UNH",
+            "unified_score": 59.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 53.0,
+              "technical": 65.4,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 94.8,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLF",
+            "unified_score": 59.4,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 69.8,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 93.1,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (93/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "NVDA",
+            "unified_score": 59.3,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 67.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 89.3,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (89/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "COST",
+            "unified_score": 58.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 66.8,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 89.6,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (90/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLY",
+            "unified_score": 58.4,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 70.9,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 85.2,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (85/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "AMD",
+            "unified_score": 58.1,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 85.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 97.3,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (97/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "XLP",
+            "unified_score": 57.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 69.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 80.8,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (81/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLU",
+            "unified_score": 57.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 58.6,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 91.5,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (92/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLI",
+            "unified_score": 56.4,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 55.6,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 87.3,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (87/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLB",
+            "unified_score": 55.0,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 54.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 78.7,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (79/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "AAPL",
+            "unified_score": 54.9,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 71.4,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 56.1,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (71/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "JPM",
+            "unified_score": 54.9,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 53.0,
+              "technical": 70.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 93.0,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (93/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "GOOGL",
+            "unified_score": 53.9,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 59.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 95.1,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "IWM",
+            "unified_score": 53.9,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 72.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 53.8,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (72/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "MSFT",
+            "unified_score": 51.7,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 67.9,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 55.5,
+              "insider": 37.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (68/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "SPY",
+            "unified_score": 51.5,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 65.5,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 44.4,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (66/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "AVGO",
+            "unified_score": 50.6,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 52.7,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 51.6,
+              "insider": 50.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (53/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "WMT",
+            "unified_score": 50.3,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 50.0,
+              "technical": 40.6,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 94.9,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "META",
+            "unified_score": 48.4,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 51.6,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 65.9,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (66/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "AMZN",
+            "unified_score": 47.2,
+            "factor_breakdown": {
+              "sentiment": 50.0,
+              "earnings": 55.0,
+              "technical": 59.0,
+              "macro_fit": 50.0,
+              "influencer": 50.0,
+              "news": 50.7,
+              "insider": 25.0
+            },
+            "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (59/100).",
+            "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+            "risk_flags": [
+              "degraded_signal",
+              "insider_selling"
+            ]
+          }
+        ],
+        "_fallback_used": true
+      },
+      "error": null,
+      "input_tokens": 39757,
+      "output_tokens": 4096,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "latency_seconds": 60.563,
+      "estimated_cost_usd": 0.903555
+    },
+    "output": {
+      "market_context": "Expansion regime with stable Fed funds at 3.64%, rising inflation, and moderate growth; AI capex narrative dominates with semis leading while consumer sentiment dips to 49.8 signaling a bifurcated tape.",
+      "themes": [
+        "AI capex super-cycle (semis dominant)",
+        "Healthcare contrarian bounce (XLV breakout)",
+        "Mag7 insider distribution into strength",
+        "Defensive sectors (XLP/XLU) macro-mismatched but news-positive",
+        "Walmart breakdown on weak Q1"
+      ],
+      "ranked_candidates": [
+        {
+          "ticker": "SMCI",
+          "unified_score": 63.9,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 91.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 96.4,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (96/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "MU",
+          "unified_score": 61.4,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 81.6,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 94.2,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (94/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "TSLA",
+          "unified_score": 61.1,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 53.0,
+            "technical": 75.9,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 95.4,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "BRK.B",
+          "unified_score": 60.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 70.4,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 94.7,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "V",
+          "unified_score": 60.0,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 72.3,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 89.7,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (90/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "DIA",
+          "unified_score": 59.8,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 73.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 91.6,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (92/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLE",
+          "unified_score": 59.7,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 70.3,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 94.2,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (94/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "QQQ",
+          "unified_score": 59.6,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 68.3,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 95.9,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (96/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLK",
+          "unified_score": 59.6,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 80.2,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 83.7,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (84/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLV",
+          "unified_score": 59.6,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 68.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 95.2,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "UNH",
+          "unified_score": 59.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 53.0,
+            "technical": 65.4,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 94.8,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLF",
+          "unified_score": 59.4,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 69.8,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 93.1,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (93/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "NVDA",
+          "unified_score": 59.3,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 67.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 89.3,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (89/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "COST",
+          "unified_score": 58.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 66.8,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 89.6,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (90/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLY",
+          "unified_score": 58.4,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 70.9,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 85.2,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (85/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "AMD",
+          "unified_score": 58.1,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 85.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 97.3,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (97/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "XLP",
+          "unified_score": 57.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 69.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 80.8,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (81/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLU",
+          "unified_score": 57.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 58.6,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 91.5,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (92/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLI",
+          "unified_score": 56.4,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 55.6,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 87.3,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (87/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLB",
+          "unified_score": 55.0,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 54.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 78.7,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (79/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "AAPL",
+          "unified_score": 54.9,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 71.4,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 56.1,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (71/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "JPM",
+          "unified_score": 54.9,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 53.0,
+            "technical": 70.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 93.0,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (93/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "GOOGL",
+          "unified_score": 53.9,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 59.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 95.1,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "IWM",
+          "unified_score": 53.9,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 72.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 53.8,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (72/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "MSFT",
+          "unified_score": 51.7,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 67.9,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 55.5,
+            "insider": 37.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (68/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "SPY",
+          "unified_score": 51.5,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 65.5,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 44.4,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (66/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "AVGO",
+          "unified_score": 50.6,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 52.7,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 51.6,
+            "insider": 50.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (53/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "WMT",
+          "unified_score": 50.3,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 50.0,
+            "technical": 40.6,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 94.9,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (95/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "META",
+          "unified_score": 48.4,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 51.6,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 65.9,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 news is the strongest signal (66/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "AMZN",
+          "unified_score": 47.2,
+          "factor_breakdown": {
+            "sentiment": 50.0,
+            "earnings": 55.0,
+            "technical": 59.0,
+            "macro_fit": 50.0,
+            "influencer": 50.0,
+            "news": 50.7,
+            "insider": 25.0
+          },
+          "primary_thesis": "Heuristic synthesis \u2014 technical is the strongest signal (59/100).",
+          "narrative": "Deterministic weighted-average fallback used because the LLM synthesis returned an empty ranking. Composite is a weighted blend of all 7 factor scores.",
+          "risk_flags": [
+            "degraded_signal",
+            "insider_selling"
+          ]
+        }
+      ],
+      "_fallback_used": true
+    }
+  },
+  "risk_brief": {
+    "as_of": "2026-05-25T16:30:26.306024+00:00",
+    "single_name_cap_pct": 0.2,
+    "sector_cap_pct": 0.4,
+    "candidates": {
+      "SMCI": {
+        "annualized_vol": 1.0632924599000955,
+        "avg_dollar_volume": 1218542879.9311733,
+        "sector": "Technology",
+        "flags": [
+          "high_vol"
+        ],
+        "suggested_max_weight": 0.1
+      },
+      "MU": {
+        "annualized_vol": 0.7859295474474126,
+        "avg_dollar_volume": 34598949313.85925,
+        "sector": "Technology",
+        "flags": [
+          "high_vol"
+        ],
+        "suggested_max_weight": 0.1
+      },
+      "TSLA": {
+        "annualized_vol": 0.4070475168054146,
+        "avg_dollar_volume": 22527325282.493134,
+        "sector": "Consumer Cyclical",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "BRK.B": {
+        "annualized_vol": 0.16306392376091108,
+        "avg_dollar_volume": 2323271571.0247803,
+        "sector": "Financial Services",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "V": {
+        "annualized_vol": 0.24126162050497751,
+        "avg_dollar_volume": 2607879384.774933,
+        "sector": "Financial Services",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "DIA": {
+        "annualized_vol": 0.14493002216075337,
+        "avg_dollar_volume": 2274810149.6665955,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLE": {
+        "annualized_vol": 0.23813152609156413,
+        "avg_dollar_volume": 2225339294.8670006,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "QQQ": {
+        "annualized_vol": 0.19193152407606565,
+        "avg_dollar_volume": 27377931272.14142,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLK": {
+        "annualized_vol": 0.247721378418297,
+        "avg_dollar_volume": 1976837529.9380493,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLV": {
+        "annualized_vol": 0.15495782060910346,
+        "avg_dollar_volume": 1409372948.3131409,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "UNH": {
+        "annualized_vol": 0.3366699141653639,
+        "avg_dollar_volume": 2657445820.5863953,
+        "sector": "Healthcare",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLF": {
+        "annualized_vol": 0.14917229246498545,
+        "avg_dollar_volume": 1711890794.5717812,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "NVDA": {
+        "annualized_vol": 0.3830563250608741,
+        "avg_dollar_volume": 35002476263.324814,
+        "sector": "Technology",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "COST": {
+        "annualized_vol": 0.196264195068587,
+        "avg_dollar_volume": 1998648769.4107056,
+        "sector": "Consumer Defensive",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLY": {
+        "annualized_vol": 0.20848501190636107,
+        "avg_dollar_volume": 962814917.1200562,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      }
+    },
+    "portfolio": {
+      "current_concentration": {
+        "XLE": 0.07783306058515568,
+        "UNH": 0.059941855751489505,
+        "BRK.B": 0.08013779390070991,
+        "GOOGL": 0.06792820249133366,
+        "NVDA": 0.058448618120166544,
+        "AMZN": 0.06067680054624149
+      },
+      "sector_concentration": {
+        "Unknown": 0.20643806362273084,
+        "Healthcare": 0.059941855751489505,
+        "Financial Services": 0.08013779390070991,
+        "Technology": 0.058448618120166544
+      },
+      "cash_headroom_pct": 0.5950336686049031,
+      "violations": []
+    }
+  },
+  "tax_brief": {
+    "as_of": "2026-05-25",
+    "tax_brackets": {
+      "stcg_rate": 0.3473,
+      "ltcg_rate": 0.2573
+    },
+    "wash_sale_blocks": {},
+    "ltcg_proximity": [],
+    "tlh_candidates": [],
+    "year_end_tlh_window_open": false
+  },
+  "reflection": {
+    "agent_result": {
+      "agent_name": "reflection",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "summary": "First week post-inception: book returned -0.62% vs SPY +0.95%, alpha -1.56%. Cold-start diversification deployed 6 medium-conviction positions (~41% gross) with heavy cash, which structurally underperformed a beta-up week.",
+        "weeks_evaluated": 1,
+        "what_worked": [
+          "Insider-selling exclusion discipline kept us out of META/AAPL/MSFT/JPM/AMD/MU/V on a week where we have no evidence those would have helped \u2014 preserves the rule but no proof yet.",
+          "Cold-start sizing restraint (no single position >8%) limited downside on a -1.56% alpha week; could have been worse with concentrated NVDA-week exposure."
+        ],
+        "what_missed": [
+          "Cash drag was the dominant cost: ~59% cash on a +0.95% SPY week mechanically gives up ~55bps before any stock selection. Cold-start caution overshot.",
+          "Avoiding QQQ/SPY/XLK as 'redundant' meant we expressed tech via only NVDA+GOOGL at 13% combined \u2014 under-indexed the actual beta driver in a tech-led tape.",
+          "Defensive ballast (BRK.B 8%, UNH 6%) at 14% of book is heavy for a risk-on week; the macro-disfavored screen flagged this but we held the names anyway as 'diversifiers'.",
+          "Insider-selling flag was applied as a hard veto rather than a sizing input \u2014 likely excluded names that worked (MSFT/META in a tech-up week)."
+        ],
+        "lessons_for_pm": [
+          "Cash >50% on a cold start is a real cost, not a free option: each 1% of SPY upside costs ~55bps of relative performance per 55% cash. After week 1, deploy toward target gross unless a specific risk-off thesis justifies the drag.",
+          "Don't treat 'redundancy' with index ETFs as a reason to skip \u2014 if single-name conviction is only medium, a small QQQ/SPY sleeve captures the beta you're implicitly betting on anyway.",
+          "Reconsider insider-selling as a hard veto. Treat it as a -1 to -2 conviction notch or a size haircut, not exclusion, especially for mega-caps where insider sales are often programmatic (10b5-1).",
+          "NVDA-earnings 'binary risk' framing led to under-sizing the highest-conviction setup (technical 74, AI capex intact). When the binary resolves favorably, small size = small reward. Either take the risk at meaningful size or pass.",
+          "Healthcare/financial 'ballast' only ballasts in a drawdown. On a flat-to-up week these positions are pure opportunity cost \u2014 re-evaluate UNH and BRK.B sizing if the tape stays risk-on."
+        ],
+        "watch_for": [
+          "Whether XLE and UNH (uncorrelated diversifiers) actually decorrelate or just drag \u2014 measure week-2 contribution explicitly.",
+          "Insider-selling veto false-negatives: track what MSFT/META/AAPL did this week to calibrate whether the rule is too strict.",
+          "Cash deployment pace \u2014 set a target gross exposure for week 2 before scanning names, not as a residual."
+        ]
+      },
+      "error": null,
+      "input_tokens": 6004,
+      "output_tokens": 1191,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "latency_seconds": 26.291,
+      "estimated_cost_usd": 0.179385
+    },
+    "output": {
+      "summary": "First week post-inception: book returned -0.62% vs SPY +0.95%, alpha -1.56%. Cold-start diversification deployed 6 medium-conviction positions (~41% gross) with heavy cash, which structurally underperformed a beta-up week.",
+      "weeks_evaluated": 1,
+      "what_worked": [
+        "Insider-selling exclusion discipline kept us out of META/AAPL/MSFT/JPM/AMD/MU/V on a week where we have no evidence those would have helped \u2014 preserves the rule but no proof yet.",
+        "Cold-start sizing restraint (no single position >8%) limited downside on a -1.56% alpha week; could have been worse with concentrated NVDA-week exposure."
+      ],
+      "what_missed": [
+        "Cash drag was the dominant cost: ~59% cash on a +0.95% SPY week mechanically gives up ~55bps before any stock selection. Cold-start caution overshot.",
+        "Avoiding QQQ/SPY/XLK as 'redundant' meant we expressed tech via only NVDA+GOOGL at 13% combined \u2014 under-indexed the actual beta driver in a tech-led tape.",
+        "Defensive ballast (BRK.B 8%, UNH 6%) at 14% of book is heavy for a risk-on week; the macro-disfavored screen flagged this but we held the names anyway as 'diversifiers'.",
+        "Insider-selling flag was applied as a hard veto rather than a sizing input \u2014 likely excluded names that worked (MSFT/META in a tech-up week)."
+      ],
+      "lessons_for_pm": [
+        "Cash >50% on a cold start is a real cost, not a free option: each 1% of SPY upside costs ~55bps of relative performance per 55% cash. After week 1, deploy toward target gross unless a specific risk-off thesis justifies the drag.",
+        "Don't treat 'redundancy' with index ETFs as a reason to skip \u2014 if single-name conviction is only medium, a small QQQ/SPY sleeve captures the beta you're implicitly betting on anyway.",
+        "Reconsider insider-selling as a hard veto. Treat it as a -1 to -2 conviction notch or a size haircut, not exclusion, especially for mega-caps where insider sales are often programmatic (10b5-1).",
+        "NVDA-earnings 'binary risk' framing led to under-sizing the highest-conviction setup (technical 74, AI capex intact). When the binary resolves favorably, small size = small reward. Either take the risk at meaningful size or pass.",
+        "Healthcare/financial 'ballast' only ballasts in a drawdown. On a flat-to-up week these positions are pure opportunity cost \u2014 re-evaluate UNH and BRK.B sizing if the tape stays risk-on."
+      ],
+      "watch_for": [
+        "Whether XLE and UNH (uncorrelated diversifiers) actually decorrelate or just drag \u2014 measure week-2 contribution explicitly.",
+        "Insider-selling veto false-negatives: track what MSFT/META/AAPL did this week to calibrate whether the rule is too strict.",
+        "Cash deployment pace \u2014 set a target gross exposure for week 2 before scanning names, not as a residual."
+      ]
+    }
+  },
+  "pm": {
+    "agent_result": {
+      "agent_name": "pm",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "decisions": [
+          {
+            "ticker": "XLE",
+            "action": "HOLD",
+            "thesis": "Energy sleeve working as macro tilt with strong news flow (94) and constructive technicals; keep full position.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "UNH",
+            "action": "HOLD",
+            "thesis": "Healthcare contrarian bounce thesis intact (news 95, XLV breakout); hold despite ballast-drag warning since position is small (~6%).",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "BRK.B",
+            "action": "HOLD",
+            "thesis": "Top-5 ranked candidate (60.5) with solid technical 70 and news 95; size already appropriate at 8%.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "GOOGL",
+            "action": "HOLD",
+            "thesis": "Insider selling flag noted but per reflection lesson treat as size haircut not exit; news 95 and earnings 55 support holding mega-cap exposure.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "NVDA",
+            "action": "ADD",
+            "thesis": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully.",
+            "conviction": "high",
+            "additional_weight_pct": 6.0,
+            "expected_horizon_weeks": 12
+          },
+          {
+            "ticker": "AMZN",
+            "action": "TRIM",
+            "thesis": "Lowest-ranked current holding (47.2) with insider selling and weakest news polarity; redeploy into higher-conviction AI/semis names.",
+            "conviction": "medium",
+            "trim_pct_of_position": 50
+          },
+          {
+            "ticker": "SMCI",
+            "action": "OPEN",
+            "thesis": "Top-ranked composite (63.9) with technical 91 + news 96 confirming AI capex leadership; size at half cap due to high_vol flag.",
+            "conviction": "high",
+            "target_weight_pct": 5.0,
+            "expected_horizon_weeks": 8
+          },
+          {
+            "ticker": "MU",
+            "action": "OPEN",
+            "thesis": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag.",
+            "conviction": "high",
+            "target_weight_pct": 5.0,
+            "expected_horizon_weeks": 8
+          },
+          {
+            "ticker": "TSLA",
+            "action": "NONE",
+            "thesis": "High news score but no edge vs incumbent positions; pass to keep concentration in semis-led AI theme.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "V",
+            "action": "NONE",
+            "thesis": "Decent rank but BRK.B already covers Financial Services exposure; no need to double up.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "DIA",
+            "action": "NONE",
+            "thesis": "Broad index with no clear edge over single-name conviction trades this week.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "QQQ",
+            "action": "OPEN",
+            "thesis": "Per reflection lesson \u2014 capture AI/tech beta with a small index sleeve since single-name conviction is concentrated; news 96 confirms.",
+            "conviction": "medium",
+            "target_weight_pct": 6.0,
+            "expected_horizon_weeks": 12
+          },
+          {
+            "ticker": "XLK",
+            "action": "NONE",
+            "thesis": "Redundant with QQQ add and direct semis exposure (NVDA/SMCI/MU); skip.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLV",
+            "action": "NONE",
+            "thesis": "UNH already provides healthcare exposure; no incremental edge from ETF wrapper.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLF",
+            "action": "NONE",
+            "thesis": "BRK.B covers financials sleeve; pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "COST",
+            "action": "NONE",
+            "thesis": "Mid-rank consumer defensive; macro-mismatched and not a conviction add.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLY",
+            "action": "NONE",
+            "thesis": "Consumer sentiment dipping to 49.8 \u2014 discretionary not the place; pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "AMD",
+            "action": "NONE",
+            "thesis": "Strong news/technical but insider selling flagged; already getting semis exposure via NVDA/SMCI/MU.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLP",
+            "action": "NONE",
+            "thesis": "Macro-mismatched defensive per synthesis; pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLU",
+            "action": "NONE",
+            "thesis": "Defensive sector mismatch with expansion regime; pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLI",
+            "action": "NONE",
+            "thesis": "Weakest technical among sector ETFs (55.6); no edge.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLB",
+            "action": "NONE",
+            "thesis": "Lowest-ranked sector ETF; no edge.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "AAPL",
+            "action": "NONE",
+            "thesis": "Mediocre news (56) and no clear catalyst; QQQ captures mega-cap beta.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "JPM",
+            "action": "NONE",
+            "thesis": "Insider selling and overlaps with BRK.B exposure.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "IWM",
+            "action": "NONE",
+            "thesis": "Weak news polarity (54); small-caps not the leadership now.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "MSFT",
+            "action": "NONE",
+            "thesis": "Below 52 composite with insider selling; not adding here.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "SPY",
+            "action": "NONE",
+            "thesis": "Choosing QQQ for AI tilt instead of broad SPY.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "AVGO",
+            "action": "NONE",
+            "thesis": "Weak composite (50.6) despite semis theme; better expression via NVDA/SMCI/MU.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "WMT",
+            "action": "NONE",
+            "thesis": "Synthesis explicitly flags Walmart breakdown on weak Q1 \u2014 avoid.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "META",
+            "action": "NONE",
+            "thesis": "Sub-50 composite with insider selling; skip.",
+            "conviction": "low"
+          }
+        ],
+        "weekly_thesis": "Lean into the AI capex super-cycle with semis leadership while deploying residual cash to ~10% target.",
+        "narrative": "Reflection lessons drive this week: cash >50% is a real drag, NVDA-style binaries deserve real size when the setup is clean, and insider selling is a haircut not a veto. I'm trimming AMZN (lowest-ranked holding with insider selling), adding meaningfully to NVDA, opening half-cap positions in top-ranked SMCI and MU to capture the semis leadership, and adding a QQQ sleeve for diversified AI/tech beta. Existing ballast (UNH/BRK.B/XLE/GOOGL) stays since sizing is already modest. Cash drops from ~59% to ~10%, fully deployed into the dominant theme.",
+        "target_cash_pct": 10.0,
+        "overrides": [
+          {
+            "ticker": "GOOGL",
+            "heuristic_suggested": "TRIM/CLOSE (insider_selling flag, composite 53.9)",
+            "pm_chose": "HOLD",
+            "reason": "Reflection lesson explicitly flags insider-selling-as-veto as too strict for mega-caps where sales are often 10b5-1 programmatic; news 95 and earnings 55 support holding small position."
+          },
+          {
+            "ticker": "NVDA",
+            "heuristic_suggested": "HOLD (composite 59.3, mid-rank)",
+            "pm_chose": "ADD +6%",
+            "reason": "Reflection lesson #4 directly criticizes under-sizing NVDA on binary fear; AI capex theme is dominant and technical/earnings already resolved favorably. Sizing up to meaningful weight."
+          },
+          {
+            "ticker": "QQQ",
+            "heuristic_suggested": "NONE (composite 59.6, mid-rank ETF)",
+            "pm_chose": "OPEN 6%",
+            "reason": "Reflection lesson #2 \u2014 don't skip index ETFs just because they overlap; small QQQ sleeve captures AI beta cleanly."
+          }
+        ]
+      },
+      "error": null,
+      "input_tokens": 11826,
+      "output_tokens": 3008,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 2298,
+      "latency_seconds": 40.799,
+      "estimated_cost_usd": 0.40299
+    },
+    "output": {
+      "decisions": [
+        {
+          "ticker": "XLE",
+          "action": "HOLD",
+          "thesis": "Energy sleeve working as macro tilt with strong news flow (94) and constructive technicals; keep full position.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "UNH",
+          "action": "HOLD",
+          "thesis": "Healthcare contrarian bounce thesis intact (news 95, XLV breakout); hold despite ballast-drag warning since position is small (~6%).",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "BRK.B",
+          "action": "HOLD",
+          "thesis": "Top-5 ranked candidate (60.5) with solid technical 70 and news 95; size already appropriate at 8%.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "GOOGL",
+          "action": "HOLD",
+          "thesis": "Insider selling flag noted but per reflection lesson treat as size haircut not exit; news 95 and earnings 55 support holding mega-cap exposure.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "NVDA",
+          "action": "ADD",
+          "thesis": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully.",
+          "conviction": "high",
+          "additional_weight_pct": 6.0,
+          "expected_horizon_weeks": 12
+        },
+        {
+          "ticker": "AMZN",
+          "action": "TRIM",
+          "thesis": "Lowest-ranked current holding (47.2) with insider selling and weakest news polarity; redeploy into higher-conviction AI/semis names.",
+          "conviction": "medium",
+          "trim_pct_of_position": 50
+        },
+        {
+          "ticker": "SMCI",
+          "action": "OPEN",
+          "thesis": "Top-ranked composite (63.9) with technical 91 + news 96 confirming AI capex leadership; size at half cap due to high_vol flag.",
+          "conviction": "high",
+          "target_weight_pct": 5.0,
+          "expected_horizon_weeks": 8
+        },
+        {
+          "ticker": "MU",
+          "action": "OPEN",
+          "thesis": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag.",
+          "conviction": "high",
+          "target_weight_pct": 5.0,
+          "expected_horizon_weeks": 8
+        },
+        {
+          "ticker": "TSLA",
+          "action": "NONE",
+          "thesis": "High news score but no edge vs incumbent positions; pass to keep concentration in semis-led AI theme.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "V",
+          "action": "NONE",
+          "thesis": "Decent rank but BRK.B already covers Financial Services exposure; no need to double up.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "DIA",
+          "action": "NONE",
+          "thesis": "Broad index with no clear edge over single-name conviction trades this week.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "QQQ",
+          "action": "OPEN",
+          "thesis": "Per reflection lesson \u2014 capture AI/tech beta with a small index sleeve since single-name conviction is concentrated; news 96 confirms.",
+          "conviction": "medium",
+          "target_weight_pct": 6.0,
+          "expected_horizon_weeks": 12
+        },
+        {
+          "ticker": "XLK",
+          "action": "NONE",
+          "thesis": "Redundant with QQQ add and direct semis exposure (NVDA/SMCI/MU); skip.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLV",
+          "action": "NONE",
+          "thesis": "UNH already provides healthcare exposure; no incremental edge from ETF wrapper.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLF",
+          "action": "NONE",
+          "thesis": "BRK.B covers financials sleeve; pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "COST",
+          "action": "NONE",
+          "thesis": "Mid-rank consumer defensive; macro-mismatched and not a conviction add.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLY",
+          "action": "NONE",
+          "thesis": "Consumer sentiment dipping to 49.8 \u2014 discretionary not the place; pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "AMD",
+          "action": "NONE",
+          "thesis": "Strong news/technical but insider selling flagged; already getting semis exposure via NVDA/SMCI/MU.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLP",
+          "action": "NONE",
+          "thesis": "Macro-mismatched defensive per synthesis; pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLU",
+          "action": "NONE",
+          "thesis": "Defensive sector mismatch with expansion regime; pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLI",
+          "action": "NONE",
+          "thesis": "Weakest technical among sector ETFs (55.6); no edge.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLB",
+          "action": "NONE",
+          "thesis": "Lowest-ranked sector ETF; no edge.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "AAPL",
+          "action": "NONE",
+          "thesis": "Mediocre news (56) and no clear catalyst; QQQ captures mega-cap beta.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "JPM",
+          "action": "NONE",
+          "thesis": "Insider selling and overlaps with BRK.B exposure.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "IWM",
+          "action": "NONE",
+          "thesis": "Weak news polarity (54); small-caps not the leadership now.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "MSFT",
+          "action": "NONE",
+          "thesis": "Below 52 composite with insider selling; not adding here.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "SPY",
+          "action": "NONE",
+          "thesis": "Choosing QQQ for AI tilt instead of broad SPY.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "AVGO",
+          "action": "NONE",
+          "thesis": "Weak composite (50.6) despite semis theme; better expression via NVDA/SMCI/MU.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "WMT",
+          "action": "NONE",
+          "thesis": "Synthesis explicitly flags Walmart breakdown on weak Q1 \u2014 avoid.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "META",
+          "action": "NONE",
+          "thesis": "Sub-50 composite with insider selling; skip.",
+          "conviction": "low"
+        }
+      ],
+      "weekly_thesis": "Lean into the AI capex super-cycle with semis leadership while deploying residual cash to ~10% target.",
+      "narrative": "Reflection lessons drive this week: cash >50% is a real drag, NVDA-style binaries deserve real size when the setup is clean, and insider selling is a haircut not a veto. I'm trimming AMZN (lowest-ranked holding with insider selling), adding meaningfully to NVDA, opening half-cap positions in top-ranked SMCI and MU to capture the semis leadership, and adding a QQQ sleeve for diversified AI/tech beta. Existing ballast (UNH/BRK.B/XLE/GOOGL) stays since sizing is already modest. Cash drops from ~59% to ~10%, fully deployed into the dominant theme.",
+      "target_cash_pct": 10.0,
+      "overrides": [
+        {
+          "ticker": "GOOGL",
+          "heuristic_suggested": "TRIM/CLOSE (insider_selling flag, composite 53.9)",
+          "pm_chose": "HOLD",
+          "reason": "Reflection lesson explicitly flags insider-selling-as-veto as too strict for mega-caps where sales are often 10b5-1 programmatic; news 95 and earnings 55 support holding small position."
+        },
+        {
+          "ticker": "NVDA",
+          "heuristic_suggested": "HOLD (composite 59.3, mid-rank)",
+          "pm_chose": "ADD +6%",
+          "reason": "Reflection lesson #4 directly criticizes under-sizing NVDA on binary fear; AI capex theme is dominant and technical/earnings already resolved favorably. Sizing up to meaningful weight."
+        },
+        {
+          "ticker": "QQQ",
+          "heuristic_suggested": "NONE (composite 59.6, mid-rank ETF)",
+          "pm_chose": "OPEN 6%",
+          "reason": "Reflection lesson #2 \u2014 don't skip index ETFs just because they overlap; small QQQ sleeve captures AI beta cleanly."
+        }
+      ]
+    }
+  },
+  "executed_trades": [
+    {
+      "kind": "sell",
+      "ticker": "AMZN",
+      "shares": 1.131911,
+      "price": 266.1868,
+      "cost_basis_per_share": 264.9924,
+      "sell_price_per_share": 266.1868,
+      "acquisition_date": "2026-05-18",
+      "sell_date": "2026-05-25",
+      "realized_pnl": 1.352,
+      "is_long_term": false,
+      "lot_id": "6ab5dfc0d5dd",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "Lowest-ranked current holding (47.2) with insider selling and weakest news polarity; redeploy into higher-conviction AI/semis names."
+    },
+    {
+      "kind": "buy",
+      "ticker": "SMCI",
+      "shares": 13.956084,
+      "price": 35.5978,
+      "cost_basis_per_share": 35.5978,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-05-25",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "d782ec6c102e",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "Top-ranked composite (63.9) with technical 91 + news 96 confirming AI capex leadership; size at half cap due to high_vol flag."
+    },
+    {
+      "kind": "buy",
+      "ticker": "MU",
+      "shares": 0.661179,
+      "price": 751.3755,
+      "cost_basis_per_share": 751.3755,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-05-25",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "4ff4b69dd722",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag."
+    },
+    {
+      "kind": "buy",
+      "ticker": "NVDA",
+      "shares": 2.767098,
+      "price": 215.4377,
+      "cost_basis_per_share": 215.4377,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-05-25",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "10f5dabbad68",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully."
+    }
+  ],
+  "skipped": [
+    {
+      "ticker": "QQQ",
+      "action": "buy",
+      "reason": "fill shares = 0"
+    }
+  ],
+  "degraded_signals": [
+    "influencer",
+    "synthesis_fallback"
+  ],
+  "pick_scoreboard_snapshot": {
+    "aggregate": {
+      "total_picks": 9,
+      "open_picks": 9,
+      "closed_picks": 0,
+      "win_count": 1,
+      "loss_count": 4,
+      "flat_count": 4,
+      "win_rate": 0.1111111111111111,
+      "avg_return_pct": -0.010001302967819219,
+      "avg_winner_return_pct": 0.005512429409517208,
+      "avg_loser_return_pct": -0.022857246092094233,
+      "equal_weight_basket_return_pct": -0.010001302967819219,
+      "weighted_basket_return_pct": -0.010867375793550169,
+      "best_pick": {
+        "ticker": "AMZN",
+        "week_of": "2026-05-18",
+        "return_pct": 0.005512,
+        "conviction": "medium"
+      },
+      "worst_pick": {
+        "ticker": "GOOGL",
+        "week_of": "2026-05-18",
+        "return_pct": -0.035194,
+        "conviction": "medium"
+      },
+      "by_conviction": {
+        "medium": {
+          "count": 6,
+          "win_rate": 0.1667,
+          "avg_return_pct": -0.015002
+        },
+        "high": {
+          "count": 3,
+          "win_rate": 0.0,
+          "avg_return_pct": 0.0
+        }
+      }
+    },
+    "weekly_recaps": [
+      {
+        "week_of": "2026-05-18",
+        "picks_count": 6,
+        "tickers": [
+          "XLE",
+          "UNH",
+          "BRK.B",
+          "GOOGL",
+          "NVDA",
+          "AMZN"
+        ],
+        "avg_return_since_pick": 0.0
+      },
+      {
+        "week_of": "2026-05-25",
+        "picks_count": 3,
+        "tickers": [
+          "SMCI",
+          "MU",
+          "NVDA"
+        ],
+        "avg_return_since_pick": 0.0
+      }
+    ],
+    "open_picks": [
+      {
+        "pick_id": "81d221744075",
+        "ticker": "XLE",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 60.58000183105469,
+        "executed_fill_price": 60.6103,
+        "target_weight_pct": 8.0,
+        "conviction": "medium",
+        "thesis": "Energy bounce with strong news polarity (95) offers uncorrelated diversifier vs tech-heavy book ahead of NVDA print.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 50.0,
+          "technical": 74.1,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 95.0,
+          "insider": 50.0
+        },
+        "current_price": 59.4900016784668,
+        "lifetime_return_pct": -0.017992738851802605,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "4ab8b3bc7ab5",
+        "ticker": "UNH",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 391.1300048828125,
+        "executed_fill_price": 391.3256,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Healthcare laggard with strong news (90) and improving technicals (74) offers uncorrelated exposure to AI/tech beta.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 73.7,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 89.5,
+          "insider": 50.0
+        },
+        "current_price": 388.4700012207031,
+        "lifetime_return_pct": -0.0068008171935219994,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "cac5dcd2d776",
+        "ticker": "BRK.B",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 488.3800048828125,
+        "executed_fill_price": 488.6242,
+        "target_weight_pct": 8.0,
+        "conviction": "medium",
+        "thesis": "Low-vol (16%) financial services anchor with solid news (88) \u2014 ballast for cold-start book during NVDA-week binary risk.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 67.3,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 87.6,
+          "insider": 50.0
+        },
+        "current_price": 486.3800048828125,
+        "lifetime_return_pct": -0.004095171751513256,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "db571758ae7e",
+        "ticker": "GOOGL",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 396.94000244140625,
+        "executed_fill_price": 397.1385,
+        "target_weight_pct": 7.0,
+        "conviction": "medium",
+        "thesis": "Mega-cap AI exposure with clean insider signal (50) unlike peers, decent technicals, and macro-favored sector.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 72.2,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 80.7,
+          "insider": 50.0
+        },
+        "current_price": 382.9700012207031,
+        "lifetime_return_pct": -0.03519423876348993,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "f20399643e56",
+        "ticker": "NVDA",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 222.32000732421875,
+        "executed_fill_price": 222.4312,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Earnings Wed is binary but technical setup (74) and AI capex narrative intact; sized small to respect event risk on first deployment.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 50.0,
+          "technical": 74.4,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 73.9,
+          "insider": 50.0
+        },
+        "current_price": 215.3300018310547,
+        "lifetime_return_pct": -0.0314411895595624,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "b545628701bb",
+        "ticker": "AMZN",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 264.8599853515625,
+        "executed_fill_price": 264.9924,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Discretionary macro-favored, strong news (78), no insider selling flag \u2014 diversifies away from pure semis.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 57.3,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 78.0,
+          "insider": 50.0
+        },
+        "current_price": 266.32000732421875,
+        "lifetime_return_pct": 0.005512429409517208,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "08e3d9e7636d",
+        "ticker": "SMCI",
+        "week_of": "2026-05-25",
+        "action": "OPEN",
+        "rec_market_price": 35.58000183105469,
+        "executed_fill_price": 35.5978,
+        "target_weight_pct": 5.0,
+        "conviction": "high",
+        "thesis": "Top-ranked composite (63.9) with technical 91 + news 96 confirming AI capex leadership; size at half cap due to high_vol flag.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 91.0,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 96.4,
+          "insider": 50.0
+        },
+        "current_price": 35.58000183105469,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "fdebb67d104e",
+        "ticker": "MU",
+        "week_of": "2026-05-25",
+        "action": "OPEN",
+        "rec_market_price": 751.0,
+        "executed_fill_price": 751.3755,
+        "target_weight_pct": 5.0,
+        "conviction": "high",
+        "thesis": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 50.0,
+          "technical": 81.6,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 94.2,
+          "insider": 50.0
+        },
+        "current_price": 751.0,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "1080316bd7e8",
+        "ticker": "NVDA",
+        "week_of": "2026-05-25",
+        "action": "ADD",
+        "rec_market_price": 215.3300018310547,
+        "executed_fill_price": 215.4377,
+        "target_weight_pct": 6.0,
+        "conviction": "high",
+        "thesis": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 67.5,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 89.3,
+          "insider": 50.0
+        },
+        "current_price": 215.3300018310547,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      }
+    ]
+  },
+  "agent_costs_usd": {
+    "reflection": 0.179385,
+    "synthesis": 0.903555,
+    "pm": 0.40299,
+    "total": 1.48593
+  }
+}
