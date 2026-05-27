@@ -296,8 +296,39 @@ def _execute_buy(
         return
 
     fill = schwab.buy(ticker, target_dollars, price)
+
+    # Round-up retry for non-fractional names whose 1 share costs more than
+    # our dollar target. Without this, a $600 QQQ target at ~$625/share is
+    # silently dropped (floor = 0 shares) and the PM's intent is lost. A real
+    # execution desk would just buy 1 share — accept a small overshoot vs.
+    # zero deployment.
+    if fill.fill_shares <= 0 and not fill.fractional_eligible:
+        one_share_cost = fill.fill_price
+        can_round_up = (
+            target_dollars >= 0.5 * one_share_cost   # PM intent was meaningful
+            and one_share_cost <= portfolio.cash     # we can afford it
+            and one_share_cost <= single_name_cap * aum  # doesn't blow single-name cap
+        )
+        if can_round_up and sector:
+            # Re-check sector cap with the (larger) single-share size
+            projected = _sector_concentration_after(
+                portfolio, price_map, sector_map, sector, one_share_cost,
+            )
+            if projected > sector_cap:
+                can_round_up = False
+
+        if can_round_up:
+            fill = schwab.buy(ticker, one_share_cost, price)
+
     if fill.fill_shares <= 0:
-        result.skipped.append({"ticker": ticker, "action": "buy", "reason": "fill shares = 0"})
+        # Still zero after round-up consideration. Surface the share price
+        # in the reason so the diagnostic is self-explanatory.
+        reason = (
+            f"fill shares = 0 (target ${target_dollars:.0f} < 1 share at ${fill.fill_price:.0f})"
+            if not fill.fractional_eligible
+            else "fill shares = 0"
+        )
+        result.skipped.append({"ticker": ticker, "action": "buy", "reason": reason})
         return
 
     lot = portfolio.open_lot(ticker, fill.fill_shares, fill.fill_price, as_of)

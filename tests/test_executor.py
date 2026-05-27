@@ -97,6 +97,66 @@ class TestOpenAction:
         assert tech_value <= 4100  # 40% of $10k + slippage buffer
 
 
+class TestNonFractionalRoundUp:
+    """For ETFs / non-S&P names whose 1 share costs more than the dollar
+    target, the executor rounds up to 1 share if PM intent was meaningful."""
+
+    def test_rounds_up_when_target_at_least_half_share(
+        self, empty_portfolio, schwab, tax_engine
+    ):
+        # PM wants 6% of $10k = $600 in QQQ; QQQ at $625 → would floor to 0
+        # without round-up. Target $600 >= 50% of $625 ($312.50) → round up to 1.
+        decisions = [{
+            "ticker": "QQQ", "action": "OPEN", "target_weight_pct": 6.0,
+            "thesis": "test", "conviction": "medium",
+        }]
+        result = execute_decisions(
+            decisions, empty_portfolio, {"QQQ": 625.0}, set(),
+            schwab, tax_engine, {"QQQ": "ETF"}, date(2026, 5, 25),
+        )
+        assert len(result.trades) == 1
+        assert len(result.skipped) == 0
+        assert result.trades[0].ticker == "QQQ"
+        assert result.trades[0].shares == 1
+        # Bought 1 share at slipped price (~$625.31)
+        assert abs(result.trades[0].price - 625.0 * 1.0005) < 0.01
+
+    def test_skips_when_target_below_half_share(
+        self, empty_portfolio, schwab, tax_engine
+    ):
+        # PM wants 1% = $100; QQQ at $625 → target way below half a share.
+        # Should skip with a descriptive reason, not round up.
+        decisions = [{
+            "ticker": "QQQ", "action": "OPEN", "target_weight_pct": 1.0,
+            "thesis": "test", "conviction": "low",
+        }]
+        result = execute_decisions(
+            decisions, empty_portfolio, {"QQQ": 625.0}, set(),
+            schwab, tax_engine, {"QQQ": "ETF"}, date(2026, 5, 25),
+        )
+        assert len(result.trades) == 0
+        assert len(result.skipped) == 1
+        assert "1 share at $625" in result.skipped[0]["reason"]
+
+    def test_round_up_respects_single_name_cap(
+        self, empty_portfolio, schwab, tax_engine
+    ):
+        # Tiny $10k portfolio + super-expensive share. 1 share of an
+        # imaginary $3,000 ETF = 30% of AUM, blows the 20% single-name cap.
+        # Even though target is "meaningful" (e.g. 10%), can't round up.
+        decisions = [{
+            "ticker": "FAKEHIGH", "action": "OPEN", "target_weight_pct": 10.0,
+            "thesis": "test", "conviction": "medium",
+        }]
+        result = execute_decisions(
+            decisions, empty_portfolio, {"FAKEHIGH": 3000.0}, set(),
+            schwab, tax_engine, {"FAKEHIGH": "ETF"}, date(2026, 5, 25),
+            single_name_cap_pct=0.20,
+        )
+        assert len(result.trades) == 0
+        assert len(result.skipped) == 1
+
+
 class TestCloseAndTrim:
     def test_close_full_exit(self, empty_portfolio, schwab, tax_engine, sector_map):
         empty_portfolio.open_lot("NVDA", 5.0, 130.0, date(2026, 5, 11))
