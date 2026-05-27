@@ -20,12 +20,12 @@
       "return_usd": -62.63603314511056,
       "spy_pct": 0.009463196376280961,
       "alpha": -0.015728079481112673,
-      "aum": 9935.32116685489
+      "aum": 10015.003722817048
     }
   ],
-  "cumulative_return_pct": -0.006265,
-  "cumulative_return_usd": -62.6361,
-  "current_aum": 9935.3212,
+  "cumulative_return_pct": 0.001705,
+  "cumulative_return_usd": 17.0465,
+  "current_aum": 10015.0037,
   "weekly_win_rate": 0.0,
   "spy_cumulative_pct": 0.009463,
   "cumulative_alpha_pct": -0.015728,

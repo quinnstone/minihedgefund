@@ -243,21 +243,40 @@
       "closed_at": null,
       "closed_price": null,
       "final_return_pct": null
+    },
+    {
+      "pick_id": "fdd0337e656f",
+      "ticker": "QQQ",
+      "week_of": "2026-05-25",
+      "action": "OPEN",
+      "rec_market_price": 730.280029296875,
+      "executed_fill_price": 730.6451693115234,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Per reflection lesson \u2014 capture AI/tech beta with a small index sleeve since single-name conviction is concentrated; news 96 confirms. [Backfilled after executor round-up fix; original Monday cycle skipped this OPEN due to a now-fixed bug where non-fractional buys with target < 1 share floored to 0 shares.]",
+      "factor_breakdown": {},
+      "current_price": 730.280029296875,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
     }
   ],
   "aggregate": {
-    "total_picks": 9,
-    "open_picks": 9,
+    "total_picks": 10,
+    "open_picks": 10,
     "closed_picks": 0,
     "win_count": 1,
     "loss_count": 4,
-    "flat_count": 4,
-    "win_rate": 0.1111111111111111,
-    "avg_return_pct": -0.010001302967819219,
+    "flat_count": 5,
+    "win_rate": 0.1,
+    "avg_return_pct": -0.009001172671037297,
     "avg_winner_return_pct": 0.005512429409517208,
     "avg_loser_return_pct": -0.022857246092094233,
-    "equal_weight_basket_return_pct": -0.010001302967819219,
-    "weighted_basket_return_pct": -0.010867375793550169,
+    "equal_weight_basket_return_pct": -0.009001172671037297,
+    "weighted_basket_return_pct": -0.009832387622735866,
     "best_pick": {
       "ticker": "AMZN",
       "week_of": "2026-05-18",
@@ -272,9 +291,9 @@
     },
     "by_conviction": {
       "medium": {
-        "count": 6,
-        "win_rate": 0.1667,
-        "avg_return_pct": -0.015002
+        "count": 7,
+        "win_rate": 0.1429,
+        "avg_return_pct": -0.012859
       },
       "high": {
         "count": 3,
@@ -299,11 +318,12 @@
     },
     {
       "week_of": "2026-05-25",
-      "picks_count": 3,
+      "picks_count": 4,
       "tickers": [
         "SMCI",
         "MU",
-        "NVDA"
+        "NVDA",
+        "QQQ"
       ],
       "avg_return_since_pick": 0.0
     }

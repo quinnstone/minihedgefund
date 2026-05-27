@@ -4890,13 +4890,7 @@
       "notes": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully."
     }
   ],
-  "skipped": [
-    {
-      "ticker": "QQQ",
-      "action": "buy",
-      "reason": "fill shares = 0"
-    }
-  ],
+  "skipped": [],
   "degraded_signals": [
     "influencer",
     "synthesis_fallback"
@@ -5216,5 +5210,16 @@
     "synthesis": 0.903555,
     "pm": 0.40299,
     "total": 1.48593
+  },
+  "backfill_audit": {
+    "ticker": "QQQ",
+    "backfilled_at_utc": "2026-05-27T01:35:53.279942+00:00",
+    "backfill_reason": "Original 2026-05-25 cycle skipped this OPEN with 'fill shares = 0' because the non-fractional buy floored to 0 (target ~$600 < 1 share at ~$625). Executor was fixed in commit bd9156f to round up to 1 share when intent is meaningful + caps allow. This backfill applies the fixed logic to the original PM decision so the audit trail reflects what should have happened.",
+    "rec_market_price": 730.280029296875,
+    "executed_fill_price": 730.6451693115234,
+    "shares": 1,
+    "lot_id": "deff22b3d1f6",
+    "pick_id": "fdd0337e656f",
+    "script": "scripts/backfill_qqq_2026_05_25.py"
   }
 }

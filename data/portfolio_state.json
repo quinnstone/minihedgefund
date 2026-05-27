@@ -1,5 +1,5 @@
 {
-  "cash": 4623.976432099686,
+  "cash": 3893.3312627881623,
   "positions": {
     "XLE": {
       "ticker": "XLE",
@@ -103,9 +103,21 @@
           "acquisition_date": "2026-05-25"
         }
       ]
+    },
+    "QQQ": {
+      "ticker": "QQQ",
+      "lots": [
+        {
+          "lot_id": "deff22b3d1f6",
+          "ticker": "QQQ",
+          "shares": 1,
+          "cost_basis_per_share": 730.6451693115234,
+          "acquisition_date": "2026-05-25"
+        }
+      ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-05-25T16:31:07.326320"
+  "last_updated": "2026-05-27T01:35:52.181330"
 }
