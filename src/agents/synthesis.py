@@ -59,7 +59,11 @@ Output rules:
 class SynthesisAgent(BaseAgent):
     name = "synthesis"
     model = MODEL_OPUS
-    max_tokens = 4096
+    # 30-ticker universe × ~130 tokens per ranked_candidate entry (factor_breakdown
+    # + thesis + narrative + risk_flags) + market_context + themes routinely
+    # exceeded 4096. Empirically observed truncation in 2026-05-25 cycle. Bumped
+    # to 8192 to give comfortable headroom without enabling runaway output.
+    max_tokens = 8192
 
     def system_prompt(self) -> str:
         return SYSTEM_PROMPT
