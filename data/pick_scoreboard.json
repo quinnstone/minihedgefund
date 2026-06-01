@@ -20,13 +20,13 @@
         "news": 95.0,
         "insider": 50.0
       },
-      "current_price": 59.4900016784668,
-      "lifetime_return_pct": -0.017992738851802605,
+      "current_price": 57.2564,
+      "lifetime_return_pct": -0.054863019653309655,
       "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-01",
+      "closed_price": 57.2564,
+      "final_return_pct": -0.054863019653309655
     },
     {
       "pick_id": "4ab8b3bc7ab5",
@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 388.4700012207031,
-      "lifetime_return_pct": -0.0068008171935219994,
-      "days_held": 7,
+      "current_price": 378.55999755859375,
+      "lifetime_return_pct": -0.032137670767510874,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -74,13 +74,13 @@
         "news": 87.6,
         "insider": 50.0
       },
-      "current_price": 486.3800048828125,
-      "lifetime_return_pct": -0.004095171751513256,
+      "current_price": 468.4167,
+      "lifetime_return_pct": -0.040876581111470224,
       "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-01",
+      "closed_price": 468.4167,
+      "final_return_pct": -0.040876581111470224
     },
     {
       "pick_id": "db571758ae7e",
@@ -101,13 +101,13 @@
         "news": 80.7,
         "insider": 50.0
       },
-      "current_price": 382.9700012207031,
-      "lifetime_return_pct": -0.03519423876348993,
+      "current_price": 377.911,
+      "lifetime_return_pct": -0.04793924100460293,
       "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-01",
+      "closed_price": 377.911,
+      "final_return_pct": -0.04793924100460293
     },
     {
       "pick_id": "f20399643e56",
@@ -128,9 +128,9 @@
         "news": 73.9,
         "insider": 50.0
       },
-      "current_price": 215.3300018310547,
-      "lifetime_return_pct": -0.0314411895595624,
-      "days_held": 7,
+      "current_price": 223.97999572753906,
+      "lifetime_return_pct": 0.007466662237463319,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -155,13 +155,13 @@
         "news": 78.0,
         "insider": 50.0
       },
-      "current_price": 266.32000732421875,
-      "lifetime_return_pct": 0.005512429409517208,
+      "current_price": 263.6581,
+      "lifetime_return_pct": -0.004537814007529995,
       "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-01",
+      "closed_price": 263.6581,
+      "final_return_pct": -0.004537814007529995
     },
     {
       "pick_id": "08e3d9e7636d",
@@ -182,9 +182,9 @@
         "news": 96.4,
         "insider": 50.0
       },
-      "current_price": 35.58000183105469,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 47.619998931884766,
+      "lifetime_return_pct": 0.3383922563579357,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -209,9 +209,9 @@
         "news": 94.2,
         "insider": 50.0
       },
-      "current_price": 751.0,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 1033.824951171875,
+      "lifetime_return_pct": 0.37659780448984687,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -236,9 +236,9 @@
         "news": 89.3,
         "insider": 50.0
       },
-      "current_price": 215.3300018310547,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 223.97999572753906,
+      "lifetime_return_pct": 0.04017087179180473,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -255,7 +255,61 @@
       "conviction": "medium",
       "thesis": "Per reflection lesson \u2014 capture AI/tech beta with a small index sleeve since single-name conviction is concentrated; news 96 confirms. [Backfilled after executor round-up fix; original Monday cycle skipped this OPEN due to a now-fixed bug where non-fractional buys with target < 1 share floored to 0 shares.]",
       "factor_breakdown": {},
-      "current_price": 730.280029296875,
+      "current_price": 744.0399780273438,
+      "lifetime_return_pct": 0.0188420170050618,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "7c24cee4499d",
+      "ticker": "MSFT",
+      "week_of": "2026-06-01",
+      "action": "OPEN",
+      "rec_market_price": 463.7943115234375,
+      "executed_fill_price": 464.0262,
+      "target_weight_pct": 9.0,
+      "conviction": "high",
+      "thesis": "Best technical composite in universe (82), earnings beat, NVDA partnership, no insider selling \u2014 lower-vol megacap to complement high-beta semis sleeve.",
+      "factor_breakdown": {
+        "sentiment": 58,
+        "earnings": 53,
+        "technical": 82,
+        "macro_fit": 72,
+        "influencer": 50,
+        "news": 87,
+        "insider": 50
+      },
+      "current_price": 463.7943115234375,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "30dcb111ebf1",
+      "ticker": "AVGO",
+      "week_of": "2026-06-01",
+      "action": "OPEN",
+      "rec_market_price": 460.7799987792969,
+      "executed_fill_price": 461.0104,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Clean AI-capex breakout, no insider distribution, news 92 \u2014 diversifies semis sleeve beyond NVDA/SMCI/MU concentration risk.",
+      "factor_breakdown": {
+        "sentiment": 55,
+        "earnings": 50,
+        "technical": 80,
+        "macro_fit": 70,
+        "influencer": 50,
+        "news": 92,
+        "insider": 50
+      },
+      "current_price": 460.7799987792969,
       "lifetime_return_pct": 0.0,
       "days_held": 0,
       "status": "open",
@@ -265,40 +319,40 @@
     }
   ],
   "aggregate": {
-    "total_picks": 10,
-    "open_picks": 10,
-    "closed_picks": 0,
-    "win_count": 1,
+    "total_picks": 12,
+    "open_picks": 8,
+    "closed_picks": 4,
+    "win_count": 5,
     "loss_count": 4,
-    "flat_count": 5,
-    "win_rate": 0.1,
-    "avg_return_pct": -0.009001172671037297,
-    "avg_winner_return_pct": 0.005512429409517208,
-    "avg_loser_return_pct": -0.022857246092094233,
-    "equal_weight_basket_return_pct": -0.009001172671037297,
-    "weighted_basket_return_pct": -0.009832387622735866,
+    "flat_count": 3,
+    "win_rate": 0.4166666666666667,
+    "avg_return_pct": 0.05009294044480739,
+    "avg_winner_return_pct": 0.1562939223764225,
+    "avg_loser_return_pct": -0.04395412813422342,
+    "equal_weight_basket_return_pct": 0.05009294044480739,
+    "weighted_basket_return_pct": 0.03400363088005368,
     "best_pick": {
-      "ticker": "AMZN",
-      "week_of": "2026-05-18",
-      "return_pct": 0.005512,
-      "conviction": "medium"
+      "ticker": "MU",
+      "week_of": "2026-05-25",
+      "return_pct": 0.376598,
+      "conviction": "high"
     },
     "worst_pick": {
-      "ticker": "GOOGL",
+      "ticker": "XLE",
       "week_of": "2026-05-18",
-      "return_pct": -0.035194,
+      "return_pct": -0.054863,
       "conviction": "medium"
     },
     "by_conviction": {
       "medium": {
-        "count": 7,
-        "win_rate": 0.1429,
-        "avg_return_pct": -0.012859
+        "count": 8,
+        "win_rate": 0.25,
+        "avg_return_pct": -0.019256
       },
       "high": {
-        "count": 3,
-        "win_rate": 0.0,
-        "avg_return_pct": 0.0
+        "count": 4,
+        "win_rate": 0.75,
+        "avg_return_pct": 0.18879
       }
     }
   },
@@ -324,6 +378,15 @@
         "MU",
         "NVDA",
         "QQQ"
+      ],
+      "avg_return_since_pick": 0.0
+    },
+    {
+      "week_of": "2026-06-01",
+      "picks_count": 2,
+      "tickers": [
+        "MSFT",
+        "AVGO"
       ],
       "avg_return_since_pick": 0.0
     }

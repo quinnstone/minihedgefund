@@ -1,0 +1,106 @@
+{
+  "as_of": "2026-06-01",
+  "as_of_utc": "2026-06-01T19:27:03.000204+00:00",
+  "price_map": {
+    "AVGO": 460.7799987792969,
+    "MSFT": 463.7943115234375,
+    "MU": 1033.824951171875,
+    "NVDA": 223.97999572753906,
+    "QQQ": 744.0399780273438,
+    "SMCI": 47.619998931884766,
+    "UNH": 378.55999755859375
+  },
+  "positions": [
+    {
+      "ticker": "UNH",
+      "shares": 1.53319,
+      "avg_cost_per_share": 391.3256,
+      "current_price": 378.56,
+      "market_value": 580.4043,
+      "unrealized_pnl": -19.572,
+      "unrealized_pnl_pct": -0.032621,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 14,
+      "n_lots": 1
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 5.464172,
+      "avg_cost_per_share": 218.8896,
+      "current_price": 223.98,
+      "market_value": 1223.8653,
+      "unrealized_pnl": 27.8148,
+      "unrealized_pnl_pct": 0.023256,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 14,
+      "n_lots": 2
+    },
+    {
+      "ticker": "SMCI",
+      "shares": 13.956084,
+      "avg_cost_per_share": 35.5978,
+      "current_price": 47.62,
+      "market_value": 664.5887,
+      "unrealized_pnl": 167.7829,
+      "unrealized_pnl_pct": 0.337723,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 7,
+      "n_lots": 1
+    },
+    {
+      "ticker": "MU",
+      "shares": 0.661179,
+      "avg_cost_per_share": 751.3755,
+      "current_price": 1033.825,
+      "market_value": 683.5429,
+      "unrealized_pnl": 186.7495,
+      "unrealized_pnl_pct": 0.37591,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 7,
+      "n_lots": 1
+    },
+    {
+      "ticker": "QQQ",
+      "shares": 1,
+      "avg_cost_per_share": 730.6452,
+      "current_price": 744.04,
+      "market_value": 744.04,
+      "unrealized_pnl": 13.3948,
+      "unrealized_pnl_pct": 0.018333,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 7,
+      "n_lots": 1
+    },
+    {
+      "ticker": "MSFT",
+      "shares": 1.991353,
+      "avg_cost_per_share": 464.0262,
+      "current_price": 463.7943,
+      "market_value": 923.5782,
+      "unrealized_pnl": -0.4618,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-06-01",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "AVGO",
+      "shares": 1.322314,
+      "avg_cost_per_share": 461.0104,
+      "current_price": 460.78,
+      "market_value": 609.296,
+      "unrealized_pnl": -0.3046,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-06-01",
+      "days_held": 0,
+      "n_lots": 1
+    }
+  ],
+  "cash": 4835.3593,
+  "aum": 10264.6747,
+  "prior_aum": 10015.0037,
+  "weekly_return_pct": 0.02493,
+  "weekly_return_usd": 249.671,
+  "spy_weekly_return_pct": 0.007847,
+  "alpha_pct": 0.017083
+}

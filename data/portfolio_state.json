@@ -1,18 +1,6 @@
 {
-  "cash": 3893.3312627881623,
+  "cash": 4835.359308140759,
   "positions": {
-    "XLE": {
-      "ticker": "XLE",
-      "lots": [
-        {
-          "lot_id": "95fda2c9144c",
-          "ticker": "XLE",
-          "shares": 13,
-          "cost_basis_per_share": 60.61029183197021,
-          "acquisition_date": "2026-05-18"
-        }
-      ]
-    },
     "UNH": {
       "ticker": "UNH",
       "lots": [
@@ -21,30 +9,6 @@
           "ticker": "UNH",
           "shares": 1.5331898040171854,
           "cost_basis_per_share": 391.3255698852539,
-          "acquisition_date": "2026-05-18"
-        }
-      ]
-    },
-    "BRK.B": {
-      "ticker": "BRK.B",
-      "lots": [
-        {
-          "lot_id": "ad2698872434",
-          "ticker": "BRK.B",
-          "shares": 1.637136514546689,
-          "cost_basis_per_share": 488.62419488525387,
-          "acquisition_date": "2026-05-18"
-        }
-      ]
-    },
-    "GOOGL": {
-      "ticker": "GOOGL",
-      "lots": [
-        {
-          "lot_id": "234d94231da2",
-          "ticker": "GOOGL",
-          "shares": 1.762416668044355,
-          "cost_basis_per_share": 397.13847244262695,
           "acquisition_date": "2026-05-18"
         }
       ]
@@ -65,18 +29,6 @@
           "shares": 2.7670980379351007,
           "cost_basis_per_share": 215.4376668319702,
           "acquisition_date": "2026-05-25"
-        }
-      ]
-    },
-    "AMZN": {
-      "ticker": "AMZN",
-      "lots": [
-        {
-          "lot_id": "6ab5dfc0d5dd",
-          "ticker": "AMZN",
-          "shares": 1.1319105506536236,
-          "cost_basis_per_share": 264.9924153442383,
-          "acquisition_date": "2026-05-18"
         }
       ]
     },
@@ -115,9 +67,33 @@
           "acquisition_date": "2026-05-25"
         }
       ]
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "lots": [
+        {
+          "lot_id": "d5367d98b678",
+          "ticker": "MSFT",
+          "shares": 1.9913530432087045,
+          "cost_basis_per_share": 464.0262086791992,
+          "acquisition_date": "2026-06-01"
+        }
+      ]
+    },
+    "AVGO": {
+      "ticker": "AVGO",
+      "lots": [
+        {
+          "lot_id": "04bc376c7347",
+          "ticker": "AVGO",
+          "shares": 1.322314256284697,
+          "cost_basis_per_share": 461.0103887786865,
+          "acquisition_date": "2026-06-01"
+        }
+      ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-05-27T01:35:52.181330"
+  "last_updated": "2026-06-01T19:27:02.468250"
 }
