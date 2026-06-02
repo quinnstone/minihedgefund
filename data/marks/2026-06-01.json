@@ -60,18 +60,6 @@
       "n_lots": 1
     },
     {
-      "ticker": "QQQ",
-      "shares": 1,
-      "avg_cost_per_share": 730.6452,
-      "current_price": 744.04,
-      "market_value": 744.04,
-      "unrealized_pnl": 13.3948,
-      "unrealized_pnl_pct": 0.018333,
-      "oldest_lot_date": "2026-05-25",
-      "days_held": 7,
-      "n_lots": 1
-    },
-    {
       "ticker": "MSFT",
       "shares": 1.991353,
       "avg_cost_per_share": 464.0262,
@@ -96,8 +84,8 @@
       "n_lots": 1
     }
   ],
-  "cash": 4835.3593,
-  "aum": 10264.6747,
+  "cash": 5566.0093,
+  "aum": 10251.2847,
   "prior_aum": 10015.0037,
   "weekly_return_pct": 0.02493,
   "weekly_return_usd": 249.671,

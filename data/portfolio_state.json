@@ -1,5 +1,5 @@
 {
-  "cash": 4835.359308140759,
+  "cash": 5566.004477452282,
   "positions": {
     "UNH": {
       "ticker": "UNH",
@@ -56,18 +56,6 @@
         }
       ]
     },
-    "QQQ": {
-      "ticker": "QQQ",
-      "lots": [
-        {
-          "lot_id": "deff22b3d1f6",
-          "ticker": "QQQ",
-          "shares": 1,
-          "cost_basis_per_share": 730.6451693115234,
-          "acquisition_date": "2026-05-25"
-        }
-      ]
-    },
     "MSFT": {
       "ticker": "MSFT",
       "lots": [
@@ -95,5 +83,5 @@
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-06-01T19:27:02.468250"
+  "last_updated": "2026-06-02T21:07:04.268394"
 }

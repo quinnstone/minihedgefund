@@ -4890,7 +4890,13 @@
       "notes": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully."
     }
   ],
-  "skipped": [],
+  "skipped": [
+    {
+      "ticker": "QQQ",
+      "action": "buy",
+      "reason": "fill shares = 0"
+    }
+  ],
   "degraded_signals": [
     "influencer",
     "synthesis_fallback"
@@ -5221,5 +5227,12 @@
     "lot_id": "deff22b3d1f6",
     "pick_id": "fdd0337e656f",
     "script": "scripts/backfill_qqq_2026_05_25.py"
+  },
+  "backfill_reversed_audit": {
+    "reversed_at_utc": "2026-06-02T21:07:04.267766+00:00",
+    "reason": "The 2026-05-25 backfill assumed user mirroring; user did NOT actually buy QQQ IRL, so the simulation is reverted to match. Removes lot deff22b3d1f6 and restores cash. The HOLD decision the PM made on 2026-06-01 is preserved in the record as historical PM output, but the position itself is now absent from the book.",
+    "lot_id_removed": "deff22b3d1f6",
+    "cash_restored_usd": 730.6451693115234,
+    "script": "scripts/reverse_qqq_backfill.py"
   }
 }

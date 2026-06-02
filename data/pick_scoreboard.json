@@ -245,25 +245,6 @@
       "final_return_pct": null
     },
     {
-      "pick_id": "fdd0337e656f",
-      "ticker": "QQQ",
-      "week_of": "2026-05-25",
-      "action": "OPEN",
-      "rec_market_price": 730.280029296875,
-      "executed_fill_price": 730.6451693115234,
-      "target_weight_pct": 6.0,
-      "conviction": "medium",
-      "thesis": "Per reflection lesson \u2014 capture AI/tech beta with a small index sleeve since single-name conviction is concentrated; news 96 confirms. [Backfilled after executor round-up fix; original Monday cycle skipped this OPEN due to a now-fixed bug where non-fractional buys with target < 1 share floored to 0 shares.]",
-      "factor_breakdown": {},
-      "current_price": 744.0399780273438,
-      "lifetime_return_pct": 0.0188420170050618,
-      "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
-    },
-    {
       "pick_id": "7c24cee4499d",
       "ticker": "MSFT",
       "week_of": "2026-06-01",
@@ -319,18 +300,18 @@
     }
   ],
   "aggregate": {
-    "total_picks": 12,
-    "open_picks": 8,
+    "total_picks": 11,
+    "open_picks": 7,
     "closed_picks": 4,
-    "win_count": 5,
+    "win_count": 4,
     "loss_count": 4,
     "flat_count": 3,
-    "win_rate": 0.4166666666666667,
-    "avg_return_pct": 0.05009294044480739,
-    "avg_winner_return_pct": 0.1562939223764225,
+    "win_rate": 0.36363636363636365,
+    "avg_return_pct": 0.05293393348478426,
+    "avg_winner_return_pct": 0.19065689871926267,
     "avg_loser_return_pct": -0.04395412813422342,
-    "equal_weight_basket_return_pct": 0.05009294044480739,
-    "weighted_basket_return_pct": 0.03400363088005368,
+    "equal_weight_basket_return_pct": 0.05293393348478426,
+    "weighted_basket_return_pct": 0.035267098702969665,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
@@ -345,9 +326,9 @@
     },
     "by_conviction": {
       "medium": {
-        "count": 8,
-        "win_rate": 0.25,
-        "avg_return_pct": -0.019256
+        "count": 7,
+        "win_rate": 0.1429,
+        "avg_return_pct": -0.024698
       },
       "high": {
         "count": 4,
@@ -372,14 +353,13 @@
     },
     {
       "week_of": "2026-05-25",
-      "picks_count": 4,
+      "picks_count": 3,
       "tickers": [
         "SMCI",
         "MU",
-        "NVDA",
-        "QQQ"
+        "NVDA"
       ],
-      "avg_return_since_pick": 0.0
+      "avg_return_since_pick": 0.25172031087986246
     },
     {
       "week_of": "2026-06-01",

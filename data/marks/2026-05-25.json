@@ -108,22 +108,10 @@
       "oldest_lot_date": "2026-05-25",
       "days_held": 0,
       "n_lots": 1
-    },
-    {
-      "ticker": "QQQ",
-      "shares": 1,
-      "avg_cost_per_share": 730.6452,
-      "current_price": 730.28,
-      "market_value": 730.28,
-      "unrealized_pnl": -0.3651,
-      "unrealized_pnl_pct": -0.0005,
-      "oldest_lot_date": "2026-05-25",
-      "days_held": 0,
-      "n_lots": 1
     }
   ],
-  "cash": 3893.3313,
-  "aum": 10015.0037,
+  "cash": 4623.9813,
+  "aum": 10015.3738,
   "prior_aum": 9997.9572,
   "weekly_return_pct": -0.006265,
   "weekly_return_usd": -62.636,

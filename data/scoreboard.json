@@ -20,7 +20,7 @@
       "return_usd": -62.63603314511056,
       "spy_pct": 0.009463196376280961,
       "alpha": -0.015728079481112673,
-      "aum": 10015.003722817048
+      "aum": 10015.3738
     },
     {
       "week_of": "2026-06-01",
@@ -28,12 +28,12 @@
       "return_usd": 249.67101701353204,
       "spy_pct": 0.007847098152844763,
       "alpha": 0.017082599777624503,
-      "aum": 10264.674717013531
+      "aum": 10251.2847
     }
   ],
-  "cumulative_return_pct": 0.026677,
-  "cumulative_return_usd": 266.7175,
-  "current_aum": 10264.6747,
+  "cumulative_return_pct": 0.025338,
+  "cumulative_return_usd": 253.3275,
+  "current_aum": 10251.2847,
   "weekly_win_rate": 0.3333,
   "spy_cumulative_pct": 0.017385,
   "cumulative_alpha_pct": 0.009293,

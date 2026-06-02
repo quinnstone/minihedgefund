@@ -5114,5 +5114,10 @@
     "synthesis": 1.07079,
     "pm": 0.416265,
     "total": 1.71414
+  },
+  "qqq_retroactively_removed_audit": {
+    "reversed_at_utc": "2026-06-02T21:07:04.267766+00:00",
+    "note": "The PM HOLD decision on QQQ this week was made when QQQ was in the book (carried over from 2026-05-25 backfill). The backfill has since been reversed because the position was never bought IRL. PM record preserved as-is; QQQ is no longer in the actual portfolio_state from this date onward.",
+    "script": "scripts/reverse_qqq_backfill.py"
   }
 }
