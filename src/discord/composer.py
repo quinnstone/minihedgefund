@@ -82,6 +82,7 @@ def compose_digest(
     degraded_signals: list[str],
     insider_brief: Optional[dict] = None,
     pick_scoreboard: Optional[dict] = None,
+    actual_book: Optional[dict] = None,
 ) -> tuple[str, list[dict]]:
     """Return (title, embeds) ready to hand to DiscordSender."""
     embeds: list[dict] = []
@@ -89,6 +90,12 @@ def compose_digest(
     title = _title(today, mark)
     embeds.append(_header_embed(today, mark, pm_output, title))
     embeds.append(_scoreboard_embed(scoreboard))
+
+    # Actual-vs-simulated-vs-SPY — appears only if the user has bootstrapped
+    # their TOS book. Sits right after the simulation scoreboard so the two
+    # are visually adjacent for comparison.
+    if actual_book and actual_book.get("entries_count"):
+        embeds.append(_actual_book_embed(actual_book, scoreboard))
 
     pick_sb_embed = _pick_scoreboard_embed(pick_scoreboard) if pick_scoreboard else None
     if pick_sb_embed:
@@ -302,6 +309,41 @@ def _diagnostics_embed(degraded_signals: list[str], skipped: list[dict]) -> dict
         "title": "🔧 Diagnostics",
         "description": _trim("\n".join(lines), 2000),
         "color": COLOR_NEUTRAL,
+    }
+
+
+def _actual_book_embed(actual: dict, sim_scoreboard: dict) -> dict:
+    """User's actual TOS book vs the simulated book vs SPY — the north-star
+    section. SPY benchmark is anchored to the user's first actual entry date
+    (apples-to-apples for the actual book; sim has its own deployment_aum
+    baseline)."""
+    lines = []
+
+    aum = actual.get("current_aum")
+    cum = actual.get("cumulative_return_pct")
+    sim_cum = sim_scoreboard.get("cumulative_return_pct")
+    spy_cum = actual.get("spy_return_from_inception_pct")
+    alpha = actual.get("alpha_pct")
+    inception = actual.get("inception_date")
+    positions = actual.get("positions") or []
+
+    lines.append(f"**Your TOS book:**  {_usd(aum)}  ·  {_pct(cum)} cum")
+    lines.append(f"**Simulated book:** {_pct(sim_cum)} cum")
+    if spy_cum is not None:
+        lines.append(f"**SPY** since {inception}: {_pct(spy_cum)}")
+    if alpha is not None:
+        marker = "🟢" if alpha > 0 else "🔴" if alpha < 0 else "⚪"
+        lines.append(f"**Your alpha vs SPY:** {marker} {_pct(alpha)}")
+    lines.append(
+        f"_Open positions: {len(positions)}  ·  Realized P&L: {_usd(actual.get('realized_pnl'))}_"
+    )
+    if actual.get("leveraged"):
+        lines.append(f"⚠ **Cash negative** (${actual.get('cash'):.2f}) — over-deployed vs $10k notional")
+
+    return {
+        "title": "🎯 Actual vs Simulated vs SPY",
+        "description": _trim("\n".join(lines), 4000),
+        "color": COLOR_SCOREBOARD,
     }
 
 

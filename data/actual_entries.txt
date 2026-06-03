@@ -1,0 +1,25 @@
+# ─── Actual paper-money entries from ThinkOrSwim ─────────────────────────
+#
+# Format (whitespace-separated, multiple spaces OK):
+#
+#   YYYY-MM-DD  TICKER  buy|sell  SHARES  PRICE  [optional notes...]
+#
+# Lines starting with # are comments. Blank lines ignored.
+# Order doesn't matter — entries are sorted by date during build.
+#
+# Examples:
+#   2026-05-19  NVDA   buy   5.2    235.50
+#   2026-06-02  AMZN   sell  0.4    178.25   thesis broken, took profit
+#
+# Edit this file via Discord /logged command (Phase B) OR directly in
+# GitHub UI (mobile/web works). Every change triggers
+# .github/workflows/parse-actual-entries.yml which regenerates
+# data/actual_book.json.
+#
+# To "undo" an entry, comment it out with # (preserves audit trail) or
+# use the /undo Discord command.
+#
+# ──────────────────────────────────────────────────────────────────────────
+
+# Bootstrap your existing TOS positions below this line.
+# (Empty for now — will be populated from your screenshot.)

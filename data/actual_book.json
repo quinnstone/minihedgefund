@@ -1,0 +1,18 @@
+{
+  "inception_date": null,
+  "initial_capital": 10000.0,
+  "cash": 10000.0,
+  "positions_value": 0.0,
+  "current_aum": 10000.0,
+  "cumulative_return_pct": 0.0,
+  "cumulative_return_usd": 0.0,
+  "realized_pnl": 0.0,
+  "spy_inception_price": null,
+  "spy_current_price": null,
+  "spy_return_from_inception_pct": null,
+  "alpha_pct": null,
+  "positions": [],
+  "closed_trades_count": 0,
+  "entries_count": 0,
+  "leveraged": false
+}

@@ -64,6 +64,7 @@ from .discord.composer import compose_digest, compose_error
 from .discord.sender import DiscordSender
 from .portfolio.schwab import DEFAULT_SLIPPAGE_BPS, SchwabRealism
 from .portfolio.tax import LTCG_HOLDING_DAYS, WASH_SALE_WINDOW, TaxEngine
+from .tracking.actual_book import load_actual_book
 from .tracking.executor import execute_decisions
 from .tracking.marking import fetch_price_map, mark_portfolio
 from .tracking.pick_tracker import (
@@ -570,6 +571,9 @@ def run_weekly(
     save_decision(today, decision_payload)
 
     # 11. Discord
+    # Optional: actual TOS book (None if user hasn't bootstrapped yet — embed skipped)
+    actual_book = load_actual_book()
+
     title, embeds = compose_digest(
         today=today,
         portfolio_state=state.to_dict(),
@@ -582,6 +586,7 @@ def run_weekly(
         degraded_signals=degraded,
         insider_brief=insider_brief,
         pick_scoreboard=pick_sb,
+        actual_book=actual_book,
     )
 
     if dry_run:
