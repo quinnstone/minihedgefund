@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 378.55999755859375,
-      "lifetime_return_pct": -0.032137670767510874,
-      "days_held": 14,
+      "current_price": 403.44000244140625,
+      "lifetime_return_pct": 0.03147290518476582,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -128,9 +128,9 @@
         "news": 73.9,
         "insider": 50.0
       },
-      "current_price": 223.97999572753906,
-      "lifetime_return_pct": 0.007466662237463319,
-      "days_held": 14,
+      "current_price": 208.6300048828125,
+      "lifetime_return_pct": -0.06157791467432589,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -182,9 +182,9 @@
         "news": 96.4,
         "insider": 50.0
       },
-      "current_price": 47.619998931884766,
-      "lifetime_return_pct": 0.3383922563579357,
-      "days_held": 7,
+      "current_price": 44.439998626708984,
+      "lifetime_return_pct": 0.24901619841742606,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -209,9 +209,9 @@
         "news": 94.2,
         "insider": 50.0
       },
-      "current_price": 1033.824951171875,
-      "lifetime_return_pct": 0.37659780448984687,
-      "days_held": 7,
+      "current_price": 954.1699829101562,
+      "lifetime_return_pct": 0.270532600412991,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -236,9 +236,9 @@
         "news": 89.3,
         "insider": 50.0
       },
-      "current_price": 223.97999572753906,
-      "lifetime_return_pct": 0.04017087179180473,
-      "days_held": 7,
+      "current_price": 208.6300048828125,
+      "lifetime_return_pct": -0.031115018303389624,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -263,13 +263,13 @@
         "news": 87,
         "insider": 50
       },
-      "current_price": 463.7943115234375,
-      "lifetime_return_pct": 0.0,
+      "current_price": 408.9355,
+      "lifetime_return_pct": -0.1182826312449614,
       "days_held": 0,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-08",
+      "closed_price": 408.9355,
+      "final_return_pct": -0.1182826312449614
     },
     {
       "pick_id": "30dcb111ebf1",
@@ -290,8 +290,89 @@
         "news": 92,
         "insider": 50
       },
-      "current_price": 460.7799987792969,
+      "current_price": 395.05999755859375,
+      "lifetime_return_pct": -0.14262772124399764,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "b0d60ec206ea",
+      "ticker": "AMD",
+      "week_of": "2026-06-08",
+      "action": "OPEN",
+      "rec_market_price": 490.68011474609375,
+      "executed_fill_price": 490.9255,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Strong momentum, bull MA stack, earnings beat, AI tailwind; insider sell caps size but cross-signals justify a position.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 58,
+        "technical": 74,
+        "macro_fit": 72,
+        "influencer": 50,
+        "news": 90,
+        "insider": 35
+      },
+      "current_price": 490.68011474609375,
       "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "6d8d78788ad5",
+      "ticker": "AAPL",
+      "week_of": "2026-06-08",
+      "action": "OPEN",
+      "rec_market_price": 314.6499938964844,
+      "executed_fill_price": 314.8073,
+      "target_weight_pct": 5.0,
+      "conviction": "medium",
+      "thesis": "WWDC catalyst today, bull MA stack, +8.9% 1M, news polarity strong; small starter given overbought RSI.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 53,
+        "technical": 69,
+        "macro_fit": 72,
+        "influencer": 50,
+        "news": 95,
+        "insider": 50
+      },
+      "current_price": 314.6499938964844,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "dc03b8c5d7fe",
+      "ticker": "UNH",
+      "week_of": "2026-06-08",
+      "action": "ADD",
+      "rec_market_price": 402.9100036621094,
+      "executed_fill_price": 403.1115,
+      "target_weight_pct": 6.0,
+      "conviction": "high",
+      "thesis": "Cleanest cross-signal name: bull MA stack, breakout, +8.9% 1M, strong news polarity, earnings tailwind; upsize the winner per reflection lesson.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 62,
+        "technical": 80,
+        "macro_fit": 55,
+        "influencer": 50,
+        "news": 86,
+        "insider": 50
+      },
+      "current_price": 403.44000244140625,
+      "lifetime_return_pct": 0.0013154272032951198,
       "days_held": 0,
       "status": "open",
       "closed_at": null,
@@ -300,40 +381,40 @@
     }
   ],
   "aggregate": {
-    "total_picks": 11,
-    "open_picks": 7,
-    "closed_picks": 4,
-    "win_count": 4,
-    "loss_count": 4,
-    "flat_count": 3,
-    "win_rate": 0.36363636363636365,
-    "avg_return_pct": 0.05293393348478426,
-    "avg_winner_return_pct": 0.19065689871926267,
-    "avg_loser_return_pct": -0.04395412813422342,
-    "equal_weight_basket_return_pct": 0.05293393348478426,
-    "weighted_basket_return_pct": 0.035267098702969665,
+    "total_picks": 14,
+    "open_picks": 9,
+    "closed_picks": 5,
+    "win_count": 3,
+    "loss_count": 7,
+    "flat_count": 4,
+    "win_rate": 0.21428571428571427,
+    "avg_return_pct": 0.0036083707124921864,
+    "avg_winner_return_pct": 0.18367390133839426,
+    "avg_loser_return_pct": -0.07104030389086534,
+    "equal_weight_basket_return_pct": 0.0036083707124921864,
+    "weighted_basket_return_pct": -0.009109123542136178,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
-      "return_pct": 0.376598,
+      "return_pct": 0.270533,
       "conviction": "high"
     },
     "worst_pick": {
-      "ticker": "XLE",
-      "week_of": "2026-05-18",
-      "return_pct": -0.054863,
+      "ticker": "AVGO",
+      "week_of": "2026-06-01",
+      "return_pct": -0.142628,
       "conviction": "medium"
     },
     "by_conviction": {
       "medium": {
-        "count": 7,
-        "win_rate": 0.1429,
-        "avg_return_pct": -0.024698
+        "count": 9,
+        "win_rate": 0.1111,
+        "avg_return_pct": -0.035661
       },
       "high": {
-        "count": 4,
-        "win_rate": 0.75,
-        "avg_return_pct": 0.18879
+        "count": 5,
+        "win_rate": 0.4,
+        "avg_return_pct": 0.074293
       }
     }
   },
@@ -369,6 +450,16 @@
         "AVGO"
       ],
       "avg_return_since_pick": 0.0
+    },
+    {
+      "week_of": "2026-06-08",
+      "picks_count": 3,
+      "tickers": [
+        "AMD",
+        "AAPL",
+        "UNH"
+      ],
+      "avg_return_since_pick": 0.0004384757344317066
     }
   ]
 }

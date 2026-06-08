@@ -1,0 +1,106 @@
+{
+  "as_of": "2026-06-08",
+  "as_of_utc": "2026-06-08T17:29:58.741528+00:00",
+  "price_map": {
+    "AAPL": 314.6499938964844,
+    "AMD": 490.68011474609375,
+    "AVGO": 395.05999755859375,
+    "MU": 954.1699829101562,
+    "NVDA": 208.6300048828125,
+    "SMCI": 44.439998626708984,
+    "UNH": 403.44000244140625
+  },
+  "positions": [
+    {
+      "ticker": "UNH",
+      "shares": 3.007164,
+      "avg_cost_per_share": 397.1025,
+      "current_price": 403.44,
+      "market_value": 1213.2101,
+      "unrealized_pnl": 19.058,
+      "unrealized_pnl_pct": 0.015959,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 21,
+      "n_lots": 2
+    },
+    {
+      "ticker": "NVDA",
+      "shares": 5.464172,
+      "avg_cost_per_share": 218.8896,
+      "current_price": 208.63,
+      "market_value": 1139.9903,
+      "unrealized_pnl": -56.0602,
+      "unrealized_pnl_pct": -0.046871,
+      "oldest_lot_date": "2026-05-18",
+      "days_held": 21,
+      "n_lots": 2
+    },
+    {
+      "ticker": "SMCI",
+      "shares": 13.956084,
+      "avg_cost_per_share": 35.5978,
+      "current_price": 44.44,
+      "market_value": 620.2084,
+      "unrealized_pnl": 123.4026,
+      "unrealized_pnl_pct": 0.248392,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 14,
+      "n_lots": 1
+    },
+    {
+      "ticker": "MU",
+      "shares": 0.330589,
+      "avg_cost_per_share": 751.3755,
+      "current_price": 954.17,
+      "market_value": 315.4384,
+      "unrealized_pnl": 67.0417,
+      "unrealized_pnl_pct": 0.269898,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 14,
+      "n_lots": 1
+    },
+    {
+      "ticker": "AVGO",
+      "shares": 1.322314,
+      "avg_cost_per_share": 461.0104,
+      "current_price": 395.06,
+      "market_value": 522.3935,
+      "unrealized_pnl": -87.2071,
+      "unrealized_pnl_pct": -0.143056,
+      "oldest_lot_date": "2026-06-01",
+      "days_held": 7,
+      "n_lots": 1
+    },
+    {
+      "ticker": "AMD",
+      "shares": 1.210384,
+      "avg_cost_per_share": 490.9255,
+      "current_price": 490.6801,
+      "market_value": 593.9115,
+      "unrealized_pnl": -0.297,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-06-08",
+      "days_held": 0,
+      "n_lots": 1
+    },
+    {
+      "ticker": "AAPL",
+      "shares": 1.572895,
+      "avg_cost_per_share": 314.8073,
+      "current_price": 314.65,
+      "market_value": 494.9114,
+      "unrealized_pnl": -0.2475,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-06-08",
+      "days_held": 0,
+      "n_lots": 1
+    }
+  ],
+  "cash": 5010.6893,
+  "aum": 9910.7528,
+  "prior_aum": 10251.2847,
+  "weekly_return_pct": -0.033218,
+  "weekly_return_usd": -340.5319,
+  "spy_weekly_return_pct": -0.027672,
+  "alpha_pct": -0.005547
+}

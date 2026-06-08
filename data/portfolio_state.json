@@ -1,5 +1,5 @@
 {
-  "cash": 5566.004477452282,
+  "cash": 5010.689273524096,
   "positions": {
     "UNH": {
       "ticker": "UNH",
@@ -10,6 +10,13 @@
           "shares": 1.5331898040171854,
           "cost_basis_per_share": 391.3255698852539,
           "acquisition_date": "2026-05-18"
+        },
+        {
+          "lot_id": "59e6e80e89b5",
+          "ticker": "UNH",
+          "shares": 1.4739739356895665,
+          "cost_basis_per_share": 403.1114586639404,
+          "acquisition_date": "2026-06-08"
         }
       ]
     },
@@ -50,21 +57,9 @@
         {
           "lot_id": "4ff4b69dd722",
           "ticker": "MU",
-          "shares": 0.6611785557963616,
+          "shares": 0.3305892778981808,
           "cost_basis_per_share": 751.3755,
           "acquisition_date": "2026-05-25"
-        }
-      ]
-    },
-    "MSFT": {
-      "ticker": "MSFT",
-      "lots": [
-        {
-          "lot_id": "d5367d98b678",
-          "ticker": "MSFT",
-          "shares": 1.9913530432087045,
-          "cost_basis_per_share": 464.0262086791992,
-          "acquisition_date": "2026-06-01"
         }
       ]
     },
@@ -79,9 +74,33 @@
           "acquisition_date": "2026-06-01"
         }
       ]
+    },
+    "AMD": {
+      "ticker": "AMD",
+      "lots": [
+        {
+          "lot_id": "b63f709f9a38",
+          "ticker": "AMD",
+          "shares": 1.2103842693860523,
+          "cost_basis_per_share": 490.9254548034668,
+          "acquisition_date": "2026-06-08"
+        }
+      ]
+    },
+    "AAPL": {
+      "ticker": "AAPL",
+      "lots": [
+        {
+          "lot_id": "06bece33a50b",
+          "ticker": "AAPL",
+          "shares": 1.5728950030957594,
+          "cost_basis_per_share": 314.8073188934326,
+          "acquisition_date": "2026-06-08"
+        }
+      ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-06-02T21:07:04.268394"
+  "last_updated": "2026-06-08T17:29:58.157043"
 }
