@@ -208,7 +208,7 @@ def _actions_embed(pm_output: dict, executed_trades: list[dict]) -> Optional[dic
         ticker = d.get("ticker", "")
         action = d.get("action", "")
         conv = _conviction_badge(d.get("conviction"))
-        thesis = _trim(d.get("thesis", ""), 280)
+        thesis = _trim(d.get("thesis", ""), 220)
         size = ""
         if action == "OPEN":
             size = f" · {d.get('target_weight_pct', 0):.1f}% target"
@@ -282,7 +282,7 @@ def _reflection_embed(reflection: dict) -> dict:
 
     if lessons:
         lines.append("\n**Lessons applied this week:**")
-        for ll in lessons[:6]:
+        for ll in lessons[:4]:
             lines.append(f"• {ll}")
 
     if watch:
