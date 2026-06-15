@@ -1,0 +1,5219 @@
+{
+  "date": "2026-06-15",
+  "as_of_utc": "2026-06-15T18:47:49.963445+00:00",
+  "methodology": {
+    "code_version": "0.1.0",
+    "git_sha": "c2a8a7847ea5",
+    "synthesis": {
+      "weights": {
+        "sentiment": 0.2,
+        "insider": 0.2,
+        "news": 0.15,
+        "earnings": 0.15,
+        "technical": 0.15,
+        "macro_fit": 0.1,
+        "influencer": 0.05
+      },
+      "fallback_used": false
+    },
+    "portfolio_rules": {
+      "max_single_name_pct": 0.2,
+      "max_sector_pct": 0.4,
+      "slippage_bps": 5
+    },
+    "tax_profile": {
+      "stcg_rate": 0.34726,
+      "ltcg_rate": 0.25726,
+      "ltcg_holding_days": 365,
+      "wash_sale_window_days": 30,
+      "federal_ordinary": 0.24,
+      "federal_ltcg": 0.15,
+      "state": 0.0685,
+      "city": 0.03876,
+      "niit_applies": false
+    },
+    "scout_config": {
+      "reddit_subreddits": [
+        "wallstreetbets",
+        "stocks",
+        "investing",
+        "stockmarket",
+        "options"
+      ],
+      "stocktwits_enabled": false,
+      "edgar_lookback_days": 7
+    }
+  },
+  "portfolio_state_before": {
+    "cash": 5010.689273524096,
+    "positions": {
+      "UNH": {
+        "ticker": "UNH",
+        "lots": [
+          {
+            "lot_id": "b382df2c6f8d",
+            "ticker": "UNH",
+            "shares": 1.5331898040171854,
+            "cost_basis_per_share": 391.3255698852539,
+            "acquisition_date": "2026-05-18"
+          },
+          {
+            "lot_id": "59e6e80e89b5",
+            "ticker": "UNH",
+            "shares": 1.4739739356895665,
+            "cost_basis_per_share": 403.1114586639404,
+            "acquisition_date": "2026-06-08"
+          }
+        ]
+      },
+      "NVDA": {
+        "ticker": "NVDA",
+        "lots": [
+          {
+            "lot_id": "36468f865281",
+            "ticker": "NVDA",
+            "shares": 2.6970744125369643,
+            "cost_basis_per_share": 222.43116732788084,
+            "acquisition_date": "2026-05-18"
+          },
+          {
+            "lot_id": "10f5dabbad68",
+            "ticker": "NVDA",
+            "shares": 2.7670980379351007,
+            "cost_basis_per_share": 215.4376668319702,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "SMCI": {
+        "ticker": "SMCI",
+        "lots": [
+          {
+            "lot_id": "d782ec6c102e",
+            "ticker": "SMCI",
+            "shares": 13.956084249084475,
+            "cost_basis_per_share": 35.59779183197021,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "MU": {
+        "ticker": "MU",
+        "lots": [
+          {
+            "lot_id": "4ff4b69dd722",
+            "ticker": "MU",
+            "shares": 0.3305892778981808,
+            "cost_basis_per_share": 751.3755,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "AVGO": {
+        "ticker": "AVGO",
+        "lots": [
+          {
+            "lot_id": "04bc376c7347",
+            "ticker": "AVGO",
+            "shares": 1.322314256284697,
+            "cost_basis_per_share": 461.0103887786865,
+            "acquisition_date": "2026-06-01"
+          }
+        ]
+      },
+      "AMD": {
+        "ticker": "AMD",
+        "lots": [
+          {
+            "lot_id": "b63f709f9a38",
+            "ticker": "AMD",
+            "shares": 1.2103842693860523,
+            "cost_basis_per_share": 490.9254548034668,
+            "acquisition_date": "2026-06-08"
+          }
+        ]
+      },
+      "AAPL": {
+        "ticker": "AAPL",
+        "lots": [
+          {
+            "lot_id": "06bece33a50b",
+            "ticker": "AAPL",
+            "shares": 1.5728950030957594,
+            "cost_basis_per_share": 314.8073188934326,
+            "acquisition_date": "2026-06-08"
+          }
+        ]
+      }
+    },
+    "initial_capital": 10000.0,
+    "inception_date": "2026-05-18",
+    "last_updated": "2026-06-08T17:29:58.157043"
+  },
+  "portfolio_state_after": {
+    "cash": 5087.351689723575,
+    "positions": {
+      "UNH": {
+        "ticker": "UNH",
+        "lots": [
+          {
+            "lot_id": "b382df2c6f8d",
+            "ticker": "UNH",
+            "shares": 0.029607934163809357,
+            "cost_basis_per_share": 391.3255698852539,
+            "acquisition_date": "2026-05-18"
+          },
+          {
+            "lot_id": "59e6e80e89b5",
+            "ticker": "UNH",
+            "shares": 1.4739739356895665,
+            "cost_basis_per_share": 403.1114586639404,
+            "acquisition_date": "2026-06-08"
+          }
+        ]
+      },
+      "NVDA": {
+        "ticker": "NVDA",
+        "lots": [
+          {
+            "lot_id": "36468f865281",
+            "ticker": "NVDA",
+            "shares": 2.6970744125369643,
+            "cost_basis_per_share": 222.43116732788084,
+            "acquisition_date": "2026-05-18"
+          },
+          {
+            "lot_id": "10f5dabbad68",
+            "ticker": "NVDA",
+            "shares": 2.7670980379351007,
+            "cost_basis_per_share": 215.4376668319702,
+            "acquisition_date": "2026-05-25"
+          }
+        ]
+      },
+      "MU": {
+        "ticker": "MU",
+        "lots": [
+          {
+            "lot_id": "4ff4b69dd722",
+            "ticker": "MU",
+            "shares": 0.3305892778981808,
+            "cost_basis_per_share": 751.3755,
+            "acquisition_date": "2026-05-25"
+          },
+          {
+            "lot_id": "9d5ea1e55e5a",
+            "ticker": "MU",
+            "shares": 0.4516434675830964,
+            "cost_basis_per_share": 1090.7750954589844,
+            "acquisition_date": "2026-06-15"
+          }
+        ]
+      },
+      "AMD": {
+        "ticker": "AMD",
+        "lots": [
+          {
+            "lot_id": "b63f709f9a38",
+            "ticker": "AMD",
+            "shares": 1.2103842693860523,
+            "cost_basis_per_share": 490.9254548034668,
+            "acquisition_date": "2026-06-08"
+          }
+        ]
+      },
+      "DIA": {
+        "ticker": "DIA",
+        "lots": [
+          {
+            "lot_id": "9f5d30388202",
+            "ticker": "DIA",
+            "shares": 1,
+            "cost_basis_per_share": 519.7647573852539,
+            "acquisition_date": "2026-06-15"
+          }
+        ]
+      },
+      "XLF": {
+        "ticker": "XLF",
+        "lots": [
+          {
+            "lot_id": "abef9bf41973",
+            "ticker": "XLF",
+            "shares": 11,
+            "cost_basis_per_share": 53.74185765266418,
+            "acquisition_date": "2026-06-15"
+          }
+        ]
+      },
+      "XLI": {
+        "ticker": "XLI",
+        "lots": [
+          {
+            "lot_id": "77371cd4615c",
+            "ticker": "XLI",
+            "shares": 2,
+            "cost_basis_per_share": 179.69980561065674,
+            "acquisition_date": "2026-06-15"
+          }
+        ]
+      }
+    },
+    "initial_capital": 10000.0,
+    "inception_date": "2026-05-18",
+    "last_updated": "2026-06-15T18:47:49.465471"
+  },
+  "universe": [
+    "UNH",
+    "NVDA",
+    "SMCI",
+    "MU",
+    "AVGO",
+    "AMD",
+    "AAPL",
+    "MSFT",
+    "GOOGL",
+    "AMZN",
+    "META",
+    "TSLA",
+    "BRK.B",
+    "JPM",
+    "V",
+    "WMT",
+    "COST",
+    "SPY",
+    "QQQ",
+    "IWM",
+    "DIA",
+    "XLK",
+    "XLF",
+    "XLV",
+    "XLE",
+    "XLY",
+    "XLI",
+    "XLP",
+    "XLU",
+    "XLB"
+  ],
+  "scout_briefs": {
+    "sentiment": {
+      "scout": "sentiment",
+      "as_of": "2026-06-15T18:44:42.461114+00:00",
+      "lookback_days": 7,
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "UNH",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "NVDA",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SMCI",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "MU",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AVGO",
+          "buzz_level": "low",
+          "reddit_mentions": 2,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AMD",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AAPL",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "MSFT",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "GOOGL",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AMZN",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "META",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "TSLA",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "BRK.B",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "JPM",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "V",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "WMT",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "COST",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SPY",
+          "buzz_level": "med",
+          "reddit_mentions": 10,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "QQQ",
+          "buzz_level": "low",
+          "reddit_mentions": 1,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "IWM",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "DIA",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLK",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLF",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLV",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLE",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLY",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLI",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLP",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLU",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "XLB",
+          "buzz_level": "low",
+          "reddit_mentions": 0,
+          "reddit_engagement": 0,
+          "reddit_score": 50.0,
+          "stocktwits_messages": 0,
+          "stocktwits_tagged": 0,
+          "stocktwits_bullish": 0,
+          "stocktwits_bearish": 0,
+          "stocktwits_weighted_score": 0.0,
+          "stocktwits_score": 50.0,
+          "composite_score": 50.0
+        }
+      ]
+    },
+    "earnings": {
+      "scout": "earnings",
+      "as_of": "2026-06-15T18:44:53.139735+00:00",
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "NVDA",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 5.54,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "WMT",
+          "recent_result": "beat",
+          "days_since_earnings": 25,
+          "surprise_pct": 2.75,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 55.0
+        },
+        {
+          "ticker": "SMCI",
+          "recent_result": "beat",
+          "days_since_earnings": 40,
+          "surprise_pct": 34.51,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "AMD",
+          "recent_result": "beat",
+          "days_since_earnings": 40,
+          "surprise_pct": 5.82,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "AAPL",
+          "recent_result": "beat",
+          "days_since_earnings": 45,
+          "surprise_pct": 3.49,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "BRK.B",
+          "recent_result": "beat",
+          "days_since_earnings": 44,
+          "surprise_pct": 4.17,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 53.0
+        },
+        {
+          "ticker": "UNH",
+          "recent_result": "beat",
+          "days_since_earnings": 55,
+          "surprise_pct": 9.52,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "MSFT",
+          "recent_result": "beat",
+          "days_since_earnings": 46,
+          "surprise_pct": 5.22,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "GOOGL",
+          "recent_result": "beat",
+          "days_since_earnings": 46,
+          "surprise_pct": 94.3,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "AMZN",
+          "recent_result": "beat",
+          "days_since_earnings": 46,
+          "surprise_pct": 69.02,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "META",
+          "recent_result": "beat",
+          "days_since_earnings": 46,
+          "surprise_pct": 7.2,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "V",
+          "recent_result": "beat",
+          "days_since_earnings": 47,
+          "surprise_pct": 6.79,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 51.5
+        },
+        {
+          "ticker": "MU",
+          "recent_result": null,
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "AVGO",
+          "recent_result": "in_line",
+          "days_since_earnings": 11,
+          "surprise_pct": 1.78,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "JPM",
+          "recent_result": null,
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "COST",
+          "recent_result": "in_line",
+          "days_since_earnings": 17,
+          "surprise_pct": -0.85,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0
+        },
+        {
+          "ticker": "SPY",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "QQQ",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "IWM",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "DIA",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLK",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLF",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLV",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLE",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLY",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLI",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLP",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLU",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "XLB",
+          "recent_result": "n/a (ETF)",
+          "days_since_earnings": null,
+          "surprise_pct": null,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 50.0,
+          "is_etf": true
+        },
+        {
+          "ticker": "TSLA",
+          "recent_result": "miss",
+          "days_since_earnings": 53,
+          "surprise_pct": -36.54,
+          "post_earnings_drift_pct": null,
+          "next_earnings_in_days": null,
+          "composite_score": 48.5
+        }
+      ]
+    },
+    "technical": {
+      "scout": "technical",
+      "as_of": "2026-06-15T18:44:57.128880+00:00",
+      "universe_size": 30,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "MU",
+          "last_close": 1090.41,
+          "ma20": 911.41,
+          "ma50": 692.13,
+          "ma_stack": "bull",
+          "rsi": 66.6,
+          "momentum_1w_pct": 14.87,
+          "momentum_1m_pct": 40.51,
+          "twentyd_breakout": true,
+          "composite_score": 85.0,
+          "data_available": true
+        },
+        {
+          "ticker": "AMD",
+          "last_close": 548.45,
+          "ma20": 488.19,
+          "ma50": 393.4,
+          "ma_stack": "bull",
+          "rsi": 65.4,
+          "momentum_1w_pct": 11.85,
+          "momentum_1m_pct": 21.96,
+          "twentyd_breakout": true,
+          "composite_score": 85.0,
+          "data_available": true
+        },
+        {
+          "ticker": "IWM",
+          "last_close": 294.84,
+          "ma20": 286.56,
+          "ma50": 279.12,
+          "ma_stack": "bull",
+          "rsi": 61.5,
+          "momentum_1w_pct": 3.78,
+          "momentum_1m_pct": 3.65,
+          "twentyd_breakout": true,
+          "composite_score": 81.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLI",
+          "last_close": 179.6,
+          "ma20": 173.44,
+          "ma50": 172.66,
+          "ma_stack": "bull",
+          "rsi": 61.2,
+          "momentum_1w_pct": 3.44,
+          "momentum_1m_pct": 2.92,
+          "twentyd_breakout": true,
+          "composite_score": 80.9,
+          "data_available": true
+        },
+        {
+          "ticker": "DIA",
+          "last_close": 519.39,
+          "ma20": 507.55,
+          "ma50": 496.75,
+          "ma_stack": "bull",
+          "rsi": 63.6,
+          "momentum_1w_pct": 2.06,
+          "momentum_1m_pct": 3.77,
+          "twentyd_breakout": true,
+          "composite_score": 79.9,
+          "data_available": true
+        },
+        {
+          "ticker": "XLF",
+          "last_close": 53.69,
+          "ma20": 51.94,
+          "ma50": 51.72,
+          "ma_stack": "bull",
+          "rsi": 67.5,
+          "momentum_1w_pct": 3.32,
+          "momentum_1m_pct": 4.69,
+          "twentyd_breakout": true,
+          "composite_score": 75.7,
+          "data_available": true
+        },
+        {
+          "ticker": "XLK",
+          "last_close": 191.77,
+          "ma20": 184.81,
+          "ma50": 169.16,
+          "ma_stack": "bull",
+          "rsi": 61.6,
+          "momentum_1w_pct": 4.12,
+          "momentum_1m_pct": 6.84,
+          "twentyd_breakout": false,
+          "composite_score": 75.5,
+          "data_available": true
+        },
+        {
+          "ticker": "QQQ",
+          "last_close": 743.96,
+          "ma20": 723.25,
+          "ma50": 684.99,
+          "ma_stack": "bull",
+          "rsi": 62.4,
+          "momentum_1w_pct": 3.89,
+          "momentum_1m_pct": 3.36,
+          "twentyd_breakout": false,
+          "composite_score": 73.6,
+          "data_available": true
+        },
+        {
+          "ticker": "UNH",
+          "last_close": 413.12,
+          "ma20": 392.16,
+          "ma50": 366.45,
+          "ma_stack": "bull",
+          "rsi": 70.0,
+          "momentum_1w_pct": 1.61,
+          "momentum_1m_pct": 3.52,
+          "twentyd_breakout": true,
+          "composite_score": 73.4,
+          "data_available": true
+        },
+        {
+          "ticker": "BRK.B",
+          "last_close": 495.92,
+          "ma20": 482.24,
+          "ma50": 478.32,
+          "ma_stack": "bull",
+          "rsi": 65.0,
+          "momentum_1w_pct": 1.83,
+          "momentum_1m_pct": 2.45,
+          "twentyd_breakout": true,
+          "composite_score": 73.1,
+          "data_available": true
+        },
+        {
+          "ticker": "XLP",
+          "last_close": 85.48,
+          "ma20": 84.16,
+          "ma50": 83.52,
+          "ma_stack": "bull",
+          "rsi": 58.5,
+          "momentum_1w_pct": 2.9,
+          "momentum_1m_pct": 0.59,
+          "twentyd_breakout": false,
+          "composite_score": 71.2,
+          "data_available": true
+        },
+        {
+          "ticker": "SPY",
+          "last_close": 755.22,
+          "ma20": 745.88,
+          "ma50": 724.79,
+          "ma_stack": "bull",
+          "rsi": 60.5,
+          "momentum_1w_pct": 2.17,
+          "momentum_1m_pct": 0.94,
+          "twentyd_breakout": false,
+          "composite_score": 70.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLY",
+          "last_close": 118.48,
+          "ma20": 117.59,
+          "ma50": 117.24,
+          "ma_stack": "bull",
+          "rsi": 53.8,
+          "momentum_1w_pct": 2.68,
+          "momentum_1m_pct": -0.16,
+          "twentyd_breakout": false,
+          "composite_score": 70.6,
+          "data_available": true
+        },
+        {
+          "ticker": "XLV",
+          "last_close": 152.78,
+          "ma20": 150.17,
+          "ma50": 147.7,
+          "ma_stack": "bull",
+          "rsi": 58.5,
+          "momentum_1w_pct": 0.09,
+          "momentum_1m_pct": 4.19,
+          "twentyd_breakout": false,
+          "composite_score": 70.2,
+          "data_available": true
+        },
+        {
+          "ticker": "XLB",
+          "last_close": 52.81,
+          "ma20": 50.84,
+          "ma50": 51.28,
+          "ma_stack": "mixed",
+          "rsi": 60.4,
+          "momentum_1w_pct": 5.69,
+          "momentum_1m_pct": 2.2,
+          "twentyd_breakout": true,
+          "composite_score": 70.1,
+          "data_available": true
+        },
+        {
+          "ticker": "V",
+          "last_close": 324.67,
+          "ma20": 324.44,
+          "ma50": 319.2,
+          "ma_stack": "bull",
+          "rsi": 52.8,
+          "momentum_1w_pct": 1.56,
+          "momentum_1m_pct": 0.67,
+          "twentyd_breakout": false,
+          "composite_score": 69.9,
+          "data_available": true
+        },
+        {
+          "ticker": "JPM",
+          "last_close": 320.31,
+          "ma20": 305.95,
+          "ma50": 307.1,
+          "ma_stack": "mixed",
+          "rsi": 64.6,
+          "momentum_1w_pct": 2.96,
+          "momentum_1m_pct": 6.8,
+          "twentyd_breakout": false,
+          "composite_score": 62.4,
+          "data_available": true
+        },
+        {
+          "ticker": "XLU",
+          "last_close": 44.94,
+          "ma20": 44.33,
+          "ma50": 45.26,
+          "ma_stack": "mixed",
+          "rsi": 53.4,
+          "momentum_1w_pct": 3.26,
+          "momentum_1m_pct": 0.09,
+          "twentyd_breakout": false,
+          "composite_score": 59.3,
+          "data_available": true
+        },
+        {
+          "ticker": "GOOGL",
+          "last_close": 371.22,
+          "ma20": 374.98,
+          "ma50": 363.57,
+          "ma_stack": "mixed",
+          "rsi": 51.1,
+          "momentum_1w_pct": 2.18,
+          "momentum_1m_pct": -7.39,
+          "twentyd_breakout": false,
+          "composite_score": 54.5,
+          "data_available": true
+        },
+        {
+          "ticker": "AAPL",
+          "last_close": 296.22,
+          "ma20": 303.68,
+          "ma50": 286.17,
+          "ma_stack": "mixed",
+          "rsi": 49.4,
+          "momentum_1w_pct": -1.76,
+          "momentum_1m_pct": -0.67,
+          "twentyd_breakout": false,
+          "composite_score": 53.9,
+          "data_available": true
+        },
+        {
+          "ticker": "NVDA",
+          "last_close": 212.33,
+          "ma20": 213.82,
+          "ma50": 207.41,
+          "ma_stack": "mixed",
+          "rsi": 51.2,
+          "momentum_1w_pct": 1.77,
+          "momentum_1m_pct": -9.83,
+          "twentyd_breakout": false,
+          "composite_score": 52.9,
+          "data_available": true
+        },
+        {
+          "ticker": "AMZN",
+          "last_close": 246.35,
+          "ma20": 256.36,
+          "ma50": 255.51,
+          "ma_stack": "mixed",
+          "rsi": 43.5,
+          "momentum_1w_pct": 0.46,
+          "momentum_1m_pct": -7.81,
+          "twentyd_breakout": false,
+          "composite_score": 52.6,
+          "data_available": true
+        },
+        {
+          "ticker": "TSLA",
+          "last_close": 409.82,
+          "ma20": 415.12,
+          "ma50": 399.28,
+          "ma_stack": "mixed",
+          "rsi": 50.0,
+          "momentum_1w_pct": 0.21,
+          "momentum_1m_pct": -7.55,
+          "twentyd_breakout": false,
+          "composite_score": 52.4,
+          "data_available": true
+        },
+        {
+          "ticker": "MSFT",
+          "last_close": 398.57,
+          "ma20": 418.45,
+          "ma50": 411.72,
+          "ma_stack": "mixed",
+          "rsi": 42.0,
+          "momentum_1w_pct": -3.2,
+          "momentum_1m_pct": -2.44,
+          "twentyd_breakout": false,
+          "composite_score": 51.6,
+          "data_available": true
+        },
+        {
+          "ticker": "AVGO",
+          "last_close": 394.45,
+          "ma20": 417.19,
+          "ma50": 408.05,
+          "ma_stack": "mixed",
+          "rsi": 45.4,
+          "momentum_1w_pct": -0.54,
+          "momentum_1m_pct": -10.31,
+          "twentyd_breakout": false,
+          "composite_score": 50.3,
+          "data_available": true
+        },
+        {
+          "ticker": "XLE",
+          "last_close": 55.85,
+          "ma20": 58.16,
+          "ma50": 57.73,
+          "ma_stack": "mixed",
+          "rsi": 41.1,
+          "momentum_1w_pct": -4.24,
+          "momentum_1m_pct": -3.81,
+          "twentyd_breakout": false,
+          "composite_score": 49.8,
+          "data_available": true
+        },
+        {
+          "ticker": "SMCI",
+          "last_close": 31.01,
+          "ma20": 38.35,
+          "ma50": 32.42,
+          "ma_stack": "mixed",
+          "rsi": 41.9,
+          "momentum_1w_pct": -29.5,
+          "momentum_1m_pct": -6.1,
+          "twentyd_breakout": false,
+          "composite_score": 47.9,
+          "data_available": true
+        },
+        {
+          "ticker": "META",
+          "last_close": 594.58,
+          "ma20": 603.23,
+          "ma50": 622.23,
+          "ma_stack": "bear",
+          "rsi": 46.5,
+          "momentum_1w_pct": 1.57,
+          "momentum_1m_pct": -3.86,
+          "twentyd_breakout": false,
+          "composite_score": 43.6,
+          "data_available": true
+        },
+        {
+          "ticker": "COST",
+          "last_close": 981.8,
+          "ma20": 997.73,
+          "ma50": 1003.75,
+          "ma_stack": "bear",
+          "rsi": 46.0,
+          "momentum_1w_pct": 0.72,
+          "momentum_1m_pct": -5.71,
+          "twentyd_breakout": false,
+          "composite_score": 41.9,
+          "data_available": true
+        },
+        {
+          "ticker": "WMT",
+          "last_close": 120.61,
+          "ma20": 120.72,
+          "ma50": 125.38,
+          "ma_stack": "bear",
+          "rsi": 46.2,
+          "momentum_1w_pct": 0.65,
+          "momentum_1m_pct": -8.95,
+          "twentyd_breakout": false,
+          "composite_score": 40.2,
+          "data_available": true
+        }
+      ]
+    },
+    "macro": {
+      "scout": "macro",
+      "as_of": "2026-06-15T18:45:06.221758+00:00",
+      "indicators": {
+        "fed_funds_rate": {
+          "name": "Federal Funds Rate",
+          "current_value": 3.63,
+          "previous_value": 3.64,
+          "change": -0.010000000000000231,
+          "change_percent": -0.2747252747252811,
+          "unit": "%",
+          "last_updated": "2026-05-01T00:00:00"
+        },
+        "inflation_cpi": {
+          "name": "Consumer Price Index",
+          "current_value": 333.979,
+          "previous_value": 332.407,
+          "change": 1.5720000000000027,
+          "change_percent": 0.47291422864139526,
+          "unit": "Index",
+          "last_updated": "2026-05-01T00:00:00"
+        },
+        "unemployment_rate": {
+          "name": "Unemployment Rate",
+          "current_value": 4.3,
+          "previous_value": 4.3,
+          "change": 0.0,
+          "change_percent": 0.0,
+          "unit": "%",
+          "last_updated": "2026-05-01T00:00:00"
+        },
+        "gdp_growth": {
+          "name": "Real GDP Growth",
+          "current_value": 1.6,
+          "previous_value": 0.5,
+          "change": 1.1,
+          "change_percent": 220.00000000000003,
+          "unit": "%",
+          "last_updated": "2026-01-01T00:00:00"
+        },
+        "treasury_10y": {
+          "name": "10-Year Treasury",
+          "current_value": 4.45,
+          "previous_value": 4.55,
+          "change": -0.09999999999999964,
+          "change_percent": -2.19780219780219,
+          "unit": "%",
+          "last_updated": "2026-06-11T00:00:00"
+        },
+        "consumer_sentiment": {
+          "name": "Consumer Sentiment",
+          "current_value": 49.8,
+          "previous_value": 53.3,
+          "change": -3.5,
+          "change_percent": -6.566604127579738,
+          "unit": "Index",
+          "last_updated": "2026-04-01T00:00:00"
+        }
+      },
+      "regime": {
+        "overall_regime": "expansion",
+        "rate_trend": "stable",
+        "inflation_trend": "stable",
+        "growth_trend": "moderate",
+        "favored_sectors": [
+          "Technology",
+          "Consumer Discretionary",
+          "Industrials",
+          "Financials"
+        ],
+        "disfavored_sectors": [
+          "Utilities",
+          "Consumer Staples"
+        ]
+      },
+      "degraded": false
+    },
+    "influencer": {
+      "scout": "influencer",
+      "as_of": "2026-06-15T18:45:22.453203+00:00",
+      "universe_size": 10,
+      "degraded": true,
+      "error_notes": [
+        "UNH: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "NVDA: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "SMCI: https://nitter.tiekoetter.com returned 0 tweets (instance may be degraded)",
+        "MU: no instances available",
+        "AVGO: no instances available"
+      ],
+      "candidates": [
+        {
+          "ticker": "UNH",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "NVDA",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "SMCI",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "MU",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AVGO",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AMD",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AAPL",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "MSFT",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "GOOGL",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        },
+        {
+          "ticker": "AMZN",
+          "mentions": 0,
+          "polarity": "unknown",
+          "bullish_count": 0,
+          "bearish_count": 0,
+          "top_handles": [],
+          "degraded": true
+        }
+      ]
+    },
+    "news": {
+      "scout": "news",
+      "as_of": "2026-06-15T18:45:26.981297+00:00",
+      "universe_size": 30,
+      "broad_items_count": 165,
+      "degraded_sources": [],
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "AMD",
+          "headline_count": 9,
+          "broad_count": 1,
+          "ticker_specific_count": 8,
+          "distinct_sources": 8,
+          "buzz_level": "high",
+          "polarity_score": 0.95,
+          "top_headlines": [
+            {
+              "title": "AMD flirts with a $900 billion valuation after beefing up its memory technology",
+              "source": "marketwatch",
+              "link": "https://www.marketwatch.com/story/amd-flirts-with-a-900-billion-valuation-after-beefing-up-its-memory-technology-2a366bdc?mod=mw_rss_topstories"
+            },
+            {
+              "title": "Better Artificial Intelligence (AI) Inference Stock: AMD vs. Intel",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/06/15/better-artificial-intelligence-ai-inference-stock/"
+            },
+            {
+              "title": "Quantum Stocks Jump as Growth Trade Revives",
+              "source": "GuruFocus.com",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/quantum-stocks-jump-growth-trade-180020171.html"
+            }
+          ],
+          "composite_score": 97.3
+        },
+        {
+          "ticker": "DIA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.991,
+          "top_headlines": [
+            {
+              "title": "Peace Agreement Sends Pre-Market Futures Higher",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/economy/policy/articles/peace-agreement-sends-pre-market-143900709.html"
+            },
+            {
+              "title": "Nasdaq, S&P 500, Dow Futures Climb While Oil Slides As US-Iran Deal Signals End To Hormuz Disruption: DJT, NFLX, GLXY, SPCX In Focus",
+              "source": "Stocktwits",
+              "link": "https://stocktwits.com/news-articles/markets/equity/nasdaq-sp500-dow-futures-climb-while-oil-slides-as-us-iran-deal-signals-end-to-hormuz-disruption/cZKfbvBR7dP"
+            },
+            {
+              "title": "S&P 500, Nasdaq, Dow End Higher On SpaceX Strong Debut And US-Iran Peace Signals \u2014 SPCX, SHEL, ROKU, XOM, HOOD In Focus",
+              "source": "Stocktwits",
+              "link": "https://stocktwits.com/news-articles/markets/equity/s-and-p-500-nasdaq-dow-end-higher-on-space-x-strong-debut-and-us-iran-peace-signals-spcx-shel-roku-xom-hood-in-focus/cZKdaEuR75L"
+            }
+          ],
+          "composite_score": 96.8
+        },
+        {
+          "ticker": "TSLA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 8,
+          "buzz_level": "high",
+          "polarity_score": 0.979,
+          "top_headlines": [
+            {
+              "title": "Tech stocks today: SpaceX becomes more valuable than Tesla",
+              "source": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/sectors/technology/live/tech-stocks-today-spacex-becomes-more-valuable-than-tesla-100000563.html"
+            },
+            {
+              "title": "SpaceX stock gains: What its IPO signals about its future success",
+              "source": "Yahoo Finance Video",
+              "link": "https://finance.yahoo.com/video/spacex-stock-gains-what-its-ipo-signals-about-its-future-success-135149957.html"
+            },
+            {
+              "title": "Peter Diamandis Dismisses SpaceX Valuation Concerns \u2014 'You're Not Buying Just The Revenue... You're Buying Humanity's Future Economy'",
+              "source": "Stocktwits",
+              "link": "https://stocktwits.com/news-articles/markets/equity/peter-diamandis-dismisses-spacex-valuation-concerns/cZKfYrfR73j"
+            }
+          ],
+          "composite_score": 96.5
+        },
+        {
+          "ticker": "NVDA",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.963,
+          "top_headlines": [
+            {
+              "title": "SpaceX just took Palantir's top spot with one of the most excessive valuation multiples in megacap tech",
+              "source": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/markets/article/spacex-just-took-palantirs-top-spot-with-one-of-the-most-excessive-valuation-multiples-in-megacap-tech-155303264.html"
+            },
+            {
+              "title": "Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them",
+              "source": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/markets/article/why-the-biggest-magnificent-7-stocks-have-one-giant-headwind-coming-right-at-them-142228430.html"
+            },
+            {
+              "title": "Can Amazon Reach $300 Per Share Before Year-End 2026?",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/can-amazon-reach-300-per-share-before-year-end-2026/"
+            }
+          ],
+          "composite_score": 96.1
+        },
+        {
+          "ticker": "SMCI",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.959,
+          "top_headlines": [
+            {
+              "title": "VRT vs. SMCI: Which Data Center Infrastructure Stock Is a Better Buy?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/vrt-vs-smci-data-center-152000990.html"
+            },
+            {
+              "title": "United and Other Airline Stocks Are Winners\u2014but Not the Winners\u2014of the Iran Deal",
+              "source": "Barrons.com",
+              "link": "https://www.barrons.com/articles/united-airlines-stock-price-delta-iran-deal-cdaf9255?siteid=yhoof2&yptr=yahoo"
+            },
+            {
+              "title": "United, Delta and Southwest Rally as Iran Deal Lifts Travel Stocks",
+              "source": "GuruFocus.com",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/airline-stocks-soar-u-iran-141527515.html"
+            }
+          ],
+          "composite_score": 96.0
+        },
+        {
+          "ticker": "MU",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.945,
+          "top_headlines": [
+            {
+              "title": "Top Midday Gainers",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/top-midday-gainers-180047578.html"
+            },
+            {
+              "title": "Quantum Stocks Jump as Growth Trade Revives",
+              "source": "GuruFocus.com",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/quantum-stocks-jump-growth-trade-180020171.html"
+            },
+            {
+              "title": "SpaceX, Western Digital, Micron, and More Stocks That Explain Today\u2019s Market",
+              "source": "Barrons.com",
+              "link": "https://www.barrons.com/articles/stock-movers-eaba1346?siteid=yhoof2&yptr=yahoo"
+            }
+          ],
+          "composite_score": 95.6
+        },
+        {
+          "ticker": "V",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.946,
+          "top_headlines": [
+            {
+              "title": "Visa (V) Holds Steady Amid Macro Concerns",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/visa-v-holds-steady-amid-132753140.html"
+            },
+            {
+              "title": "Digital Payment Update - Greece's Social Commerce Set For Major Growth By 2026",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/digital-payment-greeces-social-commerce-124533246.html"
+            },
+            {
+              "title": "AI Is Reshaping FIFA World Cup 2026: 5 Stocks Likely to Gain",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/ai-reshaping-fifa-world-cup-121200690.html"
+            }
+          ],
+          "composite_score": 95.6
+        },
+        {
+          "ticker": "META",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.932,
+          "top_headlines": [
+            {
+              "title": "SpaceX stock gains: What its IPO signals about its future success",
+              "source": "Yahoo Finance Video",
+              "link": "https://finance.yahoo.com/video/spacex-stock-gains-what-its-ipo-signals-about-its-future-success-135149957.html"
+            },
+            {
+              "title": "Meta Platforms Is Quietly Becoming One of the Market's Best AI Stocks to Buy. Here Are 3 Reasons Why.",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/06/15/meta-platforms-is-quietly-becoming-one-of-the-mark/"
+            },
+            {
+              "title": "How SpaceX\u2019s First Day Compares With Mag-7 Debuts",
+              "source": "The Wall Street Journal",
+              "link": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-06-15-2026/card/how-spacex-s-first-day-compares-with-mag-7-debuts-b9beursHsOmPDtYGoTwu?siteid=yhoof2&yptr=yahoo"
+            }
+          ],
+          "composite_score": 95.3
+        },
+        {
+          "ticker": "AAPL",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.922,
+          "top_headlines": [
+            {
+              "title": "Why the biggest \"Magnificent 7\" stocks have one giant headwind coming right at them",
+              "source": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/markets/article/why-the-biggest-magnificent-7-stocks-have-one-giant-headwind-coming-right-at-them-142228430.html"
+            },
+            {
+              "title": "Is The AI Boom Already Priced Out of Microsoft Stock?",
+              "source": "Trefis",
+              "link": "https://www.trefis.com/articles/602903/is-the-ai-boom-already-priced-out-of-microsoft-stock/2026-06-15"
+            },
+            {
+              "title": "64 Years of Raises: How DGRO Finds Companies That Never Cut Dividends",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/64-years-of-raises-how-dgro-finds-companies-that-never-cut-dividends/"
+            }
+          ],
+          "composite_score": 95.1
+        },
+        {
+          "ticker": "QQQ",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 4,
+          "buzz_level": "high",
+          "polarity_score": 0.895,
+          "top_headlines": [
+            {
+              "title": "Can Retirees Count on JEPQ\u2019s 10.3 Percent Dividend and Monthly Payments?",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/can-retirees-count-on-jepqs-10-3-percent-dividend-and-monthly-payments/"
+            },
+            {
+              "title": "EHang Rockets 18%, Archer Zooms 10%, Joby Rises 7% as Air Taxi Stocks Fly Higher With the Broader Market",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/ehang-rockets-18-archer-zooms-10-joby-rises-7-as-air-taxi-stocks-fly-higher-with-the-broader-market/"
+            },
+            {
+              "title": "Exchange-Traded Funds Rise, US Equities Rise After Midday",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-170731198.html"
+            }
+          ],
+          "composite_score": 94.4
+        },
+        {
+          "ticker": "XLB",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.897,
+          "top_headlines": [
+            {
+              "title": "Oil\u2019s 5.7% Weekly Drop Opens the Door for Jets, Materials, and Infrastructure ETFs",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/personal-finance/2026/06/14/oils-5-7-weekly-drop-opens-the-door-for-jets-materials-and-infrastructure-etfs/"
+            },
+            {
+              "title": "When the AI Trade Collapses, These 3 S&P 500 Sectors Are Your Best Bet",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2462179/when-the-ai-trade-collapses-these-3-s-p-500-sectors-are-your-best-bet"
+            },
+            {
+              "title": "LyondellBasell Stock: Is LYB Underperforming the Materials Sector?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2424438/lyondellbasell-stock-is-lyb-underperforming-the-materials-sector"
+            }
+          ],
+          "composite_score": 94.4
+        },
+        {
+          "ticker": "AMZN",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.871,
+          "top_headlines": [
+            {
+              "title": "Can Amazon Reach $300 Per Share Before Year-End 2026?",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/can-amazon-reach-300-per-share-before-year-end-2026/"
+            },
+            {
+              "title": "Stock Market Today: Dow Jumps As Trump Makes Iran Move; This AI Play Rallies Into Buy Zone (Live Coverage)",
+              "source": "Investor's Business Daily",
+              "link": "https://www.investors.com/market-trend/stock-market-today/dow-jones-sp500-nasdaq-us-iran-deal-oil-prices/?src=A00220&yptr=yahoo"
+            },
+            {
+              "title": "Is The AI Boom Already Priced Out of Microsoft Stock?",
+              "source": "Trefis",
+              "link": "https://www.trefis.com/articles/602903/is-the-ai-boom-already-priced-out-of-microsoft-stock/2026-06-15"
+            }
+          ],
+          "composite_score": 93.8
+        },
+        {
+          "ticker": "XLK",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.874,
+          "top_headlines": [
+            {
+              "title": "Which Is the Better Tech ETF for Artificial Intelligence (AI) Stocks, State Street's XLK or Vanguard's VGT?",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/coverage/etfs/2026/06/15/which-is-the-better-tech-etf-for-artificial-intelligence-ai-stocks-state-street-s-xlk-or-vanguard-s-vgt/"
+            },
+            {
+              "title": "Exchange-Traded Funds Rise, US Equities Rise After Midday",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-170731198.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            }
+          ],
+          "composite_score": 93.8
+        },
+        {
+          "ticker": "AVGO",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.86,
+          "top_headlines": [
+            {
+              "title": "The Console Cycle That Could Test Advanced Micro Stock",
+              "source": "Trefis",
+              "link": "https://www.trefis.com/articles/602915/the-console-cycle-that-could-test-advanced-micro-stock/2026-06-15"
+            },
+            {
+              "title": "Credo Technology Rides the AI Interconnect Upgrade Cycle",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/credo-technology-rides-ai-interconnect-145000244.html"
+            },
+            {
+              "title": "Is CRDO Stock Still Worth Buying After Its Massive Run Higher?",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/crdo-stock-still-worth-buying-144700751.html"
+            }
+          ],
+          "composite_score": 93.5
+        },
+        {
+          "ticker": "UNH",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.8,
+          "top_headlines": [
+            {
+              "title": "Beat the Market Like Zacks: FirstCash, Cisco, Bread Financial in Focus",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/beat-market-zacks-firstcash-cisco-123600066.html"
+            },
+            {
+              "title": "Jim Cramer on UnitedHealth: \u201cBuy It\u201d",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/jim-cramer-unitedhealth-buy-082842966.html"
+            },
+            {
+              "title": "JPMorgan Raises its Price Target on UnitedHealth Group (UNH)",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/sectors/healthcare/articles/jpmorgan-raises-price-target-unitedhealth-103948920.html"
+            }
+          ],
+          "composite_score": 92.0
+        },
+        {
+          "ticker": "MSFT",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 5,
+          "buzz_level": "high",
+          "polarity_score": 0.799,
+          "top_headlines": [
+            {
+              "title": "Update: Equity Markets Rally Intraday, Oil Tumbles Following US-Iran Deal",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/equity-markets-rally-intraday-oil-183240698.html"
+            },
+            {
+              "title": "MSFT Stock Rises Despite Shareholder Lawsuit Over AI Spending, Cloud Slowdown",
+              "source": "Stocktwits",
+              "link": "https://stocktwits.com/news-articles/markets/equity/msft-stock-rises-despite-shareholder-lawsuit/cZKfqwiR738"
+            },
+            {
+              "title": "Is The AI Boom Already Priced Out of Microsoft Stock?",
+              "source": "Trefis",
+              "link": "https://www.trefis.com/articles/602903/is-the-ai-boom-already-priced-out-of-microsoft-stock/2026-06-15"
+            }
+          ],
+          "composite_score": 92.0
+        },
+        {
+          "ticker": "SPY",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.962,
+          "top_headlines": [
+            {
+              "title": "EHang Rockets 18%, Archer Zooms 10%, Joby Rises 7% as Air Taxi Stocks Fly Higher With the Broader Market",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/ehang-rockets-18-archer-zooms-10-joby-rises-7-as-air-taxi-stocks-fly-higher-with-the-broader-market/"
+            },
+            {
+              "title": "Palantir Rises 5%, Cloudflare Pops 3% as Investors Pile Into AI Security Plays",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/palantir-rises-5-cloudflare-pops-3-as-investors-pile-into-ai-security-plays/"
+            },
+            {
+              "title": "64 Years of Raises: How DGRO Finds Companies That Never Cut Dividends",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/64-years-of-raises-how-dgro-finds-companies-that-never-cut-dividends/"
+            }
+          ],
+          "composite_score": 91.0
+        },
+        {
+          "ticker": "XLU",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.899,
+          "top_headlines": [
+            {
+              "title": "Entergy Stock: Is ETR Outperforming the Utility Sector?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2469427/entergy-stock-is-etr-outperforming-the-utility-sector"
+            },
+            {
+              "title": "When the AI Trade Collapses, These 3 S&P 500 Sectors Are Your Best Bet",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2462179/when-the-ai-trade-collapses-these-3-s-p-500-sectors-are-your-best-bet"
+            },
+            {
+              "title": "Edison International Stock: Is EIX Outperforming the Utility Sector?",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2427160/edison-international-stock-is-eix-outperforming-the-utility-sector"
+            }
+          ],
+          "composite_score": 89.5
+        },
+        {
+          "ticker": "XLE",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.888,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Energy Stocks Fall Monday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-fall-monday-175104858.html"
+            },
+            {
+              "title": "Sector Update: Energy",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/sectors/energy/articles/sector-energy-172338945.html"
+            },
+            {
+              "title": "Exchange-Traded Funds Rise, US Equities Rise After Midday",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-170731198.html"
+            }
+          ],
+          "composite_score": 89.2
+        },
+        {
+          "ticker": "JPM",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.65,
+          "top_headlines": [
+            {
+              "title": "JPMorgan Canada Move Links Security Lending Push To Valuation Upside Potential",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/jpmorgan-canada-move-links-security-181205620.html"
+            },
+            {
+              "title": "64 Years of Raises: How DGRO Finds Companies That Never Cut Dividends",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/64-years-of-raises-how-dgro-finds-companies-that-never-cut-dividends/"
+            },
+            {
+              "title": "US Bonds Rally as Traders Trim Fed Rate-Hike Bets on Iran Deal",
+              "source": "Bloomberg",
+              "link": "https://finance.yahoo.com/economy/policy/articles/treasuries-rally-traders-trim-fed-020747498.html"
+            }
+          ],
+          "composite_score": 88.3
+        },
+        {
+          "ticker": "WMT",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": 0.649,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Consumer Stocks Mixed Monday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-monday-173531511.html"
+            },
+            {
+              "title": "Costco Leans On Gasoline, E Commerce And Wellness To Deepen Member Value",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/costco-leans-gasoline-e-commerce-171312583.html"
+            },
+            {
+              "title": "Payoneer to be acquired by Nuvei in $2.75B all-cash deal",
+              "source": "Proactive",
+              "link": "https://www.proactiveinvestors.com/companies/news/1093915/payoneer-to-be-acquired-by-nuvei-in-2-75b-all-cash-deal-1093915.html"
+            }
+          ],
+          "composite_score": 88.2
+        },
+        {
+          "ticker": "XLY",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": 0.527,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Consumer Stocks Mixed Monday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-monday-173531511.html"
+            },
+            {
+              "title": "Target Lost Its Fashion Edge. It\u2019s Bringing Back a Familiar Face to Get Back on Top.",
+              "source": "Barrons.com",
+              "link": "https://www.barrons.com/articles/target-stock-fashion-retail-5c57790d?siteid=yhoof2&yptr=yahoo"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            }
+          ],
+          "composite_score": 85.2
+        },
+        {
+          "ticker": "COST",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 6,
+          "buzz_level": "high",
+          "polarity_score": 0.34,
+          "top_headlines": [
+            {
+              "title": "Costco Leans On Gasoline, E Commerce And Wellness To Deepen Member Value",
+              "source": "Simply Wall St.",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/costco-leans-gasoline-e-commerce-171312583.html"
+            },
+            {
+              "title": "Can Costco Stock Break $1,100 by 2027?",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/can-costco-stock-break-1100-by-2027/"
+            },
+            {
+              "title": "Here is What to Know Beyond Why Costco Wholesale Corporation (COST) is a Trending Stock",
+              "source": "Zacks",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/know-beyond-why-costco-wholesale-130005786.html"
+            }
+          ],
+          "composite_score": 80.5
+        },
+        {
+          "ticker": "XLF",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.52,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Financial Stocks Advance in Afternoon Trading",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-advance-afternoon-174404549.html"
+            },
+            {
+              "title": "Exchange-Traded Funds Rise, US Equities Rise After Midday",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-170731198.html"
+            },
+            {
+              "title": "Sector Update: Financial Stocks Advance Pre-Bell Monday",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-advance-pre-131758940.html"
+            }
+          ],
+          "composite_score": 80.0
+        },
+        {
+          "ticker": "XLP",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": 0.477,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Consumer Stocks Mixed Monday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-monday-173531511.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            },
+            {
+              "title": "When the AI Trade Collapses, These 3 S&P 500 Sectors Are Your Best Bet",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2462179/when-the-ai-trade-collapses-these-3-s-p-500-sectors-are-your-best-bet"
+            }
+          ],
+          "composite_score": 78.9
+        },
+        {
+          "ticker": "XLI",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": -0.273,
+          "top_headlines": [
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            },
+            {
+              "title": "When the AI Trade Collapses, These 3 S&P 500 Sectors Are Your Best Bet",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2462179/when-the-ai-trade-collapses-these-3-s-p-500-sectors-are-your-best-bet"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Mixed Pre-Bell Friday Ahead of SpaceX Debut",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131503816.html"
+            }
+          ],
+          "composite_score": 65.2
+        },
+        {
+          "ticker": "XLV",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": -0.318,
+          "top_headlines": [
+            {
+              "title": "Sector Update: Healthcare Stocks Softer Monday Afternoon",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/sectors/healthcare/articles/sector-healthcare-stocks-softer-monday-175010212.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            },
+            {
+              "title": "When the AI Trade Collapses, These 3 S&P 500 Sectors Are Your Best Bet",
+              "source": "Barchart",
+              "link": "https://www.barchart.com/story/news/2462179/when-the-ai-trade-collapses-these-3-s-p-500-sectors-are-your-best-bet"
+            }
+          ],
+          "composite_score": 64.0
+        },
+        {
+          "ticker": "GOOGL",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 7,
+          "buzz_level": "high",
+          "polarity_score": -0.331,
+          "top_headlines": [
+            {
+              "title": "Nvidia joins Wall Street's AI funding wave",
+              "source": "Yahoo Finance",
+              "link": "https://finance.yahoo.com/markets/article/nvidia-joins-wall-streets-ai-funding-wave-163231887.html"
+            },
+            {
+              "title": "Google's Samsung Talks Highlight TSMC Capacity Crunch",
+              "source": "GuruFocus.com",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/googles-samsung-talks-highlight-tsmc-180100438.html"
+            },
+            {
+              "title": "MediaTek eyes Google TPU and Musk AI rack deals in system-level pivot - Kuo",
+              "source": "Investing.com",
+              "link": "https://finance.yahoo.com/sectors/technology/articles/mediatek-eyes-google-tpu-musk-175315940.html"
+            }
+          ],
+          "composite_score": 63.7
+        },
+        {
+          "ticker": "BRK.B",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 3,
+          "buzz_level": "high",
+          "polarity_score": -0.421,
+          "top_headlines": [
+            {
+              "title": "Market Correction Ahead: Warren Buffett's Historical Warning for Investors",
+              "source": "Motley Fool",
+              "link": "https://www.fool.com/investing/2026/06/15/market-correction-ahead-warren-buffett-warning/"
+            },
+            {
+              "title": "The 15% Yield ETF That Steals Warren Buffett\u2019s Playbook",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/15/the-15-yield-etf-that-steals-warren-buffetts-playbook/"
+            },
+            {
+              "title": "Greenskeeper Asset Management Views Berkshire Hathaway (BRK.B) as Resilient Against AI Disruption",
+              "source": "Insider Monkey",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/greenskeeper-asset-management-views-berkshire-133213904.html"
+            }
+          ],
+          "composite_score": 61.5
+        },
+        {
+          "ticker": "IWM",
+          "headline_count": 8,
+          "broad_count": 0,
+          "ticker_specific_count": 8,
+          "distinct_sources": 2,
+          "buzz_level": "high",
+          "polarity_score": -0.778,
+          "top_headlines": [
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Monday Amid US-Iran Ceasefire",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-125654489.html"
+            },
+            {
+              "title": "Exchange-Traded Funds, Equity Futures Mixed Pre-Bell Friday Ahead of SpaceX Debut",
+              "source": "MT Newswires",
+              "link": "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131503816.html"
+            },
+            {
+              "title": "Sticky Inflation\u2019s Worst Nightmare: Why Small Value Stocks Are Secretly Printing Money",
+              "source": "24/7 Wall St.",
+              "link": "https://247wallst.com/investing/2026/06/11/sticky-inflations-worst-nightmare-why-small-value-stocks-are-secretly-printing-money/"
+            }
+          ],
+          "composite_score": 47.5
+        }
+      ]
+    },
+    "insider": {
+      "scout": "insider",
+      "as_of": "2026-06-15T18:45:44.389558+00:00",
+      "universe_size": 30,
+      "etfs_skipped": 13,
+      "degraded": false,
+      "candidates": [
+        {
+          "ticker": "UNH",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "NVDA",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "SMCI",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "MU",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AVGO",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AAPL",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "GOOGL",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AMZN",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "META",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "BRK.B",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "JPM",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "V",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "COST",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 0.0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "SPY",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "QQQ",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "IWM",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "DIA",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLK",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLF",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLV",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLE",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLY",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLI",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLP",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLU",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "XLB",
+          "is_etf": true,
+          "buy_count": 0,
+          "sell_count": 0,
+          "distinct_buyers": 0,
+          "distinct_sellers": 0,
+          "net_value_usd": 0.0,
+          "cluster_buy": false,
+          "composite_score": 50.0,
+          "top_transactions": []
+        },
+        {
+          "ticker": "AMD",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 27,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 57585714.54,
+          "net_value_usd": -57585714.54,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Su Lisa T",
+              "role": "Director, Chair, President & CEO",
+              "direction": "sell",
+              "shares": 2720.0,
+              "price": 449.21,
+              "value_usd": 1221851.2,
+              "date": "2026-06-10"
+            },
+            {
+              "filer": "Su Lisa T",
+              "role": "Director, Chair, President & CEO",
+              "direction": "sell",
+              "shares": 700.0,
+              "price": 450.4,
+              "value_usd": 315280.0,
+              "date": "2026-06-10"
+            },
+            {
+              "filer": "Su Lisa T",
+              "role": "Director, Chair, President & CEO",
+              "direction": "sell",
+              "shares": 4400.0,
+              "price": 451.53,
+              "value_usd": 1986732.0,
+              "date": "2026-06-10"
+            },
+            {
+              "filer": "Su Lisa T",
+              "role": "Director, Chair, President & CEO",
+              "direction": "sell",
+              "shares": 12862.0,
+              "price": 452.4,
+              "value_usd": 5818768.8,
+              "date": "2026-06-10"
+            },
+            {
+              "filer": "Su Lisa T",
+              "role": "Director, Chair, President & CEO",
+              "direction": "sell",
+              "shares": 14458.0,
+              "price": 453.45,
+              "value_usd": 6555980.1,
+              "date": "2026-06-10"
+            }
+          ]
+        },
+        {
+          "ticker": "MSFT",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 2,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 2843905.0,
+          "net_value_usd": -2843905.0,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Numoto Takeshi",
+              "role": "EVP, Chief Marketing Officer",
+              "direction": "sell",
+              "shares": 4500.0,
+              "price": 402.84,
+              "value_usd": 1812780.0,
+              "date": "2026-06-10"
+            },
+            {
+              "filer": "Numoto Takeshi",
+              "role": "EVP, Chief Marketing Officer",
+              "direction": "sell",
+              "shares": 2500.0,
+              "price": 412.45,
+              "value_usd": 1031125.0,
+              "date": "2026-06-08"
+            }
+          ]
+        },
+        {
+          "ticker": "TSLA",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 1,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 1047924.28,
+          "net_value_usd": -1047924.28,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Taneja Vaibhav",
+              "role": "Chief Financial Officer",
+              "direction": "sell",
+              "shares": 2605.5,
+              "price": 402.197,
+              "value_usd": 1047924.28,
+              "date": "2026-06-08"
+            }
+          ]
+        },
+        {
+          "ticker": "WMT",
+          "is_etf": false,
+          "buy_count": 0,
+          "sell_count": 1,
+          "distinct_buyers": 0,
+          "distinct_sellers": 1,
+          "buy_value_usd": 0.0,
+          "sell_value_usd": 1435203.96,
+          "net_value_usd": -1435203.96,
+          "cluster_buy": false,
+          "composite_score": 25.0,
+          "top_transactions": [
+            {
+              "filer": "Guggina David W",
+              "role": "Executive Vice President",
+              "direction": "sell",
+              "shares": 11978.0,
+              "price": 119.82,
+              "value_usd": 1435203.96,
+              "date": "2026-06-10"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "agent_result": {
+      "agent_name": "synthesis",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "market_context": "Expansion regime with stable rates (Fed funds 3.63%, 10Y at 4.45%), moderating inflation, and a risk-on tape catalyzed by a US-Iran peace deal driving futures higher and oil sharply lower. News flow is uniformly bullish across mega-cap tech, semis, financials and broad indices; sentiment scout is degraded (uniformly neutral) so technical + news + insider carry the weight.",
+        "themes": [
+          "AI/semis leadership re-accelerating (MU, AMD breakouts)",
+          "Risk-on rotation on US-Iran peace deal lifting cyclicals and small caps",
+          "Oil down hard - XLE weak, materials/transports beneficiary",
+          "Mag-7 dispersion: META/AAPL stable, NVDA/AMZN/MSFT technically weak",
+          "Insider selling cluster in AMD/MSFT/TSLA/WMT - caution flag on chase"
+        ],
+        "ranked_candidates": [
+          {
+            "ticker": "MU",
+            "unified_score": 82,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 85,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 95.6,
+              "insider": 50
+            },
+            "primary_thesis": "Memory super-cycle breakout with bull MA stack, +40% 1M momentum, and high-buzz positive news flow.",
+            "narrative": "MU is the cleanest technical setup in the universe: bull stack, 20D breakout, RSI 66 not yet extreme, and news polarity 0.95 across 6 sources tied to memory/AI capex. Macro expansion regime favors semis. No insider data and degraded sentiment scout cap conviction slightly, but cross-signal alignment is strong.",
+            "risk_flags": [
+              "degraded_signal",
+              "overbought_rsi"
+            ]
+          },
+          {
+            "ticker": "AMD",
+            "unified_score": 78,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 53,
+              "technical": 85,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 97.3,
+              "insider": 25
+            },
+            "primary_thesis": "AI inference momentum + $900B valuation narrative, but Lisa Su cluster-selling ~$57M is a notable counter-signal.",
+            "narrative": "Strongest news polarity in the universe (0.95) with bull MA stack and 20D breakout post-earnings beat. The offset is real: CEO Lisa Su sold 27 lots totaling ~$57M last week. Net: still a buy candidate given the breakout, but score is haircut for insider distribution into strength.",
+            "risk_flags": [
+              "insider_selling",
+              "overbought_rsi"
+            ]
+          },
+          {
+            "ticker": "DIA",
+            "unified_score": 74,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 79.9,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 96.8,
+              "insider": 50
+            },
+            "primary_thesis": "Dow breakout on US-Iran peace deal with highest news polarity in universe (0.99).",
+            "narrative": "Bull MA stack, 20D breakout, RSI 63.6, and event-driven catalyst (peace deal) lifting Dow components. ETF so no insider/earnings; macro expansion supports broad index.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "IWM",
+            "unified_score": 72,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 81.6,
+              "macro_fit": 72,
+              "influencer": 50,
+              "news": 47.5,
+              "insider": 50
+            },
+            "primary_thesis": "Small-cap breakout with bull stack and easing rates supports the risk-on rotation.",
+            "narrative": "Strong technical (20D breakout, bull MA, RSI 61.5) and 10Y yield drop to 4.45% are tailwinds for small caps. News polarity is negative (-0.78) on sticky-inflation worry, which is the main drag. Net positive on technicals.",
+            "risk_flags": [
+              "news_silence"
+            ]
+          },
+          {
+            "ticker": "XLF",
+            "unified_score": 71,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 75.7,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 80,
+              "insider": 50
+            },
+            "primary_thesis": "Financials breakout in expansion regime with positive sector news.",
+            "narrative": "Bull MA stack, RSI 67.5 (warm but not extreme), 20D breakout, and financials are a favored sector in the macro regime. News flow constructive. Watch RSI.",
+            "risk_flags": [
+              "overbought_rsi"
+            ]
+          },
+          {
+            "ticker": "XLK",
+            "unified_score": 70,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 75.5,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 93.8,
+              "insider": 50
+            },
+            "primary_thesis": "Tech sector ETF riding AI-capex narrative with bull MA stack.",
+            "narrative": "Bull stack, RSI 61.6, +6.8% 1M momentum, high-polarity news (0.87) on AI ETF flows. Macro regime favors tech. No breakout yet but trend intact.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "XLI",
+            "unified_score": 69,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 80.9,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 65.2,
+              "insider": 50
+            },
+            "primary_thesis": "Industrials breakout in expansion regime; favored sector with lower-oil tailwind.",
+            "narrative": "Bull MA stack, 20D breakout, RSI 61.2. Industrials are macro-favored and benefit from oil-down/peace-deal narrative. News polarity slightly negative but technicals dominate.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "QQQ",
+            "unified_score": 69,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 73.6,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 94.4,
+              "insider": 50
+            },
+            "primary_thesis": "Nasdaq strength with bull stack and high-polarity AI-themed news flow.",
+            "narrative": "Bull MA, RSI 62.4, news polarity 0.90 across air-taxi/AI security themes. Macro tilt supports tech. No 20D breakout yet but trend healthy.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "SPY",
+            "unified_score": 68,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 70.6,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 91,
+              "insider": 50
+            },
+            "primary_thesis": "Broad market trend intact with high-polarity news and peace-deal catalyst.",
+            "narrative": "Bull MA stack, RSI 60.5, polarity 0.96. Cleanest passive expression of the risk-on tape.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "XLB",
+            "unified_score": 68,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 70.1,
+              "macro_fit": 65,
+              "influencer": 50,
+              "news": 94.4,
+              "insider": 50
+            },
+            "primary_thesis": "Materials breakout on oil-down/peace-deal infrastructure tailwind.",
+            "narrative": "20D breakout, +5.7% 1W momentum, RSI 60.4, news polarity 0.90 explicitly citing materials beneficiary of oil drop. MA stack is mixed which caps the score.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "UNH",
+            "unified_score": 67,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 73.4,
+              "macro_fit": 55,
+              "influencer": 50,
+              "news": 92,
+              "insider": 50
+            },
+            "primary_thesis": "Bull-stack breakout with Cramer/JPM upgrades; offset by RSI 70 and healthcare sector weakness.",
+            "narrative": "Strong earnings beat (+9.5% surprise), 20D breakout, RSI 70 (overbought), positive news polarity 0.80, JPM PT raise. Healthcare disfavored in macro regime and XLV news polarity is negative. Quality name but extended.",
+            "risk_flags": [
+              "overbought_rsi",
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "BRK.B",
+            "unified_score": 64,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 53,
+              "technical": 73.1,
+              "macro_fit": 65,
+              "influencer": 50,
+              "news": 61.5,
+              "insider": 50
+            },
+            "primary_thesis": "Bull-stack breakout in a defensive quality name; news mildly negative on Buffett correction warning.",
+            "narrative": "20D breakout, RSI 65, earnings beat. News headlines lean cautious citing Buffett's correction warnings, dampening conviction. Solid hold but not a high-octane buy.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "XLP",
+            "unified_score": 63,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 71.2,
+              "macro_fit": 40,
+              "influencer": 50,
+              "news": 78.9,
+              "insider": 50
+            },
+            "primary_thesis": "Defensive bid but macro-disfavored.",
+            "narrative": "Bull MA stack, RSI 58.5, polarity 0.48. Staples are disfavored in expansion regime, so this is more of a hedge than a thesis.",
+            "risk_flags": [
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "V",
+            "unified_score": 63,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 69.9,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 95.6,
+              "insider": 50
+            },
+            "primary_thesis": "Steady compounder in favored financials sector with high-polarity news.",
+            "narrative": "Bull MA, RSI 52.8 (room to run), earnings beat, polarity 0.95 on digital payments/World Cup themes. Lacks a momentum catalyst.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "XLY",
+            "unified_score": 62,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 70.6,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 85.2,
+              "insider": 50
+            },
+            "primary_thesis": "Consumer discretionary in favored macro sector with mild positive news.",
+            "narrative": "Bull MA, RSI 53.8, polarity 0.53. Consumer sentiment indicator weakened (49.8 vs 53.3) \u2014 slight headwind. Decent but not exceptional.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "JPM",
+            "unified_score": 61,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 62.4,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 88.3,
+              "insider": 50
+            },
+            "primary_thesis": "Financials leader with +6.8% 1M momentum and positive sector news.",
+            "narrative": "Mixed MA stack but RSI 64.6 and strong momentum. Favored macro sector and Canada expansion news constructive. No earnings/insider data.",
+            "risk_flags": [
+              "degraded_signal"
+            ]
+          },
+          {
+            "ticker": "XLV",
+            "unified_score": 58,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 70.2,
+              "macro_fit": 50,
+              "influencer": 50,
+              "news": 64,
+              "insider": 50
+            },
+            "primary_thesis": "Healthcare with bull stack but negative news polarity and not macro-favored.",
+            "narrative": "Bull MA, RSI 58.5, but news polarity -0.32 and sector softer Monday. Neutral-ish.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "META",
+            "unified_score": 58,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 43.6,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 95.3,
+              "insider": 50
+            },
+            "primary_thesis": "Strong news polarity and AI narrative offset by bear MA stack technical setup.",
+            "narrative": "Bear MA stack and RSI 46.5 are technical drags, but news polarity 0.93 with bullish Motley Fool AI thesis. Conflicting signals \u2014 a potential mean-reversion setup, not a chase.",
+            "risk_flags": [
+              "sentiment_only"
+            ]
+          },
+          {
+            "ticker": "XLU",
+            "unified_score": 56,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 59.3,
+              "macro_fit": 40,
+              "influencer": 50,
+              "news": 89.5,
+              "insider": 50
+            },
+            "primary_thesis": "Utilities with positive news but macro-disfavored in expansion regime.",
+            "narrative": "Mixed MA, RSI 53. News polarity 0.90 but utilities are explicitly disfavored. Defensive only.",
+            "risk_flags": [
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "COST",
+            "unified_score": 52,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 41.9,
+              "macro_fit": 40,
+              "influencer": 50,
+              "news": 80.5,
+              "insider": 50
+            },
+            "primary_thesis": "Bear MA stack, in-line earnings (slight miss), modest news polarity.",
+            "narrative": "Bear stack, RSI 46, -5.7% 1M. News mildly positive but technicals say avoid for now.",
+            "risk_flags": [
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "AAPL",
+            "unified_score": 51,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 53,
+              "technical": 53.9,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 95.1,
+              "insider": 50
+            },
+            "primary_thesis": "Strong news polarity but mixed technicals and 'Mag-7 headwind' overhang.",
+            "narrative": "Mixed MA, RSI 49.4, -1.8% 1W. News polarity high but headlines mixed on Mag-7 risks. Wait for trend confirmation.",
+            "risk_flags": [
+              "sentiment_only"
+            ]
+          },
+          {
+            "ticker": "NVDA",
+            "unified_score": 51,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 55,
+              "technical": 52.9,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 96.1,
+              "insider": 50
+            },
+            "primary_thesis": "Earnings beat and high news polarity offset by stalled price action (-9.8% 1M).",
+            "narrative": "Mixed MA stack, RSI 51, -9.8% 1M momentum despite earnings beat and strong news polarity 0.96. Setup is consolidation; not a fresh entry signal.",
+            "risk_flags": [
+              "sentiment_only"
+            ]
+          },
+          {
+            "ticker": "AMZN",
+            "unified_score": 48,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 52.6,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 93.8,
+              "insider": 50
+            },
+            "primary_thesis": "Strong earnings surprise but technically weak (RSI 43, -7.8% 1M).",
+            "narrative": "Below 20D and 50D MA, RSI 43.5, weak momentum despite blowout earnings surprise and bullish $300 PT headline. Falling-knife risk.",
+            "risk_flags": [
+              "sentiment_only"
+            ]
+          },
+          {
+            "ticker": "GOOGL",
+            "unified_score": 47,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 54.5,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 63.7,
+              "insider": 50
+            },
+            "primary_thesis": "Strong earnings surprise but negative news polarity and -7.4% 1M technical drag.",
+            "narrative": "Mixed MA, RSI 51, polarity -0.33 with TSMC capacity crunch headlines. Wait for trend repair.",
+            "risk_flags": []
+          },
+          {
+            "ticker": "MSFT",
+            "unified_score": 44,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 51.5,
+              "technical": 51.6,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 92,
+              "insider": 25
+            },
+            "primary_thesis": "Insider selling, bear-ish technicals (RSI 42), and shareholder lawsuit overhang despite positive news polarity.",
+            "narrative": "Below 20D/50D, RSI 42, EVP CMO sold ~$2.8M, and lawsuit on AI spending in headlines. Quality name but signals conflict \u2014 skip.",
+            "risk_flags": [
+              "insider_selling"
+            ]
+          },
+          {
+            "ticker": "AVGO",
+            "unified_score": 44,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 50.3,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 93.5,
+              "insider": 50
+            },
+            "primary_thesis": "Recent in-line earnings and -10.3% 1M slide despite supportive AI news.",
+            "narrative": "Mixed MA, RSI 45.4, in-line earnings. News polarity 0.86 but price action weak \u2014 needs basing.",
+            "risk_flags": [
+              "post_earnings_chase"
+            ]
+          },
+          {
+            "ticker": "XLE",
+            "unified_score": 38,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 50,
+              "technical": 49.8,
+              "macro_fit": 50,
+              "influencer": 50,
+              "news": 89.2,
+              "insider": 50
+            },
+            "primary_thesis": "Energy crushed by US-Iran peace deal driving oil down ~5.7% weekly.",
+            "narrative": "RSI 41, -4.2% 1W, mixed MA. News polarity is mechanically positive due to volume but the actual catalyst is bearish for energy. Avoid.",
+            "risk_flags": [
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "WMT",
+            "unified_score": 38,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 55,
+              "technical": 40.2,
+              "macro_fit": 40,
+              "influencer": 50,
+              "news": 88.2,
+              "insider": 25
+            },
+            "primary_thesis": "Bear stack, insider selling, and staples disfavored \u2014 earnings beat not enough.",
+            "narrative": "Below MAs, -9% 1M, EVP sold $1.4M, staples macro-disfavored. Quality but wait.",
+            "risk_flags": [
+              "insider_selling",
+              "macro_mismatch"
+            ]
+          },
+          {
+            "ticker": "SMCI",
+            "unified_score": 34,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 53,
+              "technical": 47.9,
+              "macro_fit": 75,
+              "influencer": 50,
+              "news": 96,
+              "insider": 50
+            },
+            "primary_thesis": "-29.5% 1W collapse despite huge earnings beat and bullish news \u2014 falling knife.",
+            "narrative": "Catastrophic 1W move (-29.5%) suggests material adverse news not captured. News polarity is high but headlines mix in unrelated airline content. Avoid until basing.",
+            "risk_flags": [
+              "thin_volume",
+              "sentiment_only"
+            ]
+          },
+          {
+            "ticker": "TSLA",
+            "unified_score": 32,
+            "factor_breakdown": {
+              "sentiment": 50,
+              "earnings": 48.5,
+              "technical": 52.4,
+              "macro_fit": 70,
+              "influencer": 50,
+              "news": 96.5,
+              "insider": 25
+            },
+            "primary_thesis": "Earnings miss, CFO insider sale, SpaceX overshadowing \u2014 news polarity is event-driven not Tesla-driven.",
+            "narrative": "Mixed MA, RSI 50, -7.5% 1M, recent -36% earnings surprise miss, CFO sold ~$1M. News polarity 0.98 but headlines are dominated by SpaceX > Tesla valuation narrative, which is actually bearish for TSLA. Avoid.",
+            "risk_flags": [
+              "insider_selling",
+              "sentiment_only"
+            ]
+          }
+        ]
+      },
+      "error": null,
+      "input_tokens": 38014,
+      "output_tokens": 6569,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "latency_seconds": 80.809,
+      "estimated_cost_usd": 1.062885
+    },
+    "output": {
+      "market_context": "Expansion regime with stable rates (Fed funds 3.63%, 10Y at 4.45%), moderating inflation, and a risk-on tape catalyzed by a US-Iran peace deal driving futures higher and oil sharply lower. News flow is uniformly bullish across mega-cap tech, semis, financials and broad indices; sentiment scout is degraded (uniformly neutral) so technical + news + insider carry the weight.",
+      "themes": [
+        "AI/semis leadership re-accelerating (MU, AMD breakouts)",
+        "Risk-on rotation on US-Iran peace deal lifting cyclicals and small caps",
+        "Oil down hard - XLE weak, materials/transports beneficiary",
+        "Mag-7 dispersion: META/AAPL stable, NVDA/AMZN/MSFT technically weak",
+        "Insider selling cluster in AMD/MSFT/TSLA/WMT - caution flag on chase"
+      ],
+      "ranked_candidates": [
+        {
+          "ticker": "MU",
+          "unified_score": 82,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 85,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 95.6,
+            "insider": 50
+          },
+          "primary_thesis": "Memory super-cycle breakout with bull MA stack, +40% 1M momentum, and high-buzz positive news flow.",
+          "narrative": "MU is the cleanest technical setup in the universe: bull stack, 20D breakout, RSI 66 not yet extreme, and news polarity 0.95 across 6 sources tied to memory/AI capex. Macro expansion regime favors semis. No insider data and degraded sentiment scout cap conviction slightly, but cross-signal alignment is strong.",
+          "risk_flags": [
+            "degraded_signal",
+            "overbought_rsi"
+          ]
+        },
+        {
+          "ticker": "AMD",
+          "unified_score": 78,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 53,
+            "technical": 85,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 97.3,
+            "insider": 25
+          },
+          "primary_thesis": "AI inference momentum + $900B valuation narrative, but Lisa Su cluster-selling ~$57M is a notable counter-signal.",
+          "narrative": "Strongest news polarity in the universe (0.95) with bull MA stack and 20D breakout post-earnings beat. The offset is real: CEO Lisa Su sold 27 lots totaling ~$57M last week. Net: still a buy candidate given the breakout, but score is haircut for insider distribution into strength.",
+          "risk_flags": [
+            "insider_selling",
+            "overbought_rsi"
+          ]
+        },
+        {
+          "ticker": "DIA",
+          "unified_score": 74,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 79.9,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 96.8,
+            "insider": 50
+          },
+          "primary_thesis": "Dow breakout on US-Iran peace deal with highest news polarity in universe (0.99).",
+          "narrative": "Bull MA stack, 20D breakout, RSI 63.6, and event-driven catalyst (peace deal) lifting Dow components. ETF so no insider/earnings; macro expansion supports broad index.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "IWM",
+          "unified_score": 72,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 81.6,
+            "macro_fit": 72,
+            "influencer": 50,
+            "news": 47.5,
+            "insider": 50
+          },
+          "primary_thesis": "Small-cap breakout with bull stack and easing rates supports the risk-on rotation.",
+          "narrative": "Strong technical (20D breakout, bull MA, RSI 61.5) and 10Y yield drop to 4.45% are tailwinds for small caps. News polarity is negative (-0.78) on sticky-inflation worry, which is the main drag. Net positive on technicals.",
+          "risk_flags": [
+            "news_silence"
+          ]
+        },
+        {
+          "ticker": "XLF",
+          "unified_score": 71,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 75.7,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 80,
+            "insider": 50
+          },
+          "primary_thesis": "Financials breakout in expansion regime with positive sector news.",
+          "narrative": "Bull MA stack, RSI 67.5 (warm but not extreme), 20D breakout, and financials are a favored sector in the macro regime. News flow constructive. Watch RSI.",
+          "risk_flags": [
+            "overbought_rsi"
+          ]
+        },
+        {
+          "ticker": "XLK",
+          "unified_score": 70,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 75.5,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 93.8,
+            "insider": 50
+          },
+          "primary_thesis": "Tech sector ETF riding AI-capex narrative with bull MA stack.",
+          "narrative": "Bull stack, RSI 61.6, +6.8% 1M momentum, high-polarity news (0.87) on AI ETF flows. Macro regime favors tech. No breakout yet but trend intact.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "XLI",
+          "unified_score": 69,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 80.9,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 65.2,
+            "insider": 50
+          },
+          "primary_thesis": "Industrials breakout in expansion regime; favored sector with lower-oil tailwind.",
+          "narrative": "Bull MA stack, 20D breakout, RSI 61.2. Industrials are macro-favored and benefit from oil-down/peace-deal narrative. News polarity slightly negative but technicals dominate.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "QQQ",
+          "unified_score": 69,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 73.6,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 94.4,
+            "insider": 50
+          },
+          "primary_thesis": "Nasdaq strength with bull stack and high-polarity AI-themed news flow.",
+          "narrative": "Bull MA, RSI 62.4, news polarity 0.90 across air-taxi/AI security themes. Macro tilt supports tech. No 20D breakout yet but trend healthy.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "SPY",
+          "unified_score": 68,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 70.6,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 91,
+            "insider": 50
+          },
+          "primary_thesis": "Broad market trend intact with high-polarity news and peace-deal catalyst.",
+          "narrative": "Bull MA stack, RSI 60.5, polarity 0.96. Cleanest passive expression of the risk-on tape.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "XLB",
+          "unified_score": 68,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 70.1,
+            "macro_fit": 65,
+            "influencer": 50,
+            "news": 94.4,
+            "insider": 50
+          },
+          "primary_thesis": "Materials breakout on oil-down/peace-deal infrastructure tailwind.",
+          "narrative": "20D breakout, +5.7% 1W momentum, RSI 60.4, news polarity 0.90 explicitly citing materials beneficiary of oil drop. MA stack is mixed which caps the score.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "UNH",
+          "unified_score": 67,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 73.4,
+            "macro_fit": 55,
+            "influencer": 50,
+            "news": 92,
+            "insider": 50
+          },
+          "primary_thesis": "Bull-stack breakout with Cramer/JPM upgrades; offset by RSI 70 and healthcare sector weakness.",
+          "narrative": "Strong earnings beat (+9.5% surprise), 20D breakout, RSI 70 (overbought), positive news polarity 0.80, JPM PT raise. Healthcare disfavored in macro regime and XLV news polarity is negative. Quality name but extended.",
+          "risk_flags": [
+            "overbought_rsi",
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "BRK.B",
+          "unified_score": 64,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 53,
+            "technical": 73.1,
+            "macro_fit": 65,
+            "influencer": 50,
+            "news": 61.5,
+            "insider": 50
+          },
+          "primary_thesis": "Bull-stack breakout in a defensive quality name; news mildly negative on Buffett correction warning.",
+          "narrative": "20D breakout, RSI 65, earnings beat. News headlines lean cautious citing Buffett's correction warnings, dampening conviction. Solid hold but not a high-octane buy.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "XLP",
+          "unified_score": 63,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 71.2,
+            "macro_fit": 40,
+            "influencer": 50,
+            "news": 78.9,
+            "insider": 50
+          },
+          "primary_thesis": "Defensive bid but macro-disfavored.",
+          "narrative": "Bull MA stack, RSI 58.5, polarity 0.48. Staples are disfavored in expansion regime, so this is more of a hedge than a thesis.",
+          "risk_flags": [
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "V",
+          "unified_score": 63,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 69.9,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 95.6,
+            "insider": 50
+          },
+          "primary_thesis": "Steady compounder in favored financials sector with high-polarity news.",
+          "narrative": "Bull MA, RSI 52.8 (room to run), earnings beat, polarity 0.95 on digital payments/World Cup themes. Lacks a momentum catalyst.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "XLY",
+          "unified_score": 62,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 70.6,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 85.2,
+            "insider": 50
+          },
+          "primary_thesis": "Consumer discretionary in favored macro sector with mild positive news.",
+          "narrative": "Bull MA, RSI 53.8, polarity 0.53. Consumer sentiment indicator weakened (49.8 vs 53.3) \u2014 slight headwind. Decent but not exceptional.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "JPM",
+          "unified_score": 61,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 62.4,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 88.3,
+            "insider": 50
+          },
+          "primary_thesis": "Financials leader with +6.8% 1M momentum and positive sector news.",
+          "narrative": "Mixed MA stack but RSI 64.6 and strong momentum. Favored macro sector and Canada expansion news constructive. No earnings/insider data.",
+          "risk_flags": [
+            "degraded_signal"
+          ]
+        },
+        {
+          "ticker": "XLV",
+          "unified_score": 58,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 70.2,
+            "macro_fit": 50,
+            "influencer": 50,
+            "news": 64,
+            "insider": 50
+          },
+          "primary_thesis": "Healthcare with bull stack but negative news polarity and not macro-favored.",
+          "narrative": "Bull MA, RSI 58.5, but news polarity -0.32 and sector softer Monday. Neutral-ish.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "META",
+          "unified_score": 58,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 43.6,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 95.3,
+            "insider": 50
+          },
+          "primary_thesis": "Strong news polarity and AI narrative offset by bear MA stack technical setup.",
+          "narrative": "Bear MA stack and RSI 46.5 are technical drags, but news polarity 0.93 with bullish Motley Fool AI thesis. Conflicting signals \u2014 a potential mean-reversion setup, not a chase.",
+          "risk_flags": [
+            "sentiment_only"
+          ]
+        },
+        {
+          "ticker": "XLU",
+          "unified_score": 56,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 59.3,
+            "macro_fit": 40,
+            "influencer": 50,
+            "news": 89.5,
+            "insider": 50
+          },
+          "primary_thesis": "Utilities with positive news but macro-disfavored in expansion regime.",
+          "narrative": "Mixed MA, RSI 53. News polarity 0.90 but utilities are explicitly disfavored. Defensive only.",
+          "risk_flags": [
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "COST",
+          "unified_score": 52,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 41.9,
+            "macro_fit": 40,
+            "influencer": 50,
+            "news": 80.5,
+            "insider": 50
+          },
+          "primary_thesis": "Bear MA stack, in-line earnings (slight miss), modest news polarity.",
+          "narrative": "Bear stack, RSI 46, -5.7% 1M. News mildly positive but technicals say avoid for now.",
+          "risk_flags": [
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "AAPL",
+          "unified_score": 51,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 53,
+            "technical": 53.9,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 95.1,
+            "insider": 50
+          },
+          "primary_thesis": "Strong news polarity but mixed technicals and 'Mag-7 headwind' overhang.",
+          "narrative": "Mixed MA, RSI 49.4, -1.8% 1W. News polarity high but headlines mixed on Mag-7 risks. Wait for trend confirmation.",
+          "risk_flags": [
+            "sentiment_only"
+          ]
+        },
+        {
+          "ticker": "NVDA",
+          "unified_score": 51,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 55,
+            "technical": 52.9,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 96.1,
+            "insider": 50
+          },
+          "primary_thesis": "Earnings beat and high news polarity offset by stalled price action (-9.8% 1M).",
+          "narrative": "Mixed MA stack, RSI 51, -9.8% 1M momentum despite earnings beat and strong news polarity 0.96. Setup is consolidation; not a fresh entry signal.",
+          "risk_flags": [
+            "sentiment_only"
+          ]
+        },
+        {
+          "ticker": "AMZN",
+          "unified_score": 48,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 52.6,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 93.8,
+            "insider": 50
+          },
+          "primary_thesis": "Strong earnings surprise but technically weak (RSI 43, -7.8% 1M).",
+          "narrative": "Below 20D and 50D MA, RSI 43.5, weak momentum despite blowout earnings surprise and bullish $300 PT headline. Falling-knife risk.",
+          "risk_flags": [
+            "sentiment_only"
+          ]
+        },
+        {
+          "ticker": "GOOGL",
+          "unified_score": 47,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 54.5,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 63.7,
+            "insider": 50
+          },
+          "primary_thesis": "Strong earnings surprise but negative news polarity and -7.4% 1M technical drag.",
+          "narrative": "Mixed MA, RSI 51, polarity -0.33 with TSMC capacity crunch headlines. Wait for trend repair.",
+          "risk_flags": []
+        },
+        {
+          "ticker": "MSFT",
+          "unified_score": 44,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 51.5,
+            "technical": 51.6,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 92,
+            "insider": 25
+          },
+          "primary_thesis": "Insider selling, bear-ish technicals (RSI 42), and shareholder lawsuit overhang despite positive news polarity.",
+          "narrative": "Below 20D/50D, RSI 42, EVP CMO sold ~$2.8M, and lawsuit on AI spending in headlines. Quality name but signals conflict \u2014 skip.",
+          "risk_flags": [
+            "insider_selling"
+          ]
+        },
+        {
+          "ticker": "AVGO",
+          "unified_score": 44,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 50.3,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 93.5,
+            "insider": 50
+          },
+          "primary_thesis": "Recent in-line earnings and -10.3% 1M slide despite supportive AI news.",
+          "narrative": "Mixed MA, RSI 45.4, in-line earnings. News polarity 0.86 but price action weak \u2014 needs basing.",
+          "risk_flags": [
+            "post_earnings_chase"
+          ]
+        },
+        {
+          "ticker": "XLE",
+          "unified_score": 38,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 50,
+            "technical": 49.8,
+            "macro_fit": 50,
+            "influencer": 50,
+            "news": 89.2,
+            "insider": 50
+          },
+          "primary_thesis": "Energy crushed by US-Iran peace deal driving oil down ~5.7% weekly.",
+          "narrative": "RSI 41, -4.2% 1W, mixed MA. News polarity is mechanically positive due to volume but the actual catalyst is bearish for energy. Avoid.",
+          "risk_flags": [
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "WMT",
+          "unified_score": 38,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 55,
+            "technical": 40.2,
+            "macro_fit": 40,
+            "influencer": 50,
+            "news": 88.2,
+            "insider": 25
+          },
+          "primary_thesis": "Bear stack, insider selling, and staples disfavored \u2014 earnings beat not enough.",
+          "narrative": "Below MAs, -9% 1M, EVP sold $1.4M, staples macro-disfavored. Quality but wait.",
+          "risk_flags": [
+            "insider_selling",
+            "macro_mismatch"
+          ]
+        },
+        {
+          "ticker": "SMCI",
+          "unified_score": 34,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 53,
+            "technical": 47.9,
+            "macro_fit": 75,
+            "influencer": 50,
+            "news": 96,
+            "insider": 50
+          },
+          "primary_thesis": "-29.5% 1W collapse despite huge earnings beat and bullish news \u2014 falling knife.",
+          "narrative": "Catastrophic 1W move (-29.5%) suggests material adverse news not captured. News polarity is high but headlines mix in unrelated airline content. Avoid until basing.",
+          "risk_flags": [
+            "thin_volume",
+            "sentiment_only"
+          ]
+        },
+        {
+          "ticker": "TSLA",
+          "unified_score": 32,
+          "factor_breakdown": {
+            "sentiment": 50,
+            "earnings": 48.5,
+            "technical": 52.4,
+            "macro_fit": 70,
+            "influencer": 50,
+            "news": 96.5,
+            "insider": 25
+          },
+          "primary_thesis": "Earnings miss, CFO insider sale, SpaceX overshadowing \u2014 news polarity is event-driven not Tesla-driven.",
+          "narrative": "Mixed MA, RSI 50, -7.5% 1M, recent -36% earnings surprise miss, CFO sold ~$1M. News polarity 0.98 but headlines are dominated by SpaceX > Tesla valuation narrative, which is actually bearish for TSLA. Avoid.",
+          "risk_flags": [
+            "insider_selling",
+            "sentiment_only"
+          ]
+        }
+      ]
+    }
+  },
+  "risk_brief": {
+    "as_of": "2026-06-15T18:47:08.952299+00:00",
+    "single_name_cap_pct": 0.2,
+    "sector_cap_pct": 0.4,
+    "candidates": {
+      "MU": {
+        "annualized_vol": 0.955233526080048,
+        "avg_dollar_volume": 49344276672.65824,
+        "sector": "Technology",
+        "flags": [
+          "high_vol"
+        ],
+        "suggested_max_weight": 0.1
+      },
+      "AMD": {
+        "annualized_vol": 0.7823310095772238,
+        "avg_dollar_volume": 15296248904.65149,
+        "sector": "Technology",
+        "flags": [
+          "high_vol"
+        ],
+        "suggested_max_weight": 0.1
+      },
+      "DIA": {
+        "annualized_vol": 0.1501454781987701,
+        "avg_dollar_volume": 2736500333.195441,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "IWM": {
+        "annualized_vol": 0.21836643507025347,
+        "avg_dollar_volume": 8260650553.103946,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLF": {
+        "annualized_vol": 0.1445407183412779,
+        "avg_dollar_volume": 1956041340.7594814,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLK": {
+        "annualized_vol": 0.3038538448814681,
+        "avg_dollar_volume": 2830296270.5901985,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLI": {
+        "annualized_vol": 0.21920790411989416,
+        "avg_dollar_volume": 1414605031.4120483,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "QQQ": {
+        "annualized_vol": 0.22826027269396623,
+        "avg_dollar_volume": 34086685471.698692,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "SPY": {
+        "annualized_vol": 0.15412742906822585,
+        "avg_dollar_volume": 39150543619.04294,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLB": {
+        "annualized_vol": 0.20507007683296372,
+        "avg_dollar_volume": 640518178.7006897,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "UNH": {
+        "annualized_vol": 0.3331662333042572,
+        "avg_dollar_volume": 2673664634.414154,
+        "sector": "Healthcare",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "BRK.B": {
+        "annualized_vol": 0.12608601714671502,
+        "avg_dollar_volume": 2486632668.816629,
+        "sector": "Financial Services",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLP": {
+        "annualized_vol": 0.14803707530463206,
+        "avg_dollar_volume": 1049529281.2273537,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "V": {
+        "annualized_vol": 0.25096972847604126,
+        "avg_dollar_volume": 2514711899.982074,
+        "sector": "Financial Services",
+        "flags": [],
+        "suggested_max_weight": 0.2
+      },
+      "XLY": {
+        "annualized_vol": 0.21701109789720655,
+        "avg_dollar_volume": 922275495.4809173,
+        "sector": null,
+        "flags": [],
+        "suggested_max_weight": 0.2
+      }
+    },
+    "portfolio": {
+      "current_concentration": {
+        "UNH": 0.12603461785725037,
+        "NVDA": 0.11761081097509332,
+        "SMCI": 0.043916432557084176,
+        "MU": 0.036573673754300505,
+        "AVGO": 0.05288809283694883,
+        "AMD": 0.06725930297136838,
+        "AAPL": 0.04725428170983135
+      },
+      "sector_concentration": {
+        "Healthcare": 0.12603461785725037,
+        "Unknown": 0.2616696180789577,
+        "Technology": 0.10383297672566888
+      },
+      "cash_headroom_pct": 0.5084627873381231,
+      "violations": []
+    }
+  },
+  "tax_brief": {
+    "as_of": "2026-06-15",
+    "tax_brackets": {
+      "stcg_rate": 0.3473,
+      "ltcg_rate": 0.2573
+    },
+    "wash_sale_blocks": {
+      "BRK.B": {
+        "blocking_close_date": "2026-06-01",
+        "blocking_realized_loss": -33.082445927499975,
+        "days_until_clear": 17
+      }
+    },
+    "ltcg_proximity": [],
+    "tlh_candidates": [
+      {
+        "ticker": "AVGO",
+        "shares": 1.322314256284697,
+        "unrealized_loss": -88.41045333356021,
+        "estimated_tax_savings": 30.70141402461212,
+        "is_long_term": false
+      },
+      {
+        "ticker": "SMCI",
+        "shares": 13.956084249084475,
+        "unrealized_loss": -64.0276061299437,
+        "estimated_tax_savings": 22.23422650468425,
+        "is_long_term": false
+      },
+      {
+        "ticker": "NVDA",
+        "shares": 5.464172450472065,
+        "unrealized_loss": -37.04493333412006,
+        "estimated_tax_savings": 12.864223549606532,
+        "is_long_term": false
+      },
+      {
+        "ticker": "AAPL",
+        "shares": 1.5728950030957594,
+        "unrealized_loss": -29.487568048998526,
+        "estimated_tax_savings": 10.239852880695228,
+        "is_long_term": false
+      }
+    ],
+    "year_end_tlh_window_open": false
+  },
+  "reflection": {
+    "agent_result": {
+      "agent_name": "reflection",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "factor_weight_proposals": {
+          "technical": 0.25,
+          "earnings": 0.2,
+          "sentiment": 0.15,
+          "macro_fit": 0.2,
+          "influencer": 0.2
+        },
+        "lessons_for_pm": [
+          "Highest-conviction semis with technical+earnings+news triple-alignment (MU +27%, NVDA winners) are our edge \u2014 keep upsizing the cleanest cross-signal name, but enforce a trim trigger when RSI prints >78 (MU at RSI 80 was held, then gave back -8.3%).",
+          "News polarity \u226580 alone is NOT a thesis. XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) all opened with news \u226580 but middling technical/earnings and all lost. Require \u22652 of {technical \u226575, earnings beat, macro_fit \u226565} before sizing >5%.",
+          "Insider-sell flags >$30M have been near-perfectly predictive: MU CEO $38M \u2192 -8.3% week; META/WMT/AMD avoidances all correct. Hard rule: any single-name insider sale >$30M = max 3% or pass, regardless of other factors.",
+          "Conviction='high' on a single dominant factor has burned us \u2014 MSFT high-conviction at 9% on technical=82 lost 11.8% in one week. Reserve 'high' for \u22653 factors >70 with zero insider/macro red flags.",
+          "TLH execution is working ($23 tax savings captured), but immediate redeployment into the next flagged name (AVGO insider, AMD high-vol post-MSFT close) repeats the mistake. Park TLH proceeds in cash 1 week before redeploying.",
+          "Medium-conviction picks have an 11% win rate and -3.6% avg return \u2014 they are diluting alpha. Either upgrade thesis to high or pass; stop the 5-6% 'starter' positions on mediocre setups."
+        ],
+        "influencer_credibility_deltas": [],
+        "summary": "4 weeks tracked, cumulative -0.87% vs SPY -1.08% (+20bps alpha), but win rate is only 25% weekly and 21% per-pick \u2014 the book is being carried by one outlier (MU +27%) while medium-conviction news-led opens (XLE, BRK.B, GOOGL, AVGO, MSFT) consistently lose 4-14%. High-conviction picks win 40% with +7.4% avg; medium picks win 11% with -3.6% avg.",
+        "watch_for": [
+          "Overbought semis sleeve (NVDA/SMCI/MU/AMD) \u2014 concentration risk if AI capex narrative cracks; consider partial trim on any name with RSI >78 + insider activity.",
+          "Repeating the 'news polarity \u226585 = buy' pattern. Five of five such opens have lost. Demand technical/earnings confirmation this week.",
+          "Redeployed TLH cash chasing into the next flagged name within the same week \u2014 break the reflex; let cash sit if no clean cross-signal candidate exists."
+        ],
+        "weeks_evaluated": 4,
+        "what_missed": [
+          "News-polarity-led opens without technical/earnings confirmation: XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) \u2014 5 of 5 lost, avg -7.7%.",
+          "Sizing MSFT at 9% high-conviction on a single dominant factor (technical=82) \u2014 lost 11.8% in one week, the largest single drag in the book.",
+          "Not trimming MU when RSI hit 80 the week before the CEO $38M sale; we waited a week and gave back 8.3% before halving.",
+          "Medium-conviction bucket overall: 9 picks, 11% win rate, -3.6% avg \u2014 diluting alpha from the high-conviction sleeve."
+        ],
+        "what_worked": [
+          "MU OPEN at 5% on technical(82)+news(94)+earnings cross-signal \u2192 +27% return, best pick in the book and the entire reason cumulative alpha is positive.",
+          "Reflection-driven 'upsize the winner' rule applied to UNH (+6%) and NVDA (+6%) \u2014 the only ADDs in the book and both went on to win in their first week.",
+          "Insider-flag avoidances were 100% correct: META, WMT, TSLA, AAPL (week 1) all flagged and passed \u2014 would have been losers.",
+          "TLH discipline on broken theses (AMZN, GOOGL, BRK.B, XLE, MSFT) \u2014 captured $23 in tax savings and prevented bigger drawdowns from cumulative losers."
+        ]
+      },
+      "error": null,
+      "input_tokens": 16712,
+      "output_tokens": 2304,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 0,
+      "latency_seconds": 38.005,
+      "estimated_cost_usd": 0.42348
+    },
+    "output": {
+      "factor_weight_proposals": {
+        "technical": 0.25,
+        "earnings": 0.2,
+        "sentiment": 0.15,
+        "macro_fit": 0.2,
+        "influencer": 0.2
+      },
+      "lessons_for_pm": [
+        "Highest-conviction semis with technical+earnings+news triple-alignment (MU +27%, NVDA winners) are our edge \u2014 keep upsizing the cleanest cross-signal name, but enforce a trim trigger when RSI prints >78 (MU at RSI 80 was held, then gave back -8.3%).",
+        "News polarity \u226580 alone is NOT a thesis. XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) all opened with news \u226580 but middling technical/earnings and all lost. Require \u22652 of {technical \u226575, earnings beat, macro_fit \u226565} before sizing >5%.",
+        "Insider-sell flags >$30M have been near-perfectly predictive: MU CEO $38M \u2192 -8.3% week; META/WMT/AMD avoidances all correct. Hard rule: any single-name insider sale >$30M = max 3% or pass, regardless of other factors.",
+        "Conviction='high' on a single dominant factor has burned us \u2014 MSFT high-conviction at 9% on technical=82 lost 11.8% in one week. Reserve 'high' for \u22653 factors >70 with zero insider/macro red flags.",
+        "TLH execution is working ($23 tax savings captured), but immediate redeployment into the next flagged name (AVGO insider, AMD high-vol post-MSFT close) repeats the mistake. Park TLH proceeds in cash 1 week before redeploying.",
+        "Medium-conviction picks have an 11% win rate and -3.6% avg return \u2014 they are diluting alpha. Either upgrade thesis to high or pass; stop the 5-6% 'starter' positions on mediocre setups."
+      ],
+      "influencer_credibility_deltas": [],
+      "summary": "4 weeks tracked, cumulative -0.87% vs SPY -1.08% (+20bps alpha), but win rate is only 25% weekly and 21% per-pick \u2014 the book is being carried by one outlier (MU +27%) while medium-conviction news-led opens (XLE, BRK.B, GOOGL, AVGO, MSFT) consistently lose 4-14%. High-conviction picks win 40% with +7.4% avg; medium picks win 11% with -3.6% avg.",
+      "watch_for": [
+        "Overbought semis sleeve (NVDA/SMCI/MU/AMD) \u2014 concentration risk if AI capex narrative cracks; consider partial trim on any name with RSI >78 + insider activity.",
+        "Repeating the 'news polarity \u226585 = buy' pattern. Five of five such opens have lost. Demand technical/earnings confirmation this week.",
+        "Redeployed TLH cash chasing into the next flagged name within the same week \u2014 break the reflex; let cash sit if no clean cross-signal candidate exists."
+      ],
+      "weeks_evaluated": 4,
+      "what_missed": [
+        "News-polarity-led opens without technical/earnings confirmation: XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) \u2014 5 of 5 lost, avg -7.7%.",
+        "Sizing MSFT at 9% high-conviction on a single dominant factor (technical=82) \u2014 lost 11.8% in one week, the largest single drag in the book.",
+        "Not trimming MU when RSI hit 80 the week before the CEO $38M sale; we waited a week and gave back 8.3% before halving.",
+        "Medium-conviction bucket overall: 9 picks, 11% win rate, -3.6% avg \u2014 diluting alpha from the high-conviction sleeve."
+      ],
+      "what_worked": [
+        "MU OPEN at 5% on technical(82)+news(94)+earnings cross-signal \u2192 +27% return, best pick in the book and the entire reason cumulative alpha is positive.",
+        "Reflection-driven 'upsize the winner' rule applied to UNH (+6%) and NVDA (+6%) \u2014 the only ADDs in the book and both went on to win in their first week.",
+        "Insider-flag avoidances were 100% correct: META, WMT, TSLA, AAPL (week 1) all flagged and passed \u2014 would have been losers.",
+        "TLH discipline on broken theses (AMZN, GOOGL, BRK.B, XLE, MSFT) \u2014 captured $23 in tax savings and prevented bigger drawdowns from cumulative losers."
+      ]
+    }
+  },
+  "pm": {
+    "agent_result": {
+      "agent_name": "pm",
+      "model": "claude-opus-4-7",
+      "success": true,
+      "output": {
+        "decisions": [
+          {
+            "ticker": "MU",
+            "action": "ADD",
+            "additional_weight_pct": 5.0,
+            "thesis": "Cleanest cross-signal name: technical 85, news 95, macro fit 75, bull stack 20D breakout \u2014 upsizing the winner per reflection lesson #1.",
+            "conviction": "high",
+            "expected_horizon_weeks": 6
+          },
+          {
+            "ticker": "AMD",
+            "action": "HOLD",
+            "thesis": "Lisa Su cluster sale ~$57M is borderline >$30M hard-rule territory; technical breakout supports holding but no add.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "DIA",
+            "action": "OPEN",
+            "target_weight_pct": 8.0,
+            "thesis": "Highest news polarity (0.99), bull stack 20D breakout, peace-deal catalyst \u2014 broad-index expression of the risk-on tape.",
+            "conviction": "medium",
+            "expected_horizon_weeks": 6
+          },
+          {
+            "ticker": "IWM",
+            "action": "NONE",
+            "thesis": "Technicals strong but news polarity negative on sticky-inflation worry \u2014 conflicting signal, pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLF",
+            "action": "OPEN",
+            "target_weight_pct": 6.0,
+            "thesis": "Financials breakout in expansion regime, RSI 67 not extreme, sector tailwind \u2014 diversifier away from semis.",
+            "conviction": "medium",
+            "expected_horizon_weeks": 6
+          },
+          {
+            "ticker": "XLK",
+            "action": "NONE",
+            "thesis": "Already heavy in single-name tech (NVDA/AMD/AVGO/MU/SMCI/AAPL) \u2014 adding XLK would over-concentrate sector.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLI",
+            "action": "OPEN",
+            "target_weight_pct": 5.0,
+            "thesis": "Industrials 20D breakout, macro-favored, beneficiary of oil-down/peace-deal narrative.",
+            "conviction": "medium",
+            "expected_horizon_weeks": 6
+          },
+          {
+            "ticker": "QQQ",
+            "action": "NONE",
+            "thesis": "No 20D breakout yet and existing tech sleeve already covers the theme.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "SPY",
+            "action": "NONE",
+            "thesis": "DIA chosen as the broad-index expression; SPY would duplicate exposure.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLB",
+            "action": "NONE",
+            "thesis": "Mixed MA stack caps conviction; XLI captures cyclical-rotation theme more cleanly.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "UNH",
+            "action": "TRIM",
+            "trim_pct_of_position": 50,
+            "thesis": "RSI 70 + macro mismatch (healthcare disfavored) + extended after JPM upgrade \u2014 bank gains on extension per reflection lesson #1.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "BRK.B",
+            "action": "NONE",
+            "thesis": "Wash-sale blocked through 2026-06-18 \u2014 hard block.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLP",
+            "action": "NONE",
+            "thesis": "Staples macro-disfavored in expansion regime, no thesis.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "V",
+            "action": "NONE",
+            "thesis": "Solid compounder but lacks momentum catalyst; XLF captures financials exposure more efficiently.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLY",
+            "action": "NONE",
+            "thesis": "Consumer sentiment weakening (49.8 vs 53.3) \u2014 pass.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "JPM",
+            "action": "NONE",
+            "thesis": "Mixed MA stack; XLF provides cleaner sector exposure.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLV",
+            "action": "NONE",
+            "thesis": "Negative news polarity, not macro-favored.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "META",
+            "action": "NONE",
+            "thesis": "Bear MA stack + RSI 46 \u2014 sentiment-only setup, reflection lesson #2 says skip.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "XLU",
+            "action": "NONE",
+            "thesis": "Utilities explicitly macro-disfavored.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "COST",
+            "action": "NONE",
+            "thesis": "Bear stack and macro mismatch.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "AAPL",
+            "action": "CLOSE",
+            "thesis": "Sentiment-only flag, mixed technicals, -1.8% 1W; TLH-eligible with ~$10 tax savings \u2014 exit and park cash per reflection lesson #5.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "NVDA",
+            "action": "HOLD",
+            "thesis": "Consolidating with earnings beat + news 96; not adding into stalled price action but thesis intact.",
+            "conviction": "medium"
+          },
+          {
+            "ticker": "AMZN",
+            "action": "NONE",
+            "thesis": "Below 20D/50D, falling-knife risk despite earnings beat.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "GOOGL",
+            "action": "NONE",
+            "thesis": "Negative news polarity and weak trend \u2014 wait for repair.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "MSFT",
+            "action": "NONE",
+            "thesis": "Insider selling + bearish technicals + lawsuit overhang \u2014 explicit reflection-lesson skip.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "AVGO",
+            "action": "CLOSE",
+            "thesis": "TLH harvest \u2014 $88 unrealized loss / $30 tax savings, RSI 45, -10.3% 1M, post-earnings drift; park proceeds in cash per reflection lesson #5.",
+            "conviction": "high"
+          },
+          {
+            "ticker": "XLE",
+            "action": "NONE",
+            "thesis": "Energy crushed by peace deal / oil down \u2014 explicit macro mismatch.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "WMT",
+            "action": "NONE",
+            "thesis": "Bear stack + insider sale + staples disfavored.",
+            "conviction": "low"
+          },
+          {
+            "ticker": "SMCI",
+            "action": "CLOSE",
+            "thesis": "-29.5% 1W collapse signals adverse news not captured; TLH-eligible ($22 tax savings), reflection-lesson cut on falling-knife semis.",
+            "conviction": "high"
+          },
+          {
+            "ticker": "TSLA",
+            "action": "NONE",
+            "thesis": "Earnings miss + CFO sale + SpaceX overshadowing \u2014 avoid.",
+            "conviction": "low"
+          }
+        ],
+        "weekly_thesis": "Concentrate into the cleanest cross-signal name (MU), diversify the risk-on tape via DIA/XLF/XLI ETFs, and harvest losses on broken theses (AVGO, SMCI, AAPL) while trimming extended UNH.",
+        "narrative": "The tape is risk-on with clean technical breakouts in semis and broad indices, but reflection lessons mandate discipline: avoid news-polarity-only chases, hard-cap on insider-sell flags, and don't repeat the immediate-redeploy mistake. I'm upsizing MU as our highest-conviction cross-signal winner, adding ETF diversification via DIA/XLF/XLI to broaden the risk-on expression without piling more into single-name semis, and harvesting losses on AVGO (TLH $30 savings), SMCI (broken thesis after -29.5% week), and AAPL (sentiment-only, no trend). UNH gets trimmed 50% to bank the breakout gains given RSI 70 + macro mismatch. Resulting cash buffer (~22%) sits within operating range and respects the \"let TLH cash sit\" rule by not redeploying every dollar this week.",
+        "target_cash_pct": 22.0,
+        "overrides": [
+          {
+            "ticker": "UNH",
+            "heuristic_suggested": "HOLD (score 67, breakout)",
+            "pm_chose": "TRIM 50%",
+            "reason": "RSI 70 + healthcare macro-mismatch + reflection lesson #1 (trim extended winners) \u2014 bank gains on the JPM-upgrade pop."
+          },
+          {
+            "ticker": "AAPL",
+            "heuristic_suggested": "HOLD (sentiment-only, score 51)",
+            "pm_chose": "CLOSE",
+            "reason": "TLH opportunity ($10 savings), no technical confirmation, sentiment-only flag \u2014 recycle into cash per lesson #5 rather than holding a mediocre setup."
+          },
+          {
+            "ticker": "SMCI",
+            "heuristic_suggested": "HOLD/avoid (score 34)",
+            "pm_chose": "CLOSE",
+            "reason": "-29.5% week signals unmodeled adverse news; TLH-eligible \u2014 exit decisively rather than average down a broken thesis."
+          }
+        ]
+      },
+      "error": null,
+      "input_tokens": 12833,
+      "output_tokens": 3151,
+      "cache_read_tokens": 0,
+      "cache_creation_tokens": 2298,
+      "latency_seconds": 40.234,
+      "estimated_cost_usd": 0.42882
+    },
+    "output": {
+      "decisions": [
+        {
+          "ticker": "MU",
+          "action": "ADD",
+          "additional_weight_pct": 5.0,
+          "thesis": "Cleanest cross-signal name: technical 85, news 95, macro fit 75, bull stack 20D breakout \u2014 upsizing the winner per reflection lesson #1.",
+          "conviction": "high",
+          "expected_horizon_weeks": 6
+        },
+        {
+          "ticker": "AMD",
+          "action": "HOLD",
+          "thesis": "Lisa Su cluster sale ~$57M is borderline >$30M hard-rule territory; technical breakout supports holding but no add.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "DIA",
+          "action": "OPEN",
+          "target_weight_pct": 8.0,
+          "thesis": "Highest news polarity (0.99), bull stack 20D breakout, peace-deal catalyst \u2014 broad-index expression of the risk-on tape.",
+          "conviction": "medium",
+          "expected_horizon_weeks": 6
+        },
+        {
+          "ticker": "IWM",
+          "action": "NONE",
+          "thesis": "Technicals strong but news polarity negative on sticky-inflation worry \u2014 conflicting signal, pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLF",
+          "action": "OPEN",
+          "target_weight_pct": 6.0,
+          "thesis": "Financials breakout in expansion regime, RSI 67 not extreme, sector tailwind \u2014 diversifier away from semis.",
+          "conviction": "medium",
+          "expected_horizon_weeks": 6
+        },
+        {
+          "ticker": "XLK",
+          "action": "NONE",
+          "thesis": "Already heavy in single-name tech (NVDA/AMD/AVGO/MU/SMCI/AAPL) \u2014 adding XLK would over-concentrate sector.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLI",
+          "action": "OPEN",
+          "target_weight_pct": 5.0,
+          "thesis": "Industrials 20D breakout, macro-favored, beneficiary of oil-down/peace-deal narrative.",
+          "conviction": "medium",
+          "expected_horizon_weeks": 6
+        },
+        {
+          "ticker": "QQQ",
+          "action": "NONE",
+          "thesis": "No 20D breakout yet and existing tech sleeve already covers the theme.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "SPY",
+          "action": "NONE",
+          "thesis": "DIA chosen as the broad-index expression; SPY would duplicate exposure.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLB",
+          "action": "NONE",
+          "thesis": "Mixed MA stack caps conviction; XLI captures cyclical-rotation theme more cleanly.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "UNH",
+          "action": "TRIM",
+          "trim_pct_of_position": 50,
+          "thesis": "RSI 70 + macro mismatch (healthcare disfavored) + extended after JPM upgrade \u2014 bank gains on extension per reflection lesson #1.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "BRK.B",
+          "action": "NONE",
+          "thesis": "Wash-sale blocked through 2026-06-18 \u2014 hard block.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLP",
+          "action": "NONE",
+          "thesis": "Staples macro-disfavored in expansion regime, no thesis.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "V",
+          "action": "NONE",
+          "thesis": "Solid compounder but lacks momentum catalyst; XLF captures financials exposure more efficiently.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLY",
+          "action": "NONE",
+          "thesis": "Consumer sentiment weakening (49.8 vs 53.3) \u2014 pass.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "JPM",
+          "action": "NONE",
+          "thesis": "Mixed MA stack; XLF provides cleaner sector exposure.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLV",
+          "action": "NONE",
+          "thesis": "Negative news polarity, not macro-favored.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "META",
+          "action": "NONE",
+          "thesis": "Bear MA stack + RSI 46 \u2014 sentiment-only setup, reflection lesson #2 says skip.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "XLU",
+          "action": "NONE",
+          "thesis": "Utilities explicitly macro-disfavored.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "COST",
+          "action": "NONE",
+          "thesis": "Bear stack and macro mismatch.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "AAPL",
+          "action": "CLOSE",
+          "thesis": "Sentiment-only flag, mixed technicals, -1.8% 1W; TLH-eligible with ~$10 tax savings \u2014 exit and park cash per reflection lesson #5.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "NVDA",
+          "action": "HOLD",
+          "thesis": "Consolidating with earnings beat + news 96; not adding into stalled price action but thesis intact.",
+          "conviction": "medium"
+        },
+        {
+          "ticker": "AMZN",
+          "action": "NONE",
+          "thesis": "Below 20D/50D, falling-knife risk despite earnings beat.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "GOOGL",
+          "action": "NONE",
+          "thesis": "Negative news polarity and weak trend \u2014 wait for repair.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "MSFT",
+          "action": "NONE",
+          "thesis": "Insider selling + bearish technicals + lawsuit overhang \u2014 explicit reflection-lesson skip.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "AVGO",
+          "action": "CLOSE",
+          "thesis": "TLH harvest \u2014 $88 unrealized loss / $30 tax savings, RSI 45, -10.3% 1M, post-earnings drift; park proceeds in cash per reflection lesson #5.",
+          "conviction": "high"
+        },
+        {
+          "ticker": "XLE",
+          "action": "NONE",
+          "thesis": "Energy crushed by peace deal / oil down \u2014 explicit macro mismatch.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "WMT",
+          "action": "NONE",
+          "thesis": "Bear stack + insider sale + staples disfavored.",
+          "conviction": "low"
+        },
+        {
+          "ticker": "SMCI",
+          "action": "CLOSE",
+          "thesis": "-29.5% 1W collapse signals adverse news not captured; TLH-eligible ($22 tax savings), reflection-lesson cut on falling-knife semis.",
+          "conviction": "high"
+        },
+        {
+          "ticker": "TSLA",
+          "action": "NONE",
+          "thesis": "Earnings miss + CFO sale + SpaceX overshadowing \u2014 avoid.",
+          "conviction": "low"
+        }
+      ],
+      "weekly_thesis": "Concentrate into the cleanest cross-signal name (MU), diversify the risk-on tape via DIA/XLF/XLI ETFs, and harvest losses on broken theses (AVGO, SMCI, AAPL) while trimming extended UNH.",
+      "narrative": "The tape is risk-on with clean technical breakouts in semis and broad indices, but reflection lessons mandate discipline: avoid news-polarity-only chases, hard-cap on insider-sell flags, and don't repeat the immediate-redeploy mistake. I'm upsizing MU as our highest-conviction cross-signal winner, adding ETF diversification via DIA/XLF/XLI to broaden the risk-on expression without piling more into single-name semis, and harvesting losses on AVGO (TLH $30 savings), SMCI (broken thesis after -29.5% week), and AAPL (sentiment-only, no trend). UNH gets trimmed 50% to bank the breakout gains given RSI 70 + macro mismatch. Resulting cash buffer (~22%) sits within operating range and respects the \"let TLH cash sit\" rule by not redeploying every dollar this week.",
+      "target_cash_pct": 22.0,
+      "overrides": [
+        {
+          "ticker": "UNH",
+          "heuristic_suggested": "HOLD (score 67, breakout)",
+          "pm_chose": "TRIM 50%",
+          "reason": "RSI 70 + healthcare macro-mismatch + reflection lesson #1 (trim extended winners) \u2014 bank gains on the JPM-upgrade pop."
+        },
+        {
+          "ticker": "AAPL",
+          "heuristic_suggested": "HOLD (sentiment-only, score 51)",
+          "pm_chose": "CLOSE",
+          "reason": "TLH opportunity ($10 savings), no technical confirmation, sentiment-only flag \u2014 recycle into cash per lesson #5 rather than holding a mediocre setup."
+        },
+        {
+          "ticker": "SMCI",
+          "heuristic_suggested": "HOLD/avoid (score 34)",
+          "pm_chose": "CLOSE",
+          "reason": "-29.5% week signals unmodeled adverse news; TLH-eligible \u2014 exit decisively rather than average down a broken thesis."
+        }
+      ]
+    }
+  },
+  "executed_trades": [
+    {
+      "kind": "sell",
+      "ticker": "AAPL",
+      "shares": 1.572895,
+      "price": 295.912,
+      "cost_basis_per_share": 314.8073,
+      "sell_price_per_share": 295.912,
+      "acquisition_date": "2026-06-08",
+      "sell_date": "2026-06-15",
+      "realized_pnl": -29.7204,
+      "is_long_term": false,
+      "lot_id": "06bece33a50b",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "Sentiment-only flag, mixed technicals, -1.8% 1W; TLH-eligible with ~$10 tax savings \u2014 exit and park cash per reflection lesson #5."
+    },
+    {
+      "kind": "sell",
+      "ticker": "AVGO",
+      "shares": 1.322314,
+      "price": 393.9529,
+      "cost_basis_per_share": 461.0104,
+      "sell_price_per_share": 393.9529,
+      "acquisition_date": "2026-06-01",
+      "sell_date": "2026-06-15",
+      "realized_pnl": -88.671,
+      "is_long_term": false,
+      "lot_id": "04bc376c7347",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "TLH harvest \u2014 $88 unrealized loss / $30 tax savings, RSI 45, -10.3% 1M, post-earnings drift; park proceeds in cash per reflection lesson #5."
+    },
+    {
+      "kind": "sell",
+      "ticker": "SMCI",
+      "shares": 13.956084,
+      "price": 30.9945,
+      "cost_basis_per_share": 35.5978,
+      "sell_price_per_share": 30.9945,
+      "acquisition_date": "2026-05-25",
+      "sell_date": "2026-06-15",
+      "realized_pnl": -64.244,
+      "is_long_term": false,
+      "lot_id": "d782ec6c102e",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "-29.5% 1W collapse signals adverse news not captured; TLH-eligible ($22 tax savings), reflection-lesson cut on falling-knife semis."
+    },
+    {
+      "kind": "sell",
+      "ticker": "UNH",
+      "shares": 1.503582,
+      "price": 412.8135,
+      "cost_basis_per_share": 391.3256,
+      "sell_price_per_share": 412.8135,
+      "acquisition_date": "2026-05-18",
+      "sell_date": "2026-06-15",
+      "realized_pnl": 32.3088,
+      "is_long_term": false,
+      "lot_id": "b382df2c6f8d",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "RSI 70 + macro mismatch (healthcare disfavored) + extended after JPM upgrade \u2014 bank gains on extension per reflection lesson #1."
+    },
+    {
+      "kind": "buy",
+      "ticker": "DIA",
+      "shares": 1,
+      "price": 519.7648,
+      "cost_basis_per_share": 519.7648,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-06-15",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "9f5d30388202",
+      "fractional_eligible": false,
+      "cash_residual": 268.5203,
+      "notes": "Highest news polarity (0.99), bull stack 20D breakout, peace-deal catalyst \u2014 broad-index expression of the risk-on tape."
+    },
+    {
+      "kind": "buy",
+      "ticker": "XLF",
+      "shares": 11,
+      "price": 53.7419,
+      "cost_basis_per_share": 53.7419,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-06-15",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "abef9bf41973",
+      "fractional_eligible": false,
+      "cash_residual": 0.0378,
+      "notes": "Financials breakout in expansion regime, RSI 67 not extreme, sector tailwind \u2014 diversifier away from semis."
+    },
+    {
+      "kind": "buy",
+      "ticker": "XLI",
+      "shares": 2,
+      "price": 179.6998,
+      "cost_basis_per_share": 179.6998,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-06-15",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "77371cd4615c",
+      "fractional_eligible": false,
+      "cash_residual": 133.2508,
+      "notes": "Industrials 20D breakout, macro-favored, beneficiary of oil-down/peace-deal narrative."
+    },
+    {
+      "kind": "buy",
+      "ticker": "MU",
+      "shares": 0.451643,
+      "price": 1090.7751,
+      "cost_basis_per_share": 1090.7751,
+      "sell_price_per_share": null,
+      "acquisition_date": "2026-06-15",
+      "sell_date": null,
+      "realized_pnl": null,
+      "is_long_term": null,
+      "lot_id": "9d5ea1e55e5a",
+      "fractional_eligible": true,
+      "cash_residual": 0.0,
+      "notes": "Cleanest cross-signal name: technical 85, news 95, macro fit 75, bull stack 20D breakout \u2014 upsizing the winner per reflection lesson #1."
+    }
+  ],
+  "skipped": [],
+  "degraded_signals": [
+    "influencer"
+  ],
+  "pick_scoreboard_snapshot": {
+    "aggregate": {
+      "total_picks": 18,
+      "open_picks": 10,
+      "closed_picks": 8,
+      "win_count": 4,
+      "loss_count": 9,
+      "flat_count": 5,
+      "win_rate": 0.2222222222222222,
+      "avg_return_pct": 3.3744039945527497e-07,
+      "avg_winner_return_pct": 0.16394633070181788,
+      "avg_loser_return_pct": -0.07280044047564578,
+      "equal_weight_basket_return_pct": 3.3744039945527497e-07,
+      "weighted_basket_return_pct": -0.007674501932678845,
+      "best_pick": {
+        "ticker": "MU",
+        "week_of": "2026-05-25",
+        "return_pct": 0.457457,
+        "conviction": "high"
+      },
+      "worst_pick": {
+        "ticker": "AVGO",
+        "week_of": "2026-06-01",
+        "return_pct": -0.14503,
+        "conviction": "medium"
+      },
+      "by_conviction": {
+        "medium": {
+          "count": 12,
+          "win_rate": 0.1667,
+          "avg_return_pct": -0.018766
+        },
+        "high": {
+          "count": 6,
+          "win_rate": 0.3333,
+          "avg_return_pct": 0.037534
+        }
+      }
+    },
+    "weekly_recaps": [
+      {
+        "week_of": "2026-05-18",
+        "picks_count": 6,
+        "tickers": [
+          "XLE",
+          "UNH",
+          "BRK.B",
+          "GOOGL",
+          "NVDA",
+          "AMZN"
+        ],
+        "avg_return_since_pick": 0.0
+      },
+      {
+        "week_of": "2026-05-25",
+        "picks_count": 3,
+        "tickers": [
+          "SMCI",
+          "MU",
+          "NVDA"
+        ],
+        "avg_return_since_pick": 0.25172031087986246
+      },
+      {
+        "week_of": "2026-06-01",
+        "picks_count": 2,
+        "tickers": [
+          "MSFT",
+          "AVGO"
+        ],
+        "avg_return_since_pick": 0.0
+      },
+      {
+        "week_of": "2026-06-08",
+        "picks_count": 3,
+        "tickers": [
+          "AMD",
+          "AAPL",
+          "UNH"
+        ],
+        "avg_return_since_pick": 0.0004384757344317066
+      },
+      {
+        "week_of": "2026-06-15",
+        "picks_count": 4,
+        "tickers": [
+          "DIA",
+          "XLF",
+          "XLI",
+          "MU"
+        ],
+        "avg_return_since_pick": 0.0009906323520651955
+      }
+    ],
+    "open_picks": [
+      {
+        "pick_id": "4ab8b3bc7ab5",
+        "ticker": "UNH",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 391.1300048828125,
+        "executed_fill_price": 391.3256,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Healthcare laggard with strong news (90) and improving technicals (74) offers uncorrelated exposure to AI/tech beta.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 73.7,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 89.5,
+          "insider": 50.0
+        },
+        "current_price": 413.1199951171875,
+        "lifetime_return_pct": 0.0562216908952395,
+        "days_held": 28,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "f20399643e56",
+        "ticker": "NVDA",
+        "week_of": "2026-05-18",
+        "action": "OPEN",
+        "rec_market_price": 222.32000732421875,
+        "executed_fill_price": 222.4312,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Earnings Wed is binary but technical setup (74) and AI capex narrative intact; sized small to respect event risk on first deployment.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 50.0,
+          "technical": 74.4,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 73.9,
+          "insider": 50.0
+        },
+        "current_price": 212.22999572753906,
+        "lifetime_return_pct": -0.045385081253460885,
+        "days_held": 28,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "fdebb67d104e",
+        "ticker": "MU",
+        "week_of": "2026-05-25",
+        "action": "OPEN",
+        "rec_market_price": 751.0,
+        "executed_fill_price": 751.3755,
+        "target_weight_pct": 5.0,
+        "conviction": "high",
+        "thesis": "#2 composite with technical 82 + news 94 \u2014 memory cycle riding AI capex; half-cap size due to high_vol flag.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 50.0,
+          "technical": 81.6,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 94.2,
+          "insider": 50.0
+        },
+        "current_price": 1094.550048828125,
+        "lifetime_return_pct": 0.4574567893849867,
+        "days_held": 21,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "1080316bd7e8",
+        "ticker": "NVDA",
+        "week_of": "2026-05-25",
+        "action": "ADD",
+        "rec_market_price": 215.3300018310547,
+        "executed_fill_price": 215.4377,
+        "target_weight_pct": 6.0,
+        "conviction": "high",
+        "thesis": "AI capex super-cycle dominant theme, semis leading, NVDA earnings resolved favorably \u2014 reflection lesson explicitly says size the highest-conviction setup meaningfully.",
+        "factor_breakdown": {
+          "sentiment": 50.0,
+          "earnings": 55.0,
+          "technical": 67.5,
+          "macro_fit": 50.0,
+          "influencer": 50.0,
+          "news": 89.3,
+          "insider": 50.0
+        },
+        "current_price": 212.22999572753906,
+        "lifetime_return_pct": -0.014396535908395396,
+        "days_held": 21,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "b0d60ec206ea",
+        "ticker": "AMD",
+        "week_of": "2026-06-08",
+        "action": "OPEN",
+        "rec_market_price": 490.68011474609375,
+        "executed_fill_price": 490.9255,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Strong momentum, bull MA stack, earnings beat, AI tailwind; insider sell caps size but cross-signals justify a position.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 58,
+          "technical": 74,
+          "macro_fit": 72,
+          "influencer": 50,
+          "news": 90,
+          "insider": 35
+        },
+        "current_price": 547.9749755859375,
+        "lifetime_return_pct": 0.11676621717081692,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "dc03b8c5d7fe",
+        "ticker": "UNH",
+        "week_of": "2026-06-08",
+        "action": "ADD",
+        "rec_market_price": 402.9100036621094,
+        "executed_fill_price": 403.1115,
+        "target_weight_pct": 6.0,
+        "conviction": "high",
+        "thesis": "Cleanest cross-signal name: bull MA stack, breakout, +8.9% 1M, strong news polarity, earnings tailwind; upsize the winner per reflection lesson.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 62,
+          "technical": 80,
+          "macro_fit": 55,
+          "influencer": 50,
+          "news": 86,
+          "insider": 50
+        },
+        "current_price": 413.1199951171875,
+        "lifetime_return_pct": 0.025340625356228396,
+        "days_held": 7,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "98550cadd2b9",
+        "ticker": "DIA",
+        "week_of": "2026-06-15",
+        "action": "OPEN",
+        "rec_market_price": 519.5050048828125,
+        "executed_fill_price": 519.7648,
+        "target_weight_pct": 8.0,
+        "conviction": "medium",
+        "thesis": "Highest news polarity (0.99), bull stack 20D breakout, peace-deal catalyst \u2014 broad-index expression of the risk-on tape.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 50,
+          "technical": 79.9,
+          "macro_fit": 70,
+          "influencer": 50,
+          "news": 96.8,
+          "insider": 50
+        },
+        "current_price": 519.5050048828125,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "41d4e83778d4",
+        "ticker": "XLF",
+        "week_of": "2026-06-15",
+        "action": "OPEN",
+        "rec_market_price": 53.71500015258789,
+        "executed_fill_price": 53.7419,
+        "target_weight_pct": 6.0,
+        "conviction": "medium",
+        "thesis": "Financials breakout in expansion regime, RSI 67 not extreme, sector tailwind \u2014 diversifier away from semis.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 50,
+          "technical": 75.7,
+          "macro_fit": 75,
+          "influencer": 50,
+          "news": 80,
+          "insider": 50
+        },
+        "current_price": 53.71500015258789,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "e2f187b70b44",
+        "ticker": "XLI",
+        "week_of": "2026-06-15",
+        "action": "OPEN",
+        "rec_market_price": 179.61000061035156,
+        "executed_fill_price": 179.6998,
+        "target_weight_pct": 5.0,
+        "conviction": "medium",
+        "thesis": "Industrials 20D breakout, macro-favored, beneficiary of oil-down/peace-deal narrative.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 50,
+          "technical": 80.9,
+          "macro_fit": 75,
+          "influencer": 50,
+          "news": 65.2,
+          "insider": 50
+        },
+        "current_price": 179.61000061035156,
+        "lifetime_return_pct": 0.0,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      },
+      {
+        "pick_id": "bd74672e1fe6",
+        "ticker": "MU",
+        "week_of": "2026-06-15",
+        "action": "ADD",
+        "rec_market_price": 1090.22998046875,
+        "executed_fill_price": 1090.7751,
+        "target_weight_pct": 5.0,
+        "conviction": "high",
+        "thesis": "Cleanest cross-signal name: technical 85, news 95, macro fit 75, bull stack 20D breakout \u2014 upsizing the winner per reflection lesson #1.",
+        "factor_breakdown": {
+          "sentiment": 50,
+          "earnings": 50,
+          "technical": 85,
+          "macro_fit": 75,
+          "influencer": 50,
+          "news": 95.6,
+          "insider": 50
+        },
+        "current_price": 1094.550048828125,
+        "lifetime_return_pct": 0.003962529408260782,
+        "days_held": 0,
+        "status": "open",
+        "closed_at": null,
+        "closed_price": null,
+        "final_return_pct": null
+      }
+    ]
+  },
+  "agent_costs_usd": {
+    "reflection": 0.42348,
+    "synthesis": 1.062885,
+    "pm": 0.42882,
+    "total": 1.915185
+  }
+}

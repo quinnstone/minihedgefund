@@ -1,0 +1,88 @@
+{
+  "agent_result": {
+    "agent_name": "reflection",
+    "model": "claude-opus-4-7",
+    "success": true,
+    "output": {
+      "factor_weight_proposals": {
+        "technical": 0.25,
+        "earnings": 0.2,
+        "sentiment": 0.15,
+        "macro_fit": 0.2,
+        "influencer": 0.2
+      },
+      "lessons_for_pm": [
+        "Highest-conviction semis with technical+earnings+news triple-alignment (MU +27%, NVDA winners) are our edge \u2014 keep upsizing the cleanest cross-signal name, but enforce a trim trigger when RSI prints >78 (MU at RSI 80 was held, then gave back -8.3%).",
+        "News polarity \u226580 alone is NOT a thesis. XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) all opened with news \u226580 but middling technical/earnings and all lost. Require \u22652 of {technical \u226575, earnings beat, macro_fit \u226565} before sizing >5%.",
+        "Insider-sell flags >$30M have been near-perfectly predictive: MU CEO $38M \u2192 -8.3% week; META/WMT/AMD avoidances all correct. Hard rule: any single-name insider sale >$30M = max 3% or pass, regardless of other factors.",
+        "Conviction='high' on a single dominant factor has burned us \u2014 MSFT high-conviction at 9% on technical=82 lost 11.8% in one week. Reserve 'high' for \u22653 factors >70 with zero insider/macro red flags.",
+        "TLH execution is working ($23 tax savings captured), but immediate redeployment into the next flagged name (AVGO insider, AMD high-vol post-MSFT close) repeats the mistake. Park TLH proceeds in cash 1 week before redeploying.",
+        "Medium-conviction picks have an 11% win rate and -3.6% avg return \u2014 they are diluting alpha. Either upgrade thesis to high or pass; stop the 5-6% 'starter' positions on mediocre setups."
+      ],
+      "influencer_credibility_deltas": [],
+      "summary": "4 weeks tracked, cumulative -0.87% vs SPY -1.08% (+20bps alpha), but win rate is only 25% weekly and 21% per-pick \u2014 the book is being carried by one outlier (MU +27%) while medium-conviction news-led opens (XLE, BRK.B, GOOGL, AVGO, MSFT) consistently lose 4-14%. High-conviction picks win 40% with +7.4% avg; medium picks win 11% with -3.6% avg.",
+      "watch_for": [
+        "Overbought semis sleeve (NVDA/SMCI/MU/AMD) \u2014 concentration risk if AI capex narrative cracks; consider partial trim on any name with RSI >78 + insider activity.",
+        "Repeating the 'news polarity \u226585 = buy' pattern. Five of five such opens have lost. Demand technical/earnings confirmation this week.",
+        "Redeployed TLH cash chasing into the next flagged name within the same week \u2014 break the reflex; let cash sit if no clean cross-signal candidate exists."
+      ],
+      "weeks_evaluated": 4,
+      "what_missed": [
+        "News-polarity-led opens without technical/earnings confirmation: XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) \u2014 5 of 5 lost, avg -7.7%.",
+        "Sizing MSFT at 9% high-conviction on a single dominant factor (technical=82) \u2014 lost 11.8% in one week, the largest single drag in the book.",
+        "Not trimming MU when RSI hit 80 the week before the CEO $38M sale; we waited a week and gave back 8.3% before halving.",
+        "Medium-conviction bucket overall: 9 picks, 11% win rate, -3.6% avg \u2014 diluting alpha from the high-conviction sleeve."
+      ],
+      "what_worked": [
+        "MU OPEN at 5% on technical(82)+news(94)+earnings cross-signal \u2192 +27% return, best pick in the book and the entire reason cumulative alpha is positive.",
+        "Reflection-driven 'upsize the winner' rule applied to UNH (+6%) and NVDA (+6%) \u2014 the only ADDs in the book and both went on to win in their first week.",
+        "Insider-flag avoidances were 100% correct: META, WMT, TSLA, AAPL (week 1) all flagged and passed \u2014 would have been losers.",
+        "TLH discipline on broken theses (AMZN, GOOGL, BRK.B, XLE, MSFT) \u2014 captured $23 in tax savings and prevented bigger drawdowns from cumulative losers."
+      ]
+    },
+    "error": null,
+    "input_tokens": 16712,
+    "output_tokens": 2304,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "latency_seconds": 38.005,
+    "estimated_cost_usd": 0.42348
+  },
+  "output": {
+    "factor_weight_proposals": {
+      "technical": 0.25,
+      "earnings": 0.2,
+      "sentiment": 0.15,
+      "macro_fit": 0.2,
+      "influencer": 0.2
+    },
+    "lessons_for_pm": [
+      "Highest-conviction semis with technical+earnings+news triple-alignment (MU +27%, NVDA winners) are our edge \u2014 keep upsizing the cleanest cross-signal name, but enforce a trim trigger when RSI prints >78 (MU at RSI 80 was held, then gave back -8.3%).",
+      "News polarity \u226580 alone is NOT a thesis. XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) all opened with news \u226580 but middling technical/earnings and all lost. Require \u22652 of {technical \u226575, earnings beat, macro_fit \u226565} before sizing >5%.",
+      "Insider-sell flags >$30M have been near-perfectly predictive: MU CEO $38M \u2192 -8.3% week; META/WMT/AMD avoidances all correct. Hard rule: any single-name insider sale >$30M = max 3% or pass, regardless of other factors.",
+      "Conviction='high' on a single dominant factor has burned us \u2014 MSFT high-conviction at 9% on technical=82 lost 11.8% in one week. Reserve 'high' for \u22653 factors >70 with zero insider/macro red flags.",
+      "TLH execution is working ($23 tax savings captured), but immediate redeployment into the next flagged name (AVGO insider, AMD high-vol post-MSFT close) repeats the mistake. Park TLH proceeds in cash 1 week before redeploying.",
+      "Medium-conviction picks have an 11% win rate and -3.6% avg return \u2014 they are diluting alpha. Either upgrade thesis to high or pass; stop the 5-6% 'starter' positions on mediocre setups."
+    ],
+    "influencer_credibility_deltas": [],
+    "summary": "4 weeks tracked, cumulative -0.87% vs SPY -1.08% (+20bps alpha), but win rate is only 25% weekly and 21% per-pick \u2014 the book is being carried by one outlier (MU +27%) while medium-conviction news-led opens (XLE, BRK.B, GOOGL, AVGO, MSFT) consistently lose 4-14%. High-conviction picks win 40% with +7.4% avg; medium picks win 11% with -3.6% avg.",
+    "watch_for": [
+      "Overbought semis sleeve (NVDA/SMCI/MU/AMD) \u2014 concentration risk if AI capex narrative cracks; consider partial trim on any name with RSI >78 + insider activity.",
+      "Repeating the 'news polarity \u226585 = buy' pattern. Five of five such opens have lost. Demand technical/earnings confirmation this week.",
+      "Redeployed TLH cash chasing into the next flagged name within the same week \u2014 break the reflex; let cash sit if no clean cross-signal candidate exists."
+    ],
+    "weeks_evaluated": 4,
+    "what_missed": [
+      "News-polarity-led opens without technical/earnings confirmation: XLE (-5.5%), BRK.B (-4.1%), GOOGL (-4.8%), AVGO (-14.3%), MSFT (-11.8%) \u2014 5 of 5 lost, avg -7.7%.",
+      "Sizing MSFT at 9% high-conviction on a single dominant factor (technical=82) \u2014 lost 11.8% in one week, the largest single drag in the book.",
+      "Not trimming MU when RSI hit 80 the week before the CEO $38M sale; we waited a week and gave back 8.3% before halving.",
+      "Medium-conviction bucket overall: 9 picks, 11% win rate, -3.6% avg \u2014 diluting alpha from the high-conviction sleeve."
+    ],
+    "what_worked": [
+      "MU OPEN at 5% on technical(82)+news(94)+earnings cross-signal \u2192 +27% return, best pick in the book and the entire reason cumulative alpha is positive.",
+      "Reflection-driven 'upsize the winner' rule applied to UNH (+6%) and NVDA (+6%) \u2014 the only ADDs in the book and both went on to win in their first week.",
+      "Insider-flag avoidances were 100% correct: META, WMT, TSLA, AAPL (week 1) all flagged and passed \u2014 would have been losers.",
+      "TLH discipline on broken theses (AMZN, GOOGL, BRK.B, XLE, MSFT) \u2014 captured $23 in tax savings and prevented bigger drawdowns from cumulative losers."
+    ]
+  }
+}

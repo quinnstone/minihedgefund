@@ -1,5 +1,5 @@
 {
-  "cash": 5010.689273524096,
+  "cash": 5087.351689723575,
   "positions": {
     "UNH": {
       "ticker": "UNH",
@@ -7,7 +7,7 @@
         {
           "lot_id": "b382df2c6f8d",
           "ticker": "UNH",
-          "shares": 1.5331898040171854,
+          "shares": 0.029607934163809357,
           "cost_basis_per_share": 391.3255698852539,
           "acquisition_date": "2026-05-18"
         },
@@ -39,18 +39,6 @@
         }
       ]
     },
-    "SMCI": {
-      "ticker": "SMCI",
-      "lots": [
-        {
-          "lot_id": "d782ec6c102e",
-          "ticker": "SMCI",
-          "shares": 13.956084249084475,
-          "cost_basis_per_share": 35.59779183197021,
-          "acquisition_date": "2026-05-25"
-        }
-      ]
-    },
     "MU": {
       "ticker": "MU",
       "lots": [
@@ -60,18 +48,13 @@
           "shares": 0.3305892778981808,
           "cost_basis_per_share": 751.3755,
           "acquisition_date": "2026-05-25"
-        }
-      ]
-    },
-    "AVGO": {
-      "ticker": "AVGO",
-      "lots": [
+        },
         {
-          "lot_id": "04bc376c7347",
-          "ticker": "AVGO",
-          "shares": 1.322314256284697,
-          "cost_basis_per_share": 461.0103887786865,
-          "acquisition_date": "2026-06-01"
+          "lot_id": "9d5ea1e55e5a",
+          "ticker": "MU",
+          "shares": 0.4516434675830964,
+          "cost_basis_per_share": 1090.7750954589844,
+          "acquisition_date": "2026-06-15"
         }
       ]
     },
@@ -87,20 +70,44 @@
         }
       ]
     },
-    "AAPL": {
-      "ticker": "AAPL",
+    "DIA": {
+      "ticker": "DIA",
       "lots": [
         {
-          "lot_id": "06bece33a50b",
-          "ticker": "AAPL",
-          "shares": 1.5728950030957594,
-          "cost_basis_per_share": 314.8073188934326,
-          "acquisition_date": "2026-06-08"
+          "lot_id": "9f5d30388202",
+          "ticker": "DIA",
+          "shares": 1,
+          "cost_basis_per_share": 519.7647573852539,
+          "acquisition_date": "2026-06-15"
+        }
+      ]
+    },
+    "XLF": {
+      "ticker": "XLF",
+      "lots": [
+        {
+          "lot_id": "abef9bf41973",
+          "ticker": "XLF",
+          "shares": 11,
+          "cost_basis_per_share": 53.74185765266418,
+          "acquisition_date": "2026-06-15"
+        }
+      ]
+    },
+    "XLI": {
+      "ticker": "XLI",
+      "lots": [
+        {
+          "lot_id": "77371cd4615c",
+          "ticker": "XLI",
+          "shares": 2,
+          "cost_basis_per_share": 179.69980561065674,
+          "acquisition_date": "2026-06-15"
         }
       ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-06-08T17:29:58.157043"
+  "last_updated": "2026-06-15T18:47:49.465471"
 }

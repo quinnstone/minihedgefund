@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 403.44000244140625,
-      "lifetime_return_pct": 0.03147290518476582,
-      "days_held": 21,
+      "current_price": 413.1199951171875,
+      "lifetime_return_pct": 0.0562216908952395,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -128,9 +128,9 @@
         "news": 73.9,
         "insider": 50.0
       },
-      "current_price": 208.6300048828125,
-      "lifetime_return_pct": -0.06157791467432589,
-      "days_held": 21,
+      "current_price": 212.22999572753906,
+      "lifetime_return_pct": -0.045385081253460885,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -182,13 +182,13 @@
         "news": 96.4,
         "insider": 50.0
       },
-      "current_price": 44.439998626708984,
-      "lifetime_return_pct": 0.24901619841742606,
+      "current_price": 30.9945,
+      "lifetime_return_pct": -0.128878628304409,
       "days_held": 14,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-15",
+      "closed_price": 30.9945,
+      "final_return_pct": -0.128878628304409
     },
     {
       "pick_id": "fdebb67d104e",
@@ -209,9 +209,9 @@
         "news": 94.2,
         "insider": 50.0
       },
-      "current_price": 954.1699829101562,
-      "lifetime_return_pct": 0.270532600412991,
-      "days_held": 14,
+      "current_price": 1094.550048828125,
+      "lifetime_return_pct": 0.4574567893849867,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -236,9 +236,9 @@
         "news": 89.3,
         "insider": 50.0
       },
-      "current_price": 208.6300048828125,
-      "lifetime_return_pct": -0.031115018303389624,
-      "days_held": 14,
+      "current_price": 212.22999572753906,
+      "lifetime_return_pct": -0.014396535908395396,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -290,13 +290,13 @@
         "news": 92,
         "insider": 50
       },
-      "current_price": 395.05999755859375,
-      "lifetime_return_pct": -0.14262772124399764,
+      "current_price": 393.9529,
+      "lifetime_return_pct": -0.14503038099816815,
       "days_held": 7,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-15",
+      "closed_price": 393.9529,
+      "final_return_pct": -0.14503038099816815
     },
     {
       "pick_id": "b0d60ec206ea",
@@ -317,9 +317,9 @@
         "news": 90,
         "insider": 35
       },
-      "current_price": 490.68011474609375,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 547.9749755859375,
+      "lifetime_return_pct": 0.11676621717081692,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -344,13 +344,13 @@
         "news": 95,
         "insider": 50
       },
-      "current_price": 314.6499938964844,
-      "lifetime_return_pct": 0.0,
+      "current_price": 295.912,
+      "lifetime_return_pct": -0.059551864802034435,
       "days_held": 0,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-06-15",
+      "closed_price": 295.912,
+      "final_return_pct": -0.059551864802034435
     },
     {
       "pick_id": "dc03b8c5d7fe",
@@ -371,8 +371,116 @@
         "news": 86,
         "insider": 50
       },
-      "current_price": 403.44000244140625,
-      "lifetime_return_pct": 0.0013154272032951198,
+      "current_price": 413.1199951171875,
+      "lifetime_return_pct": 0.025340625356228396,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "98550cadd2b9",
+      "ticker": "DIA",
+      "week_of": "2026-06-15",
+      "action": "OPEN",
+      "rec_market_price": 519.5050048828125,
+      "executed_fill_price": 519.7648,
+      "target_weight_pct": 8.0,
+      "conviction": "medium",
+      "thesis": "Highest news polarity (0.99), bull stack 20D breakout, peace-deal catalyst \u2014 broad-index expression of the risk-on tape.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 79.9,
+        "macro_fit": 70,
+        "influencer": 50,
+        "news": 96.8,
+        "insider": 50
+      },
+      "current_price": 519.5050048828125,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "41d4e83778d4",
+      "ticker": "XLF",
+      "week_of": "2026-06-15",
+      "action": "OPEN",
+      "rec_market_price": 53.71500015258789,
+      "executed_fill_price": 53.7419,
+      "target_weight_pct": 6.0,
+      "conviction": "medium",
+      "thesis": "Financials breakout in expansion regime, RSI 67 not extreme, sector tailwind \u2014 diversifier away from semis.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 75.7,
+        "macro_fit": 75,
+        "influencer": 50,
+        "news": 80,
+        "insider": 50
+      },
+      "current_price": 53.71500015258789,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "e2f187b70b44",
+      "ticker": "XLI",
+      "week_of": "2026-06-15",
+      "action": "OPEN",
+      "rec_market_price": 179.61000061035156,
+      "executed_fill_price": 179.6998,
+      "target_weight_pct": 5.0,
+      "conviction": "medium",
+      "thesis": "Industrials 20D breakout, macro-favored, beneficiary of oil-down/peace-deal narrative.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 80.9,
+        "macro_fit": 75,
+        "influencer": 50,
+        "news": 65.2,
+        "insider": 50
+      },
+      "current_price": 179.61000061035156,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "bd74672e1fe6",
+      "ticker": "MU",
+      "week_of": "2026-06-15",
+      "action": "ADD",
+      "rec_market_price": 1090.22998046875,
+      "executed_fill_price": 1090.7751,
+      "target_weight_pct": 5.0,
+      "conviction": "high",
+      "thesis": "Cleanest cross-signal name: technical 85, news 95, macro fit 75, bull stack 20D breakout \u2014 upsizing the winner per reflection lesson #1.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 85,
+        "macro_fit": 75,
+        "influencer": 50,
+        "news": 95.6,
+        "insider": 50
+      },
+      "current_price": 1094.550048828125,
+      "lifetime_return_pct": 0.003962529408260782,
       "days_held": 0,
       "status": "open",
       "closed_at": null,
@@ -381,40 +489,40 @@
     }
   ],
   "aggregate": {
-    "total_picks": 14,
-    "open_picks": 9,
-    "closed_picks": 5,
-    "win_count": 3,
-    "loss_count": 7,
-    "flat_count": 4,
-    "win_rate": 0.21428571428571427,
-    "avg_return_pct": 0.0036083707124921864,
-    "avg_winner_return_pct": 0.18367390133839426,
-    "avg_loser_return_pct": -0.07104030389086534,
-    "equal_weight_basket_return_pct": 0.0036083707124921864,
-    "weighted_basket_return_pct": -0.009109123542136178,
+    "total_picks": 18,
+    "open_picks": 10,
+    "closed_picks": 8,
+    "win_count": 4,
+    "loss_count": 9,
+    "flat_count": 5,
+    "win_rate": 0.2222222222222222,
+    "avg_return_pct": 3.3744039945527497e-07,
+    "avg_winner_return_pct": 0.16394633070181788,
+    "avg_loser_return_pct": -0.07280044047564578,
+    "equal_weight_basket_return_pct": 3.3744039945527497e-07,
+    "weighted_basket_return_pct": -0.007674501932678845,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
-      "return_pct": 0.270533,
+      "return_pct": 0.457457,
       "conviction": "high"
     },
     "worst_pick": {
       "ticker": "AVGO",
       "week_of": "2026-06-01",
-      "return_pct": -0.142628,
+      "return_pct": -0.14503,
       "conviction": "medium"
     },
     "by_conviction": {
       "medium": {
-        "count": 9,
-        "win_rate": 0.1111,
-        "avg_return_pct": -0.035661
+        "count": 12,
+        "win_rate": 0.1667,
+        "avg_return_pct": -0.018766
       },
       "high": {
-        "count": 5,
-        "win_rate": 0.4,
-        "avg_return_pct": 0.074293
+        "count": 6,
+        "win_rate": 0.3333,
+        "avg_return_pct": 0.037534
       }
     }
   },
@@ -460,6 +568,17 @@
         "UNH"
       ],
       "avg_return_since_pick": 0.0004384757344317066
+    },
+    {
+      "week_of": "2026-06-15",
+      "picks_count": 4,
+      "tickers": [
+        "DIA",
+        "XLF",
+        "XLI",
+        "MU"
+      ],
+      "avg_return_since_pick": 0.0009906323520651955
     }
   ]
 }
