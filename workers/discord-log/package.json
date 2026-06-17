@@ -1,0 +1,19 @@
+{
+  "name": "minihedgefund-discord-log",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker translating Discord slash commands into commits on the minihedgefund repo's actual_entries.txt",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "register": "node scripts/register-commands.js",
+    "tail": "wrangler tail"
+  },
+  "dependencies": {
+    "discord-interactions": "^4.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "dotenv": "^16.4.5"
+  }
+}

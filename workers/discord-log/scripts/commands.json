@@ -1,0 +1,36 @@
+[
+  {
+    "name": "logged",
+    "description": "Log a paper-money BUY from your ThinkOrSwim account",
+    "options": [
+      { "name": "ticker", "type": 3, "description": "Stock ticker (e.g. NVDA)", "required": true },
+      { "name": "shares", "type": 10, "description": "Number of shares (decimals OK)", "required": true },
+      { "name": "price", "type": 10, "description": "Fill price per share", "required": true },
+      { "name": "date", "type": 3, "description": "Date YYYY-MM-DD (default: today)", "required": false },
+      { "name": "notes", "type": 3, "description": "Optional free-text notes", "required": false }
+    ]
+  },
+  {
+    "name": "closed",
+    "description": "Log a paper-money SELL from your ThinkOrSwim account",
+    "options": [
+      { "name": "ticker", "type": 3, "description": "Stock ticker (e.g. NVDA)", "required": true },
+      { "name": "shares", "type": 10, "description": "Number of shares sold", "required": true },
+      { "name": "price", "type": 10, "description": "Fill price per share", "required": true },
+      { "name": "date", "type": 3, "description": "Date YYYY-MM-DD (default: today)", "required": false },
+      { "name": "notes", "type": 3, "description": "Optional free-text notes", "required": false }
+    ]
+  },
+  {
+    "name": "undo",
+    "description": "Comment out the most recent logged entry (preserves audit trail)"
+  },
+  {
+    "name": "positions",
+    "description": "List your current open positions with cost basis and current market value"
+  },
+  {
+    "name": "book",
+    "description": "Show actual book aggregate: AUM, cumulative return, vs SPY, alpha"
+  }
+]

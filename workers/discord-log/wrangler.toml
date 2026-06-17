@@ -1,0 +1,13 @@
+name = "minihedgefund-discord-log"
+main = "src/worker.js"
+compatibility_date = "2026-01-01"
+
+# Secrets set via `wrangler secret put`:
+#   GH_PAT              GitHub fine-grained PAT (contents:write on minihedgefund)
+#   DISCORD_PUBLIC_KEY  from Discord app's General Information page
+#
+# Non-secret env (safe to commit):
+[vars]
+GH_REPO = "quinnstone/minihedgefund"
+ENTRIES_PATH = "data/actual_entries.txt"
+BOOK_PATH = "data/actual_book.json"
