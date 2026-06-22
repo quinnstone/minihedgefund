@@ -1,20 +1,13 @@
 {
-  "cash": 5087.351689723575,
+  "cash": 4432.088061635712,
   "positions": {
     "UNH": {
       "ticker": "UNH",
       "lots": [
         {
-          "lot_id": "b382df2c6f8d",
-          "ticker": "UNH",
-          "shares": 0.029607934163809357,
-          "cost_basis_per_share": 391.3255698852539,
-          "acquisition_date": "2026-05-18"
-        },
-        {
           "lot_id": "59e6e80e89b5",
           "ticker": "UNH",
-          "shares": 1.4739739356895665,
+          "shares": 0.7517909349266879,
           "cost_basis_per_share": 403.1114586639404,
           "acquisition_date": "2026-06-08"
         }
@@ -103,11 +96,30 @@
           "shares": 2,
           "cost_basis_per_share": 179.69980561065674,
           "acquisition_date": "2026-06-15"
+        },
+        {
+          "lot_id": "ae0dcb9b618e",
+          "ticker": "XLI",
+          "shares": 2,
+          "cost_basis_per_share": 181.85588188934327,
+          "acquisition_date": "2026-06-22"
+        }
+      ]
+    },
+    "IWM": {
+      "ticker": "IWM",
+      "lots": [
+        {
+          "lot_id": "52a284bb581a",
+          "ticker": "IWM",
+          "shares": 2,
+          "cost_basis_per_share": 298.95940255737304,
+          "acquisition_date": "2026-06-22"
         }
       ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-06-15T18:47:49.465471"
+  "last_updated": "2026-06-22T18:19:14.686683"
 }

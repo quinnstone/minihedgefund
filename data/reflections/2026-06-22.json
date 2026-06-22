@@ -1,0 +1,86 @@
+{
+  "agent_result": {
+    "agent_name": "reflection",
+    "model": "claude-opus-4-7",
+    "success": true,
+    "output": {
+      "summary": "5 weeks in, book is -1.4% vs SPY -0.7% (cum alpha -0.67%) with a 20% weekly win rate. The system's one real win \u2014 sizing MU/SMCI/NVDA into the late-May semis breakout (+25% basket) \u2014 has been largely given back by chasing breakouts at extension (MSFT -11.8%, AVGO -14.5%, SMCI -12.9%, AAPL -6.0%) where high technical+news scores masked weakening internals.",
+      "weeks_evaluated": 5,
+      "what_worked": [
+        "Sizing the cleanest cross-signal name aggressively paid off once: MU at 5/25 (tech 82 + news 94, high conviction) returned +45.7% \u2014 the single best pick and validates the 'upsize the winner' lesson when factors align early in a move.",
+        "Tax-loss harvesting discipline executed cleanly: SMCI, AVGO, MSFT, AAPL, XLE, GOOGL, AMZN, BRK.B all cut on broken theses captured ~$99 realized gains offset and meaningful tax credits; no dead capital lingering.",
+        "High-conviction picks outperformed medium (33% win rate, +3.75% avg vs 17%/-1.88%) \u2014 conviction labeling has signal, even though absolute hit rate is low.",
+        "Avoiding insider-flag names (WMT, META, TSLA) was correct every week \u2014 those names continued to underperform; the hard-rule filter is earning its keep."
+      ],
+      "what_missed": [
+        "Chasing 'technical + news' breakouts late in the move was the dominant failure mode: MSFT (-11.8% in 1 wk), AVGO (-14.5%), SMCI add (-12.9%), AAPL (-6.0%) \u2014 all entered with tech scores 69-91 and news 87-96 but immediately reversed. The composite score doesn't penalize extension enough.",
+        "6/01 was peak chase: opened MSFT (9%) and AVGO (6%) into RSI 75-82 universe-wide overbought conditions; both lost double-digits within a week. The reflection lesson to add into strength was applied without checking for exhaustion.",
+        "Cold-start 5/18 basket (XLE, BRK.B, GOOGL, AMZN) lost 3-5% each within 7 days \u2014 'diversified medium-conviction' bucket has zero edge; all four closed at losses. Spreading thin without conviction destroys capital.",
+        "UNH ADD on 6/08 at RSI 70 / macro-mismatch right before a -5% week \u2014 high conviction overrode the explicit macro flag. Macro mismatch should be a hard size-cap, not a tiebreaker."
+      ],
+      "lessons_for_pm": [
+        "Penalize RSI >70 and breakout-extension before sizing high. Last 4 high-tech-score opens at RSI 70+ (MSFT, AVGO, SMCI-add, AAPL) averaged -11% within 7 days. If RSI>70, cap conviction at medium and size at half.",
+        "News polarity 90+ has been a contrarian signal at extension: AVGO news 92, SMCI news 96, AAPL news 95 all preceded losses. Treat extreme news scores as crowded, not confirming, when the chart is already extended.",
+        "Macro-mismatch flag overrides news/technical \u2014 UNH 6/08 add lost on the macro tilt as flagged. Make macro_mismatch a hard 'no-add' rule, not a haircut.",
+        "Stop opening medium-conviction 6-8% positions to 'diversify' \u2014 the 5/18 basket and 6/15 ETF basket (DIA/XLF/XLI, all flat-to-down) show diversification without conviction = drag. Concentrate or hold cash.",
+        "Insider-flag avoidance is working \u2014 keep the hard rule at $30M. Don't soften it for 'cross-signal' names (AMD Lisa Su $57M was correctly held flat).",
+        "When a winner is sold/trimmed mid-trend (MU trim on 6/08 after CEO sale), document the give-back: MU continued to work after the trim. Insider sales at extension are right to respect, but consider trimming 25% not 50% when other signals remain green."
+      ],
+      "watch_for": [
+        "Any new OPEN at RSI >70 with news polarity >90 \u2014 this is the documented loss pattern; require an explicit override rationale.",
+        "Concentration in remaining tech sleeve (NVDA + MU + AMD + new XLF/XLI/DIA ETFs) \u2014 if semis roll over, the ETF diversifiers are too small to cushion. Check correlation, not just sector labels.",
+        "Cash drag \u2014 after 8 closes in 2 weeks, dry powder is high but reflexively redeploying into 'cleanest cross-signal' names has been the loss pattern. Prefer waiting for pullbacks over chasing the next breakout."
+      ],
+      "factor_weight_proposals": {
+        "technical": 0.9,
+        "sentiment": 0.85,
+        "macro_fit": 1.15,
+        "earnings": 1.0,
+        "influencer": 1.0
+      }
+    },
+    "error": null,
+    "input_tokens": 20946,
+    "output_tokens": 1838,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "latency_seconds": 35.401,
+    "estimated_cost_usd": 0.45204
+  },
+  "output": {
+    "summary": "5 weeks in, book is -1.4% vs SPY -0.7% (cum alpha -0.67%) with a 20% weekly win rate. The system's one real win \u2014 sizing MU/SMCI/NVDA into the late-May semis breakout (+25% basket) \u2014 has been largely given back by chasing breakouts at extension (MSFT -11.8%, AVGO -14.5%, SMCI -12.9%, AAPL -6.0%) where high technical+news scores masked weakening internals.",
+    "weeks_evaluated": 5,
+    "what_worked": [
+      "Sizing the cleanest cross-signal name aggressively paid off once: MU at 5/25 (tech 82 + news 94, high conviction) returned +45.7% \u2014 the single best pick and validates the 'upsize the winner' lesson when factors align early in a move.",
+      "Tax-loss harvesting discipline executed cleanly: SMCI, AVGO, MSFT, AAPL, XLE, GOOGL, AMZN, BRK.B all cut on broken theses captured ~$99 realized gains offset and meaningful tax credits; no dead capital lingering.",
+      "High-conviction picks outperformed medium (33% win rate, +3.75% avg vs 17%/-1.88%) \u2014 conviction labeling has signal, even though absolute hit rate is low.",
+      "Avoiding insider-flag names (WMT, META, TSLA) was correct every week \u2014 those names continued to underperform; the hard-rule filter is earning its keep."
+    ],
+    "what_missed": [
+      "Chasing 'technical + news' breakouts late in the move was the dominant failure mode: MSFT (-11.8% in 1 wk), AVGO (-14.5%), SMCI add (-12.9%), AAPL (-6.0%) \u2014 all entered with tech scores 69-91 and news 87-96 but immediately reversed. The composite score doesn't penalize extension enough.",
+      "6/01 was peak chase: opened MSFT (9%) and AVGO (6%) into RSI 75-82 universe-wide overbought conditions; both lost double-digits within a week. The reflection lesson to add into strength was applied without checking for exhaustion.",
+      "Cold-start 5/18 basket (XLE, BRK.B, GOOGL, AMZN) lost 3-5% each within 7 days \u2014 'diversified medium-conviction' bucket has zero edge; all four closed at losses. Spreading thin without conviction destroys capital.",
+      "UNH ADD on 6/08 at RSI 70 / macro-mismatch right before a -5% week \u2014 high conviction overrode the explicit macro flag. Macro mismatch should be a hard size-cap, not a tiebreaker."
+    ],
+    "lessons_for_pm": [
+      "Penalize RSI >70 and breakout-extension before sizing high. Last 4 high-tech-score opens at RSI 70+ (MSFT, AVGO, SMCI-add, AAPL) averaged -11% within 7 days. If RSI>70, cap conviction at medium and size at half.",
+      "News polarity 90+ has been a contrarian signal at extension: AVGO news 92, SMCI news 96, AAPL news 95 all preceded losses. Treat extreme news scores as crowded, not confirming, when the chart is already extended.",
+      "Macro-mismatch flag overrides news/technical \u2014 UNH 6/08 add lost on the macro tilt as flagged. Make macro_mismatch a hard 'no-add' rule, not a haircut.",
+      "Stop opening medium-conviction 6-8% positions to 'diversify' \u2014 the 5/18 basket and 6/15 ETF basket (DIA/XLF/XLI, all flat-to-down) show diversification without conviction = drag. Concentrate or hold cash.",
+      "Insider-flag avoidance is working \u2014 keep the hard rule at $30M. Don't soften it for 'cross-signal' names (AMD Lisa Su $57M was correctly held flat).",
+      "When a winner is sold/trimmed mid-trend (MU trim on 6/08 after CEO sale), document the give-back: MU continued to work after the trim. Insider sales at extension are right to respect, but consider trimming 25% not 50% when other signals remain green."
+    ],
+    "watch_for": [
+      "Any new OPEN at RSI >70 with news polarity >90 \u2014 this is the documented loss pattern; require an explicit override rationale.",
+      "Concentration in remaining tech sleeve (NVDA + MU + AMD + new XLF/XLI/DIA ETFs) \u2014 if semis roll over, the ETF diversifiers are too small to cushion. Check correlation, not just sector labels.",
+      "Cash drag \u2014 after 8 closes in 2 weeks, dry powder is high but reflexively redeploying into 'cleanest cross-signal' names has been the loss pattern. Prefer waiting for pullbacks over chasing the next breakout."
+    ],
+    "factor_weight_proposals": {
+      "technical": 0.9,
+      "sentiment": 0.85,
+      "macro_fit": 1.15,
+      "earnings": 1.0,
+      "influencer": 1.0
+    }
+  }
+}

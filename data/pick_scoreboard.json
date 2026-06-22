@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 413.1199951171875,
-      "lifetime_return_pct": 0.0562216908952395,
-      "days_held": 28,
+      "current_price": 407.8900146484375,
+      "lifetime_return_pct": 0.0428502276900145,
+      "days_held": 35,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -128,9 +128,9 @@
         "news": 73.9,
         "insider": 50.0
       },
-      "current_price": 212.22999572753906,
-      "lifetime_return_pct": -0.045385081253460885,
-      "days_held": 28,
+      "current_price": 209.1199951171875,
+      "lifetime_return_pct": -0.05937392844621991,
+      "days_held": 35,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -209,9 +209,9 @@
         "news": 94.2,
         "insider": 50.0
       },
-      "current_price": 1094.550048828125,
-      "lifetime_return_pct": 0.4574567893849867,
-      "days_held": 21,
+      "current_price": 1198.0999755859375,
+      "lifetime_return_pct": 0.5953395147615679,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -236,9 +236,9 @@
         "news": 89.3,
         "insider": 50.0
       },
-      "current_price": 212.22999572753906,
-      "lifetime_return_pct": -0.014396535908395396,
-      "days_held": 21,
+      "current_price": 209.1199951171875,
+      "lifetime_return_pct": -0.028839486653325176,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -317,9 +317,9 @@
         "news": 90,
         "insider": 35
       },
-      "current_price": 547.9749755859375,
-      "lifetime_return_pct": 0.11676621717081692,
-      "days_held": 7,
+      "current_price": 546.0999755859375,
+      "lifetime_return_pct": 0.11294499038038497,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -371,9 +371,9 @@
         "news": 86,
         "insider": 50
       },
-      "current_price": 413.1199951171875,
-      "lifetime_return_pct": 0.025340625356228396,
-      "days_held": 7,
+      "current_price": 407.8900146484375,
+      "lifetime_return_pct": 0.01236010757008776,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -398,9 +398,9 @@
         "news": 96.8,
         "insider": 50
       },
-      "current_price": 519.5050048828125,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 517.25,
+      "lifetime_return_pct": -0.004340679804078449,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -425,9 +425,9 @@
         "news": 80,
         "insider": 50
       },
-      "current_price": 53.71500015258789,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 53.73500061035156,
+      "lifetime_return_pct": 0.00037234399528728826,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -452,9 +452,9 @@
         "news": 65.2,
         "insider": 50
       },
-      "current_price": 179.61000061035156,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 181.77000427246094,
+      "lifetime_return_pct": 0.01202607680401559,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -479,8 +479,62 @@
         "news": 95.6,
         "insider": 50
       },
-      "current_price": 1094.550048828125,
-      "lifetime_return_pct": 0.003962529408260782,
+      "current_price": 1198.0999755859375,
+      "lifetime_return_pct": 0.09894242228672545,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "d241709ef691",
+      "ticker": "IWM",
+      "week_of": "2026-06-22",
+      "action": "OPEN",
+      "rec_market_price": 298.80999755859375,
+      "executed_fill_price": 298.9594,
+      "target_weight_pct": 7.0,
+      "conviction": "medium",
+      "thesis": "Small-cap breakout in stable-rate expansion regime; cleanest broad-tape way to express rotation theme.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 81.8,
+        "macro_fit": 75,
+        "influencer": 50,
+        "news": 91.1,
+        "insider": 50
+      },
+      "current_price": 298.80999755859375,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "54183ad2129e",
+      "ticker": "XLI",
+      "week_of": "2026-06-22",
+      "action": "ADD",
+      "rec_market_price": 181.76499938964844,
+      "executed_fill_price": 181.8559,
+      "target_weight_pct": 5.0,
+      "conviction": "medium",
+      "thesis": "Clean breakout, macro-favored, no risk flags \u2014 build the cyclical sleeve where signals align without RSI extension.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 82.4,
+        "macro_fit": 80,
+        "influencer": 50,
+        "news": 90.7,
+        "insider": 50
+      },
+      "current_price": 181.77000427246094,
+      "lifetime_return_pct": 2.753490952221811e-05,
       "days_held": 0,
       "status": "open",
       "closed_at": null,
@@ -489,22 +543,22 @@
     }
   ],
   "aggregate": {
-    "total_picks": 18,
-    "open_picks": 10,
+    "total_picks": 20,
+    "open_picks": 12,
     "closed_picks": 8,
-    "win_count": 4,
+    "win_count": 6,
     "loss_count": 9,
     "flat_count": 5,
-    "win_rate": 0.2222222222222222,
-    "avg_return_pct": 3.3744039945527497e-07,
-    "avg_winner_return_pct": 0.16394633070181788,
-    "avg_loser_return_pct": -0.07280044047564578,
-    "equal_weight_basket_return_pct": 3.3744039945527497e-07,
-    "weighted_basket_return_pct": -0.007674501932678845,
+    "win_rate": 0.3,
+    "avg_return_pct": 0.009117448118374815,
+    "avg_winner_return_pct": 0.14574388991546602,
+    "avg_loser_return_pct": -0.075959529135389,
+    "equal_weight_basket_return_pct": 0.009117448118374815,
+    "weighted_basket_return_pct": -0.0002140718186209064,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
-      "return_pct": 0.457457,
+      "return_pct": 0.59534,
       "conviction": "high"
     },
     "worst_pick": {
@@ -515,14 +569,14 @@
     },
     "by_conviction": {
       "medium": {
-        "count": 12,
-        "win_rate": 0.1667,
-        "avg_return_pct": -0.018766
+        "count": 14,
+        "win_rate": 0.2143,
+        "avg_return_pct": -0.017735
       },
       "high": {
         "count": 6,
-        "win_rate": 0.3333,
-        "avg_return_pct": 0.037534
+        "win_rate": 0.5,
+        "avg_return_pct": 0.071774
       }
     }
   },
@@ -579,6 +633,15 @@
         "MU"
       ],
       "avg_return_since_pick": 0.0009906323520651955
+    },
+    {
+      "week_of": "2026-06-22",
+      "picks_count": 2,
+      "tickers": [
+        "IWM",
+        "XLI"
+      ],
+      "avg_return_since_pick": 1.3767454761109055e-05
     }
   ]
 }
