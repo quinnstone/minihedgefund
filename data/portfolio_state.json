@@ -1,5 +1,5 @@
 {
-  "cash": 4432.088061635712,
+  "cash": 4667.162739888301,
   "positions": {
     "UNH": {
       "ticker": "UNH",
@@ -10,25 +10,6 @@
           "shares": 0.7517909349266879,
           "cost_basis_per_share": 403.1114586639404,
           "acquisition_date": "2026-06-08"
-        }
-      ]
-    },
-    "NVDA": {
-      "ticker": "NVDA",
-      "lots": [
-        {
-          "lot_id": "36468f865281",
-          "ticker": "NVDA",
-          "shares": 2.6970744125369643,
-          "cost_basis_per_share": 222.43116732788084,
-          "acquisition_date": "2026-05-18"
-        },
-        {
-          "lot_id": "10f5dabbad68",
-          "ticker": "NVDA",
-          "shares": 2.7670980379351007,
-          "cost_basis_per_share": 215.4376668319702,
-          "acquisition_date": "2026-05-25"
         }
       ]
     },
@@ -57,7 +38,7 @@
         {
           "lot_id": "b63f709f9a38",
           "ticker": "AMD",
-          "shares": 1.2103842693860523,
+          "shares": 0.6051921346930261,
           "cost_basis_per_share": 490.9254548034668,
           "acquisition_date": "2026-06-08"
         }
@@ -84,6 +65,13 @@
           "shares": 11,
           "cost_basis_per_share": 53.74185765266418,
           "acquisition_date": "2026-06-15"
+        },
+        {
+          "lot_id": "780df8800c9b",
+          "ticker": "XLF",
+          "shares": 7,
+          "cost_basis_per_share": 53.75696377372741,
+          "acquisition_date": "2026-06-29"
         }
       ]
     },
@@ -103,6 +91,13 @@
           "shares": 2,
           "cost_basis_per_share": 181.85588188934327,
           "acquisition_date": "2026-06-22"
+        },
+        {
+          "lot_id": "619b7e801f1c",
+          "ticker": "XLI",
+          "shares": 1,
+          "cost_basis_per_share": 182.51120816802978,
+          "acquisition_date": "2026-06-29"
         }
       ]
     },
@@ -117,9 +112,21 @@
           "acquisition_date": "2026-06-22"
         }
       ]
+    },
+    "V": {
+      "ticker": "V",
+      "lots": [
+        {
+          "lot_id": "d79390ba3c1f",
+          "ticker": "V",
+          "shares": 1.7170062697831843,
+          "cost_basis_per_share": 341.2005137786865,
+          "acquisition_date": "2026-06-29"
+        }
+      ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-06-22T18:19:14.686683"
+  "last_updated": "2026-06-29T17:00:08.837458"
 }

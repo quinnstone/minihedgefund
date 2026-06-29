@@ -1,0 +1,86 @@
+{
+  "agent_result": {
+    "agent_name": "reflection",
+    "model": "claude-opus-4-7",
+    "success": true,
+    "output": {
+      "weeks_evaluated": 6,
+      "summary": "Six weeks in we're +0.70% alpha vs SPY but -0.85% absolute, with a 33% weekly win rate masking one monster win (MU +59%) and a string of premature OPENs that closed -5% to -14%. Reflection-driven discipline (TLH on MSFT/AVGO/SMCI, trimming UNH on RSI extension, sitting out the WMT/AVGO insider-dump setups) is working; the misses are concentrated in new positions opened into RSI extension or right before adverse macro turns.",
+      "what_worked": [
+        "High-conviction calls outperformed: 6 high-conviction picks averaged +7.2% with 50% win rate vs medium-conviction at -1.8%/21% \u2014 sizing up the cleanest cross-signal name (MU 5/25 OPEN \u2192 +59.5%) is the single biggest P&L driver.",
+        "Insider-dump avoid rule: passing on WMT (Walton $313M/$535M), AVGO post-CTO-sale, AAPL pre-Levinson sell, META cluster sells has been consistently right; every flagged exit-liquidity name we skipped underperformed.",
+        "Tax-loss harvesting executed cleanly: MSFT/AVGO/SMCI/AAPL/AMZN/GOOGL/BRK.B/XLE closes captured ~$120 in tax credits and freed capital before further drawdown (AVGO went -14.5%, MSFT -11.8% by close week).",
+        "Rotation read on 6/22 (XLI ADD + IWM OPEN, trim UNH) generated +1.38% alpha in a down-SPY week \u2014 cyclical breadth call was correct."
+      ],
+      "what_missed": [
+        "Cold-start 5/18 deployment: 4 of 5 OPENs (XLE -5.5%, BRK.B -4.1%, GOOGL -4.8%, AMZN -0.5%) closed red within 7-14 days. Opening 6 medium-conviction positions in one week diluted edge \u2014 should have staged in.",
+        "Chasing breakouts into RSI extension: MSFT OPEN at composite-82 on 6/1 \u2192 -11.8% in one week; AVGO OPEN same week \u2192 -14.5%. Both had RSI 75+ across the tape and we ignored the 'don't add into extension' rule we later codified.",
+        "SMCI 5/25 OPEN at RSI 80 'high conviction' was a chase \u2014 closed -12.9% on 6/15. Technical 91 + news 96 was the top of the parabola, not a fresh setup.",
+        "Medium-conviction OPENs are net unprofitable (-1.8% avg, 21% win rate). The system is generating too many medium-conviction new positions vs. either passing or sizing up \u2014 the middle is where edge dies."
+      ],
+      "factor_weight_proposals": {
+        "technical": 0.95,
+        "sentiment": 0.95,
+        "earnings": 1.0,
+        "macro_fit": 1.1,
+        "influencer": 1.0
+      },
+      "lessons_for_pm": [
+        "Be ruthless on RSI extension for new OPENs. Last 6 weeks: every OPEN with RSI \u226575 at entry (MSFT, AVGO, SMCI) closed down 11\u201315% within 14 days. If RSI \u226570 and news \u226590, the setup is exit liquidity not entry \u2014 HOLD existing, do NOT initiate.",
+        "Concentrate, don't sprinkle. Medium-conviction OPENs are -1.8% avg with 21% win rate; high-conviction are +7.2% with 50% win rate. If the call isn't high-conviction, prefer HOLD/NONE or upsize an existing winner instead of opening a new medium position.",
+        "Macro_mismatch remains a hard veto and is paying off \u2014 keep avoiding XLU/XLP/XLE/COST/XLY when flagged regardless of news polarity.",
+        "Insider exit-liquidity rule is robust: any name with >$30M cluster sales or C-suite dump (WMT, AVGO pre-close, AAPL Levinson, MSFT pre-close, META) \u2014 skip or close even if news/technicals look strong.",
+        "TLH discipline is adding value \u2014 continue harvesting losers \u2265$30 tax savings when thesis is broken; don't average down on degraded_signal names.",
+        "Don't deploy a full sleeve in one week. Staging in 2\u20133 positions per week beats 6-name cold-starts; the 5/18 basket lost 4-of-5 because we deployed into a pre-correction tape."
+      ],
+      "watch_for": [
+        "MU earnings aftermath: if RSI >70 post-print, do NOT add \u2014 book gains on extension per the documented pattern.",
+        "Cyclical rotation (XLI/IWM/XLF) follow-through \u2014 if breadth fails this week, the 6/22 thesis needs to be re-examined rather than doubled-down.",
+        "Mega-cap tech (NVDA/AAPL/MSFT) re-acceleration risk: we're underweight; if cross-signals re-align with RSI <65, that's the high-conviction add window we keep missing."
+      ]
+    },
+    "error": null,
+    "input_tokens": 23765,
+    "output_tokens": 1824,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "latency_seconds": 35.024,
+    "estimated_cost_usd": 0.493275
+  },
+  "output": {
+    "weeks_evaluated": 6,
+    "summary": "Six weeks in we're +0.70% alpha vs SPY but -0.85% absolute, with a 33% weekly win rate masking one monster win (MU +59%) and a string of premature OPENs that closed -5% to -14%. Reflection-driven discipline (TLH on MSFT/AVGO/SMCI, trimming UNH on RSI extension, sitting out the WMT/AVGO insider-dump setups) is working; the misses are concentrated in new positions opened into RSI extension or right before adverse macro turns.",
+    "what_worked": [
+      "High-conviction calls outperformed: 6 high-conviction picks averaged +7.2% with 50% win rate vs medium-conviction at -1.8%/21% \u2014 sizing up the cleanest cross-signal name (MU 5/25 OPEN \u2192 +59.5%) is the single biggest P&L driver.",
+      "Insider-dump avoid rule: passing on WMT (Walton $313M/$535M), AVGO post-CTO-sale, AAPL pre-Levinson sell, META cluster sells has been consistently right; every flagged exit-liquidity name we skipped underperformed.",
+      "Tax-loss harvesting executed cleanly: MSFT/AVGO/SMCI/AAPL/AMZN/GOOGL/BRK.B/XLE closes captured ~$120 in tax credits and freed capital before further drawdown (AVGO went -14.5%, MSFT -11.8% by close week).",
+      "Rotation read on 6/22 (XLI ADD + IWM OPEN, trim UNH) generated +1.38% alpha in a down-SPY week \u2014 cyclical breadth call was correct."
+    ],
+    "what_missed": [
+      "Cold-start 5/18 deployment: 4 of 5 OPENs (XLE -5.5%, BRK.B -4.1%, GOOGL -4.8%, AMZN -0.5%) closed red within 7-14 days. Opening 6 medium-conviction positions in one week diluted edge \u2014 should have staged in.",
+      "Chasing breakouts into RSI extension: MSFT OPEN at composite-82 on 6/1 \u2192 -11.8% in one week; AVGO OPEN same week \u2192 -14.5%. Both had RSI 75+ across the tape and we ignored the 'don't add into extension' rule we later codified.",
+      "SMCI 5/25 OPEN at RSI 80 'high conviction' was a chase \u2014 closed -12.9% on 6/15. Technical 91 + news 96 was the top of the parabola, not a fresh setup.",
+      "Medium-conviction OPENs are net unprofitable (-1.8% avg, 21% win rate). The system is generating too many medium-conviction new positions vs. either passing or sizing up \u2014 the middle is where edge dies."
+    ],
+    "factor_weight_proposals": {
+      "technical": 0.95,
+      "sentiment": 0.95,
+      "earnings": 1.0,
+      "macro_fit": 1.1,
+      "influencer": 1.0
+    },
+    "lessons_for_pm": [
+      "Be ruthless on RSI extension for new OPENs. Last 6 weeks: every OPEN with RSI \u226575 at entry (MSFT, AVGO, SMCI) closed down 11\u201315% within 14 days. If RSI \u226570 and news \u226590, the setup is exit liquidity not entry \u2014 HOLD existing, do NOT initiate.",
+      "Concentrate, don't sprinkle. Medium-conviction OPENs are -1.8% avg with 21% win rate; high-conviction are +7.2% with 50% win rate. If the call isn't high-conviction, prefer HOLD/NONE or upsize an existing winner instead of opening a new medium position.",
+      "Macro_mismatch remains a hard veto and is paying off \u2014 keep avoiding XLU/XLP/XLE/COST/XLY when flagged regardless of news polarity.",
+      "Insider exit-liquidity rule is robust: any name with >$30M cluster sales or C-suite dump (WMT, AVGO pre-close, AAPL Levinson, MSFT pre-close, META) \u2014 skip or close even if news/technicals look strong.",
+      "TLH discipline is adding value \u2014 continue harvesting losers \u2265$30 tax savings when thesis is broken; don't average down on degraded_signal names.",
+      "Don't deploy a full sleeve in one week. Staging in 2\u20133 positions per week beats 6-name cold-starts; the 5/18 basket lost 4-of-5 because we deployed into a pre-correction tape."
+    ],
+    "watch_for": [
+      "MU earnings aftermath: if RSI >70 post-print, do NOT add \u2014 book gains on extension per the documented pattern.",
+      "Cyclical rotation (XLI/IWM/XLF) follow-through \u2014 if breadth fails this week, the 6/22 thesis needs to be re-examined rather than doubled-down.",
+      "Mega-cap tech (NVDA/AAPL/MSFT) re-acceleration risk: we're underweight; if cross-signals re-align with RSI <65, that's the high-conviction add window we keep missing."
+    ]
+  }
+}

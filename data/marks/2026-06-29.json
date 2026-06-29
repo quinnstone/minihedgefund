@@ -1,0 +1,119 @@
+{
+  "as_of": "2026-06-29",
+  "as_of_utc": "2026-06-29T17:00:09.667888+00:00",
+  "price_map": {
+    "AMD": 531.7050170898438,
+    "DIA": 521.094970703125,
+    "IWM": 297.0899963378906,
+    "MU": 1121.5400390625,
+    "UNH": 418.9200134277344,
+    "V": 341.0299987792969,
+    "XLF": 53.744998931884766,
+    "XLI": 182.36000061035156
+  },
+  "positions": [
+    {
+      "ticker": "UNH",
+      "shares": 0.751791,
+      "avg_cost_per_share": 403.1115,
+      "current_price": 418.92,
+      "market_value": 314.9403,
+      "unrealized_pnl": 11.8847,
+      "unrealized_pnl_pct": 0.039216,
+      "oldest_lot_date": "2026-06-08",
+      "days_held": 21,
+      "n_lots": 1
+    },
+    {
+      "ticker": "MU",
+      "shares": 0.782233,
+      "avg_cost_per_share": 947.3371,
+      "current_price": 1121.54,
+      "market_value": 877.3053,
+      "unrealized_pnl": 136.2672,
+      "unrealized_pnl_pct": 0.183887,
+      "oldest_lot_date": "2026-05-25",
+      "days_held": 35,
+      "n_lots": 2
+    },
+    {
+      "ticker": "AMD",
+      "shares": 0.605192,
+      "avg_cost_per_share": 490.9255,
+      "current_price": 531.705,
+      "market_value": 321.7837,
+      "unrealized_pnl": 24.6795,
+      "unrealized_pnl_pct": 0.083067,
+      "oldest_lot_date": "2026-06-08",
+      "days_held": 21,
+      "n_lots": 1
+    },
+    {
+      "ticker": "DIA",
+      "shares": 1,
+      "avg_cost_per_share": 519.7648,
+      "current_price": 521.095,
+      "market_value": 521.095,
+      "unrealized_pnl": 1.3302,
+      "unrealized_pnl_pct": 0.002559,
+      "oldest_lot_date": "2026-06-15",
+      "days_held": 14,
+      "n_lots": 1
+    },
+    {
+      "ticker": "XLF",
+      "shares": 18,
+      "avg_cost_per_share": 53.7477,
+      "current_price": 53.745,
+      "market_value": 967.41,
+      "unrealized_pnl": -0.0492,
+      "unrealized_pnl_pct": -5.1e-05,
+      "oldest_lot_date": "2026-06-15",
+      "days_held": 14,
+      "n_lots": 2
+    },
+    {
+      "ticker": "XLI",
+      "shares": 5,
+      "avg_cost_per_share": 181.1245,
+      "current_price": 182.36,
+      "market_value": 911.8,
+      "unrealized_pnl": 6.1774,
+      "unrealized_pnl_pct": 0.006821,
+      "oldest_lot_date": "2026-06-15",
+      "days_held": 14,
+      "n_lots": 3
+    },
+    {
+      "ticker": "IWM",
+      "shares": 2,
+      "avg_cost_per_share": 298.9594,
+      "current_price": 297.09,
+      "market_value": 594.18,
+      "unrealized_pnl": -3.7388,
+      "unrealized_pnl_pct": -0.006253,
+      "oldest_lot_date": "2026-06-22",
+      "days_held": 7,
+      "n_lots": 1
+    },
+    {
+      "ticker": "V",
+      "shares": 1.717006,
+      "avg_cost_per_share": 341.2005,
+      "current_price": 341.03,
+      "market_value": 585.5506,
+      "unrealized_pnl": -0.2928,
+      "unrealized_pnl_pct": -0.0005,
+      "oldest_lot_date": "2026-06-29",
+      "days_held": 0,
+      "n_lots": 1
+    }
+  ],
+  "cash": 4667.1627,
+  "aum": 9761.2276,
+  "prior_aum": 9912.6227,
+  "weekly_return_pct": -0.015273,
+  "weekly_return_usd": -151.3951,
+  "spy_weekly_return_pct": -0.020688,
+  "alpha_pct": 0.005415
+}
