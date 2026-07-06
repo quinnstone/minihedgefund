@@ -1,0 +1,88 @@
+{
+  "agent_result": {
+    "agent_name": "reflection",
+    "model": "claude-opus-4-7",
+    "success": true,
+    "output": {
+      "summary": "7 weeks in, +1.22% cumulative alpha vs SPY but -2.37% absolute; win rate only 28.6% weekly and 26% at the pick level. The book is being carried by MU (+49%) and disciplined avoidance of WMT/META/TSLA, but repeatedly gets hurt buying \"clean cross-signal\" names at RSI extension right before mean-reversion (AVGO -14.5%, MSFT -11.8%, SMCI -12.9%, NVDA -12.9%).",
+      "weeks_evaluated": 7,
+      "what_worked": [
+        "Hard-veto insider-cluster rules paid off: avoiding WMT (Walton $313M/$535M), META (COO/CLO cluster), and TSLA saved material downside \u2014 every one of these bear theses proved out.",
+        "Tax-loss harvesting discipline: closing NVDA 6/29, MSFT 6/8, AVGO 6/15, SMCI 6/15, AMZN/GOOGL/BRK.B/XLE 6/1 booked losses at the right time and generated ~$44 in tax credits while freeing capital for the cyclical rotation.",
+        "The 6/22 rotation call (XLI ADD, IWM OPEN, UNH TRIM on macro_mismatch) delivered +1.38% alpha the following week \u2014 the cleanest structural win. Trusting the macro_mismatch hard rule on UNH was correct.",
+        "MU held through 6/22 despite RSI 69/news 92 warning signs \u2014 refusing to add at extension but not panicking out was the right sizing choice; it became the best pick (+49%)."
+      ],
+      "what_missed": [
+        "Chasing 'best technical composite' megacaps at local tops: MSFT opened 6/1 at technical 82/news 87 \u2192 -11.8% in one week. AVGO opened same day, tech 80/news 92 \u2192 -14.5%. High technical + high news scores near market highs have been a contrarian sell signal, not a buy signal.",
+        "NVDA sizing was too generous given the $221M director sale flag on 6/8. Adding on 5/25 and only closing 6/29 cost -12.9% on a large weight. Insider distribution >$100M should downgrade conviction one full notch, not just cap size.",
+        "AAPL opened 6/8 into WWDC 'catalyst' with RSI overbought \u2014 -6% in a week. Event-driven opens on already-extended names remain a losing pattern (this is now the 3rd instance).",
+        "SMCI 5/25 open at technical 91/news 96 \u2192 -12.9% before close. Same pattern: peak-score, high-vol semis at extension.",
+        "Weekly win rate 28.6% and by-conviction medium picks are -2.2% avg \u2014 too many medium-conviction 'diversifier' opens (XLE, BRK.B, GOOGL, AMZN on 5/18 cold-start) all lost 4-5% in week 1. Cold-start diversification did not protect capital."
+      ],
+      "lessons_for_pm": [
+        "Do NOT open new longs when technical score \u226580 AND RSI \u226570 AND news polarity \u22650.90 \u2014 this exact combo has produced 4 straight losers averaging -11%. That is exit liquidity, not a signup sheet. Wait for a pullback to MA20 or a lower-RSI re-test.",
+        "Insider selling >$100M cluster is a hard size cap of \u22643% weight, regardless of how clean the technicals look. NVDA's $221M director sale should have driven a TRIM on 6/8, not a HOLD.",
+        "Medium-conviction 'diversifier' opens have -2.2% avg return over 14 picks. Stop opening medium-conviction names just to spread risk \u2014 either high conviction or cash. Concentrate.",
+        "High-conviction picks have +2.4% avg and 33% win rate vs medium -2.2%/21% \u2014 the edge IS in the conviction filter. Require \u22653 aligned cross-signals AND non-extended tape before assigning high conviction.",
+        "Event catalysts (WWDC, earnings prints) on already-overbought names are NOT reasons to open \u2014 AAPL 6/8, MU 6/22 (avoided add correctly), NVDA 5/18 all show the same pattern. Buy the setup, not the catalyst.",
+        "Rotation-ETF adds (XLF, XLI, IWM, DIA) when macro-regime-favored have been the most reliable positive-alpha trades. Prefer these over single-name megacap opens when tape is choppy."
+      ],
+      "watch_for": [
+        "Any new candidate showing RSI \u226570 + news polarity \u22650.90 + technical \u226580 \u2014 this triple is a documented loser pattern (MSFT, AVGO, SMCI, AAPL). Flag it as a fade, not a buy.",
+        "Insider cluster sales >$100M appearing in this week's data \u2014 apply hard size cap or veto, don't rationalize with 'strong news'.",
+        "Whether the cyclical rotation (XLF/XLI/IWM/V) is still leading or rolling over \u2014 if RSI on XLI/XLF has extended past 65 with news polarity fading, take the win and trim rather than add."
+      ],
+      "factor_weight_proposals": {
+        "technical": 0.9,
+        "sentiment": 0.85,
+        "macro_fit": 1.15,
+        "influencer": 1.0,
+        "earnings": 1.05
+      }
+    },
+    "error": null,
+    "input_tokens": 27503,
+    "output_tokens": 1928,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "latency_seconds": 36.145,
+    "estimated_cost_usd": 0.557145
+  },
+  "output": {
+    "summary": "7 weeks in, +1.22% cumulative alpha vs SPY but -2.37% absolute; win rate only 28.6% weekly and 26% at the pick level. The book is being carried by MU (+49%) and disciplined avoidance of WMT/META/TSLA, but repeatedly gets hurt buying \"clean cross-signal\" names at RSI extension right before mean-reversion (AVGO -14.5%, MSFT -11.8%, SMCI -12.9%, NVDA -12.9%).",
+    "weeks_evaluated": 7,
+    "what_worked": [
+      "Hard-veto insider-cluster rules paid off: avoiding WMT (Walton $313M/$535M), META (COO/CLO cluster), and TSLA saved material downside \u2014 every one of these bear theses proved out.",
+      "Tax-loss harvesting discipline: closing NVDA 6/29, MSFT 6/8, AVGO 6/15, SMCI 6/15, AMZN/GOOGL/BRK.B/XLE 6/1 booked losses at the right time and generated ~$44 in tax credits while freeing capital for the cyclical rotation.",
+      "The 6/22 rotation call (XLI ADD, IWM OPEN, UNH TRIM on macro_mismatch) delivered +1.38% alpha the following week \u2014 the cleanest structural win. Trusting the macro_mismatch hard rule on UNH was correct.",
+      "MU held through 6/22 despite RSI 69/news 92 warning signs \u2014 refusing to add at extension but not panicking out was the right sizing choice; it became the best pick (+49%)."
+    ],
+    "what_missed": [
+      "Chasing 'best technical composite' megacaps at local tops: MSFT opened 6/1 at technical 82/news 87 \u2192 -11.8% in one week. AVGO opened same day, tech 80/news 92 \u2192 -14.5%. High technical + high news scores near market highs have been a contrarian sell signal, not a buy signal.",
+      "NVDA sizing was too generous given the $221M director sale flag on 6/8. Adding on 5/25 and only closing 6/29 cost -12.9% on a large weight. Insider distribution >$100M should downgrade conviction one full notch, not just cap size.",
+      "AAPL opened 6/8 into WWDC 'catalyst' with RSI overbought \u2014 -6% in a week. Event-driven opens on already-extended names remain a losing pattern (this is now the 3rd instance).",
+      "SMCI 5/25 open at technical 91/news 96 \u2192 -12.9% before close. Same pattern: peak-score, high-vol semis at extension.",
+      "Weekly win rate 28.6% and by-conviction medium picks are -2.2% avg \u2014 too many medium-conviction 'diversifier' opens (XLE, BRK.B, GOOGL, AMZN on 5/18 cold-start) all lost 4-5% in week 1. Cold-start diversification did not protect capital."
+    ],
+    "lessons_for_pm": [
+      "Do NOT open new longs when technical score \u226580 AND RSI \u226570 AND news polarity \u22650.90 \u2014 this exact combo has produced 4 straight losers averaging -11%. That is exit liquidity, not a signup sheet. Wait for a pullback to MA20 or a lower-RSI re-test.",
+      "Insider selling >$100M cluster is a hard size cap of \u22643% weight, regardless of how clean the technicals look. NVDA's $221M director sale should have driven a TRIM on 6/8, not a HOLD.",
+      "Medium-conviction 'diversifier' opens have -2.2% avg return over 14 picks. Stop opening medium-conviction names just to spread risk \u2014 either high conviction or cash. Concentrate.",
+      "High-conviction picks have +2.4% avg and 33% win rate vs medium -2.2%/21% \u2014 the edge IS in the conviction filter. Require \u22653 aligned cross-signals AND non-extended tape before assigning high conviction.",
+      "Event catalysts (WWDC, earnings prints) on already-overbought names are NOT reasons to open \u2014 AAPL 6/8, MU 6/22 (avoided add correctly), NVDA 5/18 all show the same pattern. Buy the setup, not the catalyst.",
+      "Rotation-ETF adds (XLF, XLI, IWM, DIA) when macro-regime-favored have been the most reliable positive-alpha trades. Prefer these over single-name megacap opens when tape is choppy."
+    ],
+    "watch_for": [
+      "Any new candidate showing RSI \u226570 + news polarity \u22650.90 + technical \u226580 \u2014 this triple is a documented loser pattern (MSFT, AVGO, SMCI, AAPL). Flag it as a fade, not a buy.",
+      "Insider cluster sales >$100M appearing in this week's data \u2014 apply hard size cap or veto, don't rationalize with 'strong news'.",
+      "Whether the cyclical rotation (XLF/XLI/IWM/V) is still leading or rolling over \u2014 if RSI on XLI/XLF has extended past 65 with news polarity fading, take the win and trim rather than add."
+    ],
+    "factor_weight_proposals": {
+      "technical": 0.9,
+      "sentiment": 0.85,
+      "macro_fit": 1.15,
+      "influencer": 1.0,
+      "earnings": 1.05
+    }
+  }
+}

@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 418.9200134277344,
-      "lifetime_return_pct": 0.07105056681409065,
-      "days_held": 42,
+      "current_price": 417.95001220703125,
+      "lifetime_return_pct": 0.06857056986015267,
+      "days_held": 49,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -209,13 +209,13 @@
         "news": 94.2,
         "insider": 50.0
       },
-      "current_price": 1121.5400390625,
-      "lifetime_return_pct": 0.49339552471704395,
+      "current_price": 1001.8838,
+      "lifetime_return_pct": 0.33406631158455385,
       "days_held": 35,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-07-06",
+      "closed_price": 1001.8838,
+      "final_return_pct": 0.33406631158455385
     },
     {
       "pick_id": "1080316bd7e8",
@@ -317,9 +317,9 @@
         "news": 90,
         "insider": 35
       },
-      "current_price": 531.7050170898438,
-      "lifetime_return_pct": 0.08360824315242255,
-      "days_held": 21,
+      "current_price": 557.97998046875,
+      "lifetime_return_pct": 0.13715629327567327,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -371,9 +371,9 @@
         "news": 86,
         "insider": 50
       },
-      "current_price": 418.9200134277344,
-      "lifetime_return_pct": 0.039735945050030086,
-      "days_held": 21,
+      "current_price": 417.95001220703125,
+      "lifetime_return_pct": 0.037328456499518464,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -398,9 +398,9 @@
         "news": 96.8,
         "insider": 50
       },
-      "current_price": 521.094970703125,
-      "lifetime_return_pct": 0.0030605399473892596,
-      "days_held": 14,
+      "current_price": 528.3200073242188,
+      "lifetime_return_pct": 0.016968079919450818,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -425,9 +425,9 @@
         "news": 80,
         "insider": 50
       },
-      "current_price": 53.744998931884766,
-      "lifetime_return_pct": 0.0005584804842531442,
-      "days_held": 14,
+      "current_price": 55.935001373291016,
+      "lifetime_return_pct": 0.04132926025126651,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -452,9 +452,9 @@
         "news": 65.2,
         "insider": 50
       },
-      "current_price": 182.36000061035156,
-      "lifetime_return_pct": 0.015310951454011118,
-      "days_held": 14,
+      "current_price": 185.1699981689453,
+      "lifetime_return_pct": 0.03095594643783609,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -479,13 +479,13 @@
         "news": 95.6,
         "insider": 50
       },
-      "current_price": 1121.5400390625,
-      "lifetime_return_pct": 0.028718764989647486,
+      "current_price": 1001.8838,
+      "lifetime_return_pct": -0.08103444415531956,
       "days_held": 14,
-      "status": "open",
-      "closed_at": null,
-      "closed_price": null,
-      "final_return_pct": null
+      "status": "closed",
+      "closed_at": "2026-07-06",
+      "closed_price": 1001.8838,
+      "final_return_pct": -0.08103444415531956
     },
     {
       "pick_id": "d241709ef691",
@@ -506,9 +506,9 @@
         "news": 91.1,
         "insider": 50
       },
-      "current_price": 297.0899963378906,
-      "lifetime_return_pct": -0.005756170257877163,
-      "days_held": 7,
+      "current_price": 299.8599853515625,
+      "lifetime_return_pct": 0.0035138977997644055,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -533,9 +533,9 @@
         "news": 90.7,
         "insider": 50
       },
-      "current_price": 182.36000061035156,
-      "lifetime_return_pct": 0.0032734642131383323,
-      "days_held": 7,
+      "current_price": 185.1699981689453,
+      "lifetime_return_pct": 0.018732972743545646,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -560,9 +560,9 @@
         "news": 96,
         "insider": 50
       },
-      "current_price": 341.0299987792969,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 355.8949890136719,
+      "lifetime_return_pct": 0.04358851211794749,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -587,9 +587,9 @@
         "news": 84,
         "insider": 50
       },
-      "current_price": 53.744998931884766,
-      "lifetime_return_pct": 0.0002773158410887934,
-      "days_held": 0,
+      "current_price": 55.935001373291016,
+      "lifetime_return_pct": 0.041036638704814325,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -614,8 +614,89 @@
         "news": 95,
         "insider": 50
       },
-      "current_price": 182.36000061035156,
-      "lifetime_return_pct": -0.00032889792345126677,
+      "current_price": 185.1699981689453,
+      "lifetime_return_pct": 0.015075101565636089,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "6f95a037bc99",
+      "ticker": "XLV",
+      "week_of": "2026-07-06",
+      "action": "OPEN",
+      "rec_market_price": 162.02000427246094,
+      "executed_fill_price": 162.101,
+      "target_weight_pct": 8.0,
+      "conviction": "medium",
+      "thesis": "Best news score (0.96) with bull stack and 4-source confirmation; healthcare adds sector diversification off our heavy cyclical tilt.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 68,
+        "macro_fit": 55,
+        "influencer": 50,
+        "news": 96,
+        "insider": 50
+      },
+      "current_price": 162.02000427246094,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "f1897c471189",
+      "ticker": "JPM",
+      "week_of": "2026-07-06",
+      "action": "OPEN",
+      "rec_market_price": 336.30499267578125,
+      "executed_fill_price": 336.4731,
+      "target_weight_pct": 10.0,
+      "conviction": "high",
+      "thesis": "Clean financials breakout into bank earnings with macro tailwind \u2014 cleaner single-name expression than adding to already-stretched XLF.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 78,
+        "macro_fit": 75,
+        "influencer": 50,
+        "news": 85,
+        "insider": 50
+      },
+      "current_price": 336.30499267578125,
+      "lifetime_return_pct": 0.0,
+      "days_held": 0,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "2fc347e875ae",
+      "ticker": "BRK.B",
+      "week_of": "2026-07-06",
+      "action": "OPEN",
+      "rec_market_price": 505.54998779296875,
+      "executed_fill_price": 505.8028,
+      "target_weight_pct": 7.0,
+      "conviction": "medium",
+      "thesis": "Bull stack, low vol (13%), highest news polarity (0.92) with no insider red flags \u2014 quality anchor with real momentum.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 73,
+        "macro_fit": 65,
+        "influencer": 50,
+        "news": 91,
+        "insider": 50
+      },
+      "current_price": 505.54998779296875,
+      "lifetime_return_pct": 0.0,
       "days_held": 0,
       "status": "open",
       "closed_at": null,
@@ -624,22 +705,22 @@
     }
   ],
   "aggregate": {
-    "total_picks": 23,
-    "open_picks": 13,
-    "closed_picks": 10,
-    "win_count": 6,
+    "total_picks": 26,
+    "open_picks": 14,
+    "closed_picks": 12,
+    "win_count": 11,
     "loss_count": 10,
-    "flat_count": 7,
-    "win_rate": 0.2608695652173913,
-    "avg_return_pct": -0.0042128961510640986,
-    "avg_winner_return_pct": 0.1219699993628743,
-    "avg_loser_return_pct": -0.08310196962066083,
-    "equal_weight_basket_return_pct": -0.0042128961510640986,
-    "weighted_basket_return_pct": -0.011066066997523277,
+    "flat_count": 5,
+    "win_rate": 0.4230769230769231,
+    "avg_return_pct": -0.004712067051977735,
+    "avg_winner_return_pct": 0.07134619481458138,
+    "avg_loser_return_pct": -0.09062979701040506,
+    "equal_weight_basket_return_pct": -0.004712067051977735,
+    "weighted_basket_return_pct": -0.009407899474537526,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
-      "return_pct": 0.493396,
+      "return_pct": 0.334066,
       "conviction": "high"
     },
     "worst_pick": {
@@ -650,14 +731,14 @@
     },
     "by_conviction": {
       "medium": {
-        "count": 14,
-        "win_rate": 0.2143,
-        "avg_return_pct": -0.022196
+        "count": 16,
+        "win_rate": 0.375,
+        "avg_return_pct": -0.010289
       },
       "high": {
-        "count": 9,
-        "win_rate": 0.3333,
-        "avg_return_pct": 0.023761
+        "count": 10,
+        "win_rate": 0.5,
+        "avg_return_pct": 0.004211
       }
     }
   },
@@ -733,6 +814,16 @@
         "XLI"
       ],
       "avg_return_since_pick": -1.7194027454157798e-05
+    },
+    {
+      "week_of": "2026-07-06",
+      "picks_count": 3,
+      "tickers": [
+        "XLV",
+        "JPM",
+        "BRK.B"
+      ],
+      "avg_return_since_pick": 0.0
     }
   ]
 }
