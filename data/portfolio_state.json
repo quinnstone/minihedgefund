@@ -1,5 +1,5 @@
 {
-  "cash": 3140.7978709822337,
+  "cash": 2948.8519428744225,
   "positions": {
     "UNH": {
       "ticker": "UNH",
@@ -88,7 +88,7 @@
         {
           "lot_id": "52a284bb581a",
           "ticker": "IWM",
-          "shares": 2,
+          "shares": 1,
           "cost_basis_per_share": 298.95940255737304,
           "acquisition_date": "2026-06-22"
         }
@@ -141,9 +141,21 @@
           "acquisition_date": "2026-07-06"
         }
       ]
+    },
+    "AMZN": {
+      "ticker": "AMZN",
+      "lots": [
+        {
+          "lot_id": "b353021c2021",
+          "ticker": "AMZN",
+          "shares": 1.9534228404334246,
+          "cost_basis_per_share": 248.38412450408933,
+          "acquisition_date": "2026-07-13"
+        }
+      ]
     }
   },
   "initial_capital": 10000.0,
   "inception_date": "2026-05-18",
-  "last_updated": "2026-07-06T16:59:34.969925"
+  "last_updated": "2026-07-13T16:43:19.809224"
 }

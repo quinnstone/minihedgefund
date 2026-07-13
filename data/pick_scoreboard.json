@@ -47,9 +47,9 @@
         "news": 89.5,
         "insider": 50.0
       },
-      "current_price": 417.95001220703125,
-      "lifetime_return_pct": 0.06857056986015267,
-      "days_held": 49,
+      "current_price": 429.8699951171875,
+      "lifetime_return_pct": 0.0990463266708009,
+      "days_held": 56,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -317,9 +317,9 @@
         "news": 90,
         "insider": 35
       },
-      "current_price": 557.97998046875,
-      "lifetime_return_pct": 0.13715629327567327,
-      "days_held": 28,
+      "current_price": 538.8400268554688,
+      "lifetime_return_pct": 0.09814930473450248,
+      "days_held": 35,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -371,9 +371,9 @@
         "news": 86,
         "insider": 50
       },
-      "current_price": 417.95001220703125,
-      "lifetime_return_pct": 0.037328456499518464,
-      "days_held": 28,
+      "current_price": 429.8699951171875,
+      "lifetime_return_pct": 0.06691318460707038,
+      "days_held": 35,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -398,9 +398,9 @@
         "news": 96.8,
         "insider": 50
       },
-      "current_price": 528.3200073242188,
-      "lifetime_return_pct": 0.016968079919450818,
-      "days_held": 21,
+      "current_price": 524.0599975585938,
+      "lifetime_return_pct": 0.008767947628933322,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -425,9 +425,9 @@
         "news": 80,
         "insider": 50
       },
-      "current_price": 55.935001373291016,
-      "lifetime_return_pct": 0.04132926025126651,
-      "days_held": 21,
+      "current_price": 55.869998931884766,
+      "lifetime_return_pct": 0.04011912451224393,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -452,9 +452,9 @@
         "news": 65.2,
         "insider": 50
       },
-      "current_price": 185.1699981689453,
-      "lifetime_return_pct": 0.03095594643783609,
-      "days_held": 21,
+      "current_price": 180.36000061035156,
+      "lifetime_return_pct": 0.004175714032912123,
+      "days_held": 28,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -506,9 +506,9 @@
         "news": 91.1,
         "insider": 50
       },
-      "current_price": 299.8599853515625,
-      "lifetime_return_pct": 0.0035138977997644055,
-      "days_held": 14,
+      "current_price": 293.70001220703125,
+      "lifetime_return_pct": -0.01710111908340845,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -533,9 +533,9 @@
         "news": 90.7,
         "insider": 50
       },
-      "current_price": 185.1699981689453,
-      "lifetime_return_pct": 0.018732972743545646,
-      "days_held": 14,
+      "current_price": 180.36000061035156,
+      "lifetime_return_pct": -0.007729754265203656,
+      "days_held": 21,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -560,9 +560,9 @@
         "news": 96,
         "insider": 50
       },
-      "current_price": 355.8949890136719,
-      "lifetime_return_pct": 0.04358851211794749,
-      "days_held": 7,
+      "current_price": 356.760009765625,
+      "lifetime_return_pct": 0.04612500672267268,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -587,9 +587,9 @@
         "news": 84,
         "insider": 50
       },
-      "current_price": 55.935001373291016,
-      "lifetime_return_pct": 0.041036638704814325,
-      "days_held": 7,
+      "current_price": 55.869998931884766,
+      "lifetime_return_pct": 0.03982684302325953,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -614,9 +614,9 @@
         "news": 95,
         "insider": 50
       },
-      "current_price": 185.1699981689453,
-      "lifetime_return_pct": 0.015075101565636089,
-      "days_held": 7,
+      "current_price": 180.36000061035156,
+      "lifetime_return_pct": -0.011292608153004787,
+      "days_held": 14,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -641,9 +641,9 @@
         "news": 96,
         "insider": 50
       },
-      "current_price": 162.02000427246094,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 161.4199981689453,
+      "lifetime_return_pct": -0.0037032840864923366,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -668,9 +668,9 @@
         "news": 85,
         "insider": 50
       },
-      "current_price": 336.30499267578125,
-      "lifetime_return_pct": 0.0,
-      "days_held": 0,
+      "current_price": 334.1299133300781,
+      "lifetime_return_pct": -0.006467579706139051,
+      "days_held": 7,
       "status": "open",
       "closed_at": null,
       "closed_price": null,
@@ -695,7 +695,34 @@
         "news": 91,
         "insider": 50
       },
-      "current_price": 505.54998779296875,
+      "current_price": 496.73089599609375,
+      "lifetime_return_pct": -0.017444549519970647,
+      "days_held": 7,
+      "status": "open",
+      "closed_at": null,
+      "closed_price": null,
+      "final_return_pct": null
+    },
+    {
+      "pick_id": "7e780c7f28ae",
+      "ticker": "AMZN",
+      "week_of": "2026-07-13",
+      "action": "OPEN",
+      "rec_market_price": 248.25999450683594,
+      "executed_fill_price": 248.3841,
+      "target_weight_pct": 5.0,
+      "conviction": "medium",
+      "thesis": "20d breakout with RSI 54 (room to run), +0.75 news polarity, Consumer Discretionary macro-favored \u2014 cleanest new-money setup this week.",
+      "factor_breakdown": {
+        "sentiment": 50,
+        "earnings": 50,
+        "technical": 67.9,
+        "macro_fit": 70,
+        "influencer": 50,
+        "news": 90.8,
+        "insider": 50
+      },
+      "current_price": 248.25999450683594,
       "lifetime_return_pct": 0.0,
       "days_held": 0,
       "status": "open",
@@ -705,18 +732,18 @@
     }
   ],
   "aggregate": {
-    "total_picks": 26,
-    "open_picks": 14,
+    "total_picks": 27,
+    "open_picks": 15,
     "closed_picks": 12,
-    "win_count": 11,
-    "loss_count": 10,
-    "flat_count": 5,
-    "win_rate": 0.4230769230769231,
-    "avg_return_pct": -0.004712067051977735,
-    "avg_winner_return_pct": 0.07134619481458138,
-    "avg_loser_return_pct": -0.09062979701040506,
-    "equal_weight_basket_return_pct": -0.004712067051977735,
-    "weighted_basket_return_pct": -0.009407899474537526,
+    "win_count": 8,
+    "loss_count": 15,
+    "flat_count": 4,
+    "win_rate": 0.2962962962962963,
+    "avg_return_pct": -0.0087920339040315,
+    "avg_winner_return_pct": 0.09162675618550464,
+    "avg_loser_return_pct": -0.06442223872211848,
+    "equal_weight_basket_return_pct": -0.0087920339040315,
+    "weighted_basket_return_pct": -0.012950510028233372,
     "best_pick": {
       "ticker": "MU",
       "week_of": "2026-05-25",
@@ -731,14 +758,14 @@
     },
     "by_conviction": {
       "medium": {
-        "count": 16,
-        "win_rate": 0.375,
-        "avg_return_pct": -0.010289
+        "count": 17,
+        "win_rate": 0.2353,
+        "avg_return_pct": -0.016328
       },
       "high": {
         "count": 10,
-        "win_rate": 0.5,
-        "avg_return_pct": 0.004211
+        "win_rate": 0.4,
+        "avg_return_pct": 0.004019
       }
     }
   },
@@ -822,6 +849,14 @@
         "XLV",
         "JPM",
         "BRK.B"
+      ],
+      "avg_return_since_pick": 0.0
+    },
+    {
+      "week_of": "2026-07-13",
+      "picks_count": 1,
+      "tickers": [
+        "AMZN"
       ],
       "avg_return_since_pick": 0.0
     }

@@ -4,7 +4,7 @@
   "deployment_aum": 9997.9572,
   "deployment_cost_usd": -2.0428,
   "deployment_cost_pct": -0.000204,
-  "weeks_tracked": 8,
+  "weeks_tracked": 9,
   "weekly_returns": [
     {
       "week_of": "2026-05-18",
@@ -69,19 +69,27 @@
       "spy_pct": 0.005101254111842105,
       "alpha": -0.0038537616770328176,
       "aum": 9773.404657585452
+    },
+    {
+      "week_of": "2026-07-13",
+      "return_pct": -0.006576444785722263,
+      "return_usd": -64.27425637806846,
+      "spy_pct": 0.004884973334897504,
+      "alpha": -0.011461418120619767,
+      "aum": 9709.13044362193
     }
   ],
-  "cumulative_return_pct": -0.02246,
-  "cumulative_return_usd": -224.5525,
-  "current_aum": 9773.4047,
-  "weekly_win_rate": 0.375,
-  "spy_cumulative_pct": -0.03094,
-  "cumulative_alpha_pct": 0.008481,
-  "trades_count": 44,
+  "cumulative_return_pct": -0.028889,
+  "cumulative_return_usd": -288.8268,
+  "current_aum": 9709.1304,
+  "weekly_win_rate": 0.3333,
+  "spy_cumulative_pct": -0.026207,
+  "cumulative_alpha_pct": -0.002682,
+  "trades_count": 46,
   "total_realized_gains": 210.2391,
-  "total_realized_losses": -582.6014,
+  "total_realized_losses": -588.3075,
   "estimated_tax_owed": 73.0076,
-  "after_tax_cumulative_return_pct": -0.029762,
+  "after_tax_cumulative_return_pct": -0.036191,
   "best_week": {
     "week_of": "2026-06-01",
     "return_pct": 0.02492969793046927
