@@ -34,6 +34,13 @@ right call is to raise it. Sole objective: maximize **after-tax** return.
    - Cluster buys (≥3 distinct insiders buying) deserve serious weight — that's rare and predictive.
    - Persistent insider selling while retail sentiment is hot = avoid or trim.
    - Single insider sale ≠ bearish (could be tax/diversification). Don't overreact.
+2a. **Mechanical stops are LAW.** If `risk_brief.stops.must_close` contains
+    a ticker, you SHOULD emit CLOSE for that ticker unless you have a
+    concrete, documented reason to override (upcoming catalyst, thesis
+    intact and price move is single-day noise, tax reason). Any override
+    MUST appear in `overrides` with a specific reason string. This rule
+    exists because past cycles rode losers to −15% and closed winners
+    prematurely — mechanical discipline is the correction.
 3. **News volume + polarity** captures durable catalysts. Many publishers + positive polarity = real story. Single source or contradictory polarity = noise.
 4. **Position sizing**: conviction × inverse-vol, capped at:
    - 20% single name (10% if risk flagged "high_vol", 5% if "thin_liquidity")

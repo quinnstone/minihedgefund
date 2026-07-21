@@ -15,18 +15,37 @@ from __future__ import annotations
 import json
 from typing import Optional
 
-from .base import MODEL_OPUS, BaseAgent
+from .base import MODEL_HAIKU, MODEL_OPUS, BaseAgent  # noqa: F401 (MODEL_OPUS kept for rollback)
 
 
-# Weights mirror the spec: sentiment dominant, insider high-quality
+# Weights adjusted 2026-07-20 based on 9-week factor→return correlation
+# analysis on 27 realized picks:
+#
+#   factor       corr    high-score returns   low-score returns   spread
+#   sentiment   -0.35        -13.2%                +0.1%          -13.3%
+#   insider     -0.22         +0.0%                -0.9%           +0.9%
+#   earnings    +0.05         -2.4%                -0.0%           -2.4%
+#   news        +0.06         -1.0%                -0.8%           -0.2%
+#   technical   -0.02         -0.0%                -1.7%           +1.6%
+#   macro_fit   -0.04         -1.1%                -0.7%           -0.3%
+#   influencer  +0.00         +0.0%                -0.9%           +0.9%
+#
+# Sentiment dropped to 0.0 — clear inverted-signal (retail buzz = top signal,
+# not entry signal). Weight redistributed by evidence: news + earnings +
+# technical get the biggest boosts, insider stays highest.
+#
+# Sentiment key kept in the dict (value 0.0) so schema stays stable and the
+# key can be restored to a positive weight if a future re-measurement shows
+# the correlation flipped. Also useful as an "overheat warning" via the PM
+# prompt (high sentiment could still be surfaced as risk_flag).
 HEURISTIC_WEIGHTS = {
-    "sentiment":  0.20,
-    "insider":    0.20,
-    "news":       0.15,
-    "earnings":   0.15,
-    "technical":  0.15,
-    "macro_fit":  0.10,
+    "insider":    0.22,
+    "news":       0.20,
+    "earnings":   0.20,
+    "technical":  0.20,
+    "macro_fit":  0.13,
     "influencer": 0.05,
+    "sentiment":  0.00,   # dropped — anti-signal per 9-week analysis
 }
 
 
@@ -58,11 +77,16 @@ Output rules:
 
 class SynthesisAgent(BaseAgent):
     name = "synthesis"
-    model = MODEL_OPUS
-    # 30-ticker universe × ~130 tokens per ranked_candidate entry (factor_breakdown
-    # + thesis + narrative + risk_flags) + market_context + themes routinely
-    # exceeded 4096. Empirically observed truncation in 2026-05-25 cycle. Bumped
-    # to 8192 to give comfortable headroom without enabling runaway output.
+    # Downgraded 2026-07-20 (Opus → Haiku 4.5). Prior analysis: LLM vs
+    # heuristic had 0.89 score correlation — LLM was mostly reproducing
+    # the weighted-average math in prose. Haiku produces equivalent
+    # structured output for ~10× less. If Haiku is measurably worse over
+    # the next 4 weeks (e.g. schema violations reappear, or narrative
+    # quality degrades PM outputs), revert with `model = MODEL_OPUS`.
+    model = MODEL_HAIKU
+    # 30-ticker universe × ~130 tokens per ranked_candidate entry needs
+    # room; Haiku 4.5 supports up to 8192 output. Same ceiling as Opus for
+    # this task, no other adjustments needed for the downgrade.
     max_tokens = 8192
 
     def system_prompt(self) -> str:

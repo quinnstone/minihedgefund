@@ -67,6 +67,7 @@ from .portfolio.tax import LTCG_HOLDING_DAYS, WASH_SALE_WINDOW, TaxEngine
 from .tracking.actual_book import load_actual_book
 from .tracking.executor import execute_decisions
 from .tracking.marking import fetch_price_map, mark_portfolio
+from .tracking.stops import evaluate_stops, stops_summary_for_brief
 from .tracking.pick_tracker import (
     close_picks,
     compute_aggregate,
@@ -400,7 +401,19 @@ def run_weekly(
     top_candidates = [c["ticker"] for c in (synth_result.output.get("ranked_candidates") or [])][:15]
 
     # 6. Risk + tax briefs
-    risk_brief = build_risk_brief(top_candidates, state, snap.price_map)
+    # Mechanical stops: hard −10% + trailing (peaked +10%, dropped 5% from peak).
+    # Peak price fetched from yfinance per open position — bounded, cheap.
+    stop_signals = evaluate_stops(state, snap.price_map, today=today)
+    stops_summary = stops_summary_for_brief(stop_signals)
+    if stop_signals:
+        logger.info("stops triggered: %d must-close (%d hard, %d trailing) — %s",
+                    stops_summary["count"], stops_summary["hard_stops"],
+                    stops_summary["trailing_stops"],
+                    [s.ticker for s in stop_signals])
+
+    risk_brief = build_risk_brief(
+        top_candidates, state, snap.price_map, stops_summary=stops_summary,
+    )
     tax_brief = build_tax_brief(
         top_candidates, state, snap.price_map, recent_closed_lots(days=35), as_of=today,
     )

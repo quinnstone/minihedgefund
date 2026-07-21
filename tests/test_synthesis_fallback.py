@@ -11,11 +11,18 @@ class TestWeights:
     def test_weights_sum_to_one(self):
         assert abs(sum(HEURISTIC_WEIGHTS.values()) - 1.0) < 1e-9
 
-    def test_sentiment_and_insider_dominate(self):
-        # Per spec, sentiment + insider should be highest-weighted factors
+    def test_insider_is_top_weight(self):
+        # As of 2026-07-20: sentiment dropped (anti-signal); insider stays
+        # highest-weighted, followed by news/earnings/technical tied at 0.20.
         ranked = sorted(HEURISTIC_WEIGHTS.items(), key=lambda kv: kv[1], reverse=True)
-        top_two = {ranked[0][0], ranked[1][0]}
-        assert top_two == {"sentiment", "insider"}
+        assert ranked[0][0] == "insider"
+        assert HEURISTIC_WEIGHTS["insider"] > HEURISTIC_WEIGHTS["macro_fit"]
+
+    def test_sentiment_is_zero(self):
+        # 9-week correlation analysis showed sentiment as an anti-signal
+        # (corr -0.35). Weight is 0; keep the key so schema is stable.
+        assert "sentiment" in HEURISTIC_WEIGHTS
+        assert HEURISTIC_WEIGHTS["sentiment"] == 0.0
 
 
 class TestPolarityMapping:
@@ -52,12 +59,15 @@ class TestHeuristicSynthesis:
         assert len(out["ranked_candidates"]) == 1
         c = out["ranked_candidates"][0]
         assert c["ticker"] == "NVDA"
-        # Expected: 90*0.2 + 70*0.15 + 80*0.15 + 50*0.10 + 50*0.05 + 85*0.15 + 60*0.20
-        #         = 18 + 10.5 + 12 + 5 + 2.5 + 12.75 + 12 = 72.75
-        assert abs(c["unified_score"] - 72.75) < 0.05
+        # Expected under 2026-07-20 weights:
+        #   insider*0.22 + news*0.20 + earnings*0.20 + technical*0.20 +
+        #   macro_fit*0.13 + influencer*0.05 + sentiment*0.00
+        # = 60*.22 + 85*.20 + 70*.20 + 80*.20 + 50*.13 + 50*.05 + 90*0
+        # = 13.2 + 17 + 14 + 16 + 6.5 + 2.5 + 0 = 69.2
+        assert abs(c["unified_score"] - 69.2) < 0.05
 
     def test_missing_scout_defaults_to_50(self):
-        # No earnings/news/insider data — each should default to 50
+        # No earnings/news/insider data — each defaults to 50
         briefs = {
             "sentiment": {"candidates": [{"ticker": "AAA", "composite_score": 60}]},
             "earnings":  {"candidates": []},
@@ -69,20 +79,21 @@ class TestHeuristicSynthesis:
         }
         out = heuristic_synthesis(briefs, ["AAA"])
         c = out["ranked_candidates"][0]
-        # 60*0.2 + 50*0.15 + 60*0.15 + 50*0.10 + 50*0.05 + 50*0.15 + 50*0.20
-        # = 12 + 7.5 + 9 + 5 + 2.5 + 7.5 + 10 = 53.5
-        assert abs(c["unified_score"] - 53.5) < 0.05
+        # 50*.22 + 50*.20 + 50*.20 + 60*.20 + 50*.13 + 50*.05 + 60*0
+        # = 11 + 10 + 10 + 12 + 6.5 + 2.5 + 0 = 52.0
+        assert abs(c["unified_score"] - 52.0) < 0.05
 
     def test_ranks_descending(self):
+        # sentiment weight is 0 as of 2026-07-20 — differentiate via news + insider
         briefs = {
-            "sentiment": {"candidates": [
-                {"ticker": "WIN", "composite_score": 95},
+            "insider":  {"candidates": [
+                {"ticker": "WIN", "composite_score": 90},
                 {"ticker": "LOSS", "composite_score": 20},
             ]},
+            "sentiment": {"candidates": []},
             "earnings":  {"candidates": []},
             "technical": {"candidates": []},
             "news":      {"candidates": []},
-            "insider":   {"candidates": []},
             "macro":     {},
             "influencer": {"candidates": []},
         }

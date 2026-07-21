@@ -131,11 +131,18 @@ def build_risk_brief(
     tickers: list[str],
     portfolio: PortfolioState,
     price_map: dict[str, float],
+    stops_summary: Optional[dict] = None,
 ) -> dict:
-    """Combined output suitable for handing to the PM agent."""
+    """Combined output suitable for handing to the PM agent.
+
+    `stops_summary` (from src.tracking.stops.stops_summary_for_brief) is
+    optional so existing callers/tests don't break. When present, its
+    `must_close` list bubbles up as top-level `stops` in the brief and
+    the PM prompt is expected to honor those closes unless overridden.
+    """
     candidate_risk = assess_candidates(tickers)
     pv = portfolio_view(portfolio, price_map, candidate_risk)
-    return {
+    brief = {
         "as_of": datetime.now(timezone.utc).isoformat(),
         "single_name_cap_pct": MAX_SINGLE_NAME_PCT,
         "sector_cap_pct": MAX_SECTOR_PCT,
@@ -156,3 +163,6 @@ def build_risk_brief(
             "violations": pv.notes,
         },
     }
+    if stops_summary is not None:
+        brief["stops"] = stops_summary
+    return brief
