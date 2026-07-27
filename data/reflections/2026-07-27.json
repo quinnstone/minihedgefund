@@ -1,0 +1,16 @@
+{
+  "agent_result": {
+    "agent_name": "reflection",
+    "model": "claude-opus-4-7",
+    "success": false,
+    "output": {},
+    "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CdSshiLszrThYxBSgfdHk'}",
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_creation_tokens": 0,
+    "latency_seconds": 3.878,
+    "estimated_cost_usd": 0.0
+  },
+  "output": {}
+}
