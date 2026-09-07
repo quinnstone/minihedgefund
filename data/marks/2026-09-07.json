@@ -1,6 +1,6 @@
 {
   "as_of": "2026-09-07",
-  "as_of_utc": "2026-09-07T18:40:28.824933+00:00",
+  "as_of_utc": "2026-09-07T18:56:36.892602+00:00",
   "price_map": {
     "AMD": 477.57000732421875,
     "AMZN": 258.510009765625,
@@ -150,9 +150,9 @@
   ],
   "cash": 2948.8519,
   "aum": 9849.8271,
-  "prior_aum": 9823.4479,
-  "weekly_return_pct": 0.002685,
-  "weekly_return_usd": 26.3792,
-  "spy_weekly_return_pct": 0.004094,
-  "alpha_pct": -0.001408
+  "prior_aum": 9849.8271,
+  "weekly_return_pct": 0.0,
+  "weekly_return_usd": 0.0,
+  "spy_weekly_return_pct": null,
+  "alpha_pct": null
 }
