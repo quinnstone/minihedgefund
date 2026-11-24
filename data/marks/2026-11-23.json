@@ -1,6 +1,6 @@
 {
   "as_of": "2026-11-23",
-  "as_of_utc": "2026-11-24T01:34:09.101434+00:00",
+  "as_of_utc": "2026-11-24T01:58:01.524299+00:00",
   "price_map": {
     "AMD": NaN,
     "AMZN": NaN,
@@ -150,9 +150,9 @@
   ],
   "cash": 2948.8519,
   "aum": NaN,
-  "prior_aum": 9999.6613,
-  "weekly_return_pct": NaN,
-  "weekly_return_usd": NaN,
-  "spy_weekly_return_pct": -0.067761,
-  "alpha_pct": NaN
+  "prior_aum": NaN,
+  "weekly_return_pct": null,
+  "weekly_return_usd": null,
+  "spy_weekly_return_pct": null,
+  "alpha_pct": null
 }
